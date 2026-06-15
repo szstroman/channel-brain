@@ -376,6 +376,11 @@ CHANNEL_NAME = "The Koerner Office"
 CHANNEL_HANDLE = "@thekoerneroffice"
 CHANNEL_URL = "https://www.youtube.com/@thekoerneroffice"
 
+# ── Load index on startup ──────────────────────────────────────────────────────
+CHANNEL_NAME = "The Koerner Office"
+CHANNEL_HANDLE = "@thekoerneroffice"
+CHANNEL_URL = "https://www.youtube.com/@thekoerneroffice"
+
 @st.cache_resource(show_spinner=False)
 def load_demo_index():
     try:
@@ -388,75 +393,37 @@ def load_demo_index():
         return None, None
     return None, None
 
-# ── Show splash screen immediately on first visit ─────────────────────────────
-if not st.session_state.index_loaded:
-    # Show branded splash instantly — don't wait for index
+# Try to load index — cached so only runs once per server session
+collection, stats = load_demo_index()
+
+# No index available — show Coming Soon and stop completely
+if collection is None:
     st.markdown("""
     <div style="display:flex; flex-direction:column; align-items:center;
                 justify-content:center; min-height:100vh; text-align:center;
                 padding:40px; background:#0a0a0a;">
-        <div style="font-size:5.2rem; margin-bottom:32px;">🧠</div>
-        <div style="font-family:'Playfair Display',serif; font-size:3.1rem;
-                    color:#f5f0e8; margin-bottom:20px; line-height:1.2;">
+        <div style="font-size:4rem; margin-bottom:24px;">🧠</div>
+        <div style="font-family:'Playfair Display',serif; font-size:2rem;
+                    color:#f5f0e8; margin-bottom:16px;">
             Channel Brain
         </div>
         <div style="color:#d4a359; font-family:'DM Mono',monospace;
-                    font-size:14px; letter-spacing:3px; text-transform:uppercase;
-                    margin-bottom:32px;">
-            Live Demo
+                    font-size:12px; letter-spacing:3px; text-transform:uppercase;
+                    margin-bottom:24px;">
+            Coming Soon
         </div>
-        <div style="color:#aaa; font-size:1.17rem; max-width:500px;
-                    line-height:1.7; margin-bottom:52px;">
-            Loading 95 episodes of content into memory.
-            Ready in just a moment...
-        </div>
-        <div style="display:flex; gap:12px; align-items:center;">
-            <div style="width:12px; height:12px; border-radius:50%;
-                        background:#d4a359; animation:pulse 1.2s infinite;"></div>
-            <div style="width:12px; height:12px; border-radius:50%;
-                        background:#d4a359; animation:pulse 1.2s 0.4s infinite;"></div>
-            <div style="width:12px; height:12px; border-radius:50%;
-                        background:#d4a359; animation:pulse 1.2s 0.8s infinite;"></div>
+        <div style="color:#666; font-size:0.95rem; max-width:420px; line-height:1.7;">
+            The demo archive is being prepared.<br>
+            Check back shortly.
         </div>
     </div>
-    <style>
-    @keyframes pulse {
-        0%, 100% { opacity: 0.2; transform: scale(0.8); }
-        50% { opacity: 1; transform: scale(1.2); }
-    }
-    </style>
     """, unsafe_allow_html=True)
+    st.stop()
 
-    # NOW load the index (user sees splash while this runs)
-    collection, stats = load_demo_index()
-    if collection:
-        st.session_state.index = collection
-        st.session_state.index_loaded = True
-        st.session_state.stats = stats
-        st.rerun()
-    else:
-        # No index found — show friendly message instead of infinite loop
-        st.markdown("""
-        <div style="display:flex; flex-direction:column; align-items:center;
-                    justify-content:center; min-height:100vh; text-align:center;
-                    padding:40px; background:#0a0a0a;">
-            <div style="font-size:4rem; margin-bottom:24px;">🧠</div>
-            <div style="font-family:'Playfair Display',serif; font-size:2rem;
-                        color:#f5f0e8; margin-bottom:16px;">
-                Channel Brain
-            </div>
-            <div style="color:#d4a359; font-family:'DM Mono',monospace;
-                        font-size:12px; letter-spacing:3px; text-transform:uppercase;
-                        margin-bottom:24px;">
-                Coming Soon
-            </div>
-            <div style="color:#666; font-size:0.95rem; max-width:420px; line-height:1.7;">
-                The demo archive is being prepared.<br>
-                Check back shortly.
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
-        st.stop()
+# Index loaded successfully — store in session state and continue
+st.session_state.index = collection
+st.session_state.index_loaded = True
+st.session_state.stats = stats
 
 # ── Stats ──────────────────────────────────────────────────────────────────────
 stats = st.session_state.get("stats", {})
