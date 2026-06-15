@@ -1,0 +1,28 @@
+﻿# API Keys and secrets - NEVER commit these
+.env
+.env.*
+
+# YouTube cookies - NEVER commit
+cookies.txt
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+env/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# ChromaDB indexes (large files - rebuild locally)
+indexes/
+
+# Leads data (private)
+leads.json
+
+# OS files
+.DS_Store
+Thumbs.db
