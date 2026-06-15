@@ -433,8 +433,30 @@ if not st.session_state.index_loaded:
         st.session_state.index = collection
         st.session_state.index_loaded = True
         st.session_state.stats = stats
-    st.rerun()
-    st.stop()
+        st.rerun()
+    else:
+        # No index found — show friendly message instead of infinite loop
+        st.markdown("""
+        <div style="display:flex; flex-direction:column; align-items:center;
+                    justify-content:center; min-height:100vh; text-align:center;
+                    padding:40px; background:#0a0a0a;">
+            <div style="font-size:4rem; margin-bottom:24px;">🧠</div>
+            <div style="font-family:'Playfair Display',serif; font-size:2rem;
+                        color:#f5f0e8; margin-bottom:16px;">
+                Channel Brain
+            </div>
+            <div style="color:#d4a359; font-family:'DM Mono',monospace;
+                        font-size:12px; letter-spacing:3px; text-transform:uppercase;
+                        margin-bottom:24px;">
+                Coming Soon
+            </div>
+            <div style="color:#666; font-size:0.95rem; max-width:420px; line-height:1.7;">
+                The demo archive is being prepared.<br>
+                Check back shortly.
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+        st.stop()
 
 # ── Stats ──────────────────────────────────────────────────────────────────────
 stats = st.session_state.get("stats", {})
