@@ -1,0 +1,4219 @@
+{
+  "stats": {
+    "channel_name": "Chris Koerner on The Koerner Office Podcast",
+    "channel_id": "UCn4dfcINwD3_z41IDFPsFcA",
+    "namespace": "koerner-office",
+    "index_name": "channel-brain-prod",
+    "videos_indexed": 864,
+    "skipped": 744,
+    "skipped_titles": [
+      "The Best Way to Clone These $1M+ Online Businesses (Legally)",
+      "He Makes $3M/Year From Tiny AI Tools (Here\u2019s How You Can Too)",
+      "How To Start a Mobile Detailing Business with $500 (Everything You Need To Know)",
+      "The Best Side Hustle to Make Extra Money Before Christmas",
+      "$1K a Day From This Simple Side Hustle (Here\u2019s How to Copy It)",
+      "The Most Hands-Off Side Hustle Anyone Can Copy",
+      "Comfort Is the Trap Keeping You Average. Here\u2019s How to Break Out",
+      "The Most Copy-Pastable Online Business (Thanks to AI)",
+      "AI Agencies Just Got Simple Enough for Anyone to Start",
+      "You\u2019re Being Sold Without Knowing It (How To Copy This Trick)",
+      "Can\u2019t Code? The Best Way to Start Making Money Online",
+      "Watch This Overlooked AI Tool Build Me a Business in 23 Minutes",
+      "Everyone Chases Trends. Resell This Instead to Actually Make Money",
+      "From $3K to $270M: How He Did It (and How You Can Too)",
+      "From Nothing to $20k/month with Email Newsletters: Full Tutorial",
+      "Google\u2019s New AI Tool Is Crazy Powerful (Here\u2019s How to Profit)",
+      "Start This Simple Side Hustle Before Everyone Else Does",
+      "How to Find the Best Undervalued Deals (For Beginners)",
+      "You Can Start This $1M/Yr Business With No Tools and No Crew",
+      "A New AI Gold Rush Just Started. Don\u2019t Miss This One. (+4 Ideas)",
+      "AI Told Me to Start This Business. So I Did.",
+      "Forget Dropshipping. This Side Hustle Is 10x Easier (and Smarter)",
+      "These Genius Business Ideas Are Hidden All Over America",
+      "This $15K/Person Grant Feels Like a Cheat Code",
+      "I Asked 5 AI Tools to Make Me Rich. Then THIS Happened\u2026",
+      "8 Best ChatGPT Tools to Make Money With (Ranked)",
+      "If We Had to Make $1M Fast, We\u2019d Start These Businesses",
+      "The Most Overlooked $10K/M Business Anyone Can Start",
+      "I Started an Online Business in 56 Minutes (Beginner Friendly)",
+      "You Don\u2019t Need a Big Idea. AI Can Clone These Giants for You",
+      "How Often Would You Play the Lottery If It Were Free?",
+      "How to Start Reselling (Even With $0 in the Bank)",
+      "6 Ways to Make Money With the New GPT Agent (It Blew My Mind)",
+      "The Most Profitable Local Business Everyone Overlooks",
+      "The Smart Way to Start Small and Still Win Big",
+      "You Don\u2019t Need an Online Business to Get Rich",
+      "Everyone\u2019s Chasing AI. Start This Simple Business Instead",
+      "The Most Useful AI Skill You Can Learn Today",
+      "Start an Online Business With Just a Prompt",
+      "The Most Passive Online Business No One Talks About",
+      "Don\u2019t Quit Your Job\u2026 Yet. Watch This First",
+      "The Easiest Way to Start an Online Business (SaaS)",
+      "You\u2019re Doing Everything Except the One Thing That Works",
+      "A Business Anyone Can Start Today With Just $100",
+      "Starting a Business Has Never Been Easier. Here\u2019s How to Win",
+      "I Started a $20K/Month Pickleball Club for $200",
+      "How To Start a $10K/Month AI Automation Agency (No Code)",
+      "Facebook Ads For Beginners: Complete Guide (2026)",
+      "Sell These $3.5K AI Pitch Decks Built in 12 Min (+4 More Ideas)",
+      "The Most Overlooked Way to Make Money with AI (+10 More Ideas)",
+      "watch this if you're tired of being broke",
+      "This Simple Rental Business Could Change Your Life!",
+      "\u201cIt\u2019s Not That Easy?\u201d Sam Launched Overnight to Prove It Is",
+      "If People Pay for This, Your Idea Will Work Too",
+      "Google Veo 3 Just Changed the Game: Here\u2019s Your Money-Making Tutorial",
+      "How to Start a Business? Don\u2019t Wait for Permission.",
+      "The Koerner Office: Business Ideas & Growth Advice is live!",
+      "AI Is Replacing Content Creators (Here\u2019s How to Profit)",
+      "Quit Waiting. Start This Simple Business with $0",
+      "25 ChatGPT Hacks You Need to Know in 2026 (Profit, Become a Pro!)",
+      "How to Get a Yes From Anyone (and Change Your Life)",
+      "You\u2019re Not Ready for What\u2019s Coming: Robert Scoble on AI + Future Tech",
+      "How to Build a Thriving Business in the Middle of Nowhere",
+      "17 Years, 75 Businesses, 1 Marriage: How We Make It Work",
+      "I've Started 75+ Businesses: Here\u2019s What Actually Matters",
+      "Secrets to Making BIG Profits from Small Email Lists",
+      "what I wish I knew at age 20",
+      "You Don\u2019t Need to Be a Genius! Just Do This.",
+      "The Most Overlooked Way to Make Money On the Internet",
+      "You're Overthinking It. Here\u2019s the Simple Way to Start (ft. Nick Huber)",
+      "Fastest Way to Copy Winning Digital Products (Picsart)",
+      "This Video Will Change How You Think About Money",
+      "Missed Every Gold Rush? This One Started Just 2 Days Ago",
+      "This One AI Prompt Could Land You a $15K Client",
+      "Build Your Next Business With This Viral\u00a0AI\u00a0Tool",
+      "Billy Quit his Job to Start an AI App Agency: Here's How",
+      "My 5 Favorite AI Tools in 2026",
+      "Don\u2019t Sleep on This Specific $0-to-Millions Reselling Strategy",
+      "Why You\u2019re Overthinking Your First Product (Do This Instead)",
+      "Is Rucking the Next Gold Rush?",
+      "How to Make Money With Tariffs While Everyone Panics",
+      "This Little AI Device Will Print Millionaires",
+      "Stop Chasing Billion Dollar Ideas. Do This Instead.",
+      "AI Agents Are Overhyped. Use THIS Instead",
+      "Greg Isenberg on AI Tools That Will Replace You (or Make You Rich)",
+      "Why Hasn\u2019t Anyone Copied This Business Idea Yet?",
+      "Everyone\u2019s Overlooking This Marketing Channel: Why You Shouldn\u2019t",
+      "How to Start this $337k/Yr Service Business You\u2019ve Never Heard Of",
+      "Thinking About Dropshipping? You Might Be Too Late.",
+      "I Built a $250K Tool During the Super Bowl without Coding",
+      "AI Won't Replace You If You Do This!",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "BEWARE of this business tactic!",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Trump store financial secrets exposed!",
+      "How to Get Everything You Want Out of Life",
+      "GENIUS IDEA",
+      "How to Piggyback Your Way to $1M+ Business",
+      "GENIUS IDEA",
+      "Did I finally discover passive income?",
+      "GENIUS IDEA",
+      "How to Profit Big from the AI Wrapper Gold Rush (Part 2/2)",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "How much does this business make?",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "How Can You Tell A Guru from a Genius?",
+      "There\u2019s bread in the bread",
+      "An Insider Spills the Secrets to Starting a $1M+ SaaS Agency",
+      "$23k/Month by Month 2: Exact Playbook (Not Clickbait)",
+      "Q&A: How to Make Money Cloning Content with AI (+4 more)",
+      "How to Make Money With a No-Code App: A Step-by-Step Guide (Part 1/2)",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "The Margins on this Boring Business are Insane",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "How to Find Customers for Your Home Service Business",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "The Easiest Way to Make Money with No Code AI",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Everything I Know About Newsletters in 24 Min",
+      "GENIUS IDEA",
+      "How to use AI to start a t shirt business.",
+      "GENIUS IDEA",
+      "The 10 Most Genius Business Ideas This Week",
+      "GENIUS IDEA",
+      "Bookkeeping Basics for Beginners",
+      "GENIUS IDEA",
+      "How to Legally Avoid Paying (most) Taxes",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Why I gave up on privacy.",
+      "ex-tesla guy turns school bus into a fortune",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEAS",
+      "The Ultimate Guide to Starting Your First Service Business (Part 1/2)",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "6 figures from a $39 investment.",
+      "Wine tours from semi trucks??!",
+      "GENIUS IDEA",
+      "The Best Marketing Masterclass You'll Hear in 2026",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Why THESE Are the Best Businesses for Beginners",
+      "GENIUS IDEA",
+      "How to Build a Chat GPT Wrapper (Real Success Story)",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Secrets to Making $10k/Season with Porch Flowers",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "The 5 Most Genius Business Ideas I Saw on Instagram",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "10 at Once!? Watch me Break ChatGPT Operator",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "5 Genius AI Business Ideas",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "The Secrets to Unlocking Facebook Marketplace",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "WOW! ChatGPT Operator Just Built a Business For Me",
+      "MIND. BLOWN! I Just Paid ChatGPT Operator $200 to Build a Business",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "How to Start a $1M+ AI Business with No Coding Experience",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Here Is My Favorite AI Business Idea. Steal It!",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Q&A: Selling Spreadsheets on Etsy? Here's How to Make $5,000/Month (+5 More)",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Unbox my YouTube plaque with me",
+      "GENIUS IDEA",
+      "How I Built a $10m Business in 32 Minutes",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "I Found a Perfect Business That Anyone Can Start",
+      "GENIUS IDEA",
+      "this actually blows my mind",
+      "backyard coral reef?",
+      "This AI Strategy Will Change How You Work Forever",
+      "why don't you start this business?",
+      "Floor is lava profits",
+      "I dare you to tell me that this isn't genius",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Q&A: How Do I Grow My Local Business? (+5 others)",
+      "$1,000 per Weekend Side Hustle",
+      "GENIUS IDEA",
+      "Someone copy this genius idea",
+      "Wanna build wealth fast? Watch this.",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "My 4 Favorite Seasonal Business Ideas this Week",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "My 2025 motivation for you, from prison.",
+      "Pizza Profits",
+      "GENIUS IDEA",
+      "GENiUS IDEAS",
+      "How to Turn a 30 Second Video into a 6 Figure Business",
+      "GENIUS IDEA",
+      "Freeze Dried Candy Profits",
+      "Why is no one else doing this?",
+      "GENIUS IDEA",
+      "Why is no one doing this?",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Year in Review. Net Worth Breakdown, Investments & More",
+      "GENIUS IDEA",
+      "The Best 2025 Advice You\u2019ll Hear",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Hidden gem of a website",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Your Shortcut to Building a $1M Business in 2026",
+      "GENIUS IDEA",
+      "How to Build a No Code SaaS Business in Days",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "My 3 Favorite Business Ideas this Week",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "$1B Business Idea Hiding in Plain Sight",
+      "GENIUS IDEA",
+      "2 genius side hustle ideas for 2025",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "How to Pay $1,600 Once to Profit $1,600/Month",
+      "GENIUS IDEA",
+      "GENiUS IDEA",
+      "GENIUS IDEA",
+      "Bakery stand profits",
+      "Is there a business here?",
+      "GENIUS IDEA - check out Wizard of Willow\u2019s Etsy channel!",
+      "GENIUS IDEA",
+      "Unique candle idea",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "My 3 Favorite Farmer's Market Side Hustles",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "How to Start a $20k/Month Email Marketing Agency",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "I can't believe this is so profitable",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Exactly How to Start This Genius AI Business",
+      "GENIUS IDEA",
+      "How to turn $300 into $7k/month",
+      "GENIUS IDEA",
+      "I Just Found the Perfect Business for you to Start (yes, you)",
+      "RV park profits",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Q&A: What is my Favorite Low Risk High Reward Business?",
+      "GENIUS IDEA",
+      "THE FUTURE IS HERE",
+      "Webinar: RV Park Investment Breakdown + 2026 Bonus Depreciation Drop",
+      "This could change everything for you",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "$18k/Month in his 2nd Month doing WHAT!?",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Secrets to Earning from Facebook Communities",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "15 Years of Domain Name Investing Knowledge in 15 Mins",
+      "This is genius",
+      "Genius marketing idea",
+      "BEST BUCEES SNACKS",
+      "How To Work 4 Days per Year with a $200k Fireworks Stand",
+      "$10k/Month Hack",
+      "RV PARK PROFITS",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "How to Start a $10k/Month Sleep Consulting Business with $0",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Launch a $50k Monthly Software Biz with No Code",
+      "The 5 Most Genius Vending Machine Business Ideas",
+      "GENIUS IDEA",
+      "How He Started a $72,000/Month Event Venue Business",
+      "GENIUS IDEA",
+      "How to Make Millions with a Hole in One Challenge",
+      "GENIUS IDEA",
+      "Dessert Shop Profits",
+      "How to Growth Hack this Gold Mine Marketing Channel",
+      "GENIUS IDEA",
+      "Genius idea",
+      "Deep Dive on the Gas Delivery Business. HOLY PROFITS!",
+      "Genius idea",
+      "Brilliant Idea: The Liquid Death of Candles",
+      "Genius Idea",
+      "Tesla Side Hustle",
+      "LIVE! Splitting wood and talking business 2/2",
+      "LIVE! Splitting wood and talking business 1/2",
+      "How to Print Money With Google Sheets + AI",
+      "GENIUS IDEA",
+      "GENIUS IDEA",
+      "Oops! I Started 15 More Businesses For You To Copy (Part 4/4)",
+      "Don\u2019t be this person",
+      "I HAD NO IDEA",
+      "You'll Never Believe How Profitable This Business Is...",
+      "DO THIS NOW",
+      "How much do RV parks make?",
+      "GENIUS IDEA",
+      "How to Make $100k/Month From a Company Going Out Of Business",
+      "BRILLIANT IDEA",
+      "GENIUS IDEA",
+      "HOW TO PROFIT OFF THE GOVERNMENT",
+      "THIS IS GENIUS",
+      "This Business Model is About to Be EVERYWHERE! Don't Miss Out!",
+      "6 figures installing pergolas!?",
+      "SAUNA + COLD PLUNGE PROFITS $$$",
+      "Make $100k installing ugly pools",
+      "Deep Dive on the Sauna & Cold Plunge Business (+2 others)",
+      "HOW TO PROFIT FROM MCDONALD'S",
+      "BRILLIANT IDEA",
+      "Watch me start a firewood business",
+      "You won\u2019t believe how profitable this homemade beef jerky business is!",
+      "How to Start a Niche Job Board With 80% Margins",
+      "Salad bar install profits!?",
+      "How to Make $40k in 2 Months with Christmas Decorations",
+      "How to Start a Trash Bin Cleaning Business from Scratch",
+      "GENIUS IDEA: Cotton candy vending",
+      "Polson, Montana RV Park Investment Webinar",
+      "The most brilliant seasonal business idea since porch pumpkins! A Christmas decoration business!",
+      "Secret hack to steal free customers #businessideas #sidehustleideas #ceo",
+      "A Secret Growth Hack to Steal Free Customers",
+      "4 Business Ideas You Can Start with $0 in 2026",
+      "You\u2019ll never believe how profitable this restaurant is.#businessideas #businessgrowth",
+      "I Started These 14 Businesses. Here\u2019s How You Can Copy Them. (Part 3/4)",
+      "This is genius",
+      "How Much YouTube Paid Me in 2 Months",
+      "How to Use AI to Clone Others for Profit",
+      "How I Convince People to Give me Free iPhones",
+      "This guy placed $87,000 of gold on the ground for anyone to find #smallbusinessideas #entrepreneur",
+      "How to convert an old engine block into $5,500 #smallbusinessideas #entrepreneur",
+      "A Secret Hack to Re-Selling iPhones That You Get For Free",
+      "How much can you make per day with a food truck?",
+      "How to make a profit renting out camper vans",
+      "4 Ways to Make Money by Spying on People",
+      "Never start a business without these 4 tools",
+      "How to Scrape Millions of Leads for Almost $0 (Without Coding)",
+      "How A Teenager Turned $20 into $250/Hour (The Simple Strategy)",
+      "I Found an Untapped Home Service Business with 75% Profit Margins",
+      "Buy by the acre and sell by the foot",
+      "This freaking blew my mind",
+      "I bet you\u2019ve never looked at glamping this way! #rvparks #glamping #businessideas #entrepreneurship",
+      "How to Sell a $10 Cable for $10,000",
+      "6 figures renting out donkeys to weddings",
+      "You'll Never Guess How Profitable this Seasonal Business Is...",
+      "Sometimes the best business ideas are hiding in plain sight\u2026",
+      "How much money do ATM routes make?",
+      "How to Start a Profitable ATM Business from Nothing and Take it To Almost $1m/year of Profit",
+      "How to Start an ATM Business from Scratch.",
+      "Check out for the hot new diabetes franchise.",
+      "Some thoughts on crappy home builders and branding while riding around in spandex this morning.",
+      "$1M FROM PORCH PUMPKINS!?",
+      "Every business is scalable",
+      "A $1m Idea in the Car Industry You\u2019ve Never Heard Of.",
+      "How to Start My Favorite Car Business Idea for $0",
+      "This is an untapped goldmine",
+      "Dog lovers \u2014 what do you think of this idea? \ud83d\udc40",
+      "A Secret Hack to Finding and Selling Home Service Leads",
+      "What a genius immigrant",
+      "The Hidden Secrets to a $100k/Year Cleaning Business",
+      "How to Make Millions with a Remote Cleaning Business",
+      "The 90 Day Blueprint to Make Your First $100k",
+      "Here\u2019s what I learned after scraping the top 1,000 Skool communities",
+      "I can\u2019t believe this is America",
+      "My 5 favorite sweaty startup ideas for 2024",
+      "I Scraped Every Skool Community. This is What I Learned.",
+      "What an inspiring story",
+      "This 1 Brilliant Side Hustle Can Make You $1,000 per Weekend",
+      "$5K/MONTH SIDE HUSTLE",
+      "I felt dumb when I first heard about this",
+      "My favorite untapped home service business niche",
+      "Secrets to Starting a 7 Figure Grill Cleaning Business",
+      "How to convert a scrolling addiction into a thriving business. #businessideas #entrepreneur #viral",
+      "Perfume vending profits",
+      "A Rare Look Inside the Fly-In Neighborhood Business Model",
+      "I can\u2019t believe this exists",
+      "How a Simple Change Added $1M to Our Business",
+      "Copy These Niche Cash Cow Website Ideas",
+      "How to Make $1,000 per Weekend with This Easy Wedding Side Hustle",
+      "You don\u2019t own a business. Your business owns you.",
+      "How to find new business ideas",
+      "Why isn\u2019t this a thing yet?",
+      "How to Make Millions Selling Stupid Impulse Products",
+      "The Secret to How I Landed a Major Celebrity Business Partner (You Can Too)",
+      "Is Entrepreneurship for You? Two Experts Reveal the Truth",
+      "This matters more than almost everything",
+      "How to start a profitable wedding cookie business before spending a dollar.",
+      "How to create a money machine",
+      "My favorite real estate investing hack",
+      "My favorite AI business idea",
+      "How do we feel about this idea?",
+      "How to Start a Fully Automated AI Travel Assistant Business",
+      "Live Q&A. Ask me any business question. Comment below!",
+      "Exactly how to build an AI tool that you can make money with: Watch this video",
+      "How to make an extra $500 per month. I have nothing to sell you.",
+      "How to Make $60k per Weekend with an Auto Fair",
+      "Brilliant car idea business",
+      "My favorite business idea in the car industry",
+      "My 3 Favorite Car Business Ideas for 2026",
+      "How to persist through a crappy time of life.",
+      "Reasons why you should and should not buy a Tesla",
+      "The one true flex.",
+      "What a brilliant restaurant concept",
+      "Sell to 1 to sell to 100",
+      "How to start a digital detox business",
+      "How to Start a Digital Detox Business in 2026 (+4 more ideas)",
+      "New Buc-ee's? Here's How to Profit.",
+      "How to start a $10k/month digital agency in 60 seconds",
+      "How to Get Your First $1,000 per Month Agency Customer",
+      "How to start a date night business in 49 seconds",
+      "How to Sell Your Stuff Through Uber and Lyft Drivers (+4 more biz ideas)",
+      "If you fire someone, it\u2019s probably your fault.",
+      "You\u2019re welcome. Am I a whistleblower now?",
+      "One of the biggest opportunities of our generation",
+      "How to Make $500k per Year in Profit from a Laundromat",
+      "How to Make $300k/Year from a Laundromat",
+      "Know of anyone?",
+      "Mini jeep, mega profits",
+      "Every cold email is a lottery ticket",
+      "How to Start a $90K/Month Cold Email Agency",
+      "The most successful startup founders have this one thing in common",
+      "Here\u2019s a side hustle you can start this afternoon for $0.",
+      "How Did Yeti Build Such a Big Business?",
+      "How to start a profitable firewood business with negative COGS",
+      "How to Start a Business with OVER 100% Gross Profit Margin",
+      "How to Start a B2B Stump Grinding Business",
+      "How to Start a Garage Shelving Business Exclusively on Facebook Marketplace in 2024",
+      "How to Make $15k/Month from Facebook Marketplace",
+      "How to Earn on DoorDash with a \u2018Cars for Rent\u2019 Side Hustle",
+      "How to Start a Junk Removal Business with no Money",
+      "How to Build a $900k Junk Removal Business with No Money",
+      "Any thoughts? #businessideas #entrepreneur #businessowner #entrepreneurship",
+      "How to Start a Liquidation Business?",
+      "What To Do When AirBnB Bans You",
+      "How Isaac French Built A $7m Luxury AirBnb Business",
+      "Turning $20K into $4.7M with an AirBnB",
+      "Ho to Compete Against the Knot and Start a Wedding Marketplace",
+      "How Isaac French Built a Profitable Traincar Airbnb Business",
+      "How Marshall Turned 1 Simple Idea into $1 Million Dollars",
+      "How Can I Make Money Doing What I love?",
+      "How to Start a Coffee or Restaurant Business?",
+      "How to Start a Profitable Coffee and Restaurant Business",
+      "How to Start a Pig Farming Business",
+      "Is eCommerce Really Profitable? The Honest Truth for New Entrepreneurs",
+      "How to Start a BBQ Business in a Gas Station Parking Lot",
+      "Buc-ee's Viral Marketing Stunt",
+      "Buc-ee's Viral Marketing Stunt",
+      "How Much Can I Make Per Subscriber in a Newsletter Business?",
+      "How to Build a Business with a Lifetime Warranty Offer (+6 more ideas)",
+      "What is the Best Morning Routine?",
+      "3 Places to Find Customers for Free (Most Overlook This)",
+      "Almost all Business Gurus are Fake. What Makes Me Different?",
+      "Is Crumbl a Fad?",
+      "Where Can I find Cheap Vending Machines to Buy?",
+      "How Can I Find Reliable and Affordable Subcontractors?",
+      "How Can I Start a Sprinter Van Rental Business?",
+      "How to Start a $200K/Year Sprinter Van Rental Business",
+      "How to Start a Crushed Concrete Business",
+      "How Much Do TV Hanging Business Owners Make?",
+      "Don\u2019t start a business #entrepreneur #businessowner #entrepreneurship",
+      "My RV and Mobile Home Park Investing Masterclass",
+      "You in?",
+      "Life is wild #businessideas #sidehustleideas #entrepreneurship #businessowner #sidehustles",
+      "Am I wrong? #entrepreneurship #entrepreneur #advice #motivation #businessowner #sidehustle",
+      "Behind the Scenes of Accidentally Launching a Business",
+      "Any questions? #rvparks #realestateinvesting #realestate #mobilehomeinvesting #mhp #rvlife",
+      "So genius! #sidehustlelife #sidehustleideas",
+      "Thoughts? #businessideas #startupideas #poolparty #entrepreneurship #str #airbnb #sidehustlelife",
+      "The 5 Best Swim Business Ideas for 2026",
+      "Love this idea #sidehustleideas #businessideas #startupideas #businessidea #entrepreneurship",
+      "Fav 3 AI tools #businessideas #startupideas #aitools #marketing #entrepreneurship #sidehustlelife",
+      "Thoughts? #businessideas #startupideas #sidehustleideas #sidehustle #entrepreneur",
+      "Betrayal stings #businessowner #betrayal #entrepreneurship #businesspartnership #business",
+      "What I Learned From My Failed $50m Business Partnership",
+      "I\u2019m pro-bot #concrete #entrepreneur #businessowner #sidehustlelife #homeservice",
+      "How to Make $200/Hour with a Low-Risk Stump Grinding Business",
+      "Have you started yet? #entrepreneur #noexcuses #motivation #business #sidehustleideas",
+      "To be fair I do own a tree trimming biz \ud83d\ude02 #landscapingbusiness #businessideas #entrepreneur",
+      "I love the wedding rental business. How to start a flower wall rental business",
+      "How to Find Customers So Big That They Kinda Freak You Out",
+      "Perfume Vending Machine Webinar Recording",
+      "Hipster bounce house #bouncehouse #sidehustleideas #businessowner #businessideas #startupideas",
+      "Mall parking lot #businessideas #flowrider #entrepreneurship #entrepreneur #podcast #sidehustleideas",
+      "Botox $$ #botox #seo #pseo #sidehustleideas #googleads #leadgeneration #agency",
+      "Who am I? #podcast #entrepreneurship #entrepreneur #thekoerneroffice #sidehustleideas #businessideas",
+      "How to Start a Lead Generation Business That Prints You Cash",
+      "Alex Hormozi being a business genius for 10 minutes straight",
+      "I\u2019m fired up! #sales #doortodoor #sidehustleideas #entrepreneurship #guttercleaning #podcast",
+      "Thoughts? #landscaping #landscapingbusiness #sidehustleideas #lawncare #grass #homeservice",
+      "Is Lawn Leveling the Next Big Home Service Idea?",
+      "Turn $1k into a Thriving Business with This Simple Side Hustle Idea",
+      "Use this: sort_by=best-selling #ecommerce #shopify #dropshipping  #podcast  #marketing",
+      "Perfume Vending Machine Business: The Next Big Thing?",
+      "Why Stump Grinding Could Be 2024\u2019s Biggest Home Service Business Opportunity",
+      "How to be a Creative Genius to Flip Items Online in 2026",
+      "Perfume vending!? 6 Budget Friendly Businesses to Start in 2026",
+      "I \u2764\ufe0f RV parks #realestateinvesting #rvlife #rvparkinvesting #investing #investment",
+      "How Can I Start and Grow a Pet Cremation Business?",
+      "I love nyc #sidehustleideas #nyc #immigrants #businesshustle #businessideas",
+      "What a beautiful biz! #dumpsterrentalbusiness #sidehustleideas #homeservicebusiness #businessideas",
+      "How to Validate a Home Service Business Idea in 2026",
+      "Full video here: tkopod.co/youtube1 #skidsteers #sidehustleideas #entrepreneurship #businessowner",
+      "How to Flip High Ticket Items in 2026",
+      "Everything you need to know #rvparkinvesting #realestateinvesting #realestate #mhp #business",
+      "$9B in gas station pizza #caseys #pizza #entrepreneurship #gasstation",
+      "How to start a B2B stump grinding biz #stumpgrinding #homeservice #sidehustleideas #smallbusiness",
+      "How to Launch and Grow a $4m/Year Stump Grinding Business",
+      "Come validate a dumpster rental business with me, LIVE!",
+      "Boat & RV storage profits #rvstorage #boatstorage #rvparkinvesting #realestate #realestateinvesting",
+      "Exactly How to Validate Your Business Idea for $15",
+      "\u201cSeRiAl eNtRePrEnEuR\u201d #businessowner #serialentrepreneur #businessideas #sidehustleideas",
+      "Big $$ from restocked furniture #costcofinds #furnitureflip #auction #sidehustleideas #businessideas",
+      "Full vid here: bit.ly/3xCfGnb #entrepreneurship #tesla #sidehustleideas #cardetailing #entrepreneur",
+      "Live Q&A. Ask me any business question. Comment below!",
+      "Full video here: youtu.be/O1kUp_zVHZI #entrepreneurship #junkremoval #businessideas #sidehustleideas",
+      "Should CEOs do this? #ceo #entrepreneurship #business #meta #zuck",
+      "Great side hustle #sidehustle #vendingmachine #entrepreneurship #podcast #sidehustleideas #business",
+      "How to Launch a $53k/month Vending Machine Business for $700 in 2026",
+      "Tortilla delivery profits? #sidehustleideas #buyabusiness #entrepreneurship #businessowner #revenue",
+      "Car storage profits #entrepreneurship #landrover #sidehustleideas #landroverdefender #carstorage",
+      "\"I Bought a Business That's a Scam. Now What?\"",
+      "2 biz ideas #entrepreneurship #sidehustleideas #guttercleaning #homeservice #sidehustles #restaurant",
+      "$8m/year biz #entrepreneurship #podcast #businessideas #business",
+      "Live Q&A. Ask me any business question. Comment below!",
+      "How to Double the Value of an RV Park Business",
+      "How to Copy Your Way to a $6M/Year Indoor Sledding Biz",
+      "Full interview here: bit.ly/3VGQFiy #entrepreneurship #pigeonforge #businessideas #sledding #podcast",
+      "Watch Me Judge 9 Of Your Business Ideas, Live!",
+      "Roasting YOUR biz ideas live! Livestream glitched! Sorry to those that didn't get to ask a question",
+      "When can you charge 5x more than your competitors? #entrepreneurship #revenue #commerce",
+      "Becoming the biggest employer in the county with baseball. #baseball #employment #business",
+      "Business 101: Dominating a saturated market. #santorini #business #saturatedmarket #business101",
+      "Franchising with Paid Ads? Watch my podcast to find out more on the how! #growth #franchise #podcast",
+      "How to Make Millions Teaching Kids How To Use Heavy Machinery",
+      "Creating the BEST baseball facility in the country. #entrepreneurship #RevenuePotential #baseball",
+      "Business Hack: finding the BEST and cheapest contractors. #subcontractors #businesshack",
+      "How to Turn Your Idea Into a Profitable Amazon Product",
+      "Million Dollar Business Model: Summer Camps. #summercamp #entrepreneurship #RevenuePotential",
+      "American Advice: You know I\u2019m right. #greece #athens #americanadvice #chipotle #starbucks",
+      "Business Hack: Do something for free\u2026 build a service empire. #entrepreneurship #poolcleaning",
+      "How to Make Millions with Sledding, Massage Chairs and Candy",
+      "A great hack that will PRINT you money! You're welcome. #weddingvenue #makemoney #entrepreneurship",
+      "Making billions from old trash",
+      "Tell me I\u2019m wrong. #entrepreneurship #americawins #businessowner #greece",
+      "Taking a Junk Removal Business from $1M to $10M in 2026",
+      "How I proved you all wrong with the pressure washing biz. #pressurewashingbusiness #entrepreneur",
+      "Business Obsession - Hangar Space. 20+ people wait in the State of Texas! #hangar #RevenuePotential",
+      "How to Passively Earn $8k/year from Buying a $16k Book Royalty",
+      "Next Business Obsession: Zip Lines! #entrepreneurship #zipline #outdooractivities",
+      "The Koerner Office Live: Improv Q&A with biz owners and wantrepreneurs. Comment suggestions below!",
+      "How to start a Cybertruck rental business or side hustle",
+      "How to skip the line and build a $1M business in a week.",
+      "NW #Arkansas is the next #DFW. Tell me I\u2019m wrong. #realestateinvesting",
+      "The Secret Hack to Landing MASSIVE Commercial Service Jobs",
+      "I NEED to know more. My latest #business obsession. Comment below what I should ask on my #podcast",
+      "How to Import and Sell Profitable Products from China",
+      "How to Hire an Employee Better than Yourself",
+      "How to start a million dollar baseball retreat\u2026 #entrepreneurship #baseball #wiffleball",
+      "Would you start this biz? #entrepreneurship #petbusiness #dogbusiness #businessideas",
+      "I want to start one of these #realestateinvesting #flying #entrepreneurship",
+      "Why Dog Electrolytes Are the Next Million Dollar Idea",
+      "An RV park here - GOLDMINE. #BusinessOpportunity #RVInvestment #RVLife #TravelBusiness #rv",
+      "Pressure washing a 4,825 square foot home in 22 minutes with no edits.",
+      "$250k Profit/Year Print Shop Profit but Feeling Trapped",
+      "The Koerner Office Live Stream. Live, improv Q&A with biz owners and wantrepreneurs.",
+      "How to Make Over $10m Per Year with Rural Youth Baseball Fields.",
+      "My 4 Favorite AI Business Ideas for 2026",
+      "How to make millions in real estate in 4 easy steps #realestateinvesting #realestatemindset",
+      "23 Business Ideas for 2026 (Part 2/4)",
+      "The Koerner Office Live Stream. Riffing on Business Ideas with Nik!",
+      "How To Start a Home Service Business in 3 Minutes",
+      "A rural 8 figure baseball field?! What should I ask him? #entrepreneur #travelbaseball #baseball",
+      "How Rolling Suds Built A Multi-Million Dollar Empire (Pressure Washing)",
+      "Secrets to Starting a Dumpster Rental Business",
+      "RV Park Business Investing Webinar",
+      "How This Entrepreneur Makes Over $10m per Year Selling Cabin Kits",
+      "Why remote work is NOT the future. #remotework #workfromhome #entrepreneurship",
+      "How to Find HUGE Customers",
+      "013 - The Koerner Office Livestream",
+      "Undefeated #hiring #offmarket #realestateinvesting",
+      "5 best assets to rent out as a business #entrepreneurship #sidehustleideas #stumpgrinding",
+      "Noah Kagan Joins: Side Hustles & Entrepreneurship",
+      "012 - The Koerner Office + Noah Kagan Live Stream",
+      "x3 6 figure Tesla side hustles #entrepreneurship #sidehustleideas #tesla #cybertruck",
+      "$240k/year side hustle #entrepreneurship #broker #smallbusiness #sidehustleideas",
+      "KOA RV Park Business Investing Webinar",
+      "How Much Do Shaan Puri and Sam Parr Make (My First Million)?",
+      "How to find free customers #entrepreneurship",
+      "The most brilliant sales hack you'll see all week #coldemail #sales #entrepreneurship #entrepreneur",
+      "Craigslist book royalty profits #passiveincome #investing #entrepreneurship",
+      "Trailer parks = legal cash printing machines  #rvparks #rvlife #rvparkinvesting #realestateinvesting",
+      "Big Profits from Buying Craigslist Book Royalties",
+      "Business I started # 2/72 #entrepreneurship #startupideas #startups #entrepreneur #crypto #token",
+      "21 Business Ideas for 2026 (Part 1/4)",
+      "Day 1/72 of revealing every biz I\u2019ve ever started #startupideas #businessideas #entrepreneur",
+      "No gurus to be found #entrepreneurship",
+      "Pet cremation 101 #entrepreneurship #dogs #sidehustleideas",
+      "How to Import Products from China with Almost No Money",
+      "You\u2019re just not being creative enough #startupideas #ideas #entrepreneurship",
+      "Agree or no? Watch ep 09 of The Koerner Office for the full thing #startup #pressurewashing",
+      "Trailer Rentals, Supplements, and Vending Machine Saturation!",
+      "Laser tag rental biz #entrepreneurship #sidehustleideas #lasertag",
+      "Renovation life hack. ..#drywall #savemoney #diy #sidehustles",
+      "These guys are in trouble #epoxyflooring #pressurewashing #windowcleaning #homeservices #roofing",
+      "09 - The Koerner Office Live Stream - Unedited",
+      "The silent walkaround #negotiations #negotiating",
+      "Unexpectedly profitable #sidehustleideas #sidehustle #sidehustles",
+      "Dream RV park #rvparkinvesting #rvparks #realestateinvesting",
+      "Guess where I found this insane rv park deal #rvparks #rvparkinvesting #realestateinvesting",
+      "$9k/month profit renting kayaks #entrepreneurship",
+      "How to make millions re-selling Buc-ee\u2019s stuff #entrepreneurship #ecommerce #sidehustleideas",
+      "How much $ do RV parks make?......#rvparks #rvparkinvesting #mhpinvesting #realestateinvesting",
+      "How Do You Grow an 8 Figure Destination Wedding Business?",
+      "Cash cow rv parks\u2026 #rvparkinvesting #rvparks #realestateinvesting #realestate",
+      "This is a superpower",
+      "The best salespeople\u2026.",
+      "The best real estate asset class. #realestateinvesting #realestate",
+      "How To Increase Your Short Term Rental Occupancy",
+      "John McAfee: From $0 to $30M After Knocking on His Door",
+      "How to Grow your Business with $1 Bandit Signs",
+      "$2B per year from ONE retail store!",
+      "How to tell the fake business gurus from the real ones.",
+      "This website has 30 million monthly visitors and can make you a ton. Day 6/10. Follow for more!",
+      "How to make BANK by reselling what the government loses money on #sidehustle #sidehustleideas",
+      "How Can You Create a Serial Entrepreneur?",
+      "How to start a $1k/week side hustle for under $500. #sidehustle #sidehustles #entrepreneurship",
+      "Which Side Hustle to Choose?",
+      "How to find and buy any business on the planet #entrepreneurship #startup #business #sidehustles",
+      "How to Find More Home Service Customers with Google Street View",
+      "Make 6 figures with luxury wedding bathroom trailers! Follow me for more #entrepreneurship #weddin",
+      "Paying Indian virtual assistants $150/month for full time work? #entrepreneurship #startup",
+      "1 brilliant biz idea per day for 10 days. Follow for the next 9! #entrepreneurship #startup",
+      "Exploring a New Business Idea: Drone Roof Inspections and Selling Leads to Roofers",
+      "Find customers by suing them! #leadgeneration #entrepreneur",
+      "How We'll Double the Value of this $3M RV Park Business",
+      "How To Successfully Acquire a SaaS Business: Key Strategies and Tips",
+      "The Raisin\u2019 Canes founder is my new favorite billionaire. #entrepreneur #raisingcanes #billionaire",
+      "Crumbl owners are RICH! This is not a fad. #crumbl #franchise #entrepreneur",
+      "The only way to fix RV park occupancy issues #rvparkinvesting #mhp #mobilehomeparkinvesting",
+      "I convinced a guy to quit his job to start a moving biz",
+      "How To Profit from Washing Teslas at Supercharging Stations",
+      "How To Make $100K Building Websites for Realtors",
+      "How To Turn Street Sweeping into a Lucrative Business"
+    ],
+    "total_chunks": 7126,
+    "total_videos_on_channel": 866,
+    "last_sync_date": "2026-06-18",
+    "videos": [
+      {
+        "id": "_1DziIwKyGk",
+        "title": "The Most Profitable Side Hustle to Start With No Money"
+      },
+      {
+        "id": "OsCdIk7soVY",
+        "title": "$532K in One Month Selling Land They Didn't Own"
+      },
+      {
+        "id": "LGkcTUfySDU",
+        "title": "The Most Profitable Side Hustle No One Is Doing Yet"
+      },
+      {
+        "id": "trdHxY1UMF0",
+        "title": "The Laziest AI Side Hustle Anyone Can Start Right Now"
+      },
+      {
+        "id": "HcR7Wqgi4lU",
+        "title": "He Made $60K His First Month With This Boring Business"
+      },
+      {
+        "id": "J7ZNaOeXCAA",
+        "title": "An Average Guy Built This in One Weekend. Here's How"
+      },
+      {
+        "id": "DKqQe0MqDTs",
+        "title": "The Simplest AI Side Hustle for Beginners"
+      },
+      {
+        "id": "9DyLtQEDXN0",
+        "title": "How a Regular Guy Started a 1-Person Business with AI"
+      },
+      {
+        "id": "xhUK5VyjxuM",
+        "title": "I Told an AI Agent to Make Me Money. It Did."
+      },
+      {
+        "id": "1PwTrINNzOA",
+        "title": "I Told an AI Agent to Make Me Money. It Did."
+      },
+      {
+        "id": "XQJWYvbAaOg",
+        "title": "AI Agents Are Finally Easy to Set Up"
+      },
+      {
+        "id": "vB08-7RzgOs",
+        "title": "The Easiest Online Business to Start in 2026"
+      },
+      {
+        "id": "egN-fV-3h1M",
+        "title": "The Best Side Hustle for Beginners (Any Age)"
+      },
+      {
+        "id": "KjTHJ740fCY",
+        "title": "The Best Side Hustle for Beginners (Any Age)"
+      },
+      {
+        "id": "utOHNPN0IlQ",
+        "title": "The Laziest AI Side Hustle Just Got Even Easier"
+      },
+      {
+        "id": "sluoCJUQuf0",
+        "title": "12 Simple Online Side Hustles Anyone Can Start"
+      },
+      {
+        "id": "50iWtrj9Mkw",
+        "title": "Forget Big Apps. These Tiny Tools Are Making Millions"
+      },
+      {
+        "id": "99mmK5Fl2mg",
+        "title": "The Credit Card Side Hustle No One Talks About"
+      },
+      {
+        "id": "rvOnhGzx__Q",
+        "title": "The Credit Card Side Hustle No One Talks About"
+      },
+      {
+        "id": "xrU6tVo-qME",
+        "title": "How Anyone Can Make $10K+/Month From the Government"
+      },
+      {
+        "id": "O-bbIUy0f0A",
+        "title": "Forget Apps. Sell These Tiny Al Tools Instead"
+      },
+      {
+        "id": "quYKZushRPo",
+        "title": "The Beginner-Friendly Claude AI Side Hustle Nobody Talks About"
+      },
+      {
+        "id": "tVbN7XSPnM0",
+        "title": "The Only Playbook You Need to Sell Anything Online"
+      },
+      {
+        "id": "8_KbFW125G8",
+        "title": "The Simplest Business in a Box Anyone Can Start"
+      },
+      {
+        "id": "i4VhuHsKyxY",
+        "title": "Chris Koerner on The Koerner Office Podcast is live!"
+      },
+      {
+        "id": "TPCJCDEn4lY",
+        "title": "Chris Koerner on The Koerner Office Podcast is live!"
+      },
+      {
+        "id": "GaRgiObZqys",
+        "title": "Chris Koerner on The Koerner Office Podcast is live!"
+      },
+      {
+        "id": "FE7PZG_V7qE",
+        "title": "The Simplest Business in a Box Anyone Can Start"
+      },
+      {
+        "id": "xUZYy3hCRUM",
+        "title": "The Most Passive $104K/M Online Business You've Never Heard Of"
+      },
+      {
+        "id": "Qqpzj4pE5VA",
+        "title": "The Most Profitable Solo Business You\u2019ve Never Heard of"
+      },
+      {
+        "id": "cFr-bNBsPb8",
+        "title": "He Spends 1 Hour a Week on This Business"
+      },
+      {
+        "id": "QgkkVpA3rR8",
+        "title": "He Makes $4K/Day With This Weird Middleman Business"
+      },
+      {
+        "id": "2iqowbg2CT8",
+        "title": "He Makes $20k/Month on the Weekends"
+      },
+      {
+        "id": "bAzg8BugEVY",
+        "title": "The Most Profitable Solo Business You've Never Heard Of"
+      },
+      {
+        "id": "GHU8YdA4kxo",
+        "title": "The Most Overlooked Side Hustle You Can Start From Home"
+      },
+      {
+        "id": "03DjE7j0Suw",
+        "title": "The Easiest Way to Actually Make Money With AI"
+      },
+      {
+        "id": "Y4pvrjtb1cI",
+        "title": "The Simplest Side Hustle You Can Start Under $100"
+      },
+      {
+        "id": "aT2XgPDU6yY",
+        "title": "You Only Need a Laptop to Start This Business"
+      },
+      {
+        "id": "Wl0NMNbYRDk",
+        "title": "The Most Passive Online Side Hustle I've Ever Seen"
+      },
+      {
+        "id": "JHz6mikOPWw",
+        "title": "He Can't Code but His AI Agents Make Him $5K/Month"
+      },
+      {
+        "id": "HIYiSVvN3RA",
+        "title": "I Built an App the Government Doesn't Want You to See"
+      },
+      {
+        "id": "eD2AMYAR8tA",
+        "title": "The Most Profitable Business Everyone Overlooks"
+      },
+      {
+        "id": "g4-3AxelI_Y",
+        "title": "This Might Be the Easiest Way to Sell AI to Businesses"
+      },
+      {
+        "id": "b4_DbNaCeGc",
+        "title": "This AI Finds Cheap Products You Can Sell for 5x More"
+      },
+      {
+        "id": "YqCfQ0APU2U",
+        "title": "He Found a Way to Make $1K/Hour From His Phone"
+      },
+      {
+        "id": "y_ON1Qbb274",
+        "title": "He Turned $400 Into $2.5M Using AI (No Coding)"
+      },
+      {
+        "id": "CVlZdvDthOM",
+        "title": "How AI Makes Facebook Marketplace a Gold Mine"
+      },
+      {
+        "id": "Qv-dw57pFNA",
+        "title": "They Banned My $35K/Month\u00a0Page\u00a0So I Started a Business"
+      },
+      {
+        "id": "l0Vqm0ZIySc",
+        "title": "He Asked AI To Make Money. It Did."
+      },
+      {
+        "id": "L15oL4b3LT4",
+        "title": "He Turns Abandoned Driving Ranges Into Cash Machines"
+      },
+      {
+        "id": "t_y8SelBm_s",
+        "title": "The Simplest $7M Business You've Never Heard Of"
+      },
+      {
+        "id": "lfvyfRGIVHE",
+        "title": "How to Make $1.6K/Day on Facebook Marketplace"
+      },
+      {
+        "id": "mAyZZc_DjSE",
+        "title": "Stop Buying Things. Start Buying Assets that Pay for Themselves"
+      },
+      {
+        "id": "CKRglRCeVDM",
+        "title": "How I Use Web Scraping to Find Products That Sell for 20x the Price"
+      },
+      {
+        "id": "N0NceZbY2_4",
+        "title": "The Easiest $3K/Day Business Nobody Is Talking About"
+      },
+      {
+        "id": "iuQ_Y-qSz78",
+        "title": "The Most Overlooked $13K/Day Business Anyone Can Start"
+      },
+      {
+        "id": "t2m_Dqk4_Dc",
+        "title": "The Most Overlooked Way to Get Rich (Proven Blueprint)"
+      },
+      {
+        "id": "vQ3SxSy8J0g",
+        "title": "I Tried OpenClaw for a Month and I'm Never Going Back"
+      },
+      {
+        "id": "F034Pz-DjGQ",
+        "title": "The Most Underrated Way to Make $50K/Month"
+      },
+      {
+        "id": "4AWlBGVQ8nA",
+        "title": "Make $500k/Year with One Email a Week"
+      },
+      {
+        "id": "uWjU8ctaHIc",
+        "title": "Laid Off 2 Days Before Christmas, Now He Makes $60k/Month Reselling"
+      },
+      {
+        "id": "RaFPcXDFObM",
+        "title": "7 Low-Cost Business Ideas for Beginners in 2026"
+      },
+      {
+        "id": "KtAGjnWViMQ",
+        "title": "Now is the Best Time to Make Money with Content (AI Tutorial)"
+      },
+      {
+        "id": "tKTlzugGgYw",
+        "title": "I Built an AI Agent in 5 Minutes (And Sold It Live)"
+      },
+      {
+        "id": "KuQtxDCmyO4",
+        "title": "She Makes $1k/Day Sending Letters"
+      },
+      {
+        "id": "TmbO1tGlz5s",
+        "title": "AI is STEALING These Jobs! Here's How to Profit"
+      },
+      {
+        "id": "UeeaWuSOnkI",
+        "title": "How to Buy Big Things with Little Money"
+      },
+      {
+        "id": "LPgWaH3YY6U",
+        "title": "People Are Selling One Prompt Websites for $1K+ (Full Tutorial)"
+      },
+      {
+        "id": "-kwF1zol2gQ",
+        "title": "The 11 Best Side Hustles for 2026"
+      },
+      {
+        "id": "oSI5FE1NeTQ",
+        "title": "OpenClaw is BOOMING! Do This to Profit"
+      },
+      {
+        "id": "haUsXY0RQFE",
+        "title": "The Most Profitable One-Man Business You\u2019ve Never Heard Of"
+      },
+      {
+        "id": "YoD0hFqX9W8",
+        "title": "This Business Makes Vending Machines Look Dumb"
+      },
+      {
+        "id": "QIX0lnr3qfo",
+        "title": "How to Make $120k/Year with An Army of AI Influencers"
+      },
+      {
+        "id": "IPnafDDgj6o",
+        "title": "How I Make $35k/Month With Other People's Content (Legally)"
+      },
+      {
+        "id": "Zap_I6Uovqc",
+        "title": "People who\u2019ve never written code are building million-dollar products."
+      },
+      {
+        "id": "BAnpwRCDPjQ",
+        "title": "He Watched This Channel and Started a $2,600/Week Side Hustle"
+      },
+      {
+        "id": "Cvs_HhGD18o",
+        "title": "40 Ways to Make $400,000 from Unwanted Land"
+      },
+      {
+        "id": "pwybTbHZU-w",
+        "title": "How to Get Your First Service Clients Paying Tens of Thousands"
+      },
+      {
+        "id": "AWesz6TJRcA",
+        "title": "How To Get Paid $2,500 + Monthly Checks for \"Drag & Drop\" AI Employees"
+      },
+      {
+        "id": "PX8Jn9vFJ38",
+        "title": "Companies Are Panic Paying for This Skill. Here\u2019s How to Get In"
+      },
+      {
+        "id": "r2-1c_T6F34",
+        "title": "How to Build & Sell Micro Apps in 2026 (Using Only AI)"
+      },
+      {
+        "id": "FFYu4JQ7dqw",
+        "title": "I Tested This \"Genius\" Side Hustle (Is It A Goldmine?)"
+      },
+      {
+        "id": "J_zOrHovF9Y",
+        "title": "What I Learned Starting 80 Businesses (The Truth)"
+      },
+      {
+        "id": "SQ-OSmDMsFI",
+        "title": "Craigslist is a Goldmine. Here's Where the Gold Is"
+      },
+      {
+        "id": "M6woiZk-KeE",
+        "title": "How I Turned A Gas Station Visit Into A Multi-Million Dollar Business"
+      },
+      {
+        "id": "kHRKeDqsoG8",
+        "title": "She Buys $1 Pallets And Sells Them For $5,000 (30 Mins/Day)"
+      },
+      {
+        "id": "IHy07Ny72kA",
+        "title": "Stop Guessing. Here\u2019s How to Build What People Will Actually Pay For"
+      },
+      {
+        "id": "bH_coG-2ASo",
+        "title": "\u201cStupid Simple\u201d Apps Are Making Millions While You Overthink"
+      },
+      {
+        "id": "ZBVYDM8K8tA",
+        "title": "Stop Wasting Money on Bad Ideas. Do This Instead."
+      },
+      {
+        "id": "w0756mtps1Y",
+        "title": "I Tried the Costco Gold Hack (How Much I Actually Made)"
+      },
+      {
+        "id": "QTWNnonldjw",
+        "title": "Forget Dropshipping. Be The Middleman For $800+/Job (Drop-Servicing)"
+      },
+      {
+        "id": "D9Q2rpO0ko8",
+        "title": "The Best Low Budget Online Business To Start Right Now"
+      },
+      {
+        "id": "UgFzXqa7zNM",
+        "title": "The Easiest Way To Start A Business That Almost Never Fails"
+      },
+      {
+        "id": "vF7IT30L4jY",
+        "title": "He Tried an Idea From My Video and Made $46k in One Month"
+      },
+      {
+        "id": "Y0MRAjVp_Uo",
+        "title": "The Easiest Way to Build a Local Newsletter"
+      },
+      {
+        "id": "Zpu-eL-PToU",
+        "title": "Why Your Cold Emails Get No Replies (And How To Fix It)"
+      },
+      {
+        "id": "bsiAuk8t810",
+        "title": "You Don't Need to Invent New Products. Just Do This."
+      },
+      {
+        "id": "AA-EL571oG4",
+        "title": "I Built an AI Agent That Works While I Sleep (Cheap & Easy)"
+      },
+      {
+        "id": "OwK2x62VwoQ",
+        "title": "Marcus Lemonis Opens Up: Depression, Regrets, & Losing Millions"
+      },
+      {
+        "id": "4NJHK5KdASc",
+        "title": "How to Make $15k/M on FB Marketplace Selling This ONE Item"
+      },
+      {
+        "id": "1VjBLSQLAuo",
+        "title": "How Anybody Can Start This $15k/Month Business"
+      },
+      {
+        "id": "q-vcwPanb_Y",
+        "title": "The New Best Way to Make Money Reselling Online?!"
+      },
+      {
+        "id": "XctiWvrRqkI",
+        "title": "We Turned Random Words Into $20K/Month Businesses Ideas"
+      },
+      {
+        "id": "1hlWvRo3tnM",
+        "title": "How To Make Money by Building Simple Apps for Businesses (AI + No-Code)"
+      },
+      {
+        "id": "OomOCuptgr4",
+        "title": "I Built a Money-Making App in 1 Hour With AI (Bolt v2 Review)"
+      },
+      {
+        "id": "r5yL8PW8Kyc",
+        "title": "Watch Me Build an AI Agency in 24 Minutes"
+      },
+      {
+        "id": "8B6HfmMP-zM",
+        "title": "Build Pro Websites for Yourself (or Clients) Without Any Experience"
+      },
+      {
+        "id": "VmhEvIB_XNA",
+        "title": "These \"Boring\" Items Make Him $17.3k/Month (Side Hustle)"
+      },
+      {
+        "id": "sDtJaQynQkA",
+        "title": "AI Lets You Start This Amazon Side Hustle in Minutes"
+      },
+      {
+        "id": "0pJEW-sFDXk",
+        "title": "He Built a Simple App and Sold It for $200 Million"
+      },
+      {
+        "id": "aXVM-HI388g",
+        "title": "We Copied His $10K+/Month Business From Scratch in a New City"
+      },
+      {
+        "id": "wD-PkHYxsgY",
+        "title": "Make $20K/Month Selling to Clients Who Don\u2019t Flinch at Price"
+      },
+      {
+        "id": "awzWbwtmOd4",
+        "title": "He Watched This Channel and Made $32K in His First 2 Months"
+      },
+      {
+        "id": "9uBW16KlwB4",
+        "title": "You Can Now Build Apps for Free With Google AI Studio (w/ Google Insider)"
+      },
+      {
+        "id": "WydE1wzv2_Y",
+        "title": "Make $1K an Hour With This Simple Side Hustle"
+      },
+      {
+        "id": "GER_aZkQQ_0",
+        "title": "9 Beginner-Friendly Ways to Make $10K"
+      },
+      {
+        "id": "zdqqBELJQ1Q",
+        "title": "The 4 Best Rural Side Hustles for 2026"
+      },
+      {
+        "id": "mIxocaCBgwY",
+        "title": "The Most Valuable Skill\u00a0in\u00a0Business"
+      },
+      {
+        "id": "ppABMo0L7jI",
+        "title": "I described the idea. And then bolt.new\u2019s v2 did the rest."
+      },
+      {
+        "id": "KYtg48UoEQ8",
+        "title": "I Asked AI to Help Me Beat the Stock Market"
+      },
+      {
+        "id": "FNMNQrCbHnk",
+        "title": "She Makes $10M/Year and Doesn\u2019t Even Exist (AI Influencers Explained)"
+      },
+      {
+        "id": "fwSkDwv2qlU",
+        "title": "How to Make $1M+ With a Drone ($1.5K in 30 Minutes)"
+      },
+      {
+        "id": "5TZylaKGWUE",
+        "title": "He Made $6K in 3 Hours Selling Lemonade"
+      },
+      {
+        "id": "_b5kM2zDQTk",
+        "title": "The Best Way to Clone These $1M+ Online Businesses (Legally)"
+      },
+      {
+        "id": "SiRlIMtZygI",
+        "title": "He Makes $3M/Year From Tiny AI Tools (Here\u2019s How You Can Too)"
+      },
+      {
+        "id": "xGf27oVmgYE",
+        "title": "How To Start a Mobile Detailing Business with $500 (Everything You Need To Know)"
+      },
+      {
+        "id": "I0rAGz60fAQ",
+        "title": "The Best Side Hustle to Make Extra Money Before Christmas"
+      },
+      {
+        "id": "OWhPtx1SAWg",
+        "title": "$1K a Day From This Simple Side Hustle (Here\u2019s How to Copy It)"
+      },
+      {
+        "id": "LZ_bjRV6xx0",
+        "title": "The Most Hands-Off Side Hustle Anyone Can Copy"
+      },
+      {
+        "id": "JGqS-qzMo4I",
+        "title": "Comfort Is the Trap Keeping You Average. Here\u2019s How to Break Out"
+      },
+      {
+        "id": "abeY8nBzqzo",
+        "title": "The Most Copy-Pastable Online Business (Thanks to AI)"
+      },
+      {
+        "id": "rJ1ZpfuajkA",
+        "title": "AI Agencies Just Got Simple Enough for Anyone to Start"
+      },
+      {
+        "id": "uGzNhjFJYFI",
+        "title": "You\u2019re Being Sold Without Knowing It (How To Copy This Trick)"
+      },
+      {
+        "id": "4IETgMZy1o0",
+        "title": "Can\u2019t Code? The Best Way to Start Making Money Online"
+      },
+      {
+        "id": "uQKVxCQJPoA",
+        "title": "Watch This Overlooked AI Tool Build Me a Business in 23 Minutes"
+      },
+      {
+        "id": "W5oUjuoHWhA",
+        "title": "Everyone Chases Trends. Resell This Instead to Actually Make Money"
+      },
+      {
+        "id": "D5iCSoOL-4E",
+        "title": "From $3K to $270M: How He Did It (and How You Can Too)"
+      },
+      {
+        "id": "xc2IjVqVdQY",
+        "title": "From Nothing to $20k/month with Email Newsletters: Full Tutorial"
+      },
+      {
+        "id": "_mWhcH41Mxw",
+        "title": "Google\u2019s New AI Tool Is Crazy Powerful (Here\u2019s How to Profit)"
+      },
+      {
+        "id": "VGAOCH2vYwM",
+        "title": "Start This Simple Side Hustle Before Everyone Else Does"
+      },
+      {
+        "id": "QghV97IsDpI",
+        "title": "How to Find the Best Undervalued Deals (For Beginners)"
+      },
+      {
+        "id": "3ywztCB-hAk",
+        "title": "You Can Start This $1M/Yr Business With No Tools and No Crew"
+      },
+      {
+        "id": "E1mdDql_2yI",
+        "title": "A New AI Gold Rush Just Started. Don\u2019t Miss This One. (+4 Ideas)"
+      },
+      {
+        "id": "HIF3Y6ABYcA",
+        "title": "AI Told Me to Start This Business. So I Did."
+      },
+      {
+        "id": "6QThtf2K1r4",
+        "title": "Forget Dropshipping. This Side Hustle Is 10x Easier (and Smarter)"
+      },
+      {
+        "id": "2Qh3EaMegnY",
+        "title": "These Genius Business Ideas Are Hidden All Over America"
+      },
+      {
+        "id": "scZxo7_zLdI",
+        "title": "This $15K/Person Grant Feels Like a Cheat Code"
+      },
+      {
+        "id": "WpZE-vfLHuA",
+        "title": "I Asked 5 AI Tools to Make Me Rich. Then THIS Happened\u2026"
+      },
+      {
+        "id": "E8ARq-4ous8",
+        "title": "8 Best ChatGPT Tools to Make Money With (Ranked)"
+      },
+      {
+        "id": "2B5dCquvK4c",
+        "title": "If We Had to Make $1M Fast, We\u2019d Start These Businesses"
+      },
+      {
+        "id": "UCdWRg1KQLY",
+        "title": "The Most Overlooked $10K/M Business Anyone Can Start"
+      },
+      {
+        "id": "5mClVr2cd5U",
+        "title": "I Started an Online Business in 56 Minutes (Beginner Friendly)"
+      },
+      {
+        "id": "M3mUNpWD4ow",
+        "title": "You Don\u2019t Need a Big Idea. AI Can Clone These Giants for You"
+      },
+      {
+        "id": "fogwK_iU7Zc",
+        "title": "How Often Would You Play the Lottery If It Were Free?"
+      },
+      {
+        "id": "OZ0fdAYPyqE",
+        "title": "How to Start Reselling (Even With $0 in the Bank)"
+      },
+      {
+        "id": "I24XPX0HS5c",
+        "title": "6 Ways to Make Money With the New GPT Agent (It Blew My Mind)"
+      },
+      {
+        "id": "6Q6jS1-5pkw",
+        "title": "The Most Profitable Local Business Everyone Overlooks"
+      },
+      {
+        "id": "ZamYEo_mvxk",
+        "title": "The Smart Way to Start Small and Still Win Big"
+      },
+      {
+        "id": "3cKupknhU1w",
+        "title": "You Don\u2019t Need an Online Business to Get Rich"
+      },
+      {
+        "id": "bZrIfC-vob8",
+        "title": "Everyone\u2019s Chasing AI. Start This Simple Business Instead"
+      },
+      {
+        "id": "By9zAwSl3qg",
+        "title": "The Most Useful AI Skill You Can Learn Today"
+      },
+      {
+        "id": "VmROvPvi_iM",
+        "title": "Start an Online Business With Just a Prompt"
+      },
+      {
+        "id": "g5Vd0-y3rG8",
+        "title": "The Most Passive Online Business No One Talks About"
+      },
+      {
+        "id": "6XhabeLLuEw",
+        "title": "Don\u2019t Quit Your Job\u2026 Yet. Watch This First"
+      },
+      {
+        "id": "HWPQPTOG6Ew",
+        "title": "The Easiest Way to Start an Online Business (SaaS)"
+      },
+      {
+        "id": "RWmEE6ra--g",
+        "title": "You\u2019re Doing Everything Except the One Thing That Works"
+      },
+      {
+        "id": "R6-Es5rLfuA",
+        "title": "A Business Anyone Can Start Today With Just $100"
+      },
+      {
+        "id": "6aUtwj27IpE",
+        "title": "Starting a Business Has Never Been Easier. Here\u2019s How to Win"
+      },
+      {
+        "id": "zPL6HfcOLqw",
+        "title": "I Started a $20K/Month Pickleball Club for $200"
+      },
+      {
+        "id": "CNzMpxkwaPo",
+        "title": "How To Start a $10K/Month AI Automation Agency (No Code)"
+      },
+      {
+        "id": "uUlU5G1Nda0",
+        "title": "Facebook Ads For Beginners: Complete Guide (2026)"
+      },
+      {
+        "id": "_uHy0zY9hgk",
+        "title": "Sell These $3.5K AI Pitch Decks Built in 12 Min (+4 More Ideas)"
+      },
+      {
+        "id": "xA1crdAIneU",
+        "title": "The Most Overlooked Way to Make Money with AI (+10 More Ideas)"
+      },
+      {
+        "id": "FH2mB0iy9mw",
+        "title": "watch this if you're tired of being broke"
+      },
+      {
+        "id": "yTc3M4oMdnQ",
+        "title": "This Simple Rental Business Could Change Your Life!"
+      },
+      {
+        "id": "UcFBcfrmC2k",
+        "title": "\u201cIt\u2019s Not That Easy?\u201d Sam Launched Overnight to Prove It Is"
+      },
+      {
+        "id": "4JgLTWSzGgc",
+        "title": "If People Pay for This, Your Idea Will Work Too"
+      },
+      {
+        "id": "Jzcuxz7IeR0",
+        "title": "Google Veo 3 Just Changed the Game: Here\u2019s Your Money-Making Tutorial"
+      },
+      {
+        "id": "sYF9lrIGDn4",
+        "title": "How to Start a Business? Don\u2019t Wait for Permission."
+      },
+      {
+        "id": "Biq-B49yMBs",
+        "title": "The Koerner Office: Business Ideas & Growth Advice is live!"
+      },
+      {
+        "id": "8XEXkWAxPAQ",
+        "title": "AI Is Replacing Content Creators (Here\u2019s How to Profit)"
+      },
+      {
+        "id": "47UgXbHp6nM",
+        "title": "Quit Waiting. Start This Simple Business with $0"
+      },
+      {
+        "id": "mLZw_J1QOUo",
+        "title": "25 ChatGPT Hacks You Need to Know in 2026 (Profit, Become a Pro!)"
+      },
+      {
+        "id": "bSahqscHOsk",
+        "title": "How to Get a Yes From Anyone (and Change Your Life)"
+      },
+      {
+        "id": "AVtC8DvANxg",
+        "title": "You\u2019re Not Ready for What\u2019s Coming: Robert Scoble on AI + Future Tech"
+      },
+      {
+        "id": "Kg66hxP9tzc",
+        "title": "How to Build a Thriving Business in the Middle of Nowhere"
+      },
+      {
+        "id": "tGzvXjtVqEU",
+        "title": "17 Years, 75 Businesses, 1 Marriage: How We Make It Work"
+      },
+      {
+        "id": "eCz3OtZBic0",
+        "title": "I've Started 75+ Businesses: Here\u2019s What Actually Matters"
+      },
+      {
+        "id": "1-7Nkz6bTgU",
+        "title": "Secrets to Making BIG Profits from Small Email Lists"
+      },
+      {
+        "id": "sNmKTbi6zhI",
+        "title": "what I wish I knew at age 20"
+      },
+      {
+        "id": "7rhoNM9IGE0",
+        "title": "You Don\u2019t Need to Be a Genius! Just Do This."
+      },
+      {
+        "id": "1fTGX4sLVqA",
+        "title": "The Most Overlooked Way to Make Money On the Internet"
+      },
+      {
+        "id": "KSQF7cYG8gU",
+        "title": "You're Overthinking It. Here\u2019s the Simple Way to Start (ft. Nick Huber)"
+      },
+      {
+        "id": "cBdJajFcSzg",
+        "title": "Fastest Way to Copy Winning Digital Products (Picsart)"
+      },
+      {
+        "id": "IYotH4hI4KA",
+        "title": "This Video Will Change How You Think About Money"
+      },
+      {
+        "id": "-Whqjr6ZnmY",
+        "title": "Missed Every Gold Rush? This One Started Just 2 Days Ago"
+      },
+      {
+        "id": "VZid9SCFoz0",
+        "title": "This One AI Prompt Could Land You a $15K Client"
+      },
+      {
+        "id": "H34wM31A6_4",
+        "title": "Build Your Next Business With This Viral\u00a0AI\u00a0Tool"
+      },
+      {
+        "id": "tFP7wnWkX4w",
+        "title": "Billy Quit his Job to Start an AI App Agency: Here's How"
+      },
+      {
+        "id": "W6Q0W2R7Tqk",
+        "title": "My 5 Favorite AI Tools in 2026"
+      },
+      {
+        "id": "QYRz3WgE7eY",
+        "title": "Don\u2019t Sleep on This Specific $0-to-Millions Reselling Strategy"
+      },
+      {
+        "id": "pMtOUpkRC8w",
+        "title": "Why You\u2019re Overthinking Your First Product (Do This Instead)"
+      },
+      {
+        "id": "pIiqnuQLBPw",
+        "title": "Is Rucking the Next Gold Rush?"
+      },
+      {
+        "id": "LXB5G1zqnGg",
+        "title": "How to Make Money With Tariffs While Everyone Panics"
+      },
+      {
+        "id": "WwR35MbyOMY",
+        "title": "This Little AI Device Will Print Millionaires"
+      },
+      {
+        "id": "ykw6ArIAMOg",
+        "title": "Stop Chasing Billion Dollar Ideas. Do This Instead."
+      },
+      {
+        "id": "u7dJlv9bouA",
+        "title": "AI Agents Are Overhyped. Use THIS Instead"
+      },
+      {
+        "id": "7kV9iwXIM7Q",
+        "title": "Greg Isenberg on AI Tools That Will Replace You (or Make You Rich)"
+      },
+      {
+        "id": "sczftAQoDp0",
+        "title": "Why Hasn\u2019t Anyone Copied This Business Idea Yet?"
+      },
+      {
+        "id": "UPWH-nbGztU",
+        "title": "Everyone\u2019s Overlooking This Marketing Channel: Why You Shouldn\u2019t"
+      },
+      {
+        "id": "Fqc7dEETGio",
+        "title": "How to Start this $337k/Yr Service Business You\u2019ve Never Heard Of"
+      },
+      {
+        "id": "7opaNBRPBYw",
+        "title": "Thinking About Dropshipping? You Might Be Too Late."
+      },
+      {
+        "id": "Fa6F5Aa4UIM",
+        "title": "I Built a $250K Tool During the Super Bowl without Coding"
+      },
+      {
+        "id": "r-3cFm0VezA",
+        "title": "AI Won't Replace You If You Do This!"
+      },
+      {
+        "id": "0jOy5pmkEU0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "wZmP-o7gF5c",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "8MsdWaofi8E",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "qa1wjvjUn1Y",
+        "title": "BEWARE of this business tactic!"
+      },
+      {
+        "id": "ucTxGvyHAws",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "M4RsLcVzr74",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "2-vJay9kLsk",
+        "title": "Trump store financial secrets exposed!"
+      },
+      {
+        "id": "IhX-qhFcvlw",
+        "title": "How to Get Everything You Want Out of Life"
+      },
+      {
+        "id": "YUAr0Nd4uk4",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "vs0xoHcluQ0",
+        "title": "How to Piggyback Your Way to $1M+ Business"
+      },
+      {
+        "id": "g0kZBbAYqDk",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "jv24kU3sAaE",
+        "title": "Did I finally discover passive income?"
+      },
+      {
+        "id": "45TB_noyCl8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "l4i20N1B7ek",
+        "title": "How to Profit Big from the AI Wrapper Gold Rush (Part 2/2)"
+      },
+      {
+        "id": "n2TOBeQtZPI",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Gukt2lLC4Ew",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "DG9qJqs-KC0",
+        "title": "How much does this business make?"
+      },
+      {
+        "id": "xQh1tnWh_yI",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "e77Ffl3TfEk",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "PtMXBHjCXTM",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "RVKCJivLvaE",
+        "title": "How Can You Tell A Guru from a Genius?"
+      },
+      {
+        "id": "TzyzXFoTw10",
+        "title": "There\u2019s bread in the bread"
+      },
+      {
+        "id": "_yMXoZVAVKs",
+        "title": "An Insider Spills the Secrets to Starting a $1M+ SaaS Agency"
+      },
+      {
+        "id": "pgn3fRvWp6I",
+        "title": "$23k/Month by Month 2: Exact Playbook (Not Clickbait)"
+      },
+      {
+        "id": "BLW342yJSxI",
+        "title": "Q&A: How to Make Money Cloning Content with AI (+4 more)"
+      },
+      {
+        "id": "UXVs-C5SZTs",
+        "title": "How to Make Money With a No-Code App: A Step-by-Step Guide (Part 1/2)"
+      },
+      {
+        "id": "BfuqTEMvs-4",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "ho3QZwbB6tI",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "d1YOCL0uYII",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "8jJLSR8KQww",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "XwtqohRsYVQ",
+        "title": "The Margins on this Boring Business are Insane"
+      },
+      {
+        "id": "ujtB3kw6COs",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "NEJ6axgc6GU",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "2b14XBZF6Uw",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "VwSGdVFT2rY",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Qx1X8tPrq7s",
+        "title": "How to Find Customers for Your Home Service Business"
+      },
+      {
+        "id": "trypP8NFYTw",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Lig9SMppkpQ",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "1e-501qYOYQ",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "QeHIUu8Xy1Y",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "fixcW7IHC2U",
+        "title": "The Easiest Way to Make Money with No Code AI"
+      },
+      {
+        "id": "_p7HP88FMxU",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "tAWxDMSG4VY",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "3_JqTizhRdA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "HLKm5kDEma8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "8P39p5EyVok",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "C1C9QK9ak18",
+        "title": "Everything I Know About Newsletters in 24 Min"
+      },
+      {
+        "id": "zpFiLOR5AFQ",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "ZZyhJsdOgcg",
+        "title": "How to use AI to start a t shirt business."
+      },
+      {
+        "id": "KPH5AapaGA4",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "IVn8JJcfCRM",
+        "title": "The 10 Most Genius Business Ideas This Week"
+      },
+      {
+        "id": "j335Tb7sKV4",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "75d4yWBisD0",
+        "title": "Bookkeeping Basics for Beginners"
+      },
+      {
+        "id": "UA77VnFe4EE",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "sp2hJ1d-Zb8",
+        "title": "How to Legally Avoid Paying (most) Taxes"
+      },
+      {
+        "id": "-GBMC6ZNKg4",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "0YY9iVv0Itw",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "-rPa2oULr-I",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "BHHHD965gM0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "ABaUW30CAUM",
+        "title": "Why I gave up on privacy."
+      },
+      {
+        "id": "2WUqdw5xtlg",
+        "title": "ex-tesla guy turns school bus into a fortune"
+      },
+      {
+        "id": "fImDHH6pQ70",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "4vLlDEodirI",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "uplHJEuGoCc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "F7rEHb3sdDg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "gWzAMbONjzw",
+        "title": "GENIUS IDEAS"
+      },
+      {
+        "id": "rQt4rSwYBOg",
+        "title": "The Ultimate Guide to Starting Your First Service Business (Part 1/2)"
+      },
+      {
+        "id": "bVr8-_w9q74",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "vkDtYXrFRRQ",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "k-Jj5cMkCwA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "H449xu0vquI",
+        "title": "6 figures from a $39 investment."
+      },
+      {
+        "id": "UL1wkTBteEQ",
+        "title": "Wine tours from semi trucks??!"
+      },
+      {
+        "id": "-9jcM8e5Gp8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "uH8i8EbFUeQ",
+        "title": "The Best Marketing Masterclass You'll Hear in 2026"
+      },
+      {
+        "id": "jBWfw3mhIzA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "81cB9NuHKZg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "GVyk4WxL0QE",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Ikr3f-mX2FM",
+        "title": "Why THESE Are the Best Businesses for Beginners"
+      },
+      {
+        "id": "nEFgzbqDsQo",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "dPLAvI6wGkY",
+        "title": "How to Build a Chat GPT Wrapper (Real Success Story)"
+      },
+      {
+        "id": "TZtwitmvjpw",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "C27V-uYcoK0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "KpXYpSAL9OE",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "-AAwEVQnKPs",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "1_iDx65r7HE",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "oOsqxiZ0ahA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Y7MoXyp8UrE",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "tz1Cv2WxhwM",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "LUU5_q6gWOg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "fQyi0jcjl5U",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "TiArBYmWzYA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "DHG5wqEPlec",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "i8Oa_7F8TXI",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "H29qDuCdtsM",
+        "title": "Secrets to Making $10k/Season with Porch Flowers"
+      },
+      {
+        "id": "37uEeScZo1g",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "nsa8LUtQdLw",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "IMq85OF3GsY",
+        "title": "The 5 Most Genius Business Ideas I Saw on Instagram"
+      },
+      {
+        "id": "uJSzxeo1ew8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "JAMOKUma7-Q",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Wtm_8JK9yLc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "W9i9x-xsQ5A",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "IsKCgCWcaKQ",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "zVftEhd9nLk",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "8eFb8K_3Wj0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "rxqZua6D0iE",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Xkc5jjpQR9o",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "4CWMCuUbPGg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "-CmanXezEIs",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "ydsPVrsplRg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "qyoKH9Jv0cc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Pou_G5-NBa8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "zseaN9RMoAA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "VFrG6XexMtc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "SiDp6uamZlc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "uK5C_wY01f8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "_WK97SnW4EM",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "VWv2avu8nQg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "oAQhg3K8xJI",
+        "title": "10 at Once!? Watch me Break ChatGPT Operator"
+      },
+      {
+        "id": "TVZVWsPur4A",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "HYeIG4aDkuo",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "C-tO9kuvZL8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "hZg4TgwX_64",
+        "title": "5 Genius AI Business Ideas"
+      },
+      {
+        "id": "uDI2ZEOtfxo",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "rvVEYcehT2I",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "05AbNL8mm4Y",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "2JluloVN2ws",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "QOOxSYk0HWM",
+        "title": "The Secrets to Unlocking Facebook Marketplace"
+      },
+      {
+        "id": "i54usv8kav8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "GIjMM-nm5qc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "a7Mkd_kCUG0",
+        "title": "WOW! ChatGPT Operator Just Built a Business For Me"
+      },
+      {
+        "id": "QfWVeXHM7YI",
+        "title": "MIND. BLOWN! I Just Paid ChatGPT Operator $200 to Build a Business"
+      },
+      {
+        "id": "s_JTwH8wnhw",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "92rEAKhAYFs",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "BV_GPNoxfTg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "fu0ws8VUDHs",
+        "title": "How to Start a $1M+ AI Business with No Coding Experience"
+      },
+      {
+        "id": "ZhHcb7dhX_8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "XII9nBem0-c",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "sJBHf_83_sU",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "abx6CHhZ-4Q",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "TLsEfGviUYA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "QTDW0Mh6o2A",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "4mZottbHeJQ",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "1XUmzANLCf0",
+        "title": "Here Is My Favorite AI Business Idea. Steal It!"
+      },
+      {
+        "id": "tI8OQ7dVzss",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "xJ6_oXoFgIU",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "6Y3qiwuLcI0",
+        "title": "Q&A: Selling Spreadsheets on Etsy? Here's How to Make $5,000/Month (+5 More)"
+      },
+      {
+        "id": "sEtyAGOot1w",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "fb3ac76vjPI",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "tGg6Tv-3nJc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "5FKo4dcbRnU",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "o77_Xv5ifGk",
+        "title": "Unbox my YouTube plaque with me"
+      },
+      {
+        "id": "XVNuiLPatjQ",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "A0RZE39wQRc",
+        "title": "How I Built a $10m Business in 32 Minutes"
+      },
+      {
+        "id": "7vsVbLoGhLE",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "gXiU1k1vtak",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "5yAIEKKm4mo",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "YHbiOvPB-Tg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "VuV-S_7Zn7k",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "0mqAtItqR0c",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "UT9DwxaRM3c",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "aGgYCuqC4i0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "aUacHsbJzXQ",
+        "title": "I Found a Perfect Business That Anyone Can Start"
+      },
+      {
+        "id": "IgrPH_ocECA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "eSoW8uAlWkg",
+        "title": "this actually blows my mind"
+      },
+      {
+        "id": "7tlCLws_BaI",
+        "title": "backyard coral reef?"
+      },
+      {
+        "id": "U9-cVF9QHwo",
+        "title": "This AI Strategy Will Change How You Work Forever"
+      },
+      {
+        "id": "H56w-2PgEGI",
+        "title": "why don't you start this business?"
+      },
+      {
+        "id": "XR9CVp0YTns",
+        "title": "Floor is lava profits"
+      },
+      {
+        "id": "BTusWtmK9Is",
+        "title": "I dare you to tell me that this isn't genius"
+      },
+      {
+        "id": "z5Z0uP2CVeQ",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Dx5bFY2AZ4Q",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "RD7Oe9JgBuE",
+        "title": "Q&A: How Do I Grow My Local Business? (+5 others)"
+      },
+      {
+        "id": "g1I5IbUowRk",
+        "title": "$1,000 per Weekend Side Hustle"
+      },
+      {
+        "id": "8tI0Tb5B6t0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "7FyAgx4seH4",
+        "title": "Someone copy this genius idea"
+      },
+      {
+        "id": "bdU2GGfcs4Q",
+        "title": "Wanna build wealth fast? Watch this."
+      },
+      {
+        "id": "pSqzCHmbU3s",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Rsf6U6a-QWw",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "w57D4FbL8rc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "JmgPyuEf51A",
+        "title": "My 4 Favorite Seasonal Business Ideas this Week"
+      },
+      {
+        "id": "Tq3BcW59NK0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "qPv-wvOftto",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "CI5AfAVUMRM",
+        "title": "My 2025 motivation for you, from prison."
+      },
+      {
+        "id": "7exE9k-TuAY",
+        "title": "Pizza Profits"
+      },
+      {
+        "id": "JcY4W33R6sg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "ylTOHcsD-34",
+        "title": "GENiUS IDEAS"
+      },
+      {
+        "id": "cChCg_cPDYE",
+        "title": "How to Turn a 30 Second Video into a 6 Figure Business"
+      },
+      {
+        "id": "4SkMaausHoU",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Q9sK6j0yyUI",
+        "title": "Freeze Dried Candy Profits"
+      },
+      {
+        "id": "bXpcYAQT3Lg",
+        "title": "Why is no one else doing this?"
+      },
+      {
+        "id": "QFGtL6OtQCw",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "gMZlDtaFVbo",
+        "title": "Why is no one doing this?"
+      },
+      {
+        "id": "LXt6LyyyUxA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "KofLJfkUrDc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "kd3wxK_FAO8",
+        "title": "Year in Review. Net Worth Breakdown, Investments & More"
+      },
+      {
+        "id": "yOJwZ2ONBQk",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "KzeaiFATj0s",
+        "title": "The Best 2025 Advice You\u2019ll Hear"
+      },
+      {
+        "id": "bWue5mNyxMw",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "3wX3eiSqF5M",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "8PLFPi5I_fo",
+        "title": "Hidden gem of a website"
+      },
+      {
+        "id": "6v88z_XWVFk",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Xe7t9j4-QMc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "IlSdHESgMYw",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "3PqSi22RbBg",
+        "title": "Your Shortcut to Building a $1M Business in 2026"
+      },
+      {
+        "id": "WGps3ceBHI0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "sQOtTCNj0OY",
+        "title": "How to Build a No Code SaaS Business in Days"
+      },
+      {
+        "id": "YLSo9sG1-X4",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "FsUv-4_iFrY",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "pWtoX0HWXAE",
+        "title": "My 3 Favorite Business Ideas this Week"
+      },
+      {
+        "id": "uW5T1fQA7YA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "3jkVqtBbmr8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "y8j9UYjuJ64",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "fF_xXvBdicY",
+        "title": "$1B Business Idea Hiding in Plain Sight"
+      },
+      {
+        "id": "NaizjFqIaMc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "6KIThiioov0",
+        "title": "2 genius side hustle ideas for 2025"
+      },
+      {
+        "id": "t0Kl0Q5YbW0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "IDGc773XOh0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "VfKU0aYRNZ0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "w3AoteSXi4A",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "zs7owt5-iTo",
+        "title": "How to Pay $1,600 Once to Profit $1,600/Month"
+      },
+      {
+        "id": "OwuK_JXS3iM",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "FKNdrzheilE",
+        "title": "GENiUS IDEA"
+      },
+      {
+        "id": "mgmRjOfofYw",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "YRPH_maBAs4",
+        "title": "Bakery stand profits"
+      },
+      {
+        "id": "UC3kXpvReI8",
+        "title": "Is there a business here?"
+      },
+      {
+        "id": "M4RJzhDC3F4",
+        "title": "GENIUS IDEA - check out Wizard of Willow\u2019s Etsy channel!"
+      },
+      {
+        "id": "ETEhl8zf4Vc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "cFjzN2ciGKA",
+        "title": "Unique candle idea"
+      },
+      {
+        "id": "t6LYVzIwrTA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "bvJNZhsPGQA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Wngvuq10vY4",
+        "title": "My 3 Favorite Farmer's Market Side Hustles"
+      },
+      {
+        "id": "wMjzuVmYwwY",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "OOFIeuj0Kww",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "GL3MQMC0Rs4",
+        "title": "How to Start a $20k/Month Email Marketing Agency"
+      },
+      {
+        "id": "g7g4DgV224U",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "NrD_8R3Uq0o",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "kqMUY0N3dTs",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "YDAEJs1WpRc",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "5UwUKXpiS08",
+        "title": "I can't believe this is so profitable"
+      },
+      {
+        "id": "Ag9O-kHw_t0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "awN0dwfF8Ws",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "uGULwYU5bN8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "yCxCn1HvfK8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "OwfkLLox9rw",
+        "title": "Exactly How to Start This Genius AI Business"
+      },
+      {
+        "id": "vDp4dCaUFug",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "y0iIfukiDvI",
+        "title": "How to turn $300 into $7k/month"
+      },
+      {
+        "id": "jGV0Ogy89qU",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "UXgGQT-IJEY",
+        "title": "I Just Found the Perfect Business for you to Start (yes, you)"
+      },
+      {
+        "id": "_lLxP_sIkSY",
+        "title": "RV park profits"
+      },
+      {
+        "id": "-nD8_-vMlsE",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "0HkvK94Tb8A",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "JsBiSeNKto8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "ikBATn3J1xg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "ro_1u6yd54Y",
+        "title": "THE FUTURE IS HERE"
+      },
+      {
+        "id": "1DF3AU7aWMg",
+        "title": "Webinar: RV Park Investment Breakdown + 2026 Bonus Depreciation Drop"
+      },
+      {
+        "id": "LGJrgYyP6BQ",
+        "title": "This could change everything for you"
+      },
+      {
+        "id": "NhWl8zmo05E",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "0V8QG8FSmlI",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "xBVBlC0zYt8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "hu8m5FUz3g0",
+        "title": "$18k/Month in his 2nd Month doing WHAT!?"
+      },
+      {
+        "id": "h9_P94NUIRA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Eaz3IDX5gjg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "xnZKKM-uIhI",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "GdcN5lRv6kI",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "0ZKgF6M0jW4",
+        "title": "Secrets to Earning from Facebook Communities"
+      },
+      {
+        "id": "DbW2p_v7KSI",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "0wuuKntxKFE",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "aba_NmtzK1I",
+        "title": "15 Years of Domain Name Investing Knowledge in 15 Mins"
+      },
+      {
+        "id": "-3ZmCEJ3xUU",
+        "title": "This is genius"
+      },
+      {
+        "id": "tb61X1d0SLY",
+        "title": "Genius marketing idea"
+      },
+      {
+        "id": "spOOuURYYl0",
+        "title": "BEST BUCEES SNACKS"
+      },
+      {
+        "id": "0-xBklMNhGM",
+        "title": "How To Work 4 Days per Year with a $200k Fireworks Stand"
+      },
+      {
+        "id": "UseT2QJ-t5Q",
+        "title": "$10k/Month Hack"
+      },
+      {
+        "id": "Ag7XMwoGGsQ",
+        "title": "RV PARK PROFITS"
+      },
+      {
+        "id": "xQ7FYNdqcO8",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "Ly2cz2h_GKA",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "NohEYvyYKck",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "VDxvm4PpIwE",
+        "title": "How to Start a $10k/Month Sleep Consulting Business with $0"
+      },
+      {
+        "id": "5L2y8b0H36Q",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "2TT0tbMs2pI",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "mYdUk5tM1PM",
+        "title": "Launch a $50k Monthly Software Biz with No Code"
+      },
+      {
+        "id": "veVVuY6fy_Q",
+        "title": "The 5 Most Genius Vending Machine Business Ideas"
+      },
+      {
+        "id": "J7V75o3ZCA0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "qwSArijfxnI",
+        "title": "How He Started a $72,000/Month Event Venue Business"
+      },
+      {
+        "id": "K9dTrCFYkC4",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "StS_XKyXaH0",
+        "title": "How to Make Millions with a Hole in One Challenge"
+      },
+      {
+        "id": "y1CGaonUX3o",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "hiVgF7QnJmE",
+        "title": "Dessert Shop Profits"
+      },
+      {
+        "id": "lO40VRMgNJ8",
+        "title": "How to Growth Hack this Gold Mine Marketing Channel"
+      },
+      {
+        "id": "mMChGjCTUto",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "7U3GFOv353M",
+        "title": "Genius idea"
+      },
+      {
+        "id": "Dc_tVmO4SSs",
+        "title": "Deep Dive on the Gas Delivery Business. HOLY PROFITS!"
+      },
+      {
+        "id": "moy21XVzdX0",
+        "title": "Genius idea"
+      },
+      {
+        "id": "Mb1DTzNZUHs",
+        "title": "Brilliant Idea: The Liquid Death of Candles"
+      },
+      {
+        "id": "N6_dPMDSDCQ",
+        "title": "Genius Idea"
+      },
+      {
+        "id": "D2Q_B_yYfTM",
+        "title": "Tesla Side Hustle"
+      },
+      {
+        "id": "c_SjEbk6WwM",
+        "title": "LIVE! Splitting wood and talking business 2/2"
+      },
+      {
+        "id": "0PD9VouM0uo",
+        "title": "LIVE! Splitting wood and talking business 1/2"
+      },
+      {
+        "id": "ssUPJ0KGEwk",
+        "title": "How to Print Money With Google Sheets + AI"
+      },
+      {
+        "id": "mBaSOiOaCWs",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "u6xrtr_NgvU",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "vUGbZMP9Gk0",
+        "title": "Oops! I Started 15 More Businesses For You To Copy (Part 4/4)"
+      },
+      {
+        "id": "ziw6PWP3Gks",
+        "title": "Don\u2019t be this person"
+      },
+      {
+        "id": "J6ZH-3itOd4",
+        "title": "I HAD NO IDEA"
+      },
+      {
+        "id": "xQQJOQjZSNs",
+        "title": "You'll Never Believe How Profitable This Business Is..."
+      },
+      {
+        "id": "nIHExMSqRCE",
+        "title": "DO THIS NOW"
+      },
+      {
+        "id": "QH4DBlXQxnw",
+        "title": "How much do RV parks make?"
+      },
+      {
+        "id": "ijv2KTMddjg",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "BgyFqxaQqlA",
+        "title": "How to Make $100k/Month From a Company Going Out Of Business"
+      },
+      {
+        "id": "gJ2QwIyJ8R4",
+        "title": "BRILLIANT IDEA"
+      },
+      {
+        "id": "im4P_7FEJi0",
+        "title": "GENIUS IDEA"
+      },
+      {
+        "id": "UJOPZjw6ss0",
+        "title": "HOW TO PROFIT OFF THE GOVERNMENT"
+      },
+      {
+        "id": "xrwHlNboV5U",
+        "title": "THIS IS GENIUS"
+      },
+      {
+        "id": "zmHapb6pK1c",
+        "title": "This Business Model is About to Be EVERYWHERE! Don't Miss Out!"
+      },
+      {
+        "id": "Jt201mmRSoU",
+        "title": "6 figures installing pergolas!?"
+      },
+      {
+        "id": "bpdq5tq345Y",
+        "title": "SAUNA + COLD PLUNGE PROFITS $$$"
+      },
+      {
+        "id": "6URP4ePACRg",
+        "title": "Make $100k installing ugly pools"
+      },
+      {
+        "id": "MFIzgoI5WLE",
+        "title": "Deep Dive on the Sauna & Cold Plunge Business (+2 others)"
+      },
+      {
+        "id": "4UTNbXRwyR0",
+        "title": "HOW TO PROFIT FROM MCDONALD'S"
+      },
+      {
+        "id": "CMJCsOkygic",
+        "title": "BRILLIANT IDEA"
+      },
+      {
+        "id": "E2La501VDGM",
+        "title": "Watch me start a firewood business"
+      },
+      {
+        "id": "uM2_Z2Jqf78",
+        "title": "You won\u2019t believe how profitable this homemade beef jerky business is!"
+      },
+      {
+        "id": "Gy3ygDzsXYE",
+        "title": "How to Start a Niche Job Board With 80% Margins"
+      },
+      {
+        "id": "X3sfAxNVl5A",
+        "title": "Salad bar install profits!?"
+      },
+      {
+        "id": "2qnfnqXv0Fk",
+        "title": "How to Make $40k in 2 Months with Christmas Decorations"
+      },
+      {
+        "id": "7Ow9qRVCWM8",
+        "title": "How to Start a Trash Bin Cleaning Business from Scratch"
+      },
+      {
+        "id": "i5obHUUnv_M",
+        "title": "GENIUS IDEA: Cotton candy vending"
+      },
+      {
+        "id": "h0ocdaRmB4Q",
+        "title": "Polson, Montana RV Park Investment Webinar"
+      },
+      {
+        "id": "uwqaN3oMoAU",
+        "title": "The most brilliant seasonal business idea since porch pumpkins! A Christmas decoration business!"
+      },
+      {
+        "id": "Ck7lsUENXCI",
+        "title": "Secret hack to steal free customers #businessideas #sidehustleideas #ceo"
+      },
+      {
+        "id": "Rd2STdr_Wp8",
+        "title": "A Secret Growth Hack to Steal Free Customers"
+      },
+      {
+        "id": "o_Xs6bcP1JY",
+        "title": "4 Business Ideas You Can Start with $0 in 2026"
+      },
+      {
+        "id": "IphoS77wowA",
+        "title": "You\u2019ll never believe how profitable this restaurant is.#businessideas #businessgrowth"
+      },
+      {
+        "id": "pXiFFRRItHk",
+        "title": "I Started These 14 Businesses. Here\u2019s How You Can Copy Them. (Part 3/4)"
+      },
+      {
+        "id": "sTE_qD4uBPQ",
+        "title": "This is genius"
+      },
+      {
+        "id": "KRRs_lfiDvA",
+        "title": "How Much YouTube Paid Me in 2 Months"
+      },
+      {
+        "id": "AZmdT_OK9p8",
+        "title": "How to Use AI to Clone Others for Profit"
+      },
+      {
+        "id": "QFTdkjVYrE8",
+        "title": "How I Convince People to Give me Free iPhones"
+      },
+      {
+        "id": "rzSXKsrF9O4",
+        "title": "This guy placed $87,000 of gold on the ground for anyone to find #smallbusinessideas #entrepreneur"
+      },
+      {
+        "id": "Vxn7No9iP_g",
+        "title": "How to convert an old engine block into $5,500 #smallbusinessideas #entrepreneur"
+      },
+      {
+        "id": "e_eTLl3SbWY",
+        "title": "A Secret Hack to Re-Selling iPhones That You Get For Free"
+      },
+      {
+        "id": "x2bfwd16YhU",
+        "title": "How much can you make per day with a food truck?"
+      },
+      {
+        "id": "L6lNtlcFCEQ",
+        "title": "How to make a profit renting out camper vans"
+      },
+      {
+        "id": "U--WJujA2hY",
+        "title": "4 Ways to Make Money by Spying on People"
+      },
+      {
+        "id": "7LddPU3iJiQ",
+        "title": "Never start a business without these 4 tools"
+      },
+      {
+        "id": "-gyZzw4jcfY",
+        "title": "How to Scrape Millions of Leads for Almost $0 (Without Coding)"
+      },
+      {
+        "id": "elt44DUq6Fo",
+        "title": "How A Teenager Turned $20 into $250/Hour (The Simple Strategy)"
+      },
+      {
+        "id": "7k2QkmRYK3s",
+        "title": "I Found an Untapped Home Service Business with 75% Profit Margins"
+      },
+      {
+        "id": "OrIfFnPrk9Q",
+        "title": "Buy by the acre and sell by the foot"
+      },
+      {
+        "id": "9RDUMQ_3Pos",
+        "title": "This freaking blew my mind"
+      },
+      {
+        "id": "pgDSPNwkNTQ",
+        "title": "I bet you\u2019ve never looked at glamping this way! #rvparks #glamping #businessideas #entrepreneurship"
+      },
+      {
+        "id": "Bx1k8G5qfjg",
+        "title": "How to Sell a $10 Cable for $10,000"
+      },
+      {
+        "id": "cLlUcNANIcQ",
+        "title": "6 figures renting out donkeys to weddings"
+      },
+      {
+        "id": "OLcRyASQv9U",
+        "title": "You'll Never Guess How Profitable this Seasonal Business Is..."
+      },
+      {
+        "id": "cEY8M4ITvkk",
+        "title": "Sometimes the best business ideas are hiding in plain sight\u2026"
+      },
+      {
+        "id": "Cptdp-3R-HY",
+        "title": "How much money do ATM routes make?"
+      },
+      {
+        "id": "GbcnkJHlidc",
+        "title": "How to Start a Profitable ATM Business from Nothing and Take it To Almost $1m/year of Profit"
+      },
+      {
+        "id": "PPzJLlX1h0E",
+        "title": "How to Start an ATM Business from Scratch."
+      },
+      {
+        "id": "0kMYXuJUTr4",
+        "title": "Check out for the hot new diabetes franchise."
+      },
+      {
+        "id": "J5_ZKoqNyr4",
+        "title": "Some thoughts on crappy home builders and branding while riding around in spandex this morning."
+      },
+      {
+        "id": "9zRvwQfG-WY",
+        "title": "$1M FROM PORCH PUMPKINS!?"
+      },
+      {
+        "id": "FqN4rtc-1-k",
+        "title": "Every business is scalable"
+      },
+      {
+        "id": "RrZHKoJJFYM",
+        "title": "A $1m Idea in the Car Industry You\u2019ve Never Heard Of."
+      },
+      {
+        "id": "KotfUWuCbAg",
+        "title": "How to Start My Favorite Car Business Idea for $0"
+      },
+      {
+        "id": "D-jFlV5TbRQ",
+        "title": "This is an untapped goldmine"
+      },
+      {
+        "id": "W-Q6o-a-ayo",
+        "title": "A Secret Hack to Finding and Selling Home Service Leads"
+      },
+      {
+        "id": "tJ1MthetHTo",
+        "title": "What a genius immigrant"
+      },
+      {
+        "id": "BVv_2B-_fw8",
+        "title": "The Hidden Secrets to a $100k/Year Cleaning Business"
+      },
+      {
+        "id": "fNd791QzEUs",
+        "title": "How to Make Millions with a Remote Cleaning Business"
+      },
+      {
+        "id": "_o5z3j6s8rs",
+        "title": "The 90 Day Blueprint to Make Your First $100k"
+      },
+      {
+        "id": "z069BzO45Bg",
+        "title": "Here\u2019s what I learned after scraping the top 1,000 Skool communities"
+      },
+      {
+        "id": "a3ITjSWOKbs",
+        "title": "I can\u2019t believe this is America"
+      },
+      {
+        "id": "iQZzzhr2cuw",
+        "title": "My 5 favorite sweaty startup ideas for 2024"
+      },
+      {
+        "id": "7d6tzZ_h8dI",
+        "title": "I Scraped Every Skool Community. This is What I Learned."
+      },
+      {
+        "id": "9RBFhQk1hIw",
+        "title": "What an inspiring story"
+      },
+      {
+        "id": "Dxrn6BJrXKM",
+        "title": "This 1 Brilliant Side Hustle Can Make You $1,000 per Weekend"
+      },
+      {
+        "id": "zB_-Gd-IiZE",
+        "title": "$5K/MONTH SIDE HUSTLE"
+      },
+      {
+        "id": "OqEY0fuojks",
+        "title": "I felt dumb when I first heard about this"
+      },
+      {
+        "id": "qh2FKQz9tI8",
+        "title": "My favorite untapped home service business niche"
+      },
+      {
+        "id": "ZhVb1q4X64g",
+        "title": "Secrets to Starting a 7 Figure Grill Cleaning Business"
+      },
+      {
+        "id": "73IqxCEh7Nk",
+        "title": "How to convert a scrolling addiction into a thriving business. #businessideas #entrepreneur #viral"
+      },
+      {
+        "id": "uh3XakQWulI",
+        "title": "Perfume vending profits"
+      },
+      {
+        "id": "QOISCnOQo8A",
+        "title": "A Rare Look Inside the Fly-In Neighborhood Business Model"
+      },
+      {
+        "id": "QyZbgOdqV-M",
+        "title": "I can\u2019t believe this exists"
+      },
+      {
+        "id": "XZYYtsT4Ycg",
+        "title": "How a Simple Change Added $1M to Our Business"
+      },
+      {
+        "id": "iNo0vVwTgvU",
+        "title": "Copy These Niche Cash Cow Website Ideas"
+      },
+      {
+        "id": "ZWZVBDM5-7c",
+        "title": "How to Make $1,000 per Weekend with This Easy Wedding Side Hustle"
+      },
+      {
+        "id": "MSEJOH2HlwY",
+        "title": "You don\u2019t own a business. Your business owns you."
+      },
+      {
+        "id": "oRBm8a3NdeM",
+        "title": "How to find new business ideas"
+      },
+      {
+        "id": "AITXCWUuDc0",
+        "title": "Why isn\u2019t this a thing yet?"
+      },
+      {
+        "id": "eWjM7_TQsCc",
+        "title": "How to Make Millions Selling Stupid Impulse Products"
+      },
+      {
+        "id": "rFmD3uYxWi4",
+        "title": "The Secret to How I Landed a Major Celebrity Business Partner (You Can Too)"
+      },
+      {
+        "id": "BhGpFrfznZw",
+        "title": "Is Entrepreneurship for You? Two Experts Reveal the Truth"
+      },
+      {
+        "id": "vVZRfB1-KrE",
+        "title": "This matters more than almost everything"
+      },
+      {
+        "id": "hS3QAxNsceI",
+        "title": "How to start a profitable wedding cookie business before spending a dollar."
+      },
+      {
+        "id": "AYfdIgfk2Uc",
+        "title": "How to create a money machine"
+      },
+      {
+        "id": "Nhigl43u-XY",
+        "title": "My favorite real estate investing hack"
+      },
+      {
+        "id": "z5aE-AIp6Uc",
+        "title": "My favorite AI business idea"
+      },
+      {
+        "id": "S_8wvO0In_M",
+        "title": "How do we feel about this idea?"
+      },
+      {
+        "id": "14sqrADUseg",
+        "title": "How to Start a Fully Automated AI Travel Assistant Business"
+      },
+      {
+        "id": "TBGRtbMQN9s",
+        "title": "Exactly how to build an AI tool that you can make money with: Watch this video"
+      },
+      {
+        "id": "vK6hhLCP50I",
+        "title": "How to make an extra $500 per month. I have nothing to sell you."
+      },
+      {
+        "id": "L51w5qLGFUg",
+        "title": "How to Make $60k per Weekend with an Auto Fair"
+      },
+      {
+        "id": "p7ZUJQmT6ys",
+        "title": "Brilliant car idea business"
+      },
+      {
+        "id": "jW1K6ngCYjk",
+        "title": "My favorite business idea in the car industry"
+      },
+      {
+        "id": "HCBnz_1GsA8",
+        "title": "My 3 Favorite Car Business Ideas for 2026"
+      },
+      {
+        "id": "WN7Ozs5PKGg",
+        "title": "How to persist through a crappy time of life."
+      },
+      {
+        "id": "r5uIVsGcE48",
+        "title": "Reasons why you should and should not buy a Tesla"
+      },
+      {
+        "id": "MtNho3lhHKw",
+        "title": "The one true flex."
+      },
+      {
+        "id": "NCgv_CMo128",
+        "title": "What a brilliant restaurant concept"
+      },
+      {
+        "id": "kIP0uCmLAk0",
+        "title": "Sell to 1 to sell to 100"
+      },
+      {
+        "id": "zhVG8QAUlsY",
+        "title": "How to start a digital detox business"
+      },
+      {
+        "id": "2HRqKInXtBY",
+        "title": "How to Start a Digital Detox Business in 2026 (+4 more ideas)"
+      },
+      {
+        "id": "LqOri4aXk-A",
+        "title": "New Buc-ee's? Here's How to Profit."
+      },
+      {
+        "id": "CibGeiQIX4A",
+        "title": "How to start a $10k/month digital agency in 60 seconds"
+      },
+      {
+        "id": "ekWRhMEjgx8",
+        "title": "How to Get Your First $1,000 per Month Agency Customer"
+      },
+      {
+        "id": "JtCfm1Fre9M",
+        "title": "How to start a date night business in 49 seconds"
+      },
+      {
+        "id": "XvMRKM0RY84",
+        "title": "How to Sell Your Stuff Through Uber and Lyft Drivers (+4 more biz ideas)"
+      },
+      {
+        "id": "_eSuaxLTljU",
+        "title": "If you fire someone, it\u2019s probably your fault."
+      },
+      {
+        "id": "_hmU1_YThUs",
+        "title": "You\u2019re welcome. Am I a whistleblower now?"
+      },
+      {
+        "id": "sdW8fRTv95o",
+        "title": "One of the biggest opportunities of our generation"
+      },
+      {
+        "id": "rqXjaSki00s",
+        "title": "How to Make $500k per Year in Profit from a Laundromat"
+      },
+      {
+        "id": "77odkf5-E1A",
+        "title": "How to Make $300k/Year from a Laundromat"
+      },
+      {
+        "id": "94PhmXxJTHY",
+        "title": "Know of anyone?"
+      },
+      {
+        "id": "REAlY9G5l78",
+        "title": "Mini jeep, mega profits"
+      },
+      {
+        "id": "dWC_pqvKus4",
+        "title": "Every cold email is a lottery ticket"
+      },
+      {
+        "id": "ixJ89BIJ_Lo",
+        "title": "How to Start a $90K/Month Cold Email Agency"
+      },
+      {
+        "id": "dzZAgPJpBgw",
+        "title": "The most successful startup founders have this one thing in common"
+      },
+      {
+        "id": "cpVTfCP1mWQ",
+        "title": "Here\u2019s a side hustle you can start this afternoon for $0."
+      },
+      {
+        "id": "xcG7JTKgBjI",
+        "title": "How Did Yeti Build Such a Big Business?"
+      },
+      {
+        "id": "FfgMHKyF8gc",
+        "title": "How to start a profitable firewood business with negative COGS"
+      },
+      {
+        "id": "hXpn-3UczWQ",
+        "title": "How to Start a Business with OVER 100% Gross Profit Margin"
+      },
+      {
+        "id": "A3S7m1fgfvw",
+        "title": "How to Start a B2B Stump Grinding Business"
+      },
+      {
+        "id": "cZx_aDeZjhg",
+        "title": "How to Start a Garage Shelving Business Exclusively on Facebook Marketplace in 2024"
+      },
+      {
+        "id": "jNRxKKmh3Q0",
+        "title": "How to Make $15k/Month from Facebook Marketplace"
+      },
+      {
+        "id": "8JLeJIgeH48",
+        "title": "How to Earn on DoorDash with a \u2018Cars for Rent\u2019 Side Hustle"
+      },
+      {
+        "id": "RbXogvSGkAA",
+        "title": "How to Start a Junk Removal Business with no Money"
+      },
+      {
+        "id": "byepC8hFUbQ",
+        "title": "How to Build a $900k Junk Removal Business with No Money"
+      },
+      {
+        "id": "leTYAAQ_ciU",
+        "title": "Any thoughts? #businessideas #entrepreneur #businessowner #entrepreneurship"
+      },
+      {
+        "id": "zetMKuh1cms",
+        "title": "How to Start a Liquidation Business?"
+      },
+      {
+        "id": "-CXQj3Nrf6k",
+        "title": "What To Do When AirBnB Bans You"
+      },
+      {
+        "id": "1ygl6L792D4",
+        "title": "How Isaac French Built A $7m Luxury AirBnb Business"
+      },
+      {
+        "id": "aqWcUHm9o5I",
+        "title": "Turning $20K into $4.7M with an AirBnB"
+      },
+      {
+        "id": "y8uSd3Z4GsY",
+        "title": "Ho to Compete Against the Knot and Start a Wedding Marketplace"
+      },
+      {
+        "id": "vbLnf_E8Rh8",
+        "title": "How Isaac French Built a Profitable Traincar Airbnb Business"
+      },
+      {
+        "id": "UiSkTPZjW3A",
+        "title": "How Marshall Turned 1 Simple Idea into $1 Million Dollars"
+      },
+      {
+        "id": "jU47yffcFL0",
+        "title": "How Can I Make Money Doing What I love?"
+      },
+      {
+        "id": "1C3jVke8u3Q",
+        "title": "How to Start a Coffee or Restaurant Business?"
+      },
+      {
+        "id": "Rxjh4k_HG9k",
+        "title": "How to Start a Profitable Coffee and Restaurant Business"
+      },
+      {
+        "id": "9jm-wFJiyBU",
+        "title": "How to Start a Pig Farming Business"
+      },
+      {
+        "id": "j3EOtoz4EXQ",
+        "title": "Is eCommerce Really Profitable? The Honest Truth for New Entrepreneurs"
+      },
+      {
+        "id": "Y6ESYZzz5fo",
+        "title": "How to Start a BBQ Business in a Gas Station Parking Lot"
+      },
+      {
+        "id": "l1RVNhFu058",
+        "title": "Buc-ee's Viral Marketing Stunt"
+      },
+      {
+        "id": "mQmg5IJuNzQ",
+        "title": "Buc-ee's Viral Marketing Stunt"
+      },
+      {
+        "id": "eUdlOIgZItQ",
+        "title": "How Much Can I Make Per Subscriber in a Newsletter Business?"
+      },
+      {
+        "id": "Ey2wSsDx77Q",
+        "title": "How to Build a Business with a Lifetime Warranty Offer (+6 more ideas)"
+      },
+      {
+        "id": "hc74HPyFun0",
+        "title": "What is the Best Morning Routine?"
+      },
+      {
+        "id": "-xI5xiHqvHU",
+        "title": "3 Places to Find Customers for Free (Most Overlook This)"
+      },
+      {
+        "id": "gw0xjs1v_w0",
+        "title": "Almost all Business Gurus are Fake. What Makes Me Different?"
+      },
+      {
+        "id": "YEojT5Eu4nU",
+        "title": "Is Crumbl a Fad?"
+      },
+      {
+        "id": "1PYoIl3qXWM",
+        "title": "Where Can I find Cheap Vending Machines to Buy?"
+      },
+      {
+        "id": "KodWwGaKmh8",
+        "title": "How Can I Find Reliable and Affordable Subcontractors?"
+      },
+      {
+        "id": "2MNOLnsNPvQ",
+        "title": "How Can I Start a Sprinter Van Rental Business?"
+      },
+      {
+        "id": "qaxENPVJUww",
+        "title": "How to Start a $200K/Year Sprinter Van Rental Business"
+      },
+      {
+        "id": "i4xq07r2eGo",
+        "title": "How to Start a Crushed Concrete Business"
+      },
+      {
+        "id": "QKzDcB67CzU",
+        "title": "How Much Do TV Hanging Business Owners Make?"
+      },
+      {
+        "id": "Z_O9_MmRCzc",
+        "title": "Don\u2019t start a business #entrepreneur #businessowner #entrepreneurship"
+      },
+      {
+        "id": "A4Gv_mmr5tM",
+        "title": "My RV and Mobile Home Park Investing Masterclass"
+      },
+      {
+        "id": "nDvxTQtwRaI",
+        "title": "You in?"
+      },
+      {
+        "id": "bROxqHOfESk",
+        "title": "Life is wild #businessideas #sidehustleideas #entrepreneurship #businessowner #sidehustles"
+      },
+      {
+        "id": "lI3V0GGRss0",
+        "title": "Am I wrong? #entrepreneurship #entrepreneur #advice #motivation #businessowner #sidehustle"
+      },
+      {
+        "id": "5NmPDoNoS8A",
+        "title": "Behind the Scenes of Accidentally Launching a Business"
+      },
+      {
+        "id": "N0WtZTph9DA",
+        "title": "Any questions? #rvparks #realestateinvesting #realestate #mobilehomeinvesting #mhp #rvlife"
+      },
+      {
+        "id": "n3MI-dCi4oI",
+        "title": "So genius! #sidehustlelife #sidehustleideas"
+      },
+      {
+        "id": "lBlXJ0Sb3rk",
+        "title": "Thoughts? #businessideas #startupideas #poolparty #entrepreneurship #str #airbnb #sidehustlelife"
+      },
+      {
+        "id": "5wuzKesBuz8",
+        "title": "The 5 Best Swim Business Ideas for 2026"
+      },
+      {
+        "id": "nEgghEIeHUM",
+        "title": "Love this idea #sidehustleideas #businessideas #startupideas #businessidea #entrepreneurship"
+      },
+      {
+        "id": "gPhGQi80PRw",
+        "title": "Fav 3 AI tools #businessideas #startupideas #aitools #marketing #entrepreneurship #sidehustlelife"
+      },
+      {
+        "id": "RoLXYVAQ_Mw",
+        "title": "Thoughts? #businessideas #startupideas #sidehustleideas #sidehustle #entrepreneur"
+      },
+      {
+        "id": "y4N1r-SEapw",
+        "title": "Betrayal stings #businessowner #betrayal #entrepreneurship #businesspartnership #business"
+      },
+      {
+        "id": "9LaHuYqEy0A",
+        "title": "What I Learned From My Failed $50m Business Partnership"
+      },
+      {
+        "id": "aQ1boF-XHQI",
+        "title": "I\u2019m pro-bot #concrete #entrepreneur #businessowner #sidehustlelife #homeservice"
+      },
+      {
+        "id": "zvRjS6btywU",
+        "title": "How to Make $200/Hour with a Low-Risk Stump Grinding Business"
+      },
+      {
+        "id": "4SOzdhXbjdE",
+        "title": "Have you started yet? #entrepreneur #noexcuses #motivation #business #sidehustleideas"
+      },
+      {
+        "id": "D69CoXc_L40",
+        "title": "To be fair I do own a tree trimming biz \ud83d\ude02 #landscapingbusiness #businessideas #entrepreneur"
+      },
+      {
+        "id": "0Sa7q8DS9JE",
+        "title": "I love the wedding rental business. How to start a flower wall rental business"
+      },
+      {
+        "id": "S4JeVMhaXME",
+        "title": "How to Find Customers So Big That They Kinda Freak You Out"
+      },
+      {
+        "id": "1btUyJh02hA",
+        "title": "Perfume Vending Machine Webinar Recording"
+      },
+      {
+        "id": "ZnSAuTUVDk0",
+        "title": "Hipster bounce house #bouncehouse #sidehustleideas #businessowner #businessideas #startupideas"
+      },
+      {
+        "id": "pHTUX6wWI_8",
+        "title": "Mall parking lot #businessideas #flowrider #entrepreneurship #entrepreneur #podcast #sidehustleideas"
+      },
+      {
+        "id": "9pRepYp1vWg",
+        "title": "Botox $$ #botox #seo #pseo #sidehustleideas #googleads #leadgeneration #agency"
+      },
+      {
+        "id": "JSO4el3mtv8",
+        "title": "Who am I? #podcast #entrepreneurship #entrepreneur #thekoerneroffice #sidehustleideas #businessideas"
+      },
+      {
+        "id": "j9ovHBUEC_I",
+        "title": "How to Start a Lead Generation Business That Prints You Cash"
+      },
+      {
+        "id": "swRtJFMebJI",
+        "title": "Alex Hormozi being a business genius for 10 minutes straight"
+      },
+      {
+        "id": "sypd-C5Isyo",
+        "title": "I\u2019m fired up! #sales #doortodoor #sidehustleideas #entrepreneurship #guttercleaning #podcast"
+      },
+      {
+        "id": "clxjNhVMT7o",
+        "title": "Thoughts? #landscaping #landscapingbusiness #sidehustleideas #lawncare #grass #homeservice"
+      },
+      {
+        "id": "Uc6PSL9498M",
+        "title": "Is Lawn Leveling the Next Big Home Service Idea?"
+      },
+      {
+        "id": "H9u3wlJDv5g",
+        "title": "Turn $1k into a Thriving Business with This Simple Side Hustle Idea"
+      },
+      {
+        "id": "IbnW6cv4lJY",
+        "title": "Use this: sort_by=best-selling #ecommerce #shopify #dropshipping  #podcast  #marketing"
+      },
+      {
+        "id": "VkZF5Z5723k",
+        "title": "Perfume Vending Machine Business: The Next Big Thing?"
+      },
+      {
+        "id": "SgpqMiUsmdM",
+        "title": "Why Stump Grinding Could Be 2024\u2019s Biggest Home Service Business Opportunity"
+      },
+      {
+        "id": "rOVseOGF7ow",
+        "title": "How to be a Creative Genius to Flip Items Online in 2026"
+      },
+      {
+        "id": "cy2mtLOLbcs",
+        "title": "Perfume vending!? 6 Budget Friendly Businesses to Start in 2026"
+      },
+      {
+        "id": "bP79OoJ-y-Y",
+        "title": "I \u2764\ufe0f RV parks #realestateinvesting #rvlife #rvparkinvesting #investing #investment"
+      },
+      {
+        "id": "EYb7pjp8Xpw",
+        "title": "How Can I Start and Grow a Pet Cremation Business?"
+      },
+      {
+        "id": "aXNWJPCTZJs",
+        "title": "I love nyc #sidehustleideas #nyc #immigrants #businesshustle #businessideas"
+      },
+      {
+        "id": "Ch8CRypdSjs",
+        "title": "What a beautiful biz! #dumpsterrentalbusiness #sidehustleideas #homeservicebusiness #businessideas"
+      },
+      {
+        "id": "796U9nZPINI",
+        "title": "How to Validate a Home Service Business Idea in 2026"
+      },
+      {
+        "id": "vyZteZbwTwE",
+        "title": "Full video here: tkopod.co/youtube1 #skidsteers #sidehustleideas #entrepreneurship #businessowner"
+      },
+      {
+        "id": "aegGV_J71oA",
+        "title": "How to Flip High Ticket Items in 2026"
+      },
+      {
+        "id": "N3y5scmKyeQ",
+        "title": "Everything you need to know #rvparkinvesting #realestateinvesting #realestate #mhp #business"
+      },
+      {
+        "id": "VSKgwimN1Po",
+        "title": "$9B in gas station pizza #caseys #pizza #entrepreneurship #gasstation"
+      },
+      {
+        "id": "6RuM_99KXSI",
+        "title": "How to start a B2B stump grinding biz #stumpgrinding #homeservice #sidehustleideas #smallbusiness"
+      },
+      {
+        "id": "Gr5fozH3l3g",
+        "title": "How to Launch and Grow a $4m/Year Stump Grinding Business"
+      },
+      {
+        "id": "n0T6M39qanQ",
+        "title": "Come validate a dumpster rental business with me, LIVE!"
+      },
+      {
+        "id": "Q0znMLy7OQg",
+        "title": "Boat & RV storage profits #rvstorage #boatstorage #rvparkinvesting #realestate #realestateinvesting"
+      },
+      {
+        "id": "U1aCEVHRnV8",
+        "title": "Exactly How to Validate Your Business Idea for $15"
+      },
+      {
+        "id": "dLebTmMUy44",
+        "title": "\u201cSeRiAl eNtRePrEnEuR\u201d #businessowner #serialentrepreneur #businessideas #sidehustleideas"
+      },
+      {
+        "id": "7S36bW32VyY",
+        "title": "Big $$ from restocked furniture #costcofinds #furnitureflip #auction #sidehustleideas #businessideas"
+      },
+      {
+        "id": "2LQc7FoFXzA",
+        "title": "Full vid here: bit.ly/3xCfGnb #entrepreneurship #tesla #sidehustleideas #cardetailing #entrepreneur"
+      },
+      {
+        "id": "aEGTsPqqXBw",
+        "title": "Live Q&A. Ask me any business question. Comment below!"
+      },
+      {
+        "id": "ZBcnE10YGMM",
+        "title": "Full video here: youtu.be/O1kUp_zVHZI #entrepreneurship #junkremoval #businessideas #sidehustleideas"
+      },
+      {
+        "id": "fDOvQUdIhew",
+        "title": "Should CEOs do this? #ceo #entrepreneurship #business #meta #zuck"
+      },
+      {
+        "id": "msh9XrCnlyw",
+        "title": "Great side hustle #sidehustle #vendingmachine #entrepreneurship #podcast #sidehustleideas #business"
+      },
+      {
+        "id": "fMLwoJ3PtvU",
+        "title": "How to Launch a $53k/month Vending Machine Business for $700 in 2026"
+      },
+      {
+        "id": "4jnUaSmxo6I",
+        "title": "Tortilla delivery profits? #sidehustleideas #buyabusiness #entrepreneurship #businessowner #revenue"
+      },
+      {
+        "id": "xV64MCjy4N4",
+        "title": "Car storage profits #entrepreneurship #landrover #sidehustleideas #landroverdefender #carstorage"
+      },
+      {
+        "id": "UIfXwvvF0a4",
+        "title": "\"I Bought a Business That's a Scam. Now What?\""
+      },
+      {
+        "id": "SJ80yRCy0jU",
+        "title": "2 biz ideas #entrepreneurship #sidehustleideas #guttercleaning #homeservice #sidehustles #restaurant"
+      },
+      {
+        "id": "fgkSJX1pelU",
+        "title": "$8m/year biz #entrepreneurship #podcast #businessideas #business"
+      },
+      {
+        "id": "3AbR6Vkl8HA",
+        "title": "Live Q&A. Ask me any business question. Comment below!"
+      },
+      {
+        "id": "5YliRuIClwM",
+        "title": "How to Double the Value of an RV Park Business"
+      },
+      {
+        "id": "9Dtl0nyd8fc",
+        "title": "How to Copy Your Way to a $6M/Year Indoor Sledding Biz"
+      },
+      {
+        "id": "Hl98s6c1GoU",
+        "title": "Full interview here: bit.ly/3VGQFiy #entrepreneurship #pigeonforge #businessideas #sledding #podcast"
+      },
+      {
+        "id": "GGc03e2oDvc",
+        "title": "Watch Me Judge 9 Of Your Business Ideas, Live!"
+      },
+      {
+        "id": "-HgF9OCvcAQ",
+        "title": "Roasting YOUR biz ideas live! Livestream glitched! Sorry to those that didn't get to ask a question"
+      },
+      {
+        "id": "-F230sp1v8U",
+        "title": "When can you charge 5x more than your competitors? #entrepreneurship #revenue #commerce"
+      },
+      {
+        "id": "u4h7k-mEW5M",
+        "title": "Becoming the biggest employer in the county with baseball. #baseball #employment #business"
+      },
+      {
+        "id": "ASKSbmZs6Kg",
+        "title": "Business 101: Dominating a saturated market. #santorini #business #saturatedmarket #business101"
+      },
+      {
+        "id": "1kybQ0mAN6c",
+        "title": "Franchising with Paid Ads? Watch my podcast to find out more on the how! #growth #franchise #podcast"
+      },
+      {
+        "id": "TdhOk1-BGNw",
+        "title": "How to Make Millions Teaching Kids How To Use Heavy Machinery"
+      },
+      {
+        "id": "DahvAktSsSY",
+        "title": "Creating the BEST baseball facility in the country. #entrepreneurship #RevenuePotential #baseball"
+      },
+      {
+        "id": "vwZ-CGlQC2A",
+        "title": "Business Hack: finding the BEST and cheapest contractors. #subcontractors #businesshack"
+      },
+      {
+        "id": "htehh7Ionr4",
+        "title": "How to Turn Your Idea Into a Profitable Amazon Product"
+      },
+      {
+        "id": "soL8XvDT7KM",
+        "title": "Million Dollar Business Model: Summer Camps. #summercamp #entrepreneurship #RevenuePotential"
+      },
+      {
+        "id": "HCllbIdfWFw",
+        "title": "American Advice: You know I\u2019m right. #greece #athens #americanadvice #chipotle #starbucks"
+      },
+      {
+        "id": "-JKH_zZLIl0",
+        "title": "Business Hack: Do something for free\u2026 build a service empire. #entrepreneurship #poolcleaning"
+      },
+      {
+        "id": "fLqK7AYjz-s",
+        "title": "How to Make Millions with Sledding, Massage Chairs and Candy"
+      },
+      {
+        "id": "PaRL8qB-btk",
+        "title": "A great hack that will PRINT you money! You're welcome. #weddingvenue #makemoney #entrepreneurship"
+      },
+      {
+        "id": "IogBj8TpBIE",
+        "title": "Making billions from old trash"
+      },
+      {
+        "id": "0wNWWSfuuTY",
+        "title": "Tell me I\u2019m wrong. #entrepreneurship #americawins #businessowner #greece"
+      },
+      {
+        "id": "O1kUp_zVHZI",
+        "title": "Taking a Junk Removal Business from $1M to $10M in 2026"
+      },
+      {
+        "id": "o0JvPPiTdU4",
+        "title": "How I proved you all wrong with the pressure washing biz. #pressurewashingbusiness #entrepreneur"
+      },
+      {
+        "id": "VIg4bRIUcX4",
+        "title": "Business Obsession - Hangar Space. 20+ people wait in the State of Texas! #hangar #RevenuePotential"
+      },
+      {
+        "id": "Wm3_z9ylGpo",
+        "title": "How to Passively Earn $8k/year from Buying a $16k Book Royalty"
+      },
+      {
+        "id": "MMvBkgci-GY",
+        "title": "Next Business Obsession: Zip Lines! #entrepreneurship #zipline #outdooractivities"
+      },
+      {
+        "id": "urolgfkZFNg",
+        "title": "The Koerner Office Live: Improv Q&A with biz owners and wantrepreneurs. Comment suggestions below!"
+      },
+      {
+        "id": "_JR6Rr_YTfc",
+        "title": "How to start a Cybertruck rental business or side hustle"
+      },
+      {
+        "id": "qDBNBpFB-PM",
+        "title": "How to skip the line and build a $1M business in a week."
+      },
+      {
+        "id": "4vNiEIVuKj0",
+        "title": "NW #Arkansas is the next #DFW. Tell me I\u2019m wrong. #realestateinvesting"
+      },
+      {
+        "id": "Z95s-dhmBPs",
+        "title": "The Secret Hack to Landing MASSIVE Commercial Service Jobs"
+      },
+      {
+        "id": "aWgsgZnGEKE",
+        "title": "I NEED to know more. My latest #business obsession. Comment below what I should ask on my #podcast"
+      },
+      {
+        "id": "7exZu36Tjc8",
+        "title": "How to Import and Sell Profitable Products from China"
+      },
+      {
+        "id": "x6W4RX3CM4w",
+        "title": "How to Hire an Employee Better than Yourself"
+      },
+      {
+        "id": "Kg6EYLJT_50",
+        "title": "How to start a million dollar baseball retreat\u2026 #entrepreneurship #baseball #wiffleball"
+      },
+      {
+        "id": "eV9-aWAi5nQ",
+        "title": "Would you start this biz? #entrepreneurship #petbusiness #dogbusiness #businessideas"
+      },
+      {
+        "id": "4hiwapS8F_Y",
+        "title": "I want to start one of these #realestateinvesting #flying #entrepreneurship"
+      },
+      {
+        "id": "usH2c0IyTlo",
+        "title": "Why Dog Electrolytes Are the Next Million Dollar Idea"
+      },
+      {
+        "id": "XGNU_ZVAaP4",
+        "title": "An RV park here - GOLDMINE. #BusinessOpportunity #RVInvestment #RVLife #TravelBusiness #rv"
+      },
+      {
+        "id": "_0jNlxezczw",
+        "title": "Pressure washing a 4,825 square foot home in 22 minutes with no edits."
+      },
+      {
+        "id": "ZrwcjhkWtU4",
+        "title": "$250k Profit/Year Print Shop Profit but Feeling Trapped"
+      },
+      {
+        "id": "EU2V83KpNiQ",
+        "title": "The Koerner Office Live Stream. Live, improv Q&A with biz owners and wantrepreneurs."
+      },
+      {
+        "id": "KvsuNNwotaw",
+        "title": "How to Make Over $10m Per Year with Rural Youth Baseball Fields."
+      },
+      {
+        "id": "s7RUdSNFwIw",
+        "title": "My 4 Favorite AI Business Ideas for 2026"
+      },
+      {
+        "id": "zYFaPD3agRA",
+        "title": "How to make millions in real estate in 4 easy steps #realestateinvesting #realestatemindset"
+      },
+      {
+        "id": "Mg11UqqjHhA",
+        "title": "23 Business Ideas for 2026 (Part 2/4)"
+      },
+      {
+        "id": "J774vPT0qoU",
+        "title": "The Koerner Office Live Stream. Riffing on Business Ideas with Nik!"
+      },
+      {
+        "id": "ZqMZi9rFJSU",
+        "title": "How To Start a Home Service Business in 3 Minutes"
+      },
+      {
+        "id": "zLC_a6E8ynY",
+        "title": "A rural 8 figure baseball field?! What should I ask him? #entrepreneur #travelbaseball #baseball"
+      },
+      {
+        "id": "PqiVU-Sa-_w",
+        "title": "How Rolling Suds Built A Multi-Million Dollar Empire (Pressure Washing)"
+      },
+      {
+        "id": "wzryiw-I-0c",
+        "title": "Secrets to Starting a Dumpster Rental Business"
+      },
+      {
+        "id": "dYgFGQvXif0",
+        "title": "RV Park Business Investing Webinar"
+      },
+      {
+        "id": "lr5xbVaf5B0",
+        "title": "How This Entrepreneur Makes Over $10m per Year Selling Cabin Kits"
+      },
+      {
+        "id": "qk1mvNT0TUU",
+        "title": "Why remote work is NOT the future. #remotework #workfromhome #entrepreneurship"
+      },
+      {
+        "id": "3n2_xYXk8ls",
+        "title": "How to Find HUGE Customers"
+      },
+      {
+        "id": "FAJngdis83g",
+        "title": "013 - The Koerner Office Livestream"
+      },
+      {
+        "id": "-HCmQTUajIw",
+        "title": "Undefeated #hiring #offmarket #realestateinvesting"
+      },
+      {
+        "id": "oLtN63M3wAY",
+        "title": "5 best assets to rent out as a business #entrepreneurship #sidehustleideas #stumpgrinding"
+      },
+      {
+        "id": "Tz61vKhpglA",
+        "title": "Noah Kagan Joins: Side Hustles & Entrepreneurship"
+      },
+      {
+        "id": "C69oe6C0k-I",
+        "title": "012 - The Koerner Office + Noah Kagan Live Stream"
+      },
+      {
+        "id": "rYMRGfhPMUg",
+        "title": "x3 6 figure Tesla side hustles #entrepreneurship #sidehustleideas #tesla #cybertruck"
+      },
+      {
+        "id": "RKYlZJFUVk4",
+        "title": "$240k/year side hustle #entrepreneurship #broker #smallbusiness #sidehustleideas"
+      },
+      {
+        "id": "BcbhUyFs68w",
+        "title": "KOA RV Park Business Investing Webinar"
+      },
+      {
+        "id": "h0NqzKitEII",
+        "title": "How Much Do Shaan Puri and Sam Parr Make (My First Million)?"
+      },
+      {
+        "id": "U18Bfqai-Vc",
+        "title": "How to find free customers #entrepreneurship"
+      },
+      {
+        "id": "bFVHOvgUu4M",
+        "title": "The most brilliant sales hack you'll see all week #coldemail #sales #entrepreneurship #entrepreneur"
+      },
+      {
+        "id": "yJEhJKig-CU",
+        "title": "Craigslist book royalty profits #passiveincome #investing #entrepreneurship"
+      },
+      {
+        "id": "2uN7-mBhuBE",
+        "title": "Trailer parks = legal cash printing machines  #rvparks #rvlife #rvparkinvesting #realestateinvesting"
+      },
+      {
+        "id": "_3qYySVAKdI",
+        "title": "Big Profits from Buying Craigslist Book Royalties"
+      },
+      {
+        "id": "vE4RM4elCx0",
+        "title": "Business I started # 2/72 #entrepreneurship #startupideas #startups #entrepreneur #crypto #token"
+      },
+      {
+        "id": "T-zAt4Va7Ws",
+        "title": "21 Business Ideas for 2026 (Part 1/4)"
+      },
+      {
+        "id": "Lr-BGRHt_S8",
+        "title": "Day 1/72 of revealing every biz I\u2019ve ever started #startupideas #businessideas #entrepreneur"
+      },
+      {
+        "id": "Cbm0gS7ialM",
+        "title": "No gurus to be found #entrepreneurship"
+      },
+      {
+        "id": "mNT1s6lrexk",
+        "title": "Pet cremation 101 #entrepreneurship #dogs #sidehustleideas"
+      },
+      {
+        "id": "Y6leozSnT0E",
+        "title": "How to Import Products from China with Almost No Money"
+      },
+      {
+        "id": "dFbLWfnLqrs",
+        "title": "You\u2019re just not being creative enough #startupideas #ideas #entrepreneurship"
+      },
+      {
+        "id": "NrLg7ROozBU",
+        "title": "Agree or no? Watch ep 09 of The Koerner Office for the full thing #startup #pressurewashing"
+      },
+      {
+        "id": "Sg2UX6vEqRU",
+        "title": "Trailer Rentals, Supplements, and Vending Machine Saturation!"
+      },
+      {
+        "id": "3hoVHMMzoDs",
+        "title": "Laser tag rental biz #entrepreneurship #sidehustleideas #lasertag"
+      },
+      {
+        "id": "TjNO3t0rvgE",
+        "title": "Renovation life hack. ..#drywall #savemoney #diy #sidehustles"
+      },
+      {
+        "id": "5Y2dB9z1cxs",
+        "title": "These guys are in trouble #epoxyflooring #pressurewashing #windowcleaning #homeservices #roofing"
+      },
+      {
+        "id": "pXx5NMCTiAY",
+        "title": "09 - The Koerner Office Live Stream - Unedited"
+      },
+      {
+        "id": "pe-JzSdtNtc",
+        "title": "The silent walkaround #negotiations #negotiating"
+      },
+      {
+        "id": "F2Md7YaXMME",
+        "title": "Unexpectedly profitable #sidehustleideas #sidehustle #sidehustles"
+      },
+      {
+        "id": "ITrDLiGeryg",
+        "title": "Dream RV park #rvparkinvesting #rvparks #realestateinvesting"
+      },
+      {
+        "id": "gfzeYGXxnjE",
+        "title": "Guess where I found this insane rv park deal #rvparks #rvparkinvesting #realestateinvesting"
+      },
+      {
+        "id": "5MKtPt6WY8I",
+        "title": "$9k/month profit renting kayaks #entrepreneurship"
+      },
+      {
+        "id": "kIL3N45QZw0",
+        "title": "How to make millions re-selling Buc-ee\u2019s stuff #entrepreneurship #ecommerce #sidehustleideas"
+      },
+      {
+        "id": "dSAwpoZwQvA",
+        "title": "How much $ do RV parks make?......#rvparks #rvparkinvesting #mhpinvesting #realestateinvesting"
+      },
+      {
+        "id": "D42D-GqMwU4",
+        "title": "How Do You Grow an 8 Figure Destination Wedding Business?"
+      },
+      {
+        "id": "uIvR5plo3iE",
+        "title": "Cash cow rv parks\u2026 #rvparkinvesting #rvparks #realestateinvesting #realestate"
+      },
+      {
+        "id": "az_EoUepO68",
+        "title": "This is a superpower"
+      },
+      {
+        "id": "gPwY7qSn-zQ",
+        "title": "The best salespeople\u2026."
+      },
+      {
+        "id": "fh8bQeDy3Fw",
+        "title": "The best real estate asset class. #realestateinvesting #realestate"
+      },
+      {
+        "id": "HrYg0gBOKhE",
+        "title": "How To Increase Your Short Term Rental Occupancy"
+      },
+      {
+        "id": "mD9fKSAapFQ",
+        "title": "John McAfee: From $0 to $30M After Knocking on His Door"
+      },
+      {
+        "id": "aeWA1P42I3k",
+        "title": "How to Grow your Business with $1 Bandit Signs"
+      },
+      {
+        "id": "Z1STgCdq1cc",
+        "title": "$2B per year from ONE retail store!"
+      },
+      {
+        "id": "cXEMQe26Jvo",
+        "title": "How to tell the fake business gurus from the real ones."
+      },
+      {
+        "id": "YwjcO1xyKjk",
+        "title": "This website has 30 million monthly visitors and can make you a ton. Day 6/10. Follow for more!"
+      },
+      {
+        "id": "UK1txnyhyC4",
+        "title": "How to make BANK by reselling what the government loses money on #sidehustle #sidehustleideas"
+      },
+      {
+        "id": "CiKtDpyIWUE",
+        "title": "How Can You Create a Serial Entrepreneur?"
+      },
+      {
+        "id": "MIkW2Dh1o7U",
+        "title": "How to start a $1k/week side hustle for under $500. #sidehustle #sidehustles #entrepreneurship"
+      },
+      {
+        "id": "kDgd536-Yfo",
+        "title": "Which Side Hustle to Choose?"
+      },
+      {
+        "id": "WnGiK5q0-sA",
+        "title": "How to find and buy any business on the planet #entrepreneurship #startup #business #sidehustles"
+      },
+      {
+        "id": "cMldb2tF7Nk",
+        "title": "How to Find More Home Service Customers with Google Street View"
+      },
+      {
+        "id": "MCXUx7Yh9Ns",
+        "title": "Make 6 figures with luxury wedding bathroom trailers! Follow me for more #entrepreneurship #weddin"
+      },
+      {
+        "id": "PKM6wviV27w",
+        "title": "Paying Indian virtual assistants $150/month for full time work? #entrepreneurship #startup"
+      },
+      {
+        "id": "dyIGRauTs7c",
+        "title": "1 brilliant biz idea per day for 10 days. Follow for the next 9! #entrepreneurship #startup"
+      },
+      {
+        "id": "JLu1Mt3hCm4",
+        "title": "Exploring a New Business Idea: Drone Roof Inspections and Selling Leads to Roofers"
+      },
+      {
+        "id": "zva5EpxZwcw",
+        "title": "Find customers by suing them! #leadgeneration #entrepreneur"
+      },
+      {
+        "id": "dRLBWIjidlI",
+        "title": "How We'll Double the Value of this $3M RV Park Business"
+      },
+      {
+        "id": "t9EstEq0NZw",
+        "title": "How To Successfully Acquire a SaaS Business: Key Strategies and Tips"
+      },
+      {
+        "id": "kDuOKfaQi-E",
+        "title": "The Raisin\u2019 Canes founder is my new favorite billionaire. #entrepreneur #raisingcanes #billionaire"
+      },
+      {
+        "id": "jYSYFSZ4Cys",
+        "title": "Crumbl owners are RICH! This is not a fad. #crumbl #franchise #entrepreneur"
+      },
+      {
+        "id": "ivl39iQ1Y0I",
+        "title": "The only way to fix RV park occupancy issues #rvparkinvesting #mhp #mobilehomeparkinvesting"
+      },
+      {
+        "id": "eaJTw7I1pv0",
+        "title": "I convinced a guy to quit his job to start a moving biz"
+      },
+      {
+        "id": "SU1ZPfbz_Fc",
+        "title": "How To Profit from Washing Teslas at Supercharging Stations"
+      },
+      {
+        "id": "WjtcP2K7XLU",
+        "title": "How To Make $100K Building Websites for Realtors"
+      },
+      {
+        "id": "VErm-eG_wlY",
+        "title": "How To Turn Street Sweeping into a Lucrative Business"
+      }
+    ]
+  },
+  "pinecone_index": "channel-brain-prod",
+  "namespace": "koerner-office"
+}

@@ -386,6 +386,32 @@ CHANNEL_NAME = "The Koerner Office"
 CHANNEL_HANDLE = "@thekoerneroffice"
 CHANNEL_URL = "https://www.youtube.com/@thekoerneroffice"
 
+# ── Bootstrap: seed /data volume from repo on first startup ───────────────────
+# When deployed to Railway, the /data volume starts empty. If we have bootstrap
+# files committed to the repo at /bootstrap/, copy them to /data/ on first run.
+# After the first copy, /data/ persists across deploys so we never copy again.
+def bootstrap_data_volume():
+    import shutil
+    bootstrap_dir = Path("bootstrap")
+    if not bootstrap_dir.exists():
+        return  # No bootstrap folder, nothing to do (e.g. local dev)
+
+    target_dir = Path("/data")
+    try:
+        target_dir.mkdir(exist_ok=True)
+    except Exception:
+        return  # Can't write to /data (e.g. local dev without /data folder)
+
+    for src in bootstrap_dir.glob("*.json"):
+        dest = target_dir / src.name
+        if not dest.exists():
+            try:
+                shutil.copy2(src, dest)
+            except Exception:
+                pass  # Fail silently — app will fall back to Coming Soon
+
+bootstrap_data_volume()
+
 @st.cache_resource(show_spinner=False)
 def load_demo_index():
     try:
