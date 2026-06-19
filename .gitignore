@@ -1,11 +1,11 @@
-﻿# API Keys and secrets - NEVER commit these
+﻿# API Keys and secrets
 .env
 .env.*
 
-# YouTube cookies - NEVER commit
+# YouTube cookies
 cookies.txt
 
-# Python cache files
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
@@ -17,10 +17,16 @@ env/
 # Streamlit secrets
 .streamlit/secrets.toml
 
-# ChromaDB indexes (large files - rebuild locally)
+# ChromaDB legacy + local-only index data
 indexes/
 
-# Leads data (private)
+# Local SQLite — Railway creates its own in /data
+query_counts.db
+
+# Local diagnostic scripts (not for production)
+diagnose_skipped.py
+
+# Leads data
 leads.json
 
 # OS files

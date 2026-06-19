@@ -1,12 +1,14 @@
 """
 build_index.py
 
-Run this ONCE locally before deploying to Streamlit Cloud.
-It indexes The Koerner Office and saves the ChromaDB to disk.
-You will then commit the indexes/ folder to GitHub.
+Run this ONCE locally (with VPN on) to index a channel into Pinecone.
+Use your DEV Pinecone account for testing, PROD for real clients.
 
 Usage:
     python build_index.py
+
+To index into dev account: set PINECONE_API_KEY to your dev key in .env
+To index into prod account: set PINECONE_API_KEY to your prod key in .env
 """
 
 import os
@@ -14,31 +16,34 @@ import sys
 from dotenv import load_dotenv
 load_dotenv()
 
-# ── Set your keys here for local runs only ────────────────────────────────────
-# OR set them as environment variables before running:
-#   set YOUTUBE_API_KEY=your_key   (Windows)
-#   export YOUTUBE_API_KEY=your_key  (Mac)
+CHANNEL_URL      = "https://www.youtube.com/@thekoerneroffice"
+CLIENT_ID        = "koerner-office"   # becomes the Pinecone namespace
+MAX_VIDEOS       = 0                  # 0 = auto-detect from YouTube (indexes everything)
+INDEX_NAME       = "channel-brain-prod"  # change to "channel-brain-dev" for testing
 
+# ── Validate keys before starting ─────────────────────────────────────────────
 YOUTUBE_API_KEY   = os.environ.get("YOUTUBE_API_KEY")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
+PINECONE_API_KEY  = os.environ.get("PINECONE_API_KEY")
 
-if not YOUTUBE_API_KEY or not ANTHROPIC_API_KEY:
-    print("❌ ERROR: API keys not found. Make sure your .env file exists and contains:")
-    print("   YOUTUBE_API_KEY=your_key")
-    print("   ANTHROPIC_API_KEY=your_key")
-    import sys; sys.exit(1)
-CHANNEL_URL      = "https://www.youtube.com/@thekoerneroffice"
-MAX_VIDEOS       = 100  # Start with 100; increase to 300+ once confirmed working
+missing = []
+if not YOUTUBE_API_KEY:  missing.append("YOUTUBE_API_KEY")
+if not PINECONE_API_KEY: missing.append("PINECONE_API_KEY")
 
-# ─────────────────────────────────────────────────────────────────────────────
+if missing:
+    print(f"❌ ERROR: Missing environment variables: {', '.join(missing)}")
+    print("   Make sure your .env file contains these keys.")
+    sys.exit(1)
 
-os.environ["YOUTUBE_API_KEY"]   = YOUTUBE_API_KEY
-os.environ["ANTHROPIC_API_KEY"] = ANTHROPIC_API_KEY
-
+# ── Run index build ────────────────────────────────────────────────────────────
 from indexer import build_index
 
-print(f"Starting index build for: {CHANNEL_URL}")
-print(f"Max videos: {MAX_VIDEOS}")
+print(f"Starting index build")
+print(f"  Channel  : {CHANNEL_URL}")
+print(f"  Client ID: {CLIENT_ID}")
+print(f"  Namespace: {CLIENT_ID}")
+print(f"  Index    : {INDEX_NAME}")
+print(f"  Max videos: {MAX_VIDEOS}")
 print("-" * 50)
 
 class SimpleProgress:
@@ -46,17 +51,25 @@ class SimpleProgress:
         bar = "█" * int(pct * 30) + "░" * (30 - int(pct * 30))
         print(f"\r[{bar}] {int(pct*100)}% — {text[:60]}", end="", flush=True)
 
-collection, stats = build_index(CHANNEL_URL, MAX_VIDEOS, progress_callback=SimpleProgress())
+pinecone_config, stats = build_index(
+    CHANNEL_URL,
+    MAX_VIDEOS,
+    client_id=CLIENT_ID,
+    index_name=INDEX_NAME,
+    progress_callback=SimpleProgress()
+)
 
 print(f"\n\n✅ Done!")
 print(f"   Channel   : {stats['channel_name']}")
-print(f"   Videos    : {stats['videos_indexed']}")
+print(f"   Namespace : {stats['namespace']}")
+print(f"   Videos    : {stats['videos_indexed']} indexed / {stats.get('total_videos_on_channel', 'unknown')} on channel")
 print(f"   Chunks    : {stats['total_chunks']}")
 print(f"   Skipped   : {stats['skipped']}")
 
 if stats.get("skipped_titles"):
-    print(f"\nSkipped videos (no transcript available):")
+    print(f"\nSkipped (no transcript):")
     for t in stats["skipped_titles"]:
         print(f"   - {t}")
 
-print(f"\nNow commit the indexes/ folder to GitHub and deploy to Streamlit Cloud.")
+print(f"\nVectors are live in Pinecone namespace: '{stats['namespace']}'")
+print(f"The demo app will load this automatically on next startup.")

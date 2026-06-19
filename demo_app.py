@@ -52,7 +52,13 @@ st.markdown("""
 
 .stApp { background: #0a0a0a; color: #f5f0e8; }
 
-/* Hide Streamlit chrome */
+/* Disabled buttons — block all mouse interaction, not just visually grey */
+.stButton button:disabled,
+.stButton button[disabled] {
+    pointer-events: none !important;
+    opacity: 0.35 !important;
+    cursor: not-allowed !important;
+}
 #MainMenu, footer, header { visibility: hidden; }
 .block-container { padding: 0 !important; max-width: 100% !important; }
 section[data-testid="stSidebar"] { display: none; }
@@ -370,11 +376,10 @@ if "email_submitted" not in st.session_state:
     st.session_state.email_submitted = False
 if "loading_started" not in st.session_state:
     st.session_state.loading_started = False
-
-# ── Load index on startup ──────────────────────────────────────────────────────
-CHANNEL_NAME = "The Koerner Office"
-CHANNEL_HANDLE = "@thekoerneroffice"
-CHANNEL_URL = "https://www.youtube.com/@thekoerneroffice"
+if "generating" not in st.session_state:
+    st.session_state.generating = False
+if "pending_generation" not in st.session_state:
+    st.session_state.pending_generation = None
 
 # ── Load index on startup ──────────────────────────────────────────────────────
 CHANNEL_NAME = "The Koerner Office"
@@ -385,16 +390,55 @@ CHANNEL_URL = "https://www.youtube.com/@thekoerneroffice"
 def load_demo_index():
     try:
         from indexer import load_index
-        index_files = list(Path("indexes").glob("*.json"))
-        if index_files:
-            collection, stats = load_index(str(index_files[0]))
-            return collection, stats
+        # Check Railway volume first, then local indexes folder
+        search_paths = ["/data", "indexes"]
+        for search_dir in search_paths:
+            index_files = list(Path(search_dir).glob("*.json"))
+            if index_files:
+                index_wrapper, stats = load_index(str(index_files[0]))
+                return index_wrapper, stats
     except Exception as e:
         return None, None
     return None, None
 
+# Show branded splash while index loads — only on first load (cache_resource runs once)
+splash = st.empty()
+splash.markdown("""
+<div style="display:flex; flex-direction:column; align-items:center;
+            justify-content:center; min-height:100vh; text-align:center;
+            padding:40px; background:#0a0a0a;">
+    <div style="font-size:5rem; margin-bottom:24px;">🧠</div>
+    <div style="font-family:'Playfair Display',Georgia,serif; font-size:2.8rem;
+                color:#f5f0e8; margin-bottom:12px; font-weight:700;">
+        Channel Brain
+    </div>
+    <div style="color:#d4a359; font-family:'DM Mono',monospace;
+                font-size:12px; letter-spacing:3px; text-transform:uppercase;
+                margin-bottom:32px;">
+        Loading archive...
+    </div>
+    <div style="display:flex; gap:12px; align-items:center; justify-content:center;">
+        <div style="width:10px; height:10px; border-radius:50%; background:#d4a359;
+                    animation:pulse 1.2s infinite;"></div>
+        <div style="width:10px; height:10px; border-radius:50%; background:#d4a359;
+                    animation:pulse 1.2s 0.4s infinite;"></div>
+        <div style="width:10px; height:10px; border-radius:50%; background:#d4a359;
+                    animation:pulse 1.2s 0.8s infinite;"></div>
+    </div>
+</div>
+<style>
+@keyframes pulse {
+    0%, 100% { opacity:0.2; transform:scale(0.8); }
+    50% { opacity:1; transform:scale(1.2); }
+}
+</style>
+""", unsafe_allow_html=True)
+
 # Try to load index — cached so only runs once per server session
 collection, stats = load_demo_index()
+
+# Clear splash regardless of outcome
+splash.empty()
 
 # No index available — show Coming Soon and stop completely
 if collection is None:
@@ -483,12 +527,15 @@ with left_col:
         "What are the best examples of turning a skill into a business?",
     ]
 
+    # Track generating state for button disabling
+    is_generating = st.session_state.get("generating", False)
+
     if not st.session_state.chat_history:
         st.markdown('<div class="suggestions-label" style="padding-left:8px;">Try asking</div>', unsafe_allow_html=True)
         # Keyed container — CSS turns its inner vertical block into a 2-col grid
         with st.container(key="sug_grid"):
             for i, s in enumerate(suggestions):
-                if st.button(s, key=f"sug_{i}", use_container_width=True):
+                if st.button(s, key=f"sug_{i}", use_container_width=True, disabled=is_generating):
                     st.session_state.pending_q = s
 
     # Chat history
@@ -498,24 +545,33 @@ with left_col:
             if msg["role"] == "user":
                 chat_html += f'<div class="msg-user">🙋 {msg["content"]}</div>'
             else:
-                content = msg["content"].replace("\n", "<br>")
-                chat_html += f'<div class="msg-ai">{content}</div>'
-                if msg.get("sources"):
-                    chips = "".join(
-                        f'<span class="source-chip">📹 {s[:45]}{"…" if len(s)>45 else ""}</span>'
-                        for s in msg["sources"][:4]
-                    )
-                    chat_html += f'<div class="source-row">{chips}</div>'
+                if msg["content"] == "CAP_REACHED":
+                    chat_html += f'''<div class="msg-ai" style="border-left-color:#888; text-align:center; padding:20px;">
+                        <div style="font-size:1.3rem; margin-bottom:8px;">🧠</div>
+                        <div style="color:#f5f0e8; font-weight:600; margin-bottom:6px;">The archive is resting for this month.</div>
+                        <div style="color:#888; font-size:0.85rem; margin-bottom:12px;">Resets on the 1st of next month.</div>
+                        <a href="{CHANNEL_URL}" target="_blank" style="background:#d4a359; color:#0a0a0a; padding:8px 20px; border-radius:6px; text-decoration:none; font-weight:600; font-size:0.85rem;">Browse {CHANNEL_NAME} on YouTube →</a>
+                    </div>'''
+                else:
+                    content = msg["content"].replace("\n", "<br>")
+                    chat_html += f'<div class="msg-ai">{content}</div>'
+                    if msg.get("sources"):
+                        chips = "".join(
+                            f'<span class="source-chip">📹 {s[:45]}{"…" if len(s)>45 else ""}</span>'
+                            for s in msg["sources"][:4]
+                        )
+                        chat_html += f'<div class="source-row">{chips}</div>'
         chat_html += '</div>'
         st.markdown(chat_html, unsafe_allow_html=True)
 
         # More suggestions after first answer
         if len(st.session_state.chat_history) >= 2:
             st.markdown('<br><div class="suggestions-label">Keep exploring</div>', unsafe_allow_html=True)
-            more = [s for s in suggestions if s not in [m["content"] for m in st.session_state.chat_history]]
+            asked = [m["content"] for m in st.session_state.chat_history if m["role"] == "user"]
+            more = [s for s in suggestions if s not in asked]
             cols2 = st.columns(2)
             for i, s in enumerate(more[:4]):
-                if cols2[i % 2].button(s, key=f"more_{i}"):
+                if cols2[i % 2].button(s, key=f"more_{i}", disabled=is_generating):
                     st.session_state.pending_q = s
 
     # Input row
@@ -529,14 +585,21 @@ with left_col:
         )
     with btn_col:
         st.markdown('<div class="ask-btn">', unsafe_allow_html=True)
-        ask_btn = st.button("Ask →", use_container_width=True)
+        ask_btn = st.button("Ask →", use_container_width=True, disabled=is_generating)
         st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # Handle input
+    # Handle input — if already generating, ONLY honor the original question.
+    # This prevents a second click (which may slip through during the network
+    # round-trip before disabled buttons render) from hijacking the in-flight request.
     final_q = None
-    if ask_btn and question:
+    if st.session_state.get("generating", False):
+        # Discard any stray click that landed during generation
+        if hasattr(st.session_state, "pending_q"):
+            del st.session_state.pending_q
+        final_q = st.session_state.get("pending_generation")
+    elif ask_btn and question:
         final_q = question
     elif hasattr(st.session_state, "pending_q"):
         final_q = st.session_state.pending_q
@@ -549,29 +612,107 @@ with left_col:
         elif not st.session_state.index:
             st.warning("Index not loaded yet. Please wait a moment and try again.")
         else:
-            st.session_state.chat_history.append({"role": "user", "content": final_q})
-            with st.spinner("Searching the archive..."):
+            # ── Phase 1: set generating flag, rerun to disable buttons ────────
+            if not st.session_state.get("generating", False):
+                st.session_state.generating = True
+                st.session_state.pending_generation = final_q
+                st.session_state.chat_history.append({"role": "user", "content": final_q})
+                st.rerun()
+
+            # ── Phase 2: buttons already disabled, now run the API call ───────
+            else:
+                # Do NOT clear pending_generation here. If this script run gets
+                # interrupted by a stray click before finishing, the next run
+                # must still be able to resume the ORIGINAL question. Only the
+                # finally block (after success or failure) clears it.
+
+                # Branded animated thinking state
+                thinking = st.empty()
+                thinking.markdown(f"""
+                <div style="display:flex; align-items:flex-start; gap:12px; margin:12px 0;">
+                    <div style="font-size:1.2rem; margin-top:2px;">🧠</div>
+                    <div style="background:#1a1a1a; border-left:3px solid #d4a359;
+                                border-radius:0 8px 8px 0; padding:16px 20px;
+                                display:flex; align-items:center; gap:16px;">
+                        <div style="color:#888; font-size:0.85rem; font-family:'DM Mono',monospace;
+                                    letter-spacing:1px; text-transform:uppercase;">
+                            Searching the archive
+                        </div>
+                        <div style="display:flex; gap:6px; align-items:center;">
+                            <div style="width:7px; height:7px; border-radius:50%;
+                                        background:#d4a359; animation:tpulse 1.2s infinite;"></div>
+                            <div style="width:7px; height:7px; border-radius:50%;
+                                        background:#d4a359; animation:tpulse 1.2s 0.4s infinite;"></div>
+                            <div style="width:7px; height:7px; border-radius:50%;
+                                        background:#d4a359; animation:tpulse 1.2s 0.8s infinite;"></div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                @keyframes tpulse {{
+                    0%, 100% {{ opacity:0.2; transform:scale(0.7); }}
+                    50% {{ opacity:1; transform:scale(1.1); }}
+                }}
+                </style>
+                """, unsafe_allow_html=True)
+
                 try:
                     from qa import answer_question
                     os.environ["ANTHROPIC_API_KEY"] = anthropic_key
-                    answer, sources = answer_question(final_q, st.session_state.index)
-                    st.session_state.chat_history.append({
-                        "role": "assistant",
-                        "content": answer,
-                        "sources": sources,
-                    })
+                    answer, sources = answer_question(final_q, st.session_state.index, client_id="koerner-office")
+
+                    if answer == "CAP_REACHED":
+                        # Show cap message immediately in placeholder
+                        thinking.markdown(f"""
+                        <div class="msg-ai" style="border-left-color:#888; text-align:center; padding:20px;">
+                            <div style="font-size:1.3rem; margin-bottom:8px;">🧠</div>
+                            <div style="color:#f5f0e8; font-weight:600; margin-bottom:6px;">The archive is resting for this month.</div>
+                            <div style="color:#888; font-size:0.85rem; margin-bottom:12px;">Resets on the 1st of next month.</div>
+                            <a href="{CHANNEL_URL}" target="_blank" style="background:#d4a359; color:#0a0a0a; padding:8px 20px;
+                               border-radius:6px; text-decoration:none; font-weight:600; font-size:0.85rem;">
+                               Browse {CHANNEL_NAME} on YouTube →</a>
+                        </div>
+                        """, unsafe_allow_html=True)
+                        st.session_state.chat_history.append({
+                            "role": "assistant",
+                            "content": "CAP_REACHED",
+                            "sources": [],
+                        })
+                    else:
+                        # Render answer immediately — eliminates blank gap before rerun
+                        content = answer.replace("\n", "<br>")
+                        thinking.markdown(f"""
+                        <div class="chat-scroll">
+                            <div class="msg-ai">{content}</div>
+                        </div>
+                        """, unsafe_allow_html=True)
+                        st.session_state.chat_history.append({
+                            "role": "assistant",
+                            "content": answer,
+                            "sources": sources,
+                        })
+
                 except Exception as e:
+                    thinking.empty()
                     st.session_state.chat_history.append({
                         "role": "assistant",
                         "content": f"Something went wrong: {e}",
                         "sources": [],
                     })
-            st.rerun()
+                finally:
+                    # Always clear generating flag — buttons re-enable on next render
+                    st.session_state.generating = False
+                    st.session_state.pending_generation = None
+                    # Discard any suggestion clicks that slipped through during generation
+                    if hasattr(st.session_state, "pending_q"):
+                        del st.session_state.pending_q
+
+                st.rerun()
 
 # ── RIGHT PANEL ────────────────────────────────────────────────────────────────
 with right_col:
 
-    # Brand mark
+    # All static right panel HTML in one render call — faster than 7 separate calls
     st.markdown("""
     <div style="text-align:center; padding: 24px 0 20px;">
         <div style="font-size:3rem; margin-bottom:10px;">🧠</div>
@@ -585,10 +726,6 @@ with right_col:
         </div>
     </div>
     <hr style="border:none; border-top:1px solid #1e1e1e; margin: 0 0 20px;">
-    """, unsafe_allow_html=True)
-
-    # Step 1
-    st.markdown("""
     <div style="display:flex; align-items:flex-start; gap:14px; padding:14px 0;">
         <div style="min-width:36px; height:36px; border-radius:50%; background:#d4a359;
                     color:#0a0a0a; font-weight:700; font-size:0.85rem; display:flex;
@@ -601,10 +738,6 @@ with right_col:
         </div>
     </div>
     <hr style="border:none; border-top:1px solid #1a1a1a; margin:0;">
-    """, unsafe_allow_html=True)
-
-    # Step 2
-    st.markdown("""
     <div style="display:flex; align-items:flex-start; gap:14px; padding:14px 0;">
         <div style="min-width:36px; height:36px; border-radius:50%; background:#d4a359;
                     color:#0a0a0a; font-weight:700; font-size:0.85rem; display:flex;
@@ -617,10 +750,6 @@ with right_col:
         </div>
     </div>
     <hr style="border:none; border-top:1px solid #1a1a1a; margin:0;">
-    """, unsafe_allow_html=True)
-
-    # Step 3
-    st.markdown("""
     <div style="display:flex; align-items:flex-start; gap:14px; padding:14px 0;">
         <div style="min-width:36px; height:36px; border-radius:50%; background:#d4a359;
                     color:#0a0a0a; font-weight:700; font-size:0.85rem; display:flex;
@@ -633,10 +762,6 @@ with right_col:
         </div>
     </div>
     <hr style="border:none; border-top:1px solid #1e1e1e; margin:0 0 24px;">
-    """, unsafe_allow_html=True)
-
-    # CTA box
-    st.markdown("""
     <div class="cta-box">
         <div class="cta-title">Want Channel Brain for your channel?</div>
         <p class="cta-body">
@@ -697,10 +822,8 @@ with right_col:
         </div>
         """, unsafe_allow_html=True)
 
-    st.markdown('<hr class="gold-divider">', unsafe_allow_html=True)
-
-    # About the channel
     st.markdown(f"""
+    <hr class="gold-divider">
     <div style="font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 2px;
                 text-transform: uppercase; color: #444; margin-bottom: 14px;">
         About this demo
@@ -717,6 +840,5 @@ with right_col:
             → Visit The Koerner Office ↗
         </a>
     </div>
+    </div>
     """, unsafe_allow_html=True)
-
-    st.markdown('</div>', unsafe_allow_html=True)
