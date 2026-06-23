@@ -176,14 +176,13 @@ def answer_question(question: str, index_wrapper: dict,
 Answer the user's question based ONLY on the provided transcript excerpts.
 
 Rules:
-- Be specific and detailed, citing examples from the transcripts
-- If the content doesn't contain enough info, say so honestly
-- Format your answer clearly with bullet points or sections when helpful
-- Reference specific episode titles when relevant
-- Keep answers focused and actionable
-- For broad philosophy or synthesis questions, note that your answer reflects
-  the retrieved sample of episodes and may not capture the creator's full body
-  of work. Suggest browsing the channel for deeper context."""
+- Be specific and detailed, citing concrete examples and direct quotes from the transcripts when they strengthen the answer
+- If the transcripts genuinely don't address the question, say so directly — but do not add caveats about "browsing more episodes" or "the retrieved sample" when you have substantive content to work with
+- Format your answer clearly with bullet points, sections, or numbered lists when helpful
+- Reference specific episode titles in the body of the answer when relevant
+- Keep answers focused, confident, and actionable
+- Do not end your response with disclaimers about the limits of the retrieved content
+- Write as a knowledgeable assistant who has read the relevant material, not as a search engine apologizing for what it didn't find"""
 
     user_prompt = f"""Based on these transcript excerpts from the YouTube channel:
 
