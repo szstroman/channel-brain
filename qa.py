@@ -149,16 +149,19 @@ def answer_question(question: str, index_wrapper: dict,
 
     # ── Build context ──────────────────────────────────────────────────────────
     context_parts = []
-    seen_titles = []
+    seen_sources = []
+    seen_titles_set = set()
 
     for match in matches:
         # Handle both object-style and dict-style Pinecone responses
         meta = getattr(match, 'metadata', None) or match.get("metadata", {})
         text = meta.get("text", "")
         title = meta.get("title", "Unknown")
+        url = meta.get("url", "")
         context_parts.append(f"[From: {title}]\n{text}")
-        if title not in seen_titles:
-            seen_titles.append(title)
+        if title not in seen_titles_set:
+            seen_titles_set.add(title)
+            seen_sources.append({"title": title, "url": url})
 
     context = "\n\n---\n\n".join(context_parts)
 
@@ -227,4 +230,4 @@ Please answer based on the transcripts above."""
     )
 
     answer = message.content[0].text
-    return answer, seen_titles
+    return answer, seen_sources

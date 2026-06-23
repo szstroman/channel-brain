@@ -232,6 +232,20 @@ div[class*="st-key-sug_grid"] .stButton button {
     padding: 3px 10px;
     border-radius: 20px;
     margin: 2px 3px 2px 0;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+a.source-chip:hover {
+    background: #1f1f1f;
+    border-color: #d4a359;
+    color: #d4a359;
+    cursor: pointer;
+}
+a.source-chip:visited {
+    color: #666;
+}
+a.source-chip:visited:hover {
+    color: #d4a359;
 }
 
 /* Suggestions */
@@ -545,12 +559,12 @@ with left_col:
 
     # Suggested questions
     suggestions = [
-        "What are the best low-investment side hustle ideas mentioned across all episodes?",
-        "Which episodes cover e-commerce or Amazon FBA businesses?",
-        "What advice does Chris give most often to beginners starting a business?",
-        "What are the most profitable service businesses discussed on the show?",
-        "Which guests built businesses from zero with no outside funding?",
-        "What are the best examples of turning a skill into a business?",
+        "What are Chris' favorite business ideas of all time?",
+        "What does Chris say about starting a business with little money?",
+        "What are the most common pieces of advice Chris gives entrepreneurs?",
+        "What are Chris' top thoughts on service businesses like pressure washing?",
+        "What has Chris said about real estate and RV park investing?",
+        "What is Chris' best advice for someone just getting started?",
     ]
 
     # Track generating state for button disabling
@@ -582,10 +596,23 @@ with left_col:
                     content = msg["content"].replace("\n", "<br>")
                     chat_html += f'<div class="msg-ai">{content}</div>'
                     if msg.get("sources"):
-                        chips = "".join(
-                            f'<span class="source-chip">📹 {s[:45]}{"…" if len(s)>45 else ""}</span>'
-                            for s in msg["sources"][:4]
-                        )
+                        chip_parts = []
+                        for s in msg["sources"][:4]:
+                            # Support both old format (string) and new format (dict)
+                            if isinstance(s, dict):
+                                title = s.get("title", "Unknown")
+                                url = s.get("url", "")
+                            else:
+                                title = str(s)
+                                url = ""
+                            label = f'📹 {title[:45]}{"…" if len(title)>45 else ""}'
+                            if url:
+                                chip_parts.append(
+                                    f'<a href="{url}" target="_blank" rel="noopener" class="source-chip">{label}</a>'
+                                )
+                            else:
+                                chip_parts.append(f'<span class="source-chip">{label}</span>')
+                        chips = "".join(chip_parts)
                         chat_html += f'<div class="source-row">{chips}</div>'
         chat_html += '</div>'
         st.markdown(chat_html, unsafe_allow_html=True)
