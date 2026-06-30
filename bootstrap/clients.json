@@ -1,0 +1,13 @@
+{
+  "default_client": "koerner-office",
+  "clients": {
+    "koerner-office": {
+      "channel_name": "The Koerner Office",
+      "channel_handle": "@thekoerneroffice",
+      "channel_url": "https://www.youtube.com/@thekoerneroffice",
+      "namespace": "koerner-office",
+      "creator_name": "Chris Koerner",
+      "active": true
+    }
+  }
+}

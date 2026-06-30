@@ -431,9 +431,14 @@ def load_demo_index():
     try:
         from indexer import load_index
         # Check Railway volume first, then local indexes folder
+        # Skip clients.json — that's the multi-tenant config, not an index file
+        EXCLUDED_FILES = {"clients.json"}
         search_paths = ["/data", "indexes"]
         for search_dir in search_paths:
-            index_files = list(Path(search_dir).glob("*.json"))
+            index_files = [
+                f for f in Path(search_dir).glob("*.json")
+                if f.name not in EXCLUDED_FILES
+            ]
             if index_files:
                 index_wrapper, stats = load_index(str(index_files[0]))
                 return index_wrapper, stats
@@ -815,6 +820,44 @@ with right_col:
         </div>
     </div>
     <hr style="border:none; border-top:1px solid #1e1e1e; margin:0 0 24px;">
+
+    <!-- Creator Mode value prop reveal -->
+    <div style="background: linear-gradient(135deg, #1a1410 0%, #14110a 100%);
+                border-left: 3px solid #d4a359;
+                border-radius: 0 6px 6px 0;
+                padding: 18px 18px 16px;
+                margin: 0 0 24px;">
+        <div style="color:#d4a359; font-family:'DM Mono',monospace;
+                    font-size:10px; letter-spacing:2px; text-transform:uppercase;
+                    margin-bottom:8px;">
+            Plus — for you
+        </div>
+        <div style="color:#f5f0e8; font-family:Georgia,serif;
+                    font-size:1.05rem; font-weight:600; line-height:1.35;
+                    margin-bottom:10px;">
+            Your archive becomes a tool you can use, too
+        </div>
+        <div style="color:#999; font-size:0.78rem; line-height:1.6; margin-bottom:12px;">
+            Channel Brain isn't just for your audience. Switch to <strong style="color:#d4a359;">Creator Mode</strong>
+            and you can search your own archive for:
+        </div>
+        <ul style="color:#bbb; font-size:0.78rem; line-height:1.7;
+                   margin:0; padding-left:18px; list-style: none;">
+            <li style="margin-bottom:4px;">
+                <span style="color:#d4a359;">→</span>
+                <strong style="color:#d4d0c8;">Your best thinking on any topic</strong> for newsletters, talks, or social
+            </li>
+            <li style="margin-bottom:4px;">
+                <span style="color:#d4a359;">→</span>
+                <strong style="color:#d4d0c8;">Course and book material</strong> organized by theme, not by episode date
+            </li>
+            <li>
+                <span style="color:#d4a359;">→</span>
+                <strong style="color:#d4d0c8;">Content gap analysis</strong> — what your audience wants that you haven't covered yet
+            </li>
+        </ul>
+    </div>
+
     <div class="cta-box">
         <div class="cta-title">Want Channel Brain for your channel?</div>
         <p class="cta-body">
@@ -826,6 +869,7 @@ with right_col:
             <li>We index your full video catalog</li>
             <li>Answers come only from your content</li>
             <li>Embed it on your site or membership</li>
+            <li>Creator Mode for your own use</li>
             <li>Live in under a week</li>
             <li>Zero work on your end</li>
         </ul>
