@@ -60,8 +60,12 @@ HARDCODED_DEFAULT = {
     }
 }
 
-# Cache the validated config across calls — clients.json doesn't change between deploys
+# Cache the validated config across calls. We invalidate the cache when the
+# on-disk file's modification time changes, so operator edits to clients.json
+# take effect on the next request without needing a service restart.
 _cached_config: Optional[Dict[str, Any]] = None
+_cached_config_mtime: Optional[float] = None
+_cached_config_path: Optional[str] = None
 
 
 def _find_config_file() -> Optional[Path]:
@@ -198,35 +202,64 @@ def _validate_and_fill_defaults(raw: Dict[str, Any]) -> Dict[str, Any]:
 
 def load_clients_config(force_reload: bool = False) -> Dict[str, Any]:
     """
-    Returns the validated multi-tenant config. Cached after first call.
+    Returns the validated multi-tenant config. Cached after first call, but
+    the cache auto-invalidates when clients.json's modification time changes,
+    so operator edits take effect on the next request without a restart.
     Always returns a usable config — never raises and never returns None.
     Pass force_reload=True to bypass cache (useful for tests).
     """
-    global _cached_config
+    global _cached_config, _cached_config_mtime, _cached_config_path
+
+    config_path = _find_config_file()
+
+    # Auto-invalidate cache if the file changed on disk
+    if _cached_config is not None and not force_reload:
+        try:
+            current_path_str = str(config_path) if config_path else None
+            if current_path_str != _cached_config_path:
+                # File location changed (e.g. /data path became available)
+                force_reload = True
+            elif config_path is not None:
+                current_mtime = config_path.stat().st_mtime
+                if _cached_config_mtime is None or current_mtime != _cached_config_mtime:
+                    force_reload = True
+        except Exception:
+            # If we can't stat the file for any reason, keep using the cache
+            # rather than dropping to hardcoded defaults unnecessarily
+            pass
 
     if _cached_config is not None and not force_reload:
         return _cached_config
 
-    config_path = _find_config_file()
-
     if config_path is None:
         logger.info("No clients.json found in any search path — using hardcoded default")
         _cached_config = HARDCODED_DEFAULT.copy()
+        _cached_config_mtime = None
+        _cached_config_path = None
         return _cached_config
 
     try:
         with open(config_path, "r", encoding="utf-8") as f:
             raw = json.load(f)
+        # Capture mtime AFTER successful read so we don't cache mtime for a
+        # file we failed to parse
+        current_mtime = config_path.stat().st_mtime
     except json.JSONDecodeError as e:
         logger.error(f"clients.json is malformed: {e} — falling back to hardcoded default")
         _cached_config = HARDCODED_DEFAULT.copy()
+        _cached_config_mtime = None
+        _cached_config_path = None
         return _cached_config
     except Exception as e:
         logger.error(f"Unexpected error reading clients.json: {e} — falling back to hardcoded default")
         _cached_config = HARDCODED_DEFAULT.copy()
+        _cached_config_mtime = None
+        _cached_config_path = None
         return _cached_config
 
     _cached_config = _validate_and_fill_defaults(raw)
+    _cached_config_mtime = current_mtime
+    _cached_config_path = str(config_path)
     logger.info(
         f"Loaded clients config from {config_path}: "
         f"{len(_cached_config['clients'])} clients, default='{_cached_config['default_client']}'"
@@ -258,12 +291,14 @@ def get_client(client_id: Optional[str]) -> Tuple[str, Dict[str, Any], str]:
     Returns: (resolved_client_id, client_data, status)
       status is one of:
         "ok"        — client found and active
-        "inactive"  — client found but active=false; UI should show inactive page
-        "fallback"  — requested client not found; resolved to default
-        "default"   — no client requested; using default
-    The first three cases ALWAYS return a usable client_data (the requested,
-    or the default if the requested was missing). status tells the caller
-    how to handle UI presentation.
+        "inactive"  — client (requested OR default) exists but active=false;
+                      UI should show inactive page rather than loading the index.
+                      Applies whether the visitor asked for a specific client or
+                      no client — if the resolved client is inactive, we say so.
+        "fallback"  — requested client not found; resolved to default (which IS active)
+        "default"   — no client requested; using default (which IS active)
+    The status ALWAYS reflects the actual state of the returned client, so the
+    caller can trust that status="ok"/"default"/"fallback" implies active=True.
     """
     config = load_clients_config()
     default_id = config["default_client"]
@@ -271,14 +306,24 @@ def get_client(client_id: Optional[str]) -> Tuple[str, Dict[str, Any], str]:
 
     sanitized = sanitize_client_id(client_id)
 
+    # Determine which client we're actually returning
     if sanitized is None:
-        return default_id, clients[default_id], "default"
+        # No explicit request — use default
+        resolved_id = default_id
+        base_status = "default"
+    elif sanitized not in clients:
+        # Unknown request — fall back to default
+        resolved_id = default_id
+        base_status = "fallback"
+    else:
+        resolved_id = sanitized
+        base_status = "ok"
 
-    if sanitized not in clients:
-        return default_id, clients[default_id], "fallback"
+    client_data = clients[resolved_id]
 
-    client_data = clients[sanitized]
+    # If the resolved client is inactive, status is always "inactive"
+    # (regardless of whether the request was explicit, fallback, or default)
     if not client_data.get("active", True):
-        return sanitized, client_data, "inactive"
+        return resolved_id, client_data, "inactive"
 
-    return sanitized, client_data, "ok"
+    return resolved_id, client_data, base_status

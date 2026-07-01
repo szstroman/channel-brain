@@ -7,8 +7,23 @@ load_dotenv()
 import time
 from pathlib import Path
 
+# ── Multi-tenant client resolution ─────────────────────────────────────────────
+# Resolve which client this session is viewing based on the ?client= URL param.
+# This must run BEFORE any other UI code so hardcoded constants can be replaced
+# with client-specific values.
+from clients_config import get_client
+
+# Streamlit's query_params returns dict-like; .get() safely handles missing key
+_requested_client = st.query_params.get("client")
+_client_id, _client_data, _client_status = get_client(_requested_client)
+
+# These become the "current session's client" values used everywhere below
+CURRENT_CLIENT_ID = _client_id
+CURRENT_CLIENT = _client_data
+CURRENT_CLIENT_STATUS = _client_status  # "ok" | "inactive" | "fallback" | "default"
+
 # ── Zapier webhook ─────────────────────────────────────────────────────────────
-def send_lead_to_webhook(email: str, channel: str = "") -> bool:
+def send_lead_to_webhook(email: str, channel: str = "", demo_channel: str = "") -> bool:
     """Send lead data to webhook in background thread. Returns True immediately."""
     zapier_url = os.environ.get("ZAPIER_WEBHOOK_URL", "")
     if not zapier_url:
@@ -18,7 +33,7 @@ def send_lead_to_webhook(email: str, channel: str = "") -> bool:
         "email": email,
         "channel": channel or "Not provided",
         "source": "Channel Brain Demo",
-        "demo_channel": "The Koerner Office",
+        "demo_channel": demo_channel or "Unknown",
         "timestamp": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime()),
     }
 
@@ -396,9 +411,12 @@ if "pending_generation" not in st.session_state:
     st.session_state.pending_generation = None
 
 # ── Load index on startup ──────────────────────────────────────────────────────
-CHANNEL_NAME = "The Koerner Office"
-CHANNEL_HANDLE = "@thekoerneroffice"
-CHANNEL_URL = "https://www.youtube.com/@thekoerneroffice"
+# These constants now derive from the resolved client rather than hardcoded values.
+# For the default client (koerner-office), values are identical to before.
+CHANNEL_NAME = CURRENT_CLIENT["channel_name"]
+CHANNEL_HANDLE = CURRENT_CLIENT["channel_handle"]
+CHANNEL_URL = CURRENT_CLIENT["channel_url"]
+CREATOR_NAME = CURRENT_CLIENT["creator_name"]
 
 # ── Bootstrap: seed /data volume from repo on first startup ───────────────────
 # When deployed to Railway, the /data volume starts empty. If we have bootstrap
@@ -427,20 +445,25 @@ def bootstrap_data_volume():
 bootstrap_data_volume()
 
 @st.cache_resource(show_spinner=False)
-def load_demo_index():
+def load_demo_index(client_id: str):
+    """
+    Load the index file for a specific client. Cached per-client so that
+    switching ?client= in the URL doesn't reload the same index repeatedly
+    but does correctly load each client's own index.
+
+    Looks for {client_id}.json specifically, not just any *.json file, so
+    that clients.json or other config files can't accidentally be treated
+    as an index.
+    """
     try:
         from indexer import load_index
-        # Check Railway volume first, then local indexes folder
-        # Skip clients.json — that's the multi-tenant config, not an index file
-        EXCLUDED_FILES = {"clients.json"}
+        # Look for the client's specific index file
+        expected_filename = f"{client_id}.json"
         search_paths = ["/data", "indexes"]
         for search_dir in search_paths:
-            index_files = [
-                f for f in Path(search_dir).glob("*.json")
-                if f.name not in EXCLUDED_FILES
-            ]
-            if index_files:
-                index_wrapper, stats = load_index(str(index_files[0]))
+            candidate = Path(search_dir) / expected_filename
+            if candidate.exists() and candidate.is_file():
+                index_wrapper, stats = load_index(str(candidate))
                 return index_wrapper, stats
     except Exception as e:
         return None, None
@@ -479,8 +502,42 @@ splash.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Try to load index — cached so only runs once per server session
-collection, stats = load_demo_index()
+# ── Inactive client check ─────────────────────────────────────────────────────
+# If a client is deactivated (e.g., non-payment, offboarded), show a polite
+# "no longer available" page instead of loading their index. This protects the
+# creator's brand — visitors don't see "wrong" content and don't get an error.
+if CURRENT_CLIENT_STATUS == "inactive":
+    splash.empty()
+    st.markdown(f"""
+    <div style="display:flex; flex-direction:column; align-items:center;
+                justify-content:center; min-height:80vh; text-align:center;
+                padding:40px;">
+        <div style="font-size:4rem; margin-bottom:20px;">🧠</div>
+        <div style="font-family:Georgia,serif; font-size:2.2rem; color:#f5f0e8;
+                    margin-bottom:12px; font-weight:700;">
+            Channel Brain
+        </div>
+        <div style="color:#d4a359; font-family:'DM Mono',monospace; font-size:11px;
+                    letter-spacing:3px; text-transform:uppercase; margin-bottom:32px;">
+            No longer available
+        </div>
+        <div style="max-width:520px; color:#999; font-size:0.95rem; line-height:1.7;">
+            This Channel Brain is no longer active. If you're looking for the creator's
+            content directly, please visit their YouTube channel or website.
+        </div>
+        <div style="margin-top:36px;">
+            <a href="https://channel-brain-production.up.railway.app"
+               style="color:#d4a359; text-decoration:none; font-family:'DM Mono',monospace;
+                      font-size:10px; letter-spacing:2px; text-transform:uppercase;">
+                → View the Channel Brain demo ↗
+            </a>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    st.stop()
+
+# Try to load index — cached per-client so only runs once per (server, client) pair
+collection, stats = load_demo_index(CURRENT_CLIENT_ID)
 
 # Clear splash regardless of outcome
 splash.empty()
@@ -531,8 +588,8 @@ with left_col:
         <p class="hero-subtitle">
             Channel Brain turns any YouTube archive into an AI assistant your audience
             can have a conversation with. Below is a working example built on
-            <strong style="color:#f5f0e8;">The Koerner Office</strong> — a small business podcast
-            we indexed to show you exactly how it works.
+            <strong style="color:#f5f0e8;">{CHANNEL_NAME}</strong> —
+            a channel we indexed to show you exactly how it works.
         </p>
         <div class="stat-row">
             <div class="stat-item">
@@ -551,18 +608,22 @@ with left_col:
     </div>
     """, unsafe_allow_html=True)
 
-    st.markdown('<div class="chat-label" style="padding-left:56px;">Try it — ask the Koerner Office archive anything</div>', unsafe_allow_html=True)
+    st.markdown(f'<div class="chat-label" style="padding-left:56px;">Try it — ask the {CHANNEL_NAME} archive anything</div>', unsafe_allow_html=True)
     st.markdown(f"""
     <div style="margin-bottom: 20px; padding-left:56px;">
         <a href="{CHANNEL_URL}" target="_blank"
            style="color:#d4a359; font-size:0.82rem; font-family:'DM Mono',monospace;
                   text-decoration:none; letter-spacing:1px;">
-            → Browse The Koerner Office on YouTube ↗
+            → Browse {CHANNEL_NAME} on YouTube ↗
         </a>
     </div>
     """, unsafe_allow_html=True)
 
     # Suggested questions
+    # NOTE: These are hardcoded for the default Koerner Office demo. When we add
+    # niche demos (e.g., real estate creator), each client's suggestions should
+    # come from clients.json. For R2-07 this is left as-is since the default
+    # client is currently the only client.
     suggestions = [
         "What are Chris' favorite business ideas of all time?",
         "What does Chris say about starting a business with little money?",
@@ -638,7 +699,7 @@ with left_col:
         question = st.text_input(
             "question",
             label_visibility="collapsed",
-            placeholder="Ask anything about The Koerner Office episodes...",
+            placeholder=f"Ask anything about {CHANNEL_NAME} episodes...",
             key="question_input"
         )
     with btn_col:
@@ -717,7 +778,7 @@ with left_col:
                 try:
                     from qa import answer_question
                     os.environ["ANTHROPIC_API_KEY"] = anthropic_key
-                    answer, sources = answer_question(final_q, st.session_state.index, client_id="koerner-office")
+                    answer, sources = answer_question(final_q, st.session_state.index, client_id=CURRENT_CLIENT["namespace"])
 
                     if answer == "CAP_REACHED":
                         # Show cap message immediately in placeholder
@@ -893,7 +954,7 @@ with right_col:
         st.markdown('<div class="ask-btn">', unsafe_allow_html=True)
         if st.button("Request a Demo for My Channel →", use_container_width=True):
             if email and "@" in email:
-                success = send_lead_to_webhook(email, channel_name_input)
+                success = send_lead_to_webhook(email, channel_name_input, demo_channel=CHANNEL_NAME)
                 if success:
                     st.session_state.email_submitted = True
                     st.rerun()
@@ -927,14 +988,14 @@ with right_col:
     </div>
     <div style="font-size: 0.82rem; color: #666; line-height: 1.7;">
         This is a <strong style="color:#888;">Channel Brain demo</strong> built on
-        <strong style="color: #888;">The Koerner Office</strong> — a small business
-        podcast by Chris Koerner. We indexed it as an example to show creators
+        <strong style="color: #888;">{CHANNEL_NAME}</strong> —
+        a channel by {CREATOR_NAME}. We indexed it as an example to show creators
         what Channel Brain can do for their own channel.<br><br>
         <strong style="color:#888;">This is not affiliated with or endorsed
-        by The Koerner Office.</strong><br><br>
+        by {CHANNEL_NAME}.</strong><br><br>
         <a href="{CHANNEL_URL}" target="_blank"
            style="color: #d4a359; text-decoration: none;">
-            → Visit The Koerner Office ↗
+            → Visit {CHANNEL_NAME} ↗
         </a>
     </div>
     </div>
