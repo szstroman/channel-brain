@@ -394,21 +394,55 @@ a.source-chip:visited:hover {
 
 
 
-# ── Session state ──────────────────────────────────────────────────────────────
-if "chat_history" not in st.session_state:
-    st.session_state.chat_history = []
-if "index" not in st.session_state:
-    st.session_state.index = None
-if "index_loaded" not in st.session_state:
-    st.session_state.index_loaded = False
-if "email_submitted" not in st.session_state:
-    st.session_state.email_submitted = False
+# ── Session state (per-client namespacing) ────────────────────────────────────
+# Each piece of client-specific state gets stored under a key that includes
+# the current client_id, so switching ?client= in the same browser tab doesn't
+# leak chat history / index / lead capture between clients.
+#
+# Usage:
+#   ck("chat_history")   # → "chat_history__koerner-office"
+#   st.session_state[ck("chat_history")].append(...)
+#
+# The ss_get / ss_set / ss_has helpers wrap this pattern so we don't have to
+# repeat the prefix logic everywhere.
+def ck(key: str) -> str:
+    """Client-scoped session state key. Prefixes key with current client_id."""
+    return f"{key}__{CURRENT_CLIENT_ID}"
+
+def ss_get(key: str, default=None):
+    """Get a client-scoped session state value, returning default if missing."""
+    return st.session_state.get(ck(key), default)
+
+def ss_set(key: str, value):
+    """Set a client-scoped session state value."""
+    st.session_state[ck(key)] = value
+
+def ss_has(key: str) -> bool:
+    """Check if a client-scoped session state key exists."""
+    return ck(key) in st.session_state
+
+def ss_del(key: str):
+    """Delete a client-scoped session state key if it exists."""
+    if ss_has(key):
+        del st.session_state[ck(key)]
+
+# Initialize per-client state on first access for this (session, client) pair
+if not ss_has("chat_history"):
+    ss_set("chat_history", [])
+if not ss_has("index"):
+    ss_set("index", None)
+if not ss_has("index_loaded"):
+    ss_set("index_loaded", False)
+if not ss_has("email_submitted"):
+    ss_set("email_submitted", False)
+if not ss_has("generating"):
+    ss_set("generating", False)
+if not ss_has("pending_generation"):
+    ss_set("pending_generation", None)
+
+# loading_started stays global — it's just a splash-screen flag, not client-specific
 if "loading_started" not in st.session_state:
     st.session_state.loading_started = False
-if "generating" not in st.session_state:
-    st.session_state.generating = False
-if "pending_generation" not in st.session_state:
-    st.session_state.pending_generation = None
 
 # ── Load index on startup ──────────────────────────────────────────────────────
 # These constants now derive from the resolved client rather than hardcoded values.
@@ -567,12 +601,12 @@ if collection is None:
     st.stop()
 
 # Index loaded successfully — store in session state and continue
-st.session_state.index = collection
-st.session_state.index_loaded = True
-st.session_state.stats = stats
+ss_set("index", collection)
+ss_set("index_loaded", True)
+ss_set("stats", stats)
 
 # ── Stats ──────────────────────────────────────────────────────────────────────
-stats = st.session_state.get("stats", {})
+stats = ss_get("stats", {})
 videos_count = stats.get("videos_indexed", "95") if stats else "95"
 chunks_count = stats.get("total_chunks", "1,445") if stats else "1,445"
 
@@ -634,20 +668,20 @@ with left_col:
     ]
 
     # Track generating state for button disabling
-    is_generating = st.session_state.get("generating", False)
+    is_generating = ss_get("generating", False)
 
-    if not st.session_state.chat_history:
+    if not ss_get("chat_history"):
         st.markdown('<div class="suggestions-label" style="padding-left:8px;">Try asking</div>', unsafe_allow_html=True)
         # Keyed container — CSS turns its inner vertical block into a 2-col grid
         with st.container(key="sug_grid"):
             for i, s in enumerate(suggestions):
                 if st.button(s, key=f"sug_{i}", use_container_width=True, disabled=is_generating):
-                    st.session_state.pending_q = s
+                    ss_set("pending_q", s)
 
     # Chat history
-    if st.session_state.chat_history:
+    if ss_get("chat_history"):
         chat_html = '<div class="chat-scroll">'
-        for msg in st.session_state.chat_history:
+        for msg in ss_get("chat_history"):
             if msg["role"] == "user":
                 chat_html += f'<div class="msg-user">🙋 {msg["content"]}</div>'
             else:
@@ -684,14 +718,14 @@ with left_col:
         st.markdown(chat_html, unsafe_allow_html=True)
 
         # More suggestions after first answer
-        if len(st.session_state.chat_history) >= 2:
+        if len(ss_get("chat_history")) >= 2:
             st.markdown('<br><div class="suggestions-label">Keep exploring</div>', unsafe_allow_html=True)
-            asked = [m["content"] for m in st.session_state.chat_history if m["role"] == "user"]
+            asked = [m["content"] for m in ss_get("chat_history") if m["role"] == "user"]
             more = [s for s in suggestions if s not in asked]
             cols2 = st.columns(2)
             for i, s in enumerate(more[:4]):
                 if cols2[i % 2].button(s, key=f"more_{i}", disabled=is_generating):
-                    st.session_state.pending_q = s
+                    ss_set("pending_q", s)
 
     # Input row
     q_col, btn_col = st.columns([6, 1])
@@ -713,29 +747,29 @@ with left_col:
     # This prevents a second click (which may slip through during the network
     # round-trip before disabled buttons render) from hijacking the in-flight request.
     final_q = None
-    if st.session_state.get("generating", False):
+    if ss_get("generating", False):
         # Discard any stray click that landed during generation
-        if hasattr(st.session_state, "pending_q"):
-            del st.session_state.pending_q
-        final_q = st.session_state.get("pending_generation")
+        if ss_has("pending_q"):
+            ss_del("pending_q")
+        final_q = ss_get("pending_generation")
     elif ask_btn and question:
         final_q = question
-    elif hasattr(st.session_state, "pending_q"):
-        final_q = st.session_state.pending_q
-        del st.session_state.pending_q
+    elif ss_has("pending_q"):
+        final_q = ss_get("pending_q")
+        ss_del("pending_q")
 
     if final_q:
         anthropic_key = os.environ.get("ANTHROPIC_API_KEY", "")
         if not anthropic_key:
             st.error("Anthropic API key not configured. Add it to Streamlit secrets.")
-        elif not st.session_state.index:
+        elif not ss_get("index"):
             st.warning("Index not loaded yet. Please wait a moment and try again.")
         else:
             # ── Phase 1: set generating flag, rerun to disable buttons ────────
-            if not st.session_state.get("generating", False):
-                st.session_state.generating = True
-                st.session_state.pending_generation = final_q
-                st.session_state.chat_history.append({"role": "user", "content": final_q})
+            if not ss_get("generating", False):
+                ss_set("generating", True)
+                ss_set("pending_generation", final_q)
+                ss_get("chat_history").append({"role": "user", "content": final_q})
                 st.rerun()
 
             # ── Phase 2: buttons already disabled, now run the API call ───────
@@ -778,7 +812,7 @@ with left_col:
                 try:
                     from qa import answer_question
                     os.environ["ANTHROPIC_API_KEY"] = anthropic_key
-                    answer, sources = answer_question(final_q, st.session_state.index, client_id=CURRENT_CLIENT["namespace"])
+                    answer, sources = answer_question(final_q, ss_get("index"), client_id=CURRENT_CLIENT["namespace"])
 
                     if answer == "CAP_REACHED":
                         # Show cap message immediately in placeholder
@@ -792,7 +826,7 @@ with left_col:
                                Browse {CHANNEL_NAME} on YouTube →</a>
                         </div>
                         """, unsafe_allow_html=True)
-                        st.session_state.chat_history.append({
+                        ss_get("chat_history").append({
                             "role": "assistant",
                             "content": "CAP_REACHED",
                             "sources": [],
@@ -805,7 +839,7 @@ with left_col:
                             <div class="msg-ai">{content}</div>
                         </div>
                         """, unsafe_allow_html=True)
-                        st.session_state.chat_history.append({
+                        ss_get("chat_history").append({
                             "role": "assistant",
                             "content": answer,
                             "sources": sources,
@@ -813,18 +847,18 @@ with left_col:
 
                 except Exception as e:
                     thinking.empty()
-                    st.session_state.chat_history.append({
+                    ss_get("chat_history").append({
                         "role": "assistant",
                         "content": f"Something went wrong: {e}",
                         "sources": [],
                     })
                 finally:
                     # Always clear generating flag — buttons re-enable on next render
-                    st.session_state.generating = False
-                    st.session_state.pending_generation = None
+                    ss_set("generating", False)
+                    ss_set("pending_generation", None)
                     # Discard any suggestion clicks that slipped through during generation
-                    if hasattr(st.session_state, "pending_q"):
-                        del st.session_state.pending_q
+                    if ss_has("pending_q"):
+                        ss_del("pending_q")
 
                 st.rerun()
 
@@ -938,7 +972,7 @@ with right_col:
     """, unsafe_allow_html=True)
 
     # Email capture
-    if not st.session_state.email_submitted:
+    if not ss_get("email_submitted"):
         email = st.text_input(
             "Your email",
             placeholder="your@email.com",
@@ -956,7 +990,7 @@ with right_col:
             if email and "@" in email:
                 success = send_lead_to_webhook(email, channel_name_input, demo_channel=CHANNEL_NAME)
                 if success:
-                    st.session_state.email_submitted = True
+                    ss_set("email_submitted", True)
                     st.rerun()
                 else:
                     # Fallback — save locally if Zapier fails
@@ -968,7 +1002,7 @@ with right_col:
                         "timestamp": time.time()
                     })
                     leads_file.write_text(json.dumps(leads, indent=2))
-                    st.session_state.email_submitted = True
+                    ss_set("email_submitted", True)
                     st.rerun()
             else:
                 st.error("Please enter a valid email address.")
