@@ -23,12 +23,18 @@ from pathlib import Path
 
 def _start_sync_scheduler():
     """Start APScheduler background thread. Runs sync_runner weekly.
-    Never raises — a broken scheduler must not take down the demo."""
+    Never raises — a broken scheduler must not take down the demo.
+    Logs to stderr with explicit flush so Railway captures output regardless
+    of how Streamlit buffers stdout."""
     import sys
     streamlit_mod = sys.modules.get("streamlit")
     # Stash the flag on the streamlit module singleton — persists across reruns
     if getattr(streamlit_mod, "_cb_scheduler_started", False):
         return  # Already started for this Python process — don't spawn duplicates
+
+    def _log(msg):
+        """Log to stderr with flush — bypasses Streamlit's stdout buffering."""
+        print(msg, file=sys.stderr, flush=True)
 
     # Set the guard EARLY so any exit path (success, import error, start error)
     # prevents re-attempts on every Streamlit rerun. Otherwise we'd spam logs
@@ -40,18 +46,20 @@ def _start_sync_scheduler():
         # We continue without the guard; worst case is duplicate warnings.
         pass
 
+    _log("[scheduler] initializing background sync...")
+
     try:
         from apscheduler.schedulers.background import BackgroundScheduler
         from apscheduler.triggers.cron import CronTrigger
-    except ImportError:
+    except ImportError as e:
         # apscheduler not installed — silent skip (local dev without deps).
         # Prints once because the guard flag was set above.
-        print("[scheduler] apscheduler not installed, skipping background sync")
+        _log(f"[scheduler] apscheduler not installed ({e}), skipping background sync")
         return
 
     def _run_sync_job():
         """Wrapper that invokes sync_runner with error isolation."""
-        print("[scheduler] weekly sync starting...")
+        _log("[scheduler] weekly sync starting...")
         try:
             import sync_runner
             # sync_runner.main() reads sys.argv for args — set it to just the
@@ -60,14 +68,14 @@ def _start_sync_scheduler():
             sys.argv = ["sync_runner.py"]
             try:
                 exit_code = sync_runner.main()
-                print(f"[scheduler] weekly sync finished with exit code {exit_code}")
+                _log(f"[scheduler] weekly sync finished with exit code {exit_code}")
             finally:
                 sys.argv = original_argv
         except Exception as e:
             # Never let a sync error kill the Streamlit process
-            print(f"[scheduler] weekly sync FAILED with exception: {type(e).__name__}: {e}")
+            _log(f"[scheduler] weekly sync FAILED with exception: {type(e).__name__}: {e}")
             import traceback
-            traceback.print_exc()
+            traceback.print_exc(file=sys.stderr)
 
     # Wrap scheduler construction AND .start() in try/except.
     # APScheduler can raise at start time in unusual environments (signal
@@ -85,15 +93,23 @@ def _start_sync_scheduler():
         scheduler.start()
     except Exception as e:
         # Broken scheduler must NEVER crash the demo. Log and continue.
-        print(f"[scheduler] FAILED to start scheduler: {type(e).__name__}: {e}")
+        _log(f"[scheduler] FAILED to start scheduler: {type(e).__name__}: {e}")
         import traceback
-        traceback.print_exc()
+        traceback.print_exc(file=sys.stderr)
         return
 
-    print("[scheduler] background sync scheduler started (weekly, Mon 09:00 UTC)")
+    _log("[scheduler] background sync scheduler started (weekly, Mon 09:00 UTC)")
 
 # Start the scheduler now. Idempotent — safe to call on every Streamlit rerun.
-_start_sync_scheduler()
+# Wrapped in try/except at the call site as a last-resort belt-and-suspenders:
+# even if _start_sync_scheduler somehow raises despite its own internal handlers,
+# the demo must still load.
+try:
+    _start_sync_scheduler()
+except Exception as _e:
+    import sys as _sys
+    print(f"[scheduler] top-level failure: {type(_e).__name__}: {_e}",
+          file=_sys.stderr, flush=True)
 
 # ── Multi-tenant client resolution ─────────────────────────────────────────────
 # Resolve which client this session is viewing based on the ?client= URL param.
