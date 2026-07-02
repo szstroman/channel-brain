@@ -7,6 +7,94 @@ load_dotenv()
 import time
 from pathlib import Path
 
+# ── Background scheduler for weekly sync ──────────────────────────────────────
+# Runs sync_runner.main() in a background thread on a weekly schedule.
+# Uses APScheduler (mature Python lib).
+#
+# IMPORTANT: Streamlit re-executes this whole script on every user interaction,
+# so we can't just do `if not FLAG: start(); FLAG = True` — the FLAG=False line
+# at the top would reset it every rerun. Instead we stash the "started" state
+# on the sys.modules['streamlit'] object itself, which persists across reruns
+# because it's the actual imported module singleton in the Python process.
+#
+# NOTE: Assumes single Streamlit replica. If Railway ever runs multiple replicas
+# of this service, we'd get one sync-runner per replica firing at the same time.
+# For weekly cadence with 1 replica that's fine — document if we ever scale up.
+
+def _start_sync_scheduler():
+    """Start APScheduler background thread. Runs sync_runner weekly.
+    Never raises — a broken scheduler must not take down the demo."""
+    import sys
+    streamlit_mod = sys.modules.get("streamlit")
+    # Stash the flag on the streamlit module singleton — persists across reruns
+    if getattr(streamlit_mod, "_cb_scheduler_started", False):
+        return  # Already started for this Python process — don't spawn duplicates
+
+    # Set the guard EARLY so any exit path (success, import error, start error)
+    # prevents re-attempts on every Streamlit rerun. Otherwise we'd spam logs
+    # and waste CPU retrying failed imports/starts on every user interaction.
+    try:
+        streamlit_mod._cb_scheduler_started = True
+    except (AttributeError, TypeError):
+        # Extremely unlikely — streamlit somehow rejects attribute setting.
+        # We continue without the guard; worst case is duplicate warnings.
+        pass
+
+    try:
+        from apscheduler.schedulers.background import BackgroundScheduler
+        from apscheduler.triggers.cron import CronTrigger
+    except ImportError:
+        # apscheduler not installed — silent skip (local dev without deps).
+        # Prints once because the guard flag was set above.
+        print("[scheduler] apscheduler not installed, skipping background sync")
+        return
+
+    def _run_sync_job():
+        """Wrapper that invokes sync_runner with error isolation."""
+        print("[scheduler] weekly sync starting...")
+        try:
+            import sync_runner
+            # sync_runner.main() reads sys.argv for args — set it to just the
+            # script name so it processes all active clients with no flags
+            original_argv = sys.argv
+            sys.argv = ["sync_runner.py"]
+            try:
+                exit_code = sync_runner.main()
+                print(f"[scheduler] weekly sync finished with exit code {exit_code}")
+            finally:
+                sys.argv = original_argv
+        except Exception as e:
+            # Never let a sync error kill the Streamlit process
+            print(f"[scheduler] weekly sync FAILED with exception: {type(e).__name__}: {e}")
+            import traceback
+            traceback.print_exc()
+
+    # Wrap scheduler construction AND .start() in try/except.
+    # APScheduler can raise at start time in unusual environments (signal
+    # handler conflicts, thread creation failures). If it does, the demo
+    # must continue working — sync automation is strictly additive.
+    try:
+        scheduler = BackgroundScheduler(timezone="UTC")
+        # Every Monday at 09:00 UTC
+        scheduler.add_job(
+            _run_sync_job,
+            trigger=CronTrigger(day_of_week="mon", hour=9, minute=0),
+            id="weekly_sync",
+            replace_existing=True,
+        )
+        scheduler.start()
+    except Exception as e:
+        # Broken scheduler must NEVER crash the demo. Log and continue.
+        print(f"[scheduler] FAILED to start scheduler: {type(e).__name__}: {e}")
+        import traceback
+        traceback.print_exc()
+        return
+
+    print("[scheduler] background sync scheduler started (weekly, Mon 09:00 UTC)")
+
+# Start the scheduler now. Idempotent — safe to call on every Streamlit rerun.
+_start_sync_scheduler()
+
 # ── Multi-tenant client resolution ─────────────────────────────────────────────
 # Resolve which client this session is viewing based on the ?client= URL param.
 # This must run BEFORE any other UI code so hardcoded constants can be replaced
