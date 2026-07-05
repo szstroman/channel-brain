@@ -61,7 +61,7 @@ export function LeadForm({ clientId }: Props) {
           <div className="flex items-baseline gap-2 mb-3">
             <span
               className="font-serif text-3xl font-bold"
-              style={{ color: "var(--accent)" }}
+              style={{ color: "#d4a359" }}
             >
               $497
             </span>
@@ -98,7 +98,7 @@ export function LeadForm({ clientId }: Props) {
             onChange={(e) => setEmail(e.target.value)}
             disabled={state === "submitting"}
             placeholder="you@example.com"
-            className="w-full bg-bg-input border border-border-input rounded-lg px-3 py-2.5 text-sm text-fg-primary placeholder:text-fg-dim focus:outline-none focus:border-[color:var(--accent)] disabled:opacity-50"
+            className="w-full bg-bg-input border border-border-input rounded-lg px-3 py-2.5 text-sm text-fg-primary placeholder:text-fg-dim focus:outline-none focus:border-[color:#d4a359] disabled:opacity-50"
           />
         </div>
 
@@ -112,7 +112,7 @@ export function LeadForm({ clientId }: Props) {
             onChange={(e) => setChannelUrl(e.target.value)}
             disabled={state === "submitting"}
             placeholder="youtube.com/@yourchannel"
-            className="w-full bg-bg-input border border-border-input rounded-lg px-3 py-2.5 text-sm text-fg-primary placeholder:text-fg-dim focus:outline-none focus:border-[color:var(--accent)] disabled:opacity-50"
+            className="w-full bg-bg-input border border-border-input rounded-lg px-3 py-2.5 text-sm text-fg-primary placeholder:text-fg-dim focus:outline-none focus:border-[color:#d4a359] disabled:opacity-50"
           />
         </div>
 
@@ -122,7 +122,7 @@ export function LeadForm({ clientId }: Props) {
             checked={consent}
             onChange={(e) => setConsent(e.target.checked)}
             disabled={state === "submitting"}
-            className="mt-0.5 shrink-0 w-4 h-4 accent-[color:var(--accent)]"
+            className="mt-0.5 shrink-0 w-4 h-4 accent-[color:#d4a359]"
           />
           <span className="text-xs text-fg-muted leading-relaxed group-hover:text-fg-secondary">
             I agree to be contacted by Channel Brain about this inquiry. My email

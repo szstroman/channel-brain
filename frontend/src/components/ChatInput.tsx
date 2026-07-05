@@ -48,7 +48,8 @@ export function ChatInput({ onSend, disabled, placeholder }: Props) {
       <button
         onClick={submit}
         disabled={disabled || !value.trim()}
-        className="bg-accent-creator hover:bg-accent-creator-hover disabled:opacity-40 disabled:cursor-not-allowed text-bg-base font-semibold text-sm px-5 py-3 rounded-lg transition-colors whitespace-nowrap"
+        className="disabled:opacity-40 disabled:cursor-not-allowed text-bg-base font-semibold text-sm px-5 py-3 rounded-lg transition-opacity whitespace-nowrap hover:opacity-90"
+        style={{ background: "var(--accent)" }}
       >
         Ask →
       </button>

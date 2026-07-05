@@ -444,16 +444,6 @@ export default function Home() {
           </div>
 
           <div className="w-full max-w-3xl pb-6 pt-2 border-t border-border-subtle">
-            {/* Persistent suggestions above the input — encourages preloaded
-                clicks over write-ins, which keeps costs down and answer
-                quality consistently high. */}
-            {suggestions.length > 0 && !atLimit && (
-              <Suggestions
-                suggestions={suggestions}
-                onClick={(s) => handleSend(s, true)}
-                disabled={streaming}
-              />
-            )}
             {/* Turn-limit warnings */}
             {!atLimit && remaining <= WARN_TURNS_REMAINING && turnCount > 0 && (
               <p className="text-center text-xs mb-2" style={{ color: "var(--accent)" }}>
@@ -479,6 +469,18 @@ export default function Home() {
               disabled={streaming || atLimit}
               placeholder={atLimit ? "Start a new chat to continue..." : "Ask anything..."}
             />
+            {/* Suggestions BELOW input after first message so the input sits
+                directly under the answer stream. Above input in the empty
+                state so they're the first thing a visitor sees. */}
+            {suggestions.length > 0 && !atLimit && (
+              <div className="mt-3">
+                <Suggestions
+                  suggestions={suggestions}
+                  onClick={(s) => handleSend(s, true)}
+                  disabled={streaming}
+                />
+              </div>
+            )}
             <p className="text-center text-[10px] text-fg-dim mt-2 leading-relaxed">
               AI-generated from public YouTube content. May contain inaccuracies.
               For educational purposes only. Not affiliated with or endorsed by the source channel.
@@ -522,7 +524,7 @@ export default function Home() {
         >
           <p
             className="font-mono text-[10px] tracking-[0.2em] uppercase mb-2"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "#d4a359" }}
           >
             ⚡ How it works
           </p>
@@ -538,7 +540,7 @@ export default function Home() {
               <div key={step.num} className="flex items-start gap-4">
                 <div
                   className="shrink-0 w-9 h-9 rounded-full text-bg-base font-bold flex items-center justify-center"
-                  style={{ background: "var(--accent)" }}
+                  style={{ background: "#d4a359" }}
                 >
                   {step.num}
                 </div>
@@ -562,7 +564,7 @@ export default function Home() {
         >
           <p
             className="font-mono text-[10px] tracking-[0.2em] uppercase mb-2"
-            style={{ color: "var(--accent)" }}
+            style={{ color: "#d4a359" }}
           >
             📩 Get yours
           </p>
