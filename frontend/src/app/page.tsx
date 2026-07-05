@@ -415,6 +415,16 @@ export default function Home() {
             >
               {eyebrowText}
             </p>
+            {client?.channel_url && (
+              <a
+                href={client.channel_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-2 text-[11px] text-fg-muted hover:text-fg-primary underline underline-offset-2 transition-colors"
+              >
+                Visit channel on YouTube ↗
+              </a>
+            )}
             {clientError && (
               <p className="mt-3 text-xs text-red-400">
                 Client load error: {clientError}
