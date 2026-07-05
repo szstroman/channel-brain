@@ -34,3 +34,15 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #3a3a3a;
 }
+
+/* Prevent iOS Safari auto-zoom on input focus.
+   iOS zooms in whenever an input has font-size below 16px.
+   The visual size stays the same (we override with Tailwind text-sm at
+   14px), but the base rule forces 16px so iOS's zoom trigger is bypassed. */
+@media (max-width: 768px) {
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}

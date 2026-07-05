@@ -67,6 +67,23 @@ export default function Home() {
     }
   }, [messages, thinking]);
 
+  // Separate mobile auto-scroll effect: only fires when a NEW message is added
+  // or the thinking indicator toggles. Token updates change message.content but
+  // don't change messages.length, so this effect skips them — no scroll jitter
+  // during streaming.
+  const messageCount = messages.length;
+  useEffect(() => {
+    if (typeof window === "undefined" || window.innerWidth >= 768) return;
+    if (messageCount === 0 && !thinking) return;
+    const t = setTimeout(() => {
+      const chatSection = document.getElementById("section-chat");
+      if (chatSection) {
+        chatSection.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100);
+    return () => clearTimeout(t);
+  }, [messageCount, thinking]);
+
   useEffect(() => {
     return () => {
       abortRef.current?.abort();
@@ -87,6 +104,16 @@ export default function Home() {
       setMessages([]);
       setThinking(false);
       setStreaming(false);
+      // After a beat (so the visitor sees the toggle animate + palette change),
+      // scroll back up to the chat so they can try the new mode without hunting.
+      // 800ms lets both the toggle switch animation (~200ms) and the palette
+      // swap fully register before we scroll.
+      setTimeout(() => {
+        const chatSection = document.getElementById("section-chat");
+        if (chatSection) {
+          chatSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 800);
     },
     []
   );
@@ -348,10 +375,14 @@ export default function Home() {
   // Filter out suggestions that have already been asked in this conversation.
   // Match on exact question text (trimmed) — same convention the backend uses
   // for cache lookup, so filtering here mirrors what would happen on a hit.
+  // Cap at 4 suggestions to keep the empty state compact on mobile (visitors
+  // shouldn't need to scroll to see the input).
   const askedQuestions = new Set(
     messages.filter((m) => m.role === "user").map((m) => m.content.trim())
   );
-  const suggestions = allSuggestions.filter((s) => !askedQuestions.has(s.trim()));
+  const suggestions = allSuggestions
+    .filter((s) => !askedQuestions.has(s.trim()))
+    .slice(0, 4);
 
   const eyebrowText = isCreator
     ? "Creator Mode — Your Archive"
