@@ -66,6 +66,36 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 logger = logging.getLogger(__name__)
 
 
+# ── Bootstrap: seed /data volume from repo on first startup ───────────────────
+# When deployed to Railway, /data may start empty. If we have bootstrap files
+# committed to the repo at /bootstrap/, copy them to /data/ on first run.
+# After the first copy, /data/ persists across deploys so we never copy again.
+def _bootstrap_data_volume():
+    import shutil
+    bootstrap_dir = Path(_PARENT_DIR) / "bootstrap"
+    if not bootstrap_dir.exists():
+        return
+
+    target_dir = Path("/data")
+    try:
+        target_dir.mkdir(exist_ok=True)
+    except Exception:
+        # Can't write to /data (e.g. local dev without /data folder)
+        return
+
+    for src in bootstrap_dir.glob("*.json"):
+        dest = target_dir / src.name
+        if not dest.exists():
+            try:
+                shutil.copy2(src, dest)
+                logger.info(f"Bootstrapped {src.name} into /data")
+            except Exception as e:
+                logger.warning(f"Failed to bootstrap {src.name}: {e}")
+
+
+_bootstrap_data_volume()
+
+
 # ── App and CORS ──────────────────────────────────────────────────────────────
 
 app = FastAPI(title="Channel Brain API", version="0.1.0")
