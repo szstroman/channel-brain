@@ -23,6 +23,7 @@ Then test with the curl example in backend/README.md.
 
 import os
 import sys
+import time
 import json
 import logging
 from pathlib import Path
@@ -473,7 +474,17 @@ async def submit_lead(req: LeadRequest):
         f"client={req.client_id!r} consent=True"
     )
 
-    # Forward to Zapier if webhook is configured
+    # Resolve the client's display name so Zapier gets a human-readable "which
+    # demo did they come from" value instead of the internal client_id slug.
+    try:
+        _, client_data, _ = get_client(req.client_id)
+        demo_channel_name = client_data.get("channel_name") or req.client_id or "Unknown"
+    except Exception:
+        demo_channel_name = req.client_id or "Unknown"
+
+    # Forward to Zapier if webhook is configured.
+    # Payload shape MUST match what the Zapier automation expects — same field
+    # names the old Streamlit demo sent, so no automation re-config needed.
     zapier_url = os.environ.get("ZAPIER_WEBHOOK_URL")
     if zapier_url:
         try:
@@ -482,9 +493,10 @@ async def submit_lead(req: LeadRequest):
                 zapier_url,
                 json={
                     "email": email,
-                    "channel_url": req.channel_url.strip(),
-                    "client_id": req.client_id.strip(),
-                    "source": "channel_brain_demo",
+                    "channel": req.channel_url.strip() or "Not provided",
+                    "source": "Channel Brain Demo",
+                    "demo_channel": demo_channel_name,
+                    "timestamp": time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime()),
                 },
                 timeout=5,
             )
