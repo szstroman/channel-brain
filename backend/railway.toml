@@ -1,0 +1,16 @@
+[build]
+builder = "NIXPACKS"
+
+# Install parent-directory Python deps (qa.py etc need them) PLUS backend deps
+nixpacksConfigPath = "backend/nixpacks.toml"
+
+[deploy]
+# Bind uvicorn to the port Railway assigns via $PORT. Run from repo root so
+# imports of qa.py, clients_config.py etc resolve correctly.
+startCommand = "cd backend && python -m uvicorn main:app --host 0.0.0.0 --port $PORT"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 3
+
+[deploy.healthcheck]
+path = "/health"
+timeout = 30

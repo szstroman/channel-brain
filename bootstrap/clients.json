@@ -7,7 +7,23 @@
       "channel_url": "https://www.youtube.com/@thekoerneroffice",
       "namespace": "koerner-office",
       "creator_name": "Chris Koerner",
-      "active": true
+      "active": true,
+      "audience_suggestions": [
+        "What are Chris' favorite business ideas of all time?",
+        "What does Chris say about starting a business with little money?",
+        "What are the most common pieces of advice Chris gives entrepreneurs?",
+        "What are Chris' top thoughts on service businesses like pressure washing?",
+        "What has Chris said about real estate and RV park investing?",
+        "What is Chris' best advice for someone just getting started?"
+      ],
+      "creator_suggestions": [
+        "What are my top pieces of advice on starting a business with no money?",
+        "What themes come up most often in my episodes?",
+        "What have I said about pricing services?",
+        "Which episodes best summarize my philosophy on entrepreneurship?",
+        "What content gaps could I fill based on what I've covered?",
+        "Pull my most quotable one-liners about business."
+      ]
     }
   }
 }

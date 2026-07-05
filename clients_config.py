@@ -35,6 +35,7 @@ in safe defaults rather than crashing.
 """
 
 import json
+import copy
 import re
 import logging
 from pathlib import Path
@@ -45,7 +46,36 @@ logger = logging.getLogger(__name__)
 # Search paths in priority order
 CONFIG_SEARCH_PATHS = ["/data/clients.json", "indexes/clients.json"]
 
-# Hardcoded fallback if no config file exists anywhere
+# Default suggestion questions. Used when a client's config doesn't include
+# per-client audience_suggestions or creator_suggestions. These match the
+# existing hardcoded questions in demo_app.py for the Koerner Office demo,
+# preserving backward compatibility when clients.json has no suggestions.
+DEFAULT_AUDIENCE_SUGGESTIONS = [
+    "What are Chris' favorite business ideas of all time?",
+    "What does Chris say about starting a business with little money?",
+    "What are the most common pieces of advice Chris gives entrepreneurs?",
+    "What are Chris' top thoughts on service businesses like pressure washing?",
+    "What has Chris said about real estate and RV park investing?",
+    "What is Chris' best advice for someone just getting started?",
+]
+
+DEFAULT_CREATOR_SUGGESTIONS = [
+    "What are my top pieces of advice on starting a business with no money?",
+    "What themes come up most often in my episodes?",
+    "What have I said about pricing services?",
+    "Which episodes best summarize my philosophy on entrepreneurship?",
+    "What content gaps could I fill based on what I've covered?",
+    "Pull my most quotable one-liners about business.",
+]
+
+# Hardcoded fallback if no config file exists anywhere.
+# Suggestion lists are populated from DEFAULT_*_SUGGESTIONS after they're
+# defined below — see the module-level init at the end of this block.
+#
+# IMPORTANT: When code paths return this fallback, they MUST use copy.deepcopy()
+# rather than .copy(). Shallow copies share nested list references, which means
+# a caller mutating the returned config's suggestion lists would permanently
+# corrupt HARDCODED_DEFAULT for the rest of the process.
 HARDCODED_DEFAULT = {
     "default_client": "koerner-office",
     "clients": {
@@ -56,9 +86,16 @@ HARDCODED_DEFAULT = {
             "namespace": "koerner-office",
             "creator_name": "Chris Koerner",
             "active": True,
+            # Suggestion arrays attached below
         }
     }
 }
+
+# Attach default suggestions to HARDCODED_DEFAULT now that both are defined.
+# We use list() to make copies so that mutation of the hardcoded default's
+# lists doesn't affect the module-level DEFAULT_*_SUGGESTIONS constants.
+HARDCODED_DEFAULT["clients"]["koerner-office"]["audience_suggestions"] = list(DEFAULT_AUDIENCE_SUGGESTIONS)
+HARDCODED_DEFAULT["clients"]["koerner-office"]["creator_suggestions"] = list(DEFAULT_CREATOR_SUGGESTIONS)
 
 # Cache the validated config across calls. We invalidate the cache when the
 # on-disk file's modification time changes, so operator edits to clients.json
@@ -108,6 +145,46 @@ def _coerce_active(value: Any) -> bool:
     return True
 
 
+def _coerce_suggestions(value: Any, defaults: list, client_id: str, field_name: str) -> list:
+    """
+    Safely coerce a suggestions field to a list of non-empty strings.
+    Missing/None → use defaults. Non-list → warn + use defaults.
+    List with mixed types → keep string entries, drop the rest, use defaults if empty.
+    Always returns a NEW list (never a shared reference to defaults).
+    """
+    if value is None:
+        return list(defaults)
+    if not isinstance(value, list):
+        logger.warning(
+            f"Client '{client_id}' has '{field_name}' that is not a list "
+            f"(got {type(value).__name__}) — using defaults"
+        )
+        return list(defaults)
+
+    # Filter to non-empty strings only, trimmed
+    cleaned = []
+    for i, item in enumerate(value):
+        if not isinstance(item, str):
+            logger.warning(
+                f"Client '{client_id}' '{field_name}' entry #{i} is not a string "
+                f"(got {type(item).__name__}) — skipping"
+            )
+            continue
+        trimmed = item.strip()
+        if not trimmed:
+            logger.warning(f"Client '{client_id}' '{field_name}' entry #{i} is empty — skipping")
+            continue
+        cleaned.append(trimmed)
+
+    if not cleaned:
+        logger.warning(
+            f"Client '{client_id}' '{field_name}' has no valid entries — using defaults"
+        )
+        return list(defaults)
+
+    return cleaned
+
+
 def _validate_and_fill_defaults(raw: Dict[str, Any]) -> Dict[str, Any]:
     """
     Takes raw parsed JSON and returns a validated, defaults-filled config dict.
@@ -116,12 +193,12 @@ def _validate_and_fill_defaults(raw: Dict[str, Any]) -> Dict[str, Any]:
     """
     if not isinstance(raw, dict):
         logger.warning("clients.json root is not a dict — falling back to hardcoded default")
-        return HARDCODED_DEFAULT.copy()
+        return copy.deepcopy(HARDCODED_DEFAULT)
 
     clients = raw.get("clients")
     if not isinstance(clients, dict) or not clients:
         logger.warning("clients.json has no valid 'clients' dict — falling back to hardcoded default")
-        return HARDCODED_DEFAULT.copy()
+        return copy.deepcopy(HARDCODED_DEFAULT)
 
     # Validate each client entry and fill missing fields with safe defaults
     validated_clients: Dict[str, Dict[str, Any]] = {}
@@ -156,6 +233,21 @@ def _validate_and_fill_defaults(raw: Dict[str, Any]) -> Dict[str, Any]:
         if channel_url is None:
             channel_url = ""
 
+        # Validate suggestion fields. Missing/malformed → use defaults.
+        # Present but valid → keep string entries, drop anything else.
+        audience_suggestions = _coerce_suggestions(
+            cdata.get("audience_suggestions"),
+            DEFAULT_AUDIENCE_SUGGESTIONS,
+            client_id,
+            "audience_suggestions",
+        )
+        creator_suggestions = _coerce_suggestions(
+            cdata.get("creator_suggestions"),
+            DEFAULT_CREATOR_SUGGESTIONS,
+            client_id,
+            "creator_suggestions",
+        )
+
         # Check namespace uniqueness — duplicate namespaces would cause cross-tenant data leaks
         if namespace in seen_namespaces:
             logger.warning(
@@ -172,11 +264,13 @@ def _validate_and_fill_defaults(raw: Dict[str, Any]) -> Dict[str, Any]:
             "namespace": str(namespace),
             "creator_name": str(creator_name),
             "active": active,
+            "audience_suggestions": audience_suggestions,
+            "creator_suggestions": creator_suggestions,
         }
 
     if not validated_clients:
         logger.warning("No valid clients after validation — falling back to hardcoded default")
-        return HARDCODED_DEFAULT.copy()
+        return copy.deepcopy(HARDCODED_DEFAULT)
 
     # Validate default_client — must be a key in validated_clients
     default_client = raw.get("default_client")
@@ -233,7 +327,7 @@ def load_clients_config(force_reload: bool = False) -> Dict[str, Any]:
 
     if config_path is None:
         logger.info("No clients.json found in any search path — using hardcoded default")
-        _cached_config = HARDCODED_DEFAULT.copy()
+        _cached_config = copy.deepcopy(HARDCODED_DEFAULT)
         _cached_config_mtime = None
         _cached_config_path = None
         return _cached_config
@@ -246,13 +340,13 @@ def load_clients_config(force_reload: bool = False) -> Dict[str, Any]:
         current_mtime = config_path.stat().st_mtime
     except json.JSONDecodeError as e:
         logger.error(f"clients.json is malformed: {e} — falling back to hardcoded default")
-        _cached_config = HARDCODED_DEFAULT.copy()
+        _cached_config = copy.deepcopy(HARDCODED_DEFAULT)
         _cached_config_mtime = None
         _cached_config_path = None
         return _cached_config
     except Exception as e:
         logger.error(f"Unexpected error reading clients.json: {e} — falling back to hardcoded default")
-        _cached_config = HARDCODED_DEFAULT.copy()
+        _cached_config = copy.deepcopy(HARDCODED_DEFAULT)
         _cached_config_mtime = None
         _cached_config_path = None
         return _cached_config

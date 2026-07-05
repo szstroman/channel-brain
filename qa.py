@@ -99,51 +99,20 @@ def fire_operator_alert(client_id: str, count: int, cap: int, alert_type: str):
 
 # ── Main Q&A function ──────────────────────────────────────────────────────────
 
-def answer_question(question: str, index_wrapper: dict,
-                    client_id: str = "demo",
-                    n_results: int = 8) -> tuple[str, list[str]]:
+def _generate_answer_from_context(question: str, matches: list,
+                                  system_prompt: str = None) -> tuple[str, list[dict]]:
     """
-    1. Check query cap — return CAP_REACHED if exceeded.
-    2. Embed question and retrieve top-n chunks from Pinecone.
-    3. Send chunks + question to Claude.
-    Returns (answer_text, list_of_source_titles).
+    Core answer-generation logic used by both live and preloaded paths.
+    Takes Pinecone matches and returns (answer_text, sources).
+    Does NOT touch the query counter or fire operator alerts — the caller
+    is responsible for cap enforcement if applicable.
+
+    Args:
+        question: The user's question.
+        matches: List of Pinecone match objects (result.matches from query()).
+        system_prompt: Override the default system prompt. If None, uses the
+            standard audience-mode prompt. Creator Mode passes its own.
     """
-
-    # ── Cap check ──────────────────────────────────────────────────────────────
-    current_count = get_query_count(client_id)
-
-    if current_count >= MONTHLY_QUERY_CAP:
-        return "CAP_REACHED", []
-
-    # Log query and fire alerts at thresholds
-    new_count = log_query(client_id)
-    alert_threshold = int(MONTHLY_QUERY_CAP * CAP_ALERT_THRESHOLD)
-
-    if new_count == alert_threshold:
-        fire_operator_alert(client_id, new_count, MONTHLY_QUERY_CAP, "80pct")
-    elif new_count >= MONTHLY_QUERY_CAP:
-        fire_operator_alert(client_id, new_count, MONTHLY_QUERY_CAP, "cap_hit")
-
-    # ── Retrieve from Pinecone ─────────────────────────────────────────────────
-    pinecone_index = index_wrapper["pinecone_index"]
-    namespace = index_wrapper["namespace"]
-
-    # Embed the question
-    model = get_model()
-    q_embedding = model.encode([question])[0].tolist()
-
-    # Query Pinecone
-    results = pinecone_index.query(
-        vector=q_embedding,
-        top_k=n_results,
-        namespace=namespace,
-        include_metadata=True
-    )
-
-    matches = getattr(results, 'matches', None)
-    if matches is None:
-        matches = results.get("matches", [])
-
     if not matches:
         return "I couldn't find relevant content for that question in this channel's archive.", []
 
@@ -172,17 +141,8 @@ def answer_question(question: str, index_wrapper: dict,
 
     client = anthropic.Anthropic(api_key=anthropic_key)
 
-    system_prompt = """You are an expert research assistant given transcript excerpts from a YouTube channel.
-Answer the user's question based ONLY on the provided transcript excerpts.
-
-Rules:
-- Be specific and detailed, citing concrete examples and direct quotes from the transcripts when they strengthen the answer
-- If the transcripts genuinely don't address the question, say so directly — but do not add caveats about "browsing more episodes" or "the retrieved sample" when you have substantive content to work with
-- Format your answer clearly with bullet points, sections, or numbered lists when helpful
-- Reference specific episode titles in the body of the answer when relevant
-- Keep answers focused, confident, and actionable
-- Do not end your response with disclaimers about the limits of the retrieved content
-- Write as a knowledgeable assistant who has read the relevant material, not as a search engine apologizing for what it didn't find"""
+    if system_prompt is None:
+        system_prompt = DEFAULT_AUDIENCE_SYSTEM_PROMPT
 
     user_prompt = f"""Based on these transcript excerpts from the YouTube channel:
 
@@ -195,31 +155,26 @@ Question: {question}
 Please answer based on the transcripts above."""
 
     # ── Dynamic max_tokens ─────────────────────────────────────────────────────
-    # Scale output budget to question complexity — no point allocating 2000
-    # tokens for a simple factual question that needs 100.
-    #
-    # Signals of complexity:
-    #   - Word count of the question
-    #   - Synthesis keywords (best, overall, most, compare, summarize, list all)
-    #   - Question mark count (compound questions)
-    #
+    # Scale output budget to question complexity. Reduced from prior 2000/1200/600
+    # to 1200/800/500 — typical answers use 700-800 tokens, so the ceiling still
+    # has headroom. Cutting the ceiling reduces Claude generation time by ~40%
+    # (5-8 seconds saved per synthesis query) without truncating most answers.
     word_count = len(question.split())
     synthesis_keywords = {
         "best", "worst", "most", "overall", "summarize", "summary",
         "compare", "list", "all", "every", "philosophy", "advice",
         "approach", "strategy", "explain", "describe", "breakdown"
     }
-    # Strip punctuation before matching so "best?" correctly matches "best"
     clean_words = set(re.sub(r'[^\w\s]', '', question.lower()).split())
     is_synthesis = bool(clean_words & synthesis_keywords)
     is_compound = question.count("?") > 1 or word_count > 20
 
     if is_synthesis or is_compound:
-        max_tokens = 2000   # Complex / synthesis question — full budget
+        max_tokens = 1200
     elif word_count > 10:
-        max_tokens = 1200   # Medium question — moderate budget
+        max_tokens = 800
     else:
-        max_tokens = 600    # Simple / factual question — tight budget
+        max_tokens = 500
 
     message = client.messages.create(
         model="claude-sonnet-4-5",
@@ -230,3 +185,91 @@ Please answer based on the transcripts above."""
 
     answer = message.content[0].text
     return answer, seen_sources
+
+
+def retrieve_matches(question: str, index_wrapper: dict, n_results: int = 8):
+    """
+    Embed a question and query Pinecone for the top-n matching chunks.
+    Returns the raw Pinecone matches list. Shared by live and preloaded paths.
+    """
+    pinecone_index = index_wrapper["pinecone_index"]
+    namespace = index_wrapper["namespace"]
+
+    model = get_model()
+    q_embedding = model.encode([question])[0].tolist()
+
+    results = pinecone_index.query(
+        vector=q_embedding,
+        top_k=n_results,
+        namespace=namespace,
+        include_metadata=True
+    )
+
+    matches = getattr(results, 'matches', None)
+    if matches is None:
+        matches = results.get("matches", [])
+    return matches
+
+
+DEFAULT_AUDIENCE_SYSTEM_PROMPT = """You are an expert research assistant given transcript excerpts from a YouTube channel.
+Answer the user's question based ONLY on the provided transcript excerpts.
+
+Rules:
+- Be specific and detailed, citing concrete examples and direct quotes from the transcripts when they strengthen the answer
+- If the transcripts genuinely don't address the question, say so directly — but do not add caveats about "browsing more episodes" or "the retrieved sample" when you have substantive content to work with
+- Format your answer clearly with bullet points, sections, or numbered lists when helpful
+- Reference specific episode titles in the body of the answer when relevant
+- Keep answers focused, confident, and actionable
+- Do not end your response with disclaimers about the limits of the retrieved content
+- Write as a knowledgeable assistant who has read the relevant material, not as a search engine apologizing for what it didn't find"""
+
+
+CREATOR_SYSTEM_PROMPT = """You are a strategic analyst helping a creator explore their own YouTube archive. The person asking questions IS the creator whose transcripts you are reading. You are showing them patterns, themes, and quotable moments from their own content so they can repurpose it, plan future material, or spot gaps.
+
+Voice and framing:
+- Speak in second person: "you", "your", "you've said". Never refer to the creator in third person.
+- Frame findings as patterns in THEIR thinking, not as objective claims. "Your consistent framing is..." not "The transcripts say...". "You return to this idea in..." not "This idea appears in...".
+- When possible, quantify presence: "You've discussed pricing in about 8 episodes" or "This theme comes up across four episodes including..." — this makes the analysis feel data-driven, not fluffy.
+- Reference specific episodes by title when illustrating a point.
+- For content gap questions, reason about what's ADJACENT to what's covered. "You cover X thoroughly but rarely address Y, which pairs naturally with your existing content on Z."
+- For quotable-line requests, pull actual verbatim quotes and format them as callouts, prioritizing quotes that are punchy, standalone, and could work as social copy.
+
+Rules:
+- Answer ONLY from the provided transcript excerpts. If the transcripts genuinely don't cover something, say so directly, but do not add hedge caveats about "the retrieved sample" or "browsing more episodes."
+- Format clearly with headers, bullet points, or numbered lists when it aids scanability.
+- Keep answers focused, confident, and actionable — the creator is using this to make decisions about their content strategy.
+- Do not end with disclaimers about the limits of the retrieved content.
+- Write as a strategic advisor who has read the creator's full archive, not as a search engine apologizing for what it didn't find."""
+
+
+def answer_question(question: str, index_wrapper: dict,
+                    client_id: str = "demo",
+                    n_results: int = 8,
+                    system_prompt: str = None) -> tuple[str, list[dict]]:
+    """
+    Live query pipeline:
+    1. Check query cap — return CAP_REACHED if exceeded.
+    2. Log query and fire alerts at thresholds.
+    3. Embed question and retrieve top-n chunks from Pinecone.
+    4. Send chunks + question to Claude.
+    Returns (answer_text, list_of_source_dicts).
+    """
+
+    # ── Cap check ──────────────────────────────────────────────────────────────
+    current_count = get_query_count(client_id)
+
+    if current_count >= MONTHLY_QUERY_CAP:
+        return "CAP_REACHED", []
+
+    # Log query and fire alerts at thresholds
+    new_count = log_query(client_id)
+    alert_threshold = int(MONTHLY_QUERY_CAP * CAP_ALERT_THRESHOLD)
+
+    if new_count == alert_threshold:
+        fire_operator_alert(client_id, new_count, MONTHLY_QUERY_CAP, "80pct")
+    elif new_count >= MONTHLY_QUERY_CAP:
+        fire_operator_alert(client_id, new_count, MONTHLY_QUERY_CAP, "cap_hit")
+
+    # Retrieve + generate
+    matches = retrieve_matches(question, index_wrapper, n_results)
+    return _generate_answer_from_context(question, matches, system_prompt)

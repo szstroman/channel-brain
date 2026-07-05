@@ -116,6 +116,11 @@ except Exception as _e:
 # This must run BEFORE any other UI code so hardcoded constants can be replaced
 # with client-specific values.
 from clients_config import get_client
+from preloaded import lookup_preloaded
+# NOTE: `from qa import CREATOR_SYSTEM_PROMPT` is deliberately NOT imported at
+# module scope. qa.py pulls in sentence-transformers (torch, transformers, etc)
+# at import time, which adds several seconds to cold start. We defer it to the
+# live generation path where we already lazy-import `answer_question` anyway.
 
 # Streamlit's query_params returns dict-like; .get() safely handles missing key
 _requested_client = st.query_params.get("client")
@@ -251,7 +256,7 @@ div[class*="st-key-sug_grid"] .stButton button {
     position: absolute;
     top: -60px; right: -60px;
     width: 400px; height: 400px;
-    background: radial-gradient(circle, rgba(212,163,89,0.06) 0%, transparent 70%);
+    background: radial-gradient(circle, var(--accent-glow-soft) 0%, transparent 70%);
     pointer-events: none;
 }
 .hero-eyebrow {
@@ -259,7 +264,7 @@ div[class*="st-key-sug_grid"] .stButton button {
     font-size: 11px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #d4a359;
+    color: var(--accent);
     margin-bottom: 12px;
     display: flex;
     align-items: center;
@@ -273,7 +278,7 @@ div[class*="st-key-sug_grid"] .stButton button {
     color: #f5f0e8;
     margin: 0 0 14px;
 }
-.hero-title span { color: #d4a359; }
+.hero-title span { color: var(--accent); }
 .hero-subtitle {
     font-size: 1.08rem;
     color: #aaa;
@@ -296,7 +301,7 @@ div[class*="st-key-sug_grid"] .stButton button {
     font-family: 'Playfair Display', serif;
     font-size: 2rem;
     font-weight: 700;
-    color: #d4a359;
+    color: var(--accent);
     line-height: 1;
 }
 .stat-label {
@@ -331,7 +336,7 @@ div[class*="st-key-sug_grid"] .stButton button {
 .msg-ai {
     background: #0f0f0f;
     border: 1px solid #1e1e1e;
-    border-left: 3px solid #d4a359;
+    border-left: 3px solid var(--accent);
     border-radius: 16px 16px 16px 2px;
     padding: 16px 18px;
     margin: 12px 0 4px;
@@ -356,15 +361,15 @@ div[class*="st-key-sug_grid"] .stButton button {
 }
 a.source-chip:hover {
     background: #1f1f1f;
-    border-color: #d4a359;
-    color: #d4a359;
+    border-color: var(--accent);
+    color: var(--accent);
     cursor: pointer;
 }
 a.source-chip:visited {
     color: #666;
 }
 a.source-chip:visited:hover {
-    color: #d4a359;
+    color: var(--accent);
 }
 
 /* Suggestions */
@@ -402,7 +407,7 @@ a.source-chip:visited:hover {
 }
 .stButton > button:hover {
     background: #1a1a1a !important;
-    border-color: #d4a359 !important;
+    border-color: var(--accent) !important;
     color: #f5f0e8 !important;
 }
 
@@ -436,7 +441,7 @@ a.source-chip:visited:hover {
     color: #888;
     padding: 2px 0;
 }
-.cta-features li::before { content: '→ '; color: #d4a359; }
+.cta-features li::before { content: '→ '; color: var(--accent); }
 
 /* Inputs */
 .stTextInput > div > div > input {
@@ -449,13 +454,14 @@ a.source-chip:visited:hover {
     padding: 12px 16px !important;
 }
 .stTextInput > div > div > input:focus {
-    border-color: #d4a359 !important;
-    box-shadow: 0 0 0 2px rgba(212,163,89,0.1) !important;
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 2px var(--accent-glow) !important;
 }
 .stTextInput > div > div > input::placeholder { color: #555 !important; }
 .stTextInput label { color: #aaa !important; font-size: 0.84rem !important; }
 
-/* Ask button */
+/* Ask button — stays gold in BOTH modes for brand consistency and CTA effectiveness.
+   Do not change to var(--accent). */
 .ask-btn > button {
     background: #d4a359 !important;
     color: #0a0a0a !important;
@@ -484,7 +490,7 @@ a.source-chip:visited:hover {
 
 /* Toast */
 .toast {
-    background: #d4a359;
+    background: var(--accent);
     color: #0a0a0a;
     padding: 10px 18px;
     border-radius: 8px;
@@ -543,10 +549,49 @@ if not ss_has("generating"):
     ss_set("generating", False)
 if not ss_has("pending_generation"):
     ss_set("pending_generation", None)
+# Mode: "audience" (default) or "creator". Controls suggestions, prompt, and
+# accent color. See R3-01 for the toggle logic below.
+if not ss_has("mode"):
+    ss_set("mode", "audience")
+
+# Helper for concise mode checks throughout the layout code
+def is_creator_mode() -> bool:
+    return ss_get("mode") == "creator"
 
 # loading_started stays global — it's just a splash-screen flag, not client-specific
 if "loading_started" not in st.session_state:
     st.session_state.loading_started = False
+
+# ── Mode-based CSS palette ────────────────────────────────────────────────────
+# Every accent color in the main style block above uses var(--accent) etc.
+# Here we set the actual values based on the current session mode. Audience mode
+# gets a cool blue palette ("utility / library" feel); Creator Mode gets the
+# original gold ("premium / brand" feel). Ask/CTA buttons stay gold in both
+# modes (see comment above .ask-btn styles).
+if is_creator_mode():
+    _accent_hex = "#d4a359"
+    _accent_hover_hex = "#c4934a"
+    _glow_soft = "rgba(212,163,89,0.06)"
+    _glow = "rgba(212,163,89,0.1)"
+    _glow_strong = "rgba(212,163,89,0.3)"
+else:
+    _accent_hex = "#5eb8ff"
+    _accent_hover_hex = "#3a9aec"
+    _glow_soft = "rgba(94,184,255,0.06)"
+    _glow = "rgba(94,184,255,0.1)"
+    _glow_strong = "rgba(94,184,255,0.3)"
+
+st.markdown(f"""
+<style>
+.stApp {{
+    --accent: {_accent_hex};
+    --accent-hover: {_accent_hover_hex};
+    --accent-glow-soft: {_glow_soft};
+    --accent-glow: {_glow};
+    --accent-glow-strong: {_glow_strong};
+}}
+</style>
+""", unsafe_allow_html=True)
 
 # ── Load index on startup ──────────────────────────────────────────────────────
 # These constants now derive from the resolved client rather than hardcoded values.
@@ -618,17 +663,17 @@ splash.markdown("""
                 color:#f5f0e8; margin-bottom:12px; font-weight:700;">
         Channel Brain
     </div>
-    <div style="color:#d4a359; font-family:'DM Mono',monospace;
+    <div style="color:var(--accent); font-family:'DM Mono',monospace;
                 font-size:12px; letter-spacing:3px; text-transform:uppercase;
                 margin-bottom:32px;">
         Loading archive...
     </div>
     <div style="display:flex; gap:12px; align-items:center; justify-content:center;">
-        <div style="width:10px; height:10px; border-radius:50%; background:#d4a359;
+        <div style="width:10px; height:10px; border-radius:50%; background:var(--accent);
                     animation:pulse 1.2s infinite;"></div>
-        <div style="width:10px; height:10px; border-radius:50%; background:#d4a359;
+        <div style="width:10px; height:10px; border-radius:50%; background:var(--accent);
                     animation:pulse 1.2s 0.4s infinite;"></div>
-        <div style="width:10px; height:10px; border-radius:50%; background:#d4a359;
+        <div style="width:10px; height:10px; border-radius:50%; background:var(--accent);
                     animation:pulse 1.2s 0.8s infinite;"></div>
     </div>
 </div>
@@ -655,7 +700,7 @@ if CURRENT_CLIENT_STATUS == "inactive":
                     margin-bottom:12px; font-weight:700;">
             Channel Brain
         </div>
-        <div style="color:#d4a359; font-family:'DM Mono',monospace; font-size:11px;
+        <div style="color:var(--accent); font-family:'DM Mono',monospace; font-size:11px;
                     letter-spacing:3px; text-transform:uppercase; margin-bottom:32px;">
             No longer available
         </div>
@@ -665,7 +710,7 @@ if CURRENT_CLIENT_STATUS == "inactive":
         </div>
         <div style="margin-top:36px;">
             <a href="https://channel-brain-production.up.railway.app"
-               style="color:#d4a359; text-decoration:none; font-family:'DM Mono',monospace;
+               style="color:var(--accent); text-decoration:none; font-family:'DM Mono',monospace;
                       font-size:10px; letter-spacing:2px; text-transform:uppercase;">
                 → View the Channel Brain demo ↗
             </a>
@@ -676,6 +721,23 @@ if CURRENT_CLIENT_STATUS == "inactive":
 
 # Try to load index — cached per-client so only runs once per (server, client) pair
 collection, stats = load_demo_index(CURRENT_CLIENT_ID)
+
+# ── Pre-warm the embedding model while the splash is still showing ─────
+# This is a speed optimization: the sentence-transformers model takes 2-3s
+# to load on first use, which would normally happen on the visitor's first
+# query. By calling get_model() here, we pay that cost inside the splash
+# window where the visitor is already waiting — so their first real query
+# feels instant instead of adding an extra 2-3s delay.
+#
+# Wrapped in try/except so a model-load failure doesn't crash the whole
+# demo. If it fails here, the first live query pays the cost as before.
+if collection is not None:
+    try:
+        from qa import get_model
+        _warm_model = get_model()
+    except Exception as _e:
+        print(f"[startup] embedding model pre-warm failed: "
+              f"{type(_e).__name__}: {_e}", flush=True)
 
 # Clear splash regardless of outcome
 splash.empty()
@@ -691,7 +753,7 @@ if collection is None:
                     color:#f5f0e8; margin-bottom:16px;">
             Channel Brain
         </div>
-        <div style="color:#d4a359; font-family:'DM Mono',monospace;
+        <div style="color:var(--accent); font-family:'DM Mono',monospace;
                     font-size:12px; letter-spacing:3px; text-transform:uppercase;
                     margin-bottom:24px;">
             Coming Soon
@@ -718,16 +780,34 @@ chunks_count = stats.get("total_chunks", "1,445") if stats else "1,445"
 left_col, right_col = st.columns([3, 1])
 
 with left_col:
-    # Hero
+    # Hero — copy shifts based on mode. Audience frames as "this could be YOUR
+    # channel" (imagining the product); Creator Mode frames as "this IS your
+    # archive" (already yours, working for you).
+    if is_creator_mode():
+        _eyebrow_text = "Creator Mode — Your Archive"
+        _hero_title_html = 'This is <span>your archive</span><br>working for you.'
+        _hero_subtitle_html = (
+            "Creator Mode turns your own video archive into a strategic mirror. "
+            "Ask what patterns you keep returning to, pull quotable moments, spot "
+            "gaps in what you've covered. Right now you're exploring "
+            f"<strong style=\"color:#f5f0e8;\">{CHANNEL_NAME}</strong>'s archive."
+        )
+    else:
+        _eyebrow_text = "Channel Brain — Live Demo"
+        _hero_title_html = 'This is what<br><span>your channel</span><br>could look like.'
+        _hero_subtitle_html = (
+            "Channel Brain turns any YouTube archive into an AI assistant your audience "
+            "can have a conversation with. Below is a working example built on "
+            f"<strong style=\"color:#f5f0e8;\">{CHANNEL_NAME}</strong> — "
+            "a channel we indexed to show you exactly how it works."
+        )
+
     st.markdown(f"""
     <div class="hero">
-        <div class="hero-eyebrow"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#d4a359;margin-right:8px;vertical-align:middle;"></span>Channel Brain — Live Demo</div>
-        <h1 class="hero-title">This is what<br><span>your channel</span><br>could look like.</h1>
+        <div class="hero-eyebrow"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:middle;"></span>{_eyebrow_text}</div>
+        <h1 class="hero-title">{_hero_title_html}</h1>
         <p class="hero-subtitle">
-            Channel Brain turns any YouTube archive into an AI assistant your audience
-            can have a conversation with. Below is a working example built on
-            <strong style="color:#f5f0e8;">{CHANNEL_NAME}</strong> —
-            a channel we indexed to show you exactly how it works.
+            {_hero_subtitle_html}
         </p>
         <div class="stat-row">
             <div class="stat-item">
@@ -746,33 +826,49 @@ with left_col:
     </div>
     """, unsafe_allow_html=True)
 
-    st.markdown(f'<div class="chat-label" style="padding-left:56px;">Try it — ask the {CHANNEL_NAME} archive anything</div>', unsafe_allow_html=True)
+    _chat_label = (
+        f"Try it — explore your archive"
+        if is_creator_mode()
+        else f"Try it — ask the {CHANNEL_NAME} archive anything"
+    )
+    st.markdown(f'<div class="chat-label" style="padding-left:56px;">{_chat_label}</div>', unsafe_allow_html=True)
     st.markdown(f"""
     <div style="margin-bottom: 20px; padding-left:56px;">
         <a href="{CHANNEL_URL}" target="_blank"
-           style="color:#d4a359; font-size:0.82rem; font-family:'DM Mono',monospace;
+           style="color:var(--accent); font-size:0.82rem; font-family:'DM Mono',monospace;
                   text-decoration:none; letter-spacing:1px;">
             → Browse {CHANNEL_NAME} on YouTube ↗
         </a>
     </div>
     """, unsafe_allow_html=True)
 
-    # Suggested questions
-    # NOTE: These are hardcoded for the default Koerner Office demo. When we add
-    # niche demos (e.g., real estate creator), each client's suggestions should
-    # come from clients.json. For R2-07 this is left as-is since the default
-    # client is currently the only client.
-    suggestions = [
-        "What are Chris' favorite business ideas of all time?",
-        "What does Chris say about starting a business with little money?",
-        "What are the most common pieces of advice Chris gives entrepreneurs?",
-        "What are Chris' top thoughts on service businesses like pressure washing?",
-        "What has Chris said about real estate and RV park investing?",
-        "What is Chris' best advice for someone just getting started?",
-    ]
+    # Suggested questions — pulled from clients.json per client + mode (R3-02).
+    # Falls back to hardcoded list only if clients_config didn't fill in defaults
+    # (defensive; shouldn't happen after R3-08 landed).
+    if is_creator_mode():
+        suggestions = CURRENT_CLIENT.get("creator_suggestions") or [
+            "What are my top pieces of advice on starting a business with no money?",
+            "What themes come up most often in my episodes?",
+            "What have I said about pricing services?",
+            "Which episodes best summarize my philosophy on entrepreneurship?",
+            "What content gaps could I fill based on what I've covered?",
+            "Pull my most quotable one-liners about business.",
+        ]
+    else:
+        suggestions = CURRENT_CLIENT.get("audience_suggestions") or [
+            "What are Chris' favorite business ideas of all time?",
+            "What does Chris say about starting a business with little money?",
+            "What are the most common pieces of advice Chris gives entrepreneurs?",
+            "What are Chris' top thoughts on service businesses like pressure washing?",
+            "What has Chris said about real estate and RV park investing?",
+            "What is Chris' best advice for someone just getting started?",
+        ]
 
-    # Track generating state for button disabling
-    is_generating = ss_get("generating", False)
+    # Track generating state for button disabling. Also treat an in-flight
+    # preloaded delivery (Phase 1 fired, Phase 2 not yet complete) as "generating"
+    # so buttons visibly disable during the 1.5s animation window and match
+    # the live-query UX exactly.
+    is_generating = ss_get("generating", False) or ss_has("pending_preloaded")
 
     if not ss_get("chat_history"):
         st.markdown('<div class="suggestions-label" style="padding-left:8px;">Try asking</div>', unsafe_allow_html=True)
@@ -794,7 +890,7 @@ with left_col:
                         <div style="font-size:1.3rem; margin-bottom:8px;">🧠</div>
                         <div style="color:#f5f0e8; font-weight:600; margin-bottom:6px;">The archive is resting for this month.</div>
                         <div style="color:#888; font-size:0.85rem; margin-bottom:12px;">Resets on the 1st of next month.</div>
-                        <a href="{CHANNEL_URL}" target="_blank" style="background:#d4a359; color:#0a0a0a; padding:8px 20px; border-radius:6px; text-decoration:none; font-weight:600; font-size:0.85rem;">Browse {CHANNEL_NAME} on YouTube →</a>
+                        <a href="{CHANNEL_URL}" target="_blank" style="background:var(--accent); color:#0a0a0a; padding:8px 20px; border-radius:6px; text-decoration:none; font-weight:600; font-size:0.85rem;">Browse {CHANNEL_NAME} on YouTube →</a>
                     </div>'''
                 else:
                     content = msg["content"].replace("\n", "<br>")
@@ -851,6 +947,7 @@ with left_col:
     # This prevents a second click (which may slip through during the network
     # round-trip before disabled buttons render) from hijacking the in-flight request.
     final_q = None
+    final_q_from_suggestion = False
     if ss_get("generating", False):
         # Discard any stray click that landed during generation
         if ss_has("pending_q"):
@@ -858,9 +955,100 @@ with left_col:
         final_q = ss_get("pending_generation")
     elif ask_btn and question:
         final_q = question
+        final_q_from_suggestion = False
     elif ss_has("pending_q"):
         final_q = ss_get("pending_q")
         ss_del("pending_q")
+        final_q_from_suggestion = True
+
+    # ── Preloaded cache lookup (R3-10) ─────────────────────────────────────
+    # Suggestion clicks check the preloaded cache first. On hit, we short-circuit
+    # the Claude call — but we still want the visual experience to match a live
+    # query (branded "Searching the archive" animation + short delay) so
+    # visitors don't feel a jarring difference between preloaded and live paths.
+    # Two-phase pattern (mirrors the write-in flow):
+    #   Phase 1: append user message, save cached answer to pending, rerun
+    #   Phase 2: render thinking animation, sleep, append assistant message, rerun
+    # Write-in questions never use the cache — they always go live.
+    #
+    # lookup_preloaded is documented never to raise, but we wrap it defensively:
+    # if something ever DOES go wrong (corrupt cache, disk error, bug in a
+    # future refactor), we want the demo to gracefully fall through to live
+    # generation, not show a Streamlit error page.
+    if final_q and final_q_from_suggestion and not ss_get("generating", False) and not ss_has("pending_preloaded"):
+        _mode = "creator" if is_creator_mode() else "audience"
+        _cache_ok = False
+        try:
+            _cached = lookup_preloaded(CURRENT_CLIENT_ID, _mode, final_q)
+            if _cached is not None:
+                # Guard against a future contract break — lookup_preloaded is
+                # documented to return (str, list) or None, but be defensive.
+                _answer, _sources = _cached
+                _cache_ok = True
+        except Exception as _e:
+            print(f"[preloaded] lookup or unpack failed: {type(_e).__name__}: {_e}",
+                  flush=True)
+            _cache_ok = False
+        if _cache_ok:
+            # Phase 1: append user message, stash the cached answer for phase 2
+            ss_get("chat_history").append({"role": "user", "content": final_q})
+            ss_set("pending_preloaded", {"answer": _answer, "sources": _sources})
+            # Clear final_q so the live-path code below doesn't also run
+            final_q = None
+            st.rerun()
+
+    # ── Preloaded Phase 2: thinking animation + delay + delivery ───────────
+    # Runs on the rerun AFTER phase 1 (which appended the user message and
+    # stashed the cached answer). We show the same "Searching the archive"
+    # animation as the live path, then a short delay, then append the answer.
+    # This makes preloaded clicks feel identical to write-ins from the visitor's
+    # perspective.
+    if ss_has("pending_preloaded"):
+        _pending = ss_get("pending_preloaded")
+        # Render the same animation as the live path (identical HTML)
+        _p2_thinking = st.empty()
+        _p2_thinking.markdown(f"""
+        <div style="display:flex; align-items:flex-start; gap:12px; margin:12px 0;">
+            <div style="font-size:1.2rem; margin-top:2px;">🧠</div>
+            <div style="background:#1a1a1a; border-left:3px solid var(--accent);
+                        border-radius:0 8px 8px 0; padding:16px 20px;
+                        display:flex; align-items:center; gap:16px;">
+                <div style="color:#888; font-size:0.85rem; font-family:'DM Mono',monospace;
+                            letter-spacing:1px; text-transform:uppercase;">
+                    Searching the archive
+                </div>
+                <div style="display:flex; gap:6px; align-items:center;">
+                    <div style="width:7px; height:7px; border-radius:50%;
+                                background:var(--accent); animation:tpulse 1.2s infinite;"></div>
+                    <div style="width:7px; height:7px; border-radius:50%;
+                                background:var(--accent); animation:tpulse 1.2s 0.4s infinite;"></div>
+                    <div style="width:7px; height:7px; border-radius:50%;
+                                background:var(--accent); animation:tpulse 1.2s 0.8s infinite;"></div>
+                </div>
+            </div>
+        </div>
+        <style>
+        @keyframes tpulse {{
+            0%, 100% {{ opacity:0.2; transform:scale(0.7); }}
+            50% {{ opacity:1; transform:scale(1.1); }}
+        }}
+        </style>
+        """, unsafe_allow_html=True)
+
+        # Deliberate delay so the visitor sees the animation. Long enough to feel
+        # like real work; short enough that it doesn't feel slow. 1.5s hits the
+        # sweet spot — matches typical live query "thinking" time (~1-2s).
+        time.sleep(1.5)
+
+        # Append the cached answer and clear pending state
+        ss_get("chat_history").append({
+            "role": "assistant",
+            "content": _pending["answer"],
+            "sources": _pending["sources"],
+        })
+        ss_del("pending_preloaded")
+        _p2_thinking.empty()
+        st.rerun()
 
     if final_q:
         anthropic_key = os.environ.get("ANTHROPIC_API_KEY", "")
@@ -888,7 +1076,7 @@ with left_col:
                 thinking.markdown(f"""
                 <div style="display:flex; align-items:flex-start; gap:12px; margin:12px 0;">
                     <div style="font-size:1.2rem; margin-top:2px;">🧠</div>
-                    <div style="background:#1a1a1a; border-left:3px solid #d4a359;
+                    <div style="background:#1a1a1a; border-left:3px solid var(--accent);
                                 border-radius:0 8px 8px 0; padding:16px 20px;
                                 display:flex; align-items:center; gap:16px;">
                         <div style="color:#888; font-size:0.85rem; font-family:'DM Mono',monospace;
@@ -897,11 +1085,11 @@ with left_col:
                         </div>
                         <div style="display:flex; gap:6px; align-items:center;">
                             <div style="width:7px; height:7px; border-radius:50%;
-                                        background:#d4a359; animation:tpulse 1.2s infinite;"></div>
+                                        background:var(--accent); animation:tpulse 1.2s infinite;"></div>
                             <div style="width:7px; height:7px; border-radius:50%;
-                                        background:#d4a359; animation:tpulse 1.2s 0.4s infinite;"></div>
+                                        background:var(--accent); animation:tpulse 1.2s 0.4s infinite;"></div>
                             <div style="width:7px; height:7px; border-radius:50%;
-                                        background:#d4a359; animation:tpulse 1.2s 0.8s infinite;"></div>
+                                        background:var(--accent); animation:tpulse 1.2s 0.8s infinite;"></div>
                         </div>
                     </div>
                 </div>
@@ -914,18 +1102,30 @@ with left_col:
                 """, unsafe_allow_html=True)
 
                 try:
-                    from qa import answer_question
+                    # Lazy imports — qa pulls in sentence-transformers (torch/transformers)
+                    # which is heavy. Deferring means faster cold start; the import
+                    # cost is paid on first real query, not on demo page load.
+                    from qa import answer_question, CREATOR_SYSTEM_PROMPT
                     os.environ["ANTHROPIC_API_KEY"] = anthropic_key
-                    answer, sources = answer_question(final_q, ss_get("index"), client_id=CURRENT_CLIENT["namespace"])
+                    # Creator Mode uses the second-person "your archive" prompt;
+                    # audience mode uses the default (system_prompt=None).
+                    _live_prompt = CREATOR_SYSTEM_PROMPT if is_creator_mode() else None
+                    answer, sources = answer_question(
+                        final_q,
+                        ss_get("index"),
+                        client_id=CURRENT_CLIENT["namespace"],
+                        system_prompt=_live_prompt,
+                    )
 
                     if answer == "CAP_REACHED":
-                        # Show cap message immediately in placeholder
+                        # Show cap message immediately in placeholder — this stays
+                        # visible until the rerun renders the persisted version
                         thinking.markdown(f"""
                         <div class="msg-ai" style="border-left-color:#888; text-align:center; padding:20px;">
                             <div style="font-size:1.3rem; margin-bottom:8px;">🧠</div>
                             <div style="color:#f5f0e8; font-weight:600; margin-bottom:6px;">The archive is resting for this month.</div>
                             <div style="color:#888; font-size:0.85rem; margin-bottom:12px;">Resets on the 1st of next month.</div>
-                            <a href="{CHANNEL_URL}" target="_blank" style="background:#d4a359; color:#0a0a0a; padding:8px 20px;
+                            <a href="{CHANNEL_URL}" target="_blank" style="background:var(--accent); color:#0a0a0a; padding:8px 20px;
                                border-radius:6px; text-decoration:none; font-weight:600; font-size:0.85rem;">
                                Browse {CHANNEL_NAME} on YouTube →</a>
                         </div>
@@ -936,13 +1136,13 @@ with left_col:
                             "sources": [],
                         })
                     else:
-                        # Render answer immediately — eliminates blank gap before rerun
-                        content = answer.replace("\n", "<br>")
-                        thinking.markdown(f"""
-                        <div class="chat-scroll">
-                            <div class="msg-ai">{content}</div>
-                        </div>
-                        """, unsafe_allow_html=True)
+                        # Clear the thinking placeholder before rerun. Previously this
+                        # rendered the answer inline in the placeholder to avoid a "blank
+                        # gap" during rerun, but that caused a visible flash — the answer
+                        # appeared BELOW the input field, then jumped INTO the chat
+                        # history above on rerun. Clearing empty is cleaner: brief blank
+                        # for ~200ms, then answer renders in its final position.
+                        thinking.empty()
                         ss_get("chat_history").append({
                             "role": "assistant",
                             "content": answer,
@@ -978,13 +1178,13 @@ with right_col:
             Channel Brain
         </div>
         <div style="font-family:monospace; font-size:10px;
-                    letter-spacing:3px; color:#d4a359; text-transform:uppercase;">
+                    letter-spacing:3px; color:var(--accent); text-transform:uppercase;">
             Turn your archive into an AI
         </div>
     </div>
     <hr style="border:none; border-top:1px solid #1e1e1e; margin: 0 0 20px;">
     <div style="display:flex; align-items:flex-start; gap:14px; padding:14px 0;">
-        <div style="min-width:36px; height:36px; border-radius:50%; background:#d4a359;
+        <div style="min-width:36px; height:36px; border-radius:50%; background:var(--accent);
                     color:#0a0a0a; font-weight:700; font-size:0.85rem; display:flex;
                     align-items:center; justify-content:center; flex-shrink:0;">1</div>
         <div>
@@ -996,7 +1196,7 @@ with right_col:
     </div>
     <hr style="border:none; border-top:1px solid #1a1a1a; margin:0;">
     <div style="display:flex; align-items:flex-start; gap:14px; padding:14px 0;">
-        <div style="min-width:36px; height:36px; border-radius:50%; background:#d4a359;
+        <div style="min-width:36px; height:36px; border-radius:50%; background:var(--accent);
                     color:#0a0a0a; font-weight:700; font-size:0.85rem; display:flex;
                     align-items:center; justify-content:center; flex-shrink:0;">2</div>
         <div>
@@ -1008,7 +1208,7 @@ with right_col:
     </div>
     <hr style="border:none; border-top:1px solid #1a1a1a; margin:0;">
     <div style="display:flex; align-items:flex-start; gap:14px; padding:14px 0;">
-        <div style="min-width:36px; height:36px; border-radius:50%; background:#d4a359;
+        <div style="min-width:36px; height:36px; border-radius:50%; background:var(--accent);
                     color:#0a0a0a; font-weight:700; font-size:0.85rem; display:flex;
                     align-items:center; justify-content:center; flex-shrink:0;">3</div>
         <div>
@@ -1019,44 +1219,147 @@ with right_col:
         </div>
     </div>
     <hr style="border:none; border-top:1px solid #1e1e1e; margin:0 0 24px;">
+    """, unsafe_allow_html=True)
 
-    <!-- Creator Mode value prop reveal -->
-    <div style="background: linear-gradient(135deg, #1a1410 0%, #14110a 100%);
-                border-left: 3px solid #d4a359;
-                border-radius: 0 6px 6px 0;
-                padding: 18px 18px 16px;
-                margin: 0 0 24px;">
-        <div style="color:#d4a359; font-family:'DM Mono',monospace;
-                    font-size:10px; letter-spacing:2px; text-transform:uppercase;
-                    margin-bottom:8px;">
-            Plus — for you
-        </div>
-        <div style="color:#f5f0e8; font-family:Georgia,serif;
-                    font-size:1.05rem; font-weight:600; line-height:1.35;
-                    margin-bottom:10px;">
-            Your archive becomes a tool you can use, too
-        </div>
-        <div style="color:#999; font-size:0.78rem; line-height:1.6; margin-bottom:12px;">
-            Channel Brain isn't just for your audience. Switch to <strong style="color:#d4a359;">Creator Mode</strong>
-            and you can search your own archive for:
-        </div>
-        <ul style="color:#bbb; font-size:0.78rem; line-height:1.7;
-                   margin:0; padding-left:18px; list-style: none;">
-            <li style="margin-bottom:4px;">
-                <span style="color:#d4a359;">→</span>
-                <strong style="color:#d4d0c8;">Your best thinking on any topic</strong> for newsletters, talks, or social
-            </li>
-            <li style="margin-bottom:4px;">
-                <span style="color:#d4a359;">→</span>
-                <strong style="color:#d4d0c8;">Course and book material</strong> organized by theme, not by episode date
-            </li>
-            <li>
-                <span style="color:#d4a359;">→</span>
-                <strong style="color:#d4d0c8;">Content gap analysis</strong> — what your audience wants that you haven't covered yet
-            </li>
-        </ul>
+    # ── Creator Mode toggle (R3-01) ────────────────────────────────────────
+    # The toggle sits at the TOP of the "Plus — for you" section — it IS the
+    # value prop, not a footnote. Toggling switches every part of the demo
+    # (suggestions, accent color, hero copy, system prompt) and clears the
+    # current chat so context doesn't bleed between the two conversations.
+    _in_creator_mode_before = is_creator_mode()
+    # Disable toggle during any generation window — live query OR preloaded
+    # delivery. Same reasoning as the button disable above: consistent UX.
+    _is_generating = ss_get("generating", False) or ss_has("pending_preloaded")
+
+    # Frame the section header depending on current mode so it reads correctly
+    # for whichever direction the visitor is about to go.
+    if _in_creator_mode_before:
+        _plus_eyebrow = "You're in Creator Mode"
+        _plus_headline = "Your archive is working for you"
+        _plus_body_html = (
+            "You're seeing the creator side of the demo — first-person analysis "
+            "of your own archive. Toggle off to see what your audience would experience."
+        )
+    else:
+        _plus_eyebrow = "Plus — for you"
+        _plus_headline = "Your archive becomes a tool you can use, too"
+        _plus_body_html = (
+            "Channel Brain isn't just for your audience. "
+            "Turn on <strong style=\"color:var(--accent);\">Creator Mode</strong> "
+            "to search your own archive for:"
+        )
+
+    # ── Custom CSS for the toggle (Streamlit's default text color is dark) ──
+    # Force the toggle label text to be light enough to read on the dark bg.
+    # Also enlarge it since this is the featured CTA of the right column.
+    st.markdown("""
+    <style>
+    /* Toggle wrapper: bright label, larger type, centered */
+    div[data-testid="stCheckbox"] label,
+    div[data-testid="stCheckbox"] label p,
+    div[data-testid="stCheckbox"] label span,
+    div[data-testid="stCheckbox"] label div {
+        color: #f5f0e8 !important;
+        font-size: 0.98rem !important;
+        font-weight: 600 !important;
+        font-family: 'DM Sans', sans-serif !important;
+    }
+    /* The toggle track itself — bump size a bit so it feels prominent */
+    div[data-testid="stCheckbox"] label > div:first-child {
+        transform: scale(1.15);
+    }
+    /* Container: gets some breathing room so it doesn't feel cramped */
+    .creator-toggle-wrap {
+        background: linear-gradient(135deg, #1a1410 0%, #14110a 100%);
+        border-left: 3px solid var(--accent);
+        border-radius: 0 6px 6px 0;
+        padding: 18px 20px 14px;
+        margin: 0 0 16px;
+    }
+    .creator-toggle-eyebrow {
+        color: var(--accent);
+        font-family: 'DM Mono', monospace;
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+    .creator-toggle-headline {
+        color: #f5f0e8;
+        font-family: Georgia, serif;
+        font-size: 1.05rem;
+        font-weight: 600;
+        line-height: 1.35;
+        margin-bottom: 8px;
+    }
+    .creator-toggle-body {
+        color: #999;
+        font-size: 0.78rem;
+        line-height: 1.6;
+        margin-bottom: 14px;
+    }
+    .creator-toggle-bullets {
+        color: #bbb;
+        font-size: 0.78rem;
+        line-height: 1.7;
+        margin: 12px 0 0;
+        padding-left: 18px;
+        list-style: none;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+    # Panel header + body — rendered ABOVE the toggle so the toggle sits
+    # as the visible "action" following the pitch
+    st.markdown(f"""
+    <div class="creator-toggle-wrap">
+        <div class="creator-toggle-eyebrow">{_plus_eyebrow}</div>
+        <div class="creator-toggle-headline">{_plus_headline}</div>
+        <div class="creator-toggle-body">{_plus_body_html}</div>
     </div>
+    """, unsafe_allow_html=True)
 
+    # The toggle itself — Streamlit widget. Disabled during generation.
+    _new_toggle_state = st.toggle(
+        "🎨 Try Creator Mode" if not _in_creator_mode_before else "🎨 Creator Mode is on",
+        value=_in_creator_mode_before,
+        key=ck("creator_mode_toggle"),
+        disabled=_is_generating,
+        help="See what your own Channel Brain would look like — mining your archive for patterns, quotes, and gaps.",
+    )
+    if _new_toggle_state != _in_creator_mode_before:
+        # Mode changed — update state, clear chat history so contexts don't bleed,
+        # discard any pending suggestion click that hasn't been processed yet.
+        ss_set("mode", "creator" if _new_toggle_state else "audience")
+        ss_set("chat_history", [])
+        if ss_has("pending_q"):
+            ss_del("pending_q")
+        # Also clear any preloaded response mid-delivery so a mode-flip
+        # doesn't leave an orphaned assistant message about to append.
+        if ss_has("pending_preloaded"):
+            ss_del("pending_preloaded")
+        st.rerun()
+
+    # Bullet list — rendered BELOW the toggle so the toggle is sandwiched
+    # between "here's why you want this" and "here's what you'd get"
+    st.markdown("""
+    <ul class="creator-toggle-bullets" style="margin-bottom: 24px;">
+        <li style="margin-bottom:4px;">
+            <span style="color:var(--accent);">→</span>
+            <strong style="color:#d4d0c8;">Your best thinking on any topic</strong> for newsletters, talks, or social
+        </li>
+        <li style="margin-bottom:4px;">
+            <span style="color:var(--accent);">→</span>
+            <strong style="color:#d4d0c8;">Course and book material</strong> organized by theme, not by episode date
+        </li>
+        <li>
+            <span style="color:var(--accent);">→</span>
+            <strong style="color:#d4d0c8;">Content gap analysis</strong> — what your audience wants that you haven't covered yet
+        </li>
+    </ul>
+    """, unsafe_allow_html=True)
+
+    st.markdown("""
     <div class="cta-box">
         <div class="cta-title">Want Channel Brain for your channel?</div>
         <p class="cta-body">
@@ -1132,7 +1435,7 @@ with right_col:
         <strong style="color:#888;">This is not affiliated with or endorsed
         by {CHANNEL_NAME}.</strong><br><br>
         <a href="{CHANNEL_URL}" target="_blank"
-           style="color: #d4a359; text-decoration: none;">
+           style="color: var(--accent); text-decoration: none;">
             → Visit {CHANNEL_NAME} ↗
         </a>
     </div>
