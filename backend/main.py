@@ -67,10 +67,16 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(me
 logger = logging.getLogger(__name__)
 
 
-# ── Bootstrap: seed /data volume from repo on first startup ───────────────────
-# When deployed to Railway, /data may start empty. If we have bootstrap files
-# committed to the repo at /bootstrap/, copy them to /data/ on first run.
-# After the first copy, /data/ persists across deploys so we never copy again.
+# ── Bootstrap: seed /data volume from repo on every startup ───────────────────
+# The committed `bootstrap/` folder is the source of truth. Any *.json there is
+# copied into /data/ on startup, overwriting existing files. This way, updating
+# a bootstrap file in git and pushing WILL update the deployed cache — no need
+# to manually delete files on the Railway volume.
+#
+# The tradeoff: /data isn't a place to write runtime state anymore (would get
+# clobbered on next deploy). For now that's fine — nothing at runtime writes
+# to /data. If we later need runtime persistence (e.g., cap counters in a DB),
+# we'll move that to a separate location like /data/runtime/.
 def _bootstrap_data_volume():
     import shutil
     bootstrap_dir = Path(_PARENT_DIR) / "bootstrap"
@@ -86,12 +92,11 @@ def _bootstrap_data_volume():
 
     for src in bootstrap_dir.glob("*.json"):
         dest = target_dir / src.name
-        if not dest.exists():
-            try:
-                shutil.copy2(src, dest)
-                logger.info(f"Bootstrapped {src.name} into /data")
-            except Exception as e:
-                logger.warning(f"Failed to bootstrap {src.name}: {e}")
+        try:
+            shutil.copy2(src, dest)
+            logger.info(f"Bootstrapped {src.name} into /data")
+        except Exception as e:
+            logger.warning(f"Failed to bootstrap {src.name}: {e}")
 
 
 _bootstrap_data_volume()
