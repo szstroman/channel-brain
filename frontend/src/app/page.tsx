@@ -448,6 +448,10 @@ export default function Home() {
               disabled={streaming || atLimit}
               placeholder={atLimit ? "Start a new chat to continue..." : "Ask anything..."}
             />
+            <p className="text-center text-[10px] text-fg-dim mt-2 leading-relaxed">
+              AI-generated from public YouTube content. May contain inaccuracies.
+              For educational purposes only. Not affiliated with or endorsed by {creatorName}.
+            </p>
           </div>
         </section>
 
