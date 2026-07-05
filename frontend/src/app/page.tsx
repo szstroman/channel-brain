@@ -450,7 +450,7 @@ export default function Home() {
             />
             <p className="text-center text-[10px] text-fg-dim mt-2 leading-relaxed">
               AI-generated from public YouTube content. May contain inaccuracies.
-              For educational purposes only. Not affiliated with or endorsed by {creatorName}.
+              For educational purposes only. Not affiliated with or endorsed by the source channel.
             </p>
           </div>
         </section>
@@ -554,10 +554,10 @@ export default function Home() {
 
         <footer className="max-w-3xl mx-auto px-4 py-8 text-center">
           <p className="text-fg-dim text-[11px] leading-relaxed">
-            Channel Brain is an AI assistant trained on {creatorName}&apos;s
-            public YouTube content. Responses are for educational purposes only
-            and may contain inaccuracies. Not affiliated with or endorsed by the
-            creator unless stated otherwise.
+            Channel Brain is an AI assistant trained on a creator&apos;s public
+            YouTube content. Responses are for educational purposes only and may
+            contain inaccuracies. Not affiliated with or endorsed by the source
+            channel unless stated otherwise.
           </p>
         </footer>
       </main>
