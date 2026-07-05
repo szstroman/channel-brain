@@ -50,10 +50,13 @@ _PARENT_DIR = str(Path(__file__).resolve().parent.parent)
 if _PARENT_DIR not in sys.path:
     sys.path.insert(0, _PARENT_DIR)
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import StreamingResponse, JSONResponse
 from pydantic import BaseModel, Field
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
 import anthropic
 
 # Reuse existing project modules
@@ -105,6 +108,26 @@ _bootstrap_data_volume()
 # ── App and CORS ──────────────────────────────────────────────────────────────
 
 app = FastAPI(title="Channel Brain API", version="0.1.0")
+
+# ── Rate limiting ─────────────────────────────────────────────────────────────
+# Per-IP rate limits protect against abuse. Two tiers:
+#   - Cheap endpoints (health, client config): unlimited
+#   - Live query endpoint: burn-the-Anthropic-budget protection
+#   - Lead capture: form-spam protection
+#
+# On Railway, get_remote_address returns Railway's edge proxy IP by default.
+# We use X-Forwarded-For (set by Railway's proxy) to get the real client IP.
+def _real_ip(request: Request) -> str:
+    xff = request.headers.get("x-forwarded-for", "")
+    if xff:
+        # X-Forwarded-For can have multiple hops; the first is the original client.
+        return xff.split(",")[0].strip()
+    return get_remote_address(request)
+
+
+limiter = Limiter(key_func=_real_ip)
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 # In local dev, Next.js runs on :3000 and backend on :8000. CORS must allow that.
 # In production, override CORS_ALLOW_ORIGINS via Railway env var to the actual
@@ -361,7 +384,8 @@ async def health():
 
 
 @app.post("/api/query/stream")
-async def query_stream(req: QueryStreamRequest):
+@limiter.limit("15/minute")
+async def query_stream(request: Request, req: QueryStreamRequest):
     """
     Stream a Q&A answer for the given question. Uses Server-Sent Events.
 
@@ -426,7 +450,8 @@ class PreloadedRequest(BaseModel):
 
 
 @app.post("/api/preloaded")
-async def preloaded_lookup(req: PreloadedRequest):
+@limiter.limit("30/minute")
+async def preloaded_lookup(request: Request, req: PreloadedRequest):
     """
     Look up a preloaded answer for (client_id, mode, question).
     Returns the cached answer + sources on hit, or 404 on miss.
@@ -456,7 +481,8 @@ class LeadRequest(BaseModel):
 
 
 @app.post("/api/lead")
-async def submit_lead(req: LeadRequest):
+@limiter.limit("5/minute")
+async def submit_lead(request: Request, req: LeadRequest):
     """
     Handle lead capture form submission.
     Validates consent, forwards to Zapier webhook if configured.
