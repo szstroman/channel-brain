@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  /* Mode accent — swapped at the app root when mode changes */
+  --accent: #5eb8ff;
+  --accent-hover: #3a9aec;
+  --accent-glow: rgba(94, 184, 255, 0.1);
+  --accent-glow-soft: rgba(94, 184, 255, 0.06);
+}
+
+html,
+body {
+  background: #0a0a0a;
+  color: #f5f0e8;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+/* Scrollbar styling to match dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
