@@ -58,15 +58,18 @@ export function LeadForm({ clientId }: Props) {
           <div className="font-mono text-[10px] tracking-widest uppercase text-fg-muted mb-3">
             💰 Pricing
           </div>
-          <div className="flex items-baseline gap-2 mb-3">
+          <div className="flex items-baseline gap-2 mb-1">
             <span
               className="font-serif text-3xl font-bold"
               style={{ color: "#d4a359" }}
             >
-              $497
+              $650
             </span>
-            <span className="text-fg-muted text-sm">/ month</span>
+            <span className="text-fg-muted text-sm">/ month · 3-month min</span>
           </div>
+          <p className="text-fg-faint text-xs mb-3">
+            30-day money-back guarantee. If you don&apos;t see clear value in the first month, full refund.
+          </p>
           <ul className="text-fg-secondary text-sm space-y-1.5">
             <li>→ We index your full video catalog</li>
             <li>→ Unlimited queries from your audience</li>

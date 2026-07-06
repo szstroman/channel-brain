@@ -525,6 +525,35 @@ export default function Home() {
               disabled={streaming}
             />
           </div>
+
+          {/* Pro tier teaser — tests demand without building the feature yet */}
+          <div className="mt-6 bg-bg-panel border border-border-strong rounded-lg p-6">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="font-mono text-[10px] tracking-widest uppercase" style={{ color: "#d4a359" }}>
+                ⭐ Pro tier
+              </span>
+              <span className="font-mono text-[9px] tracking-widest uppercase text-fg-dim">
+                on the roadmap
+              </span>
+            </div>
+            <h3 className="font-serif text-xl font-bold text-fg-primary mb-2">
+              Audience Insights from your YouTube comments
+            </h3>
+            <p className="text-fg-secondary text-sm leading-relaxed mb-4">
+              Pull questions your audience keeps asking, spot content gaps, and
+              track sentiment across your archive. Built on the same comment
+              data you already have on YouTube.
+            </p>
+            <ul className="text-fg-muted text-sm space-y-1.5 mb-4">
+              <li>→ Weekly &quot;questions your audience is asking&quot; report</li>
+              <li>→ Content gap analysis across your videos</li>
+              <li>→ Sentiment trends per video and topic</li>
+              <li>→ Query your comment archive in Creator Mode</li>
+            </ul>
+            <p className="text-fg-faint text-xs">
+              Interested? Mention Pro tier in the demo request below.
+            </p>
+          </div>
         </section>
 
         {/* ─── Section 3: How it works ─────────────────────── */}
