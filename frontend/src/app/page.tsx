@@ -501,21 +501,21 @@ export default function Home() {
         {/* ─── Section 2: Creator Mode ─────────────────────── */}
         <section
           id="section-creator-mode"
-          className="min-h-[70vh] max-w-3xl mx-auto px-4 py-16"
+          className="max-w-5xl mx-auto px-4 md:px-8 py-20 md:py-24"
         >
-          <p className="font-mono text-[10px] tracking-[0.2em] uppercase text-accent-creator mb-2">
+          <p className="font-mono text-xs tracking-[0.2em] uppercase text-accent-creator mb-3">
             🎨 Creator Mode
           </p>
-          <h2 className="font-serif text-3xl font-bold text-fg-primary mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-fg-primary mb-6 leading-tight">
             Your archive becomes a tool you can use, too
           </h2>
-          <p className="text-fg-secondary text-base leading-relaxed mb-6">
+          <p className="text-fg-secondary text-lg md:text-xl leading-relaxed mb-8 max-w-3xl">
             Creator Mode turns your own video archive into a strategic mirror.
             Ask what patterns you keep returning to, pull quotable moments, spot
             gaps in what you&apos;ve covered.
           </p>
-          <div className="bg-bg-panel border-l-4 border-accent-creator rounded-r-lg p-6">
-            <p className="text-fg-secondary text-sm mb-4">
+          <div className="bg-bg-panel border-l-4 border-accent-creator rounded-r-lg p-6 md:p-8 max-w-3xl">
+            <p className="text-fg-secondary text-base md:text-lg mb-4">
               Toggle Creator Mode to shift the demo above into first-person
               analysis of your own archive.
             </p>
@@ -527,30 +527,30 @@ export default function Home() {
           </div>
 
           {/* Pro tier teaser — tests demand without building the feature yet */}
-          <div className="mt-6 bg-bg-panel border border-border-strong rounded-lg p-6">
+          <div className="mt-8 bg-bg-panel border border-border-strong rounded-lg p-6 md:p-8 max-w-3xl">
             <div className="flex items-center gap-2 mb-3">
-              <span className="font-mono text-[10px] tracking-widest uppercase" style={{ color: "#d4a359" }}>
+              <span className="font-mono text-xs tracking-widest uppercase" style={{ color: "#d4a359" }}>
                 ⭐ Pro tier
               </span>
-              <span className="font-mono text-[9px] tracking-widest uppercase text-fg-dim">
+              <span className="font-mono text-[10px] tracking-widest uppercase text-fg-dim">
                 on the roadmap
               </span>
             </div>
-            <h3 className="font-serif text-xl font-bold text-fg-primary mb-2">
+            <h3 className="font-serif text-2xl md:text-3xl font-bold text-fg-primary mb-3">
               Audience Insights from your YouTube comments
             </h3>
-            <p className="text-fg-secondary text-sm leading-relaxed mb-4">
+            <p className="text-fg-secondary text-base md:text-lg leading-relaxed mb-4">
               Pull questions your audience keeps asking, spot content gaps, and
               track sentiment across your archive. Built on the same comment
               data you already have on YouTube.
             </p>
-            <ul className="text-fg-muted text-sm space-y-1.5 mb-4">
+            <ul className="text-fg-muted text-base md:text-lg space-y-2 mb-4">
               <li>→ Weekly &quot;questions your audience is asking&quot; report</li>
               <li>→ Content gap analysis across your videos</li>
               <li>→ Sentiment trends per video and topic</li>
               <li>→ Query your comment archive in Creator Mode</li>
             </ul>
-            <p className="text-fg-faint text-xs">
+            <p className="text-fg-faint text-sm">
               Interested? Mention Pro tier in the demo request below.
             </p>
           </div>
@@ -559,35 +559,35 @@ export default function Home() {
         {/* ─── Section 3: How it works ─────────────────────── */}
         <section
           id="section-how"
-          className="min-h-[70vh] max-w-3xl mx-auto px-4 py-16"
+          className="max-w-5xl mx-auto px-4 md:px-8 py-20 md:py-24"
         >
           <p
-            className="font-mono text-[10px] tracking-[0.2em] uppercase mb-2"
+            className="font-mono text-xs tracking-[0.2em] uppercase mb-3"
             style={{ color: "#d4a359" }}
           >
             ⚡ How it works
           </p>
-          <h2 className="font-serif text-3xl font-bold text-fg-primary mb-8">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-fg-primary mb-10 leading-tight">
             From YouTube archive to conversational AI
           </h2>
-          <div className="space-y-6">
+          <div className="space-y-8">
             {[
               { num: 1, title: "We index your channel", body: "Every video transcript is pulled, chunked, and stored in a searchable database." },
               { num: 2, title: "Your audience asks questions", body: "They type any question in plain English, just like texting you directly." },
               { num: 3, title: "AI answers from your content", body: "Answers sourced only from your videos, with links back to the source episode." },
             ].map((step) => (
-              <div key={step.num} className="flex items-start gap-4">
+              <div key={step.num} className="flex items-start gap-5">
                 <div
-                  className="shrink-0 w-9 h-9 rounded-full text-bg-base font-bold flex items-center justify-center"
+                  className="shrink-0 w-12 h-12 rounded-full text-bg-base font-bold text-xl flex items-center justify-center"
                   style={{ background: "#d4a359" }}
                 >
                   {step.num}
                 </div>
                 <div>
-                  <div className="font-semibold text-fg-primary text-base mb-1">
+                  <div className="font-semibold text-fg-primary text-xl md:text-2xl mb-2">
                     {step.title}
                   </div>
-                  <div className="text-fg-muted text-sm leading-relaxed">
+                  <div className="text-fg-muted text-base md:text-lg leading-relaxed">
                     {step.body}
                   </div>
                 </div>
@@ -599,29 +599,31 @@ export default function Home() {
         {/* ─── Section 4: Get yours ─────────────────────────── */}
         <section
           id="section-get-yours"
-          className="min-h-[70vh] max-w-3xl mx-auto px-4 py-16"
+          className="max-w-5xl mx-auto px-4 md:px-8 py-20 md:py-24"
         >
           <p
-            className="font-mono text-[10px] tracking-[0.2em] uppercase mb-2"
+            className="font-mono text-xs tracking-[0.2em] uppercase mb-3"
             style={{ color: "#d4a359" }}
           >
             📩 Get yours
           </p>
-          <h2 className="font-serif text-3xl font-bold text-fg-primary mb-4">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-fg-primary mb-6 leading-tight">
             Live on your site in under a week
           </h2>
-          <p className="text-fg-secondary text-base leading-relaxed mb-6">
+          <p className="text-fg-secondary text-lg md:text-xl leading-relaxed mb-8 max-w-3xl">
             What you just tried? We build that for your channel. Trained on your
             content, branded for your audience, live on your website in under a
             week.
           </p>
-          <div className="bg-bg-panel border border-border-default rounded-lg p-6 mb-4">
-            <p className="text-fg-secondary text-sm mb-1 leading-relaxed">
+          <div className="bg-bg-panel border border-border-default rounded-lg p-6 md:p-8 mb-6 max-w-3xl">
+            <p className="text-fg-secondary text-base md:text-lg leading-relaxed">
               Tell us where to reach you and where your channel lives. We&apos;ll
               get back within 48 hours.
             </p>
           </div>
-          <LeadForm clientId={CLIENT_ID} />
+          <div className="max-w-3xl">
+            <LeadForm clientId={CLIENT_ID} />
+          </div>
         </section>
 
         <footer className="max-w-3xl mx-auto px-4 py-8 text-center">

@@ -21,7 +21,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://channel-brain.up.railway.app"),
+  metadataBase: new URL("https://demo.channelbrain.io"),
   title: "Channel Brain",
   description:
     "Turn any YouTube archive into an AI assistant your audience can have a conversation with.",
