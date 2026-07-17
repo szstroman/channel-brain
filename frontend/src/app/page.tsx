@@ -402,9 +402,9 @@ export default function Home() {
         {/* ─── Section 1: Chat ─────────────────────────────── */}
         <section
           id="section-chat"
-          className="min-h-screen flex flex-col items-center px-4"
+          className="min-h-screen flex flex-col items-center px-4 md:px-8"
         >
-          <div className="w-full max-w-3xl pt-10 pb-4 text-center">
+          <div className="w-full max-w-4xl pt-10 pb-4 text-center">
             <div className="text-4xl mb-3">🧠</div>
             <h1 className="font-serif text-5xl font-black text-fg-primary">
               {heroTitle}
@@ -434,7 +434,7 @@ export default function Home() {
 
           <div
             ref={scrollRef}
-            className={`w-full max-w-3xl overflow-y-auto pb-4 min-h-0 ${messages.length === 0 && !thinking ? "" : "flex-1"}`}
+            className={`w-full max-w-4xl overflow-y-auto pb-4 min-h-0 ${messages.length === 0 && !thinking ? "" : "flex-1"}`}
             style={{ maxHeight: "calc(100vh - 320px)" }}
           >
             {messages.length === 0 && !thinking && (
@@ -453,7 +453,7 @@ export default function Home() {
             {thinking && <ThinkingIndicator />}
           </div>
 
-          <div className="w-full max-w-3xl pb-6 pt-2 border-t border-border-subtle">
+          <div className="w-full max-w-4xl pb-6 pt-2 border-t border-border-subtle">
             {/* Turn-limit warnings */}
             {!atLimit && remaining <= WARN_TURNS_REMAINING && turnCount > 0 && (
               <p className="text-center text-xs mb-2" style={{ color: "var(--accent)" }}>
@@ -501,7 +501,7 @@ export default function Home() {
         {/* ─── Section 2: Creator Mode ─────────────────────── */}
         <section
           id="section-creator-mode"
-          className="max-w-5xl mx-auto px-4 md:px-8 py-20 md:py-24"
+          className="max-w-4xl mx-auto px-4 md:px-8 py-20 md:py-24"
         >
           <p className="font-mono text-xs tracking-[0.2em] uppercase text-accent-creator mb-3">
             🎨 Creator Mode
@@ -559,7 +559,7 @@ export default function Home() {
         {/* ─── Section 3: How it works ─────────────────────── */}
         <section
           id="section-how"
-          className="max-w-5xl mx-auto px-4 md:px-8 py-20 md:py-24"
+          className="max-w-4xl mx-auto px-4 md:px-8 py-20 md:py-24"
         >
           <p
             className="font-mono text-xs tracking-[0.2em] uppercase mb-3"
@@ -599,7 +599,7 @@ export default function Home() {
         {/* ─── Section 4: Get yours ─────────────────────────── */}
         <section
           id="section-get-yours"
-          className="max-w-5xl mx-auto px-4 md:px-8 py-20 md:py-24"
+          className="max-w-4xl mx-auto px-4 md:px-8 py-20 md:py-24"
         >
           <p
             className="font-mono text-xs tracking-[0.2em] uppercase mb-3"
@@ -626,8 +626,8 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="max-w-3xl mx-auto px-4 py-8 text-center">
-          <p className="text-fg-dim text-[11px] leading-relaxed">
+        <footer className="max-w-4xl mx-auto px-4 md:px-8 py-10 md:py-12 text-center">
+          <p className="text-fg-dim text-sm md:text-base leading-relaxed">
             Channel Brain is an AI assistant trained on a creator&apos;s public
             YouTube content. Responses are for educational purposes only and may
             contain inaccuracies. Not affiliated with or endorsed by the source
