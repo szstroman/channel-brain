@@ -596,6 +596,75 @@ export default function Home() {
           </div>
         </section>
 
+        {/* ─── Section 3.5: Why not just use YouTube's AI? ────── */}
+        <section
+          id="section-vs-youtube"
+          className="max-w-4xl mx-auto px-4 md:px-8 py-20 md:py-24"
+        >
+          <p
+            className="font-mono text-xs tracking-[0.2em] uppercase mb-3"
+            style={{ color: "#d4a359" }}
+          >
+            🤔 Why not just use YouTube&apos;s AI?
+          </p>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-fg-primary mb-6 leading-tight">
+            YouTube&apos;s AI works for YouTube. Channel Brain works for you.
+          </h2>
+          <p className="text-fg-secondary text-lg md:text-xl leading-relaxed mb-10 max-w-3xl">
+            Google just launched Ask YouTube — a great search feature. But it&apos;s
+            built for YouTube, not your business. Here&apos;s the difference:
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-5">
+            {[
+              {
+                title: "Lives on YOUR site",
+                body: "Every conversation happens on your domain, not youtube.com. Your audience stays in your world — where your course, coaching, and email list live.",
+              },
+              {
+                title: "Your voice only",
+                body: "Answers come from your videos and only your videos. YouTube's AI blends you with every other creator on the platform.",
+              },
+              {
+                title: "Captures leads for you",
+                body: "Interested visitors turn into email subscribers or booked calls. YouTube's AI sends them back to more YouTube.",
+              },
+              {
+                title: "Creator Mode included",
+                body: "Interrogate your own archive: what patterns do I return to? What's my most quotable moment? What have I NOT covered? YouTube doesn't do this.",
+              },
+              {
+                title: "Fully branded",
+                body: "Colors, tone, and integration match your brand. No Google logo, no YouTube recommendations pulling attention elsewhere.",
+              },
+              {
+                title: "You own the data",
+                body: "Every question your audience asks is yours to see and learn from. YouTube keeps that data for itself.",
+              },
+            ].map((point, i) => (
+              <div
+                key={i}
+                className="bg-bg-panel border border-border-strong rounded-lg p-6 md:p-7"
+              >
+                <div className="flex items-start gap-3 mb-2">
+                  <span
+                    className="shrink-0 font-serif text-2xl font-bold"
+                    style={{ color: "#d4a359" }}
+                  >
+                    ✓
+                  </span>
+                  <h3 className="font-semibold text-fg-primary text-lg md:text-xl leading-snug">
+                    {point.title}
+                  </h3>
+                </div>
+                <p className="text-fg-muted text-base md:text-lg leading-relaxed pl-9">
+                  {point.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* ─── Section 4: Get yours ─────────────────────────── */}
         <section
           id="section-get-yours"
