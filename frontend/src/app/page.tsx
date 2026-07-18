@@ -406,11 +406,11 @@ export default function Home() {
         >
           <div className="w-full max-w-4xl pt-10 pb-4 text-center">
             <div className="text-4xl mb-3">🧠</div>
-            <h1 className="font-serif text-5xl font-black text-fg-primary">
+            <h1 className="font-serif text-5xl md:text-6xl font-black text-fg-primary">
               {heroTitle}
             </h1>
             <p
-              className="font-mono text-xs tracking-[0.2em] uppercase mt-2"
+              className="font-mono text-sm md:text-base tracking-[0.2em] uppercase mt-3"
               style={{ color: "var(--accent)" }}
             >
               {eyebrowText}
@@ -420,13 +420,13 @@ export default function Home() {
                 href={client.channel_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-2 text-[11px] text-fg-muted hover:text-fg-primary underline underline-offset-2 transition-colors"
+                className="inline-block mt-3 text-sm md:text-base text-fg-muted hover:text-fg-primary underline underline-offset-2 transition-colors"
               >
                 Visit channel on YouTube ↗
               </a>
             )}
             {clientError && (
-              <p className="mt-3 text-xs text-red-400">
+              <p className="mt-3 text-sm text-red-400">
                 Client load error: {clientError}
               </p>
             )}
@@ -438,10 +438,10 @@ export default function Home() {
             style={{ maxHeight: "calc(100vh - 320px)" }}
           >
             {messages.length === 0 && !thinking && (
-              <div className="text-center text-fg-faint text-sm pt-4 pb-6">
+              <div className="text-center text-fg-muted text-base md:text-lg pt-4 pb-6">
                 {emptyStatePrompt}
                 {suggestions.length > 0 && (
-                  <div className="mt-1 text-xs">
+                  <div className="mt-2 text-sm md:text-base text-fg-faint">
                     Try one of the questions below, or type your own.
                   </div>
                 )}
