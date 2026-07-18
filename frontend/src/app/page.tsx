@@ -13,7 +13,19 @@ import { ModeToggle } from "@/components/ModeToggle";
 import { LeadForm } from "@/components/LeadForm";
 
 const MIN_THINKING_MS = 4000;
-const CLIENT_ID = "koerner-office";
+const DEFAULT_CLIENT_ID = "koerner-office";
+
+// Resolve the client to demo from the URL. Supports:
+//   /              → koerner-office (default)
+//   /?client=X     → X
+//   /?c=X          → X (short form)
+// Falls back to default on server (during SSR) since window isn't defined there.
+function resolveClientId(): string {
+  if (typeof window === "undefined") return DEFAULT_CLIENT_ID;
+  const params = new URLSearchParams(window.location.search);
+  const cid = params.get("client") || params.get("c");
+  return cid?.trim() || DEFAULT_CLIENT_ID;
+}
 const MAX_TURNS = 8; // Each turn = 1 user + 1 assistant. So 8 user messages max.
 const WARN_TURNS_REMAINING = 2;
 
@@ -26,6 +38,14 @@ function countUserTurns(messages: Message[]): number {
 }
 
 export default function Home() {
+  // Resolve which client to demo from the URL exactly once, at first render.
+  // useState's lazy initializer runs only on the initial render (not on every
+  // re-render), so this is efficient. Combined with resolveClientId's SSR guard
+  // (returns DEFAULT_CLIENT_ID on server), this ensures:
+  //   - On server: renders with DEFAULT_CLIENT_ID
+  //   - On client first paint: renders with URL-derived client
+  //   - No flash from Koerner → Ken because we skip the useEffect-based swap
+  const [clientId] = useState<string>(() => resolveClientId());
   const [mode, setMode] = useState<Mode>("audience");
   const [client, setClient] = useState<ClientConfig | null>(null);
   const [clientError, setClientError] = useState<string | null>(null);
@@ -54,12 +74,12 @@ export default function Home() {
 
   // Fetch client config on mount
   useEffect(() => {
-    fetchClient(CLIENT_ID)
+    fetchClient(clientId)
       .then(setClient)
       .catch((e) => {
         setClientError(e instanceof Error ? e.message : "Failed to load client");
       });
-  }, []);
+  }, [clientId]);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -244,7 +264,7 @@ export default function Home() {
         const stream = streamQuery(
           {
             question,
-            client_id: CLIENT_ID,
+            client_id: clientId,
             mode,
             history,
           },
@@ -340,7 +360,7 @@ export default function Home() {
         abortRef.current = null;
       }
     },
-    [messages, mode]
+    [messages, mode, clientId]
   );
 
   const handleSend = useCallback(
@@ -350,7 +370,7 @@ export default function Home() {
 
       // Suggestion clicks check preloaded cache first
       if (fromSuggestion) {
-        const cached = await fetchPreloaded(CLIENT_ID, mode, question);
+        const cached = await fetchPreloaded(clientId, mode, question);
         if (cached) {
           await deliverPreloaded(question, cached.answer, cached.sources);
           return;
@@ -359,7 +379,7 @@ export default function Home() {
 
       await runLiveQuery(question);
     },
-    [mode, streaming, atLimit, deliverPreloaded, runLiveQuery]
+    [mode, streaming, atLimit, deliverPreloaded, runLiveQuery, clientId]
   );
 
   // ─── Derived display values ────────────────────────────────────────────
@@ -691,7 +711,7 @@ export default function Home() {
             </p>
           </div>
           <div className="max-w-3xl">
-            <LeadForm clientId={CLIENT_ID} />
+            <LeadForm clientId={clientId} />
           </div>
         </section>
 
