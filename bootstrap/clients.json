@@ -24,6 +24,30 @@
         "What content gaps could I fill based on what I've covered?",
         "Pull my most quotable one-liners about business."
       ]
+    },
+    "ken-pozek": {
+      "channel_name": "Ken Pozek",
+      "channel_handle": "@kenpozek",
+      "channel_url": "https://www.youtube.com/@kenpozek",
+      "namespace": "ken-pozek",
+      "creator_name": "Ken Pozek",
+      "active": true,
+      "audience_suggestions": [
+        "What should I know before moving to Orlando?",
+        "What are Ken's top recommended neighborhoods in Orlando?",
+        "What's Ken's take on the current Orlando real estate market?",
+        "What are the pros and cons of buying a new construction home in Florida?",
+        "What does Ken say about property taxes and HOA fees in Florida?",
+        "What has Ken said about the best areas for families in Orlando?"
+      ],
+      "creator_suggestions": [
+        "What are my most repeated pieces of advice for people moving to Orlando?",
+        "What themes come up most often in my market update videos?",
+        "What have I said about working with buyers vs sellers?",
+        "Which videos best represent my philosophy on Orlando real estate?",
+        "What content gaps could I fill based on Orlando topics I haven't covered?",
+        "Pull my most quotable one-liners about the Orlando market."
+      ]
     }
   }
 }

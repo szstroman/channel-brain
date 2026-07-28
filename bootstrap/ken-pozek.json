@@ -1,0 +1,3374 @@
+{
+  "pinecone_config": {
+    "stats": {
+      "channel_name": "Ken Pozek",
+      "channel_id": "UC_xegE89D8RBGdFWChAucWg",
+      "namespace": "ken-pozek",
+      "index_name": "channel-brain-prod",
+      "videos_indexed": 22,
+      "skipped": 735,
+      "skipped_titles": [
+        "INSIDE a $9,500,000 Orlando Home. It's Actually Insane",
+        "Orlando Custom Home BOOM is happening in THIS Suburb!",
+        "The Orlando Jags? Florida Taxes. Your questions answered!",
+        "Small Towns Near Orlando Everyone's Moving To Right Now",
+        "Florida Speed Limit, Orlando Area Schools, Live Local Act",
+        "Winter Garden vs Winter Park - Orlando's Best Places to Live?",
+        "Moving to Orlando for Disney? Here's Where People Buy",
+        "Central Florida Boomtown + Winter Garden in turmoil?",
+        "Tunnels to Epic Universe, Flamingos, and your Orlando Q&A!",
+        "Celebration Florida is Changing (2026 Update)",
+        "Orlando's Hottest Neighborhoods in 2026",
+        "Florida Insurance Woes, Rage Rooms, and Millions for Nurses",
+        "Orlando's Hottest Suburb Just Added Five New Neighborhoods",
+        "Orlando Projects, Theme Parks, and Events happening in 2026!",
+        "Changes to Florida HOAs, Tolls, and a look back at Orlando in 2025",
+        "Updates from Orlando: MLB, DC at Universal (rumor), and developments taking shape",
+        "MAJOR Projects Shaping Orlando in 2026",
+        "Orlando's Hidden Neighborhoods Everyone Should Know",
+        "Orlando has grown by HOW MUCH? We rank #2.",
+        "Saving Orlando #orlando",
+        "Orlando\u2019s Top Luxury Neighborhood Expands",
+        "Orlando Film Incentives, Road relief and Epic Universe to Ramp Up.",
+        "MASSIVE Florida Insurance Rebate, MCO Expansion, Orlando's Q&A!",
+        "Windermere, Florida - Orlando's hottest address? You decide!",
+        "Orlando Football, Roads, and Ticket Prices",
+        "New resorts, neighborhoods, and Florida's LARGEST animal shelter approved in Orlando",
+        "Horizon West and Wellness Way Update (2025)",
+        "Orlando's Redevelopment and New Transportation",
+        "Inside a $14,500,000 Home at Walt Disney World\u2019s Golden Oak",
+        "Orlando H-Mart, Universal Expansion, Fashion Square Mall, and your Q&A",
+        "Top 10 Questions About Living in Orlando",
+        "Moving to Orlando from California",
+        "Orlando New Construction Process in 2025",
+        "State of Orlando Recap + A big move in Lake Nona",
+        "Here\u2019s what $6M buys in Golden Oak vs Winter Park",
+        "This Florida boom town is about to explode",
+        "Orlando Housing Strengthened and Record Insurance Profits",
+        "Billions Invested into Orlando Area Roads",
+        "Neocity Expands, Home Prices Drop, Epic Drives Growth",
+        "Orlando Real LIVE! Florida economic insights and your Q&A",
+        "Orlando Before and After Walt Disney World",
+        "These Projects Could Change Orlando\u2019s Future",
+        "Here's What's Coming to Orlando in the Next 20 Years",
+        "No 5th Park at WDW? + Orlando\u2019s Millionaire Boom",
+        "5 Reasons Why Orlando Will Thrive Over The Next 10 Years",
+        "Orlando Housing Crash? Here's the data.",
+        "Orlando Art, explained for newbies (with Jefr\u00eb)",
+        "Waymo Hits Orlando Streets | County Connector Updates + Disney Closures",
+        "Inside Epic Universe\u2019s Grand Opening. Exclusive Interviews and More!",
+        "Epic Universe Opens and a New Town Center in St. Cloud!",
+        "Orlando Update: Tourism Surge, Epic Universe, and New Communities",
+        "TOP Places to Own a Vacation Home in Orlando, Florida",
+        "Orlando Updates: Redistricting, I-4 Opens, and Church Condos",
+        "HUGE Discounts on Orlando Area New Homes",
+        "Updates in Orlando! I4 surprise, tourist surge, and your Q&A",
+        "HUGE New Growth in Clermont Florida Shocked Me",
+        "Orlando\u2019s Population Booms! + Epic Universe Q&A",
+        "MASSIVE Orlando Construction Projects That Will Change How You Live",
+        "Lower Florida Property Tax, I-Drive Project, & Disney Office Deal in Orlando",
+        "What makes Seminole County, Florida special?",
+        "Orlando\u2019s Wild Growth: Vacation Rentals by Disney, Jaguars Rumors, and New Transit Plans",
+        "Winter Garden Homes: $400K to $2.25M | Which Would YOU Pick?",
+        "10 Realities of Living in Orlando Florida",
+        "Changes in the Orlando Real Estate Market",
+        "I4 Tolls, Chickens take over Orlando, New Permits Filed, and your Q&A!",
+        "Living in Celebration Florida vs Other Orlando Communities",
+        "Living in Windermere, Florida (they told me to live here)",
+        "Villains Land, Road Delays and life in Orlando",
+        "Orlando\u2019s development: An Architect\u2019s Take on Our Future",
+        "MLB Revived in Orlando + A Starcruiser Update (2025)",
+        "Inside a home near Disney World listed at $8,250,000",
+        "Orlando Growth Report: From Clermont to the Michelin Guide",
+        "St. Cloud Florida area MASSIVE developments on the way",
+        "Orlando Ranks Number One",
+        "Tour This $6.7M Golden Oak Disney Property",
+        "Here\u2019s where Orlando is headed",
+        "Florida ranks #1 in migration, Orlando area news and more!",
+        "This Modern Golden Oak Home Has a Hidden Casita",
+        "Orlando Food, Jobs, and New Homes",
+        "Sunbridge Florida Like You\u2019ve Never Seen Before: Exclusive Look",
+        "MLB in Orlando? Plus 5 other changes in Central Florida",
+        "2025 Predictions for Orlando Real Estate",
+        "INSIDE a CASTLE outside Orlando Florida",
+        "Inside a $15,850,000 Home at Walt Disney World\u2019s Golden Oak",
+        "Orlando's Economy Slows. Development Moves Forward",
+        "Exclusive: Inside Orlando\u2019s Biggest Developer Shaping the City",
+        "New Laws and Upcoming Votes changing Greater Orlando",
+        "Orlando Locals Spill the Truth About Living Here",
+        "Big Changes Coming to Orlando Florida",
+        "How Horizon West Has Changed (and what's coming to Winter Garden)",
+        "Orlando's Most Exclusive Neighborhood Tour",
+        "Will this help affordability in Orlando?",
+        "Hyatt Regency Orlando sells for $1B #realestate #orlando",
+        "Orlando Transportation Woes (planes, trains, and automobiles)",
+        "Orlando Area Schools, Disney Rumors, New Development, and more!",
+        "Winter Park, Florida and the Custom Home Process",
+        "10 days or less: Orlando areas that are still selling quickly.",
+        "New construction: large amenity or large lot?",
+        "Florida passes 23 Million residents",
+        "Apopka, Florida is about to BOOM (here's why)",
+        "Groveland Custom Home Tour and a Clermont Update!",
+        "The Truth About Price Drops, Rising Inventory and Deals in Orlando",
+        "THIS Area is the Best Place to Live for Theme Park fans",
+        "Average home list price around greater Orlando #realestate #movingtoorlando",
+        "Walkable Orlando Neighborhoods: Top Places to Live",
+        "3 Lesser Known Orlando Suburbs You'll Love",
+        "New Florida BIlls Affect Homeowners",
+        "Massive changes coming to Orlando",
+        "Is Dr. Phillips the Best Place to Live in Orlando?",
+        "INSIDE a $7.25M Home for Sale in Walt Disney World\u2019s Golden Oak Neighborhood",
+        "Orlando\u2019s Canceled, Postponed, and Moving Forward projects",
+        "Inside Walt Disney\u2019s Newest Golden Oak Home",
+        "Lake Nona: Orlando\u2019s Living Lab",
+        "Living in St. Cloud, Florida: Fastest Growing Area?",
+        "These 5 Things Could Hold Orlando Back",
+        "Lessons Learned in Flipping a Home in Orlando",
+        "Wellness Way, Disney, and Airbnb updates",
+        "Orlando Florida: Top Spot for Starting a Business",
+        "What these changes mean for Orlando's Real Estate Market",
+        "Winter Park Florida: Ultimate Guide to Homes and Hidden Gems!",
+        "Shuttered Disney Area Gains New Life and More!",
+        "How Far Does $1,000,000 Go in Orlando?",
+        "Clermont vs Winter Garden Florida. Which area is best?",
+        "Retiring in Orlando: The Ultimate Guide",
+        "Orlando Housing Market Forecast for 2024",
+        "Florida is CLOSED. Don't move here",
+        "Living in Orlando. The Ultimate Guide to making the move",
+        "Your Guide to Celebration Florida: The Town Disney Built",
+        "Orlando's Homeowners Insurance Woes",
+        "The Most Interesting Homes in Orlando",
+        "Top 10 Orlando Developments I'm excited about in 2024",
+        "The $4,550,000 Way to Live at Disney World - Golden Oak Home For Sale",
+        "Tips on Owning an Second Home in Orlando",
+        "Top Orlando Stories of 2023",
+        "Florida overtakes New York for most valuable market, Orlando Magic project, and more!",
+        "Top places to live in America? Hunters Creek, Orlando, Florida",
+        "Johnny Damon lists $30M Orlando home. New Law Would Out Wall Street from Real Estate.",
+        "15 Reasons Why I Love Living in Orlando",
+        "Dubbed one of the biggest development deals in greater Orlando",
+        "It's a Wonderful (Orlando) Life",
+        "Orlando Sales Fall, Disney's $40B impact, and the LARGEST listing",
+        "Sending human remains to space",
+        "Orlando's Donut King vs. Voodoo Donuts. What's the best?",
+        "Jeff Bezos Florida man, huge Orlando travel news, Universal affordable housing on Orlando Real Recap",
+        "Southwest Airlines Moves to Orlando",
+        "$200k vs $2,000,000 in Orlando Florida",
+        "Orlando\u2019s must have neighborhood amenities plus your Q+A!",
+        "Orlando Defaults, Best Buys for new construction, and more!",
+        "THIS area in Orlando has promise",
+        "Connecting Winter Garden and Clermont Florida",
+        "Four Growth Areas in Orlando",
+        "A Look Inside Amazon Orlando, plus a look into local jobs",
+        "Surf Park Coming to West Orlando?",
+        "Winter Park Florida brings the largest McLaren dealership in the World",
+        "Celebration vs Reunion - Where would you rather live?",
+        "Fireworks from your house? TOP Orlando must haves",
+        "Is the \"bubble\" bursting in Orlando?",
+        "Downtown Orlando might be different than you think",
+        "Arts in Downtown Orlando",
+        "St Cloud vs Minneola Florida",
+        "Downtown Orlando Reimagined - Here\u2019s what\u2019s coming",
+        "They made a mistake when moving to Orlando. Tips on choosing the right area",
+        "How many Orlando homes sell all cash?",
+        "Target, Torchy's, and Tiger. This week's Orlando Real Live!",
+        "Lake Living in Greater Orlando!",
+        "Bear on the loose at Magic Kingdom?! #orlandoflorida #wdw #floridalife",
+        "What is the Florida Live Local Act? How does it affect Orlando?",
+        "New Construction in Orlando - Is It the Only Option?",
+        "Orlando Redevelopment: Is this a good thing?",
+        "Living in Orlando as a theme park fan",
+        "Winter Garden - My fav neighborhood, small businesses, and more!",
+        "Inside an Orlando Home Transformation",
+        "Massive Orlando Road Development Near Disney Springs",
+        "Orlando Park Attendance is down. When is the best time to go?",
+        "Lake Nona Performance Club",
+        "What It's Really Like Moving to Orlando",
+        "Orlando Ranks on list of cities with...",
+        "This small community outside Orlando is incredible",
+        "These Orlando Chefs Have a WILD Job!",
+        "Olympic Trials to start in Orlando",
+        "Minions, Mayhem, and an Orlando Housing Shortage",
+        "Windermere Florida Tour | Best Place To Live In Orlando?",
+        "Mr. Beast Sues Orlando Based Virtual Dining Concepts",
+        "Saint Cloud or Horizon West Florida?",
+        "Florida Jobs Report, Should there be build to rent, and YOUR Q+A",
+        "Lake Nona Town Center Expansion",
+        "Hidden Gem's of Orlando | Places No One Talks About Living...",
+        "Brightline Train Orlando Posts Almost 1 MILLION...",
+        "Florida Home Insurance Woes Continue",
+        "Reasons to be excited if you live in Orlando, Florida",
+        "Orlando Area Home listed for $30M is Back on the Market",
+        "Cocaine Sharks off Florida Coast!",
+        "Why are people STILL moving to Orlando in 2023?!",
+        "Here's where Orlando Ranks!",
+        "Highest Rated Neighborhoods in Orlando ** According to Locals",
+        "THESE are the most sought after Lake Nona Gated Communities",
+        "Florida Bans Foreign Investment - How will it affect Orlando?",
+        "Popular Orlando Neighborhood Changes Proposed",
+        "Where Do Orlando's Wealthy Choose to Live?!",
+        "Windermere or Winter Park Florida? Which one do you prefer?",
+        "Orlando's More Affordable Cities + Top Rated Florida Restaurant is HERE!",
+        "Orlando's 192 Area Redevelopment",
+        "Orlando Areas Heating Up and Cooling Off",
+        "New Orlando Construction, Will there be Smoke in Orlando, and your Q&A!",
+        "Full Sunbridge Florida Update!",
+        "Orlando's Ranked in Hottest Housing Markets List + Your Q&A",
+        "Did I Buy A Money Pit In Orlando?",
+        "Coming Soon to Orlando's iDrive and Surrounding Area",
+        "Disney Cancels Lake Nona Move (and that's not all)",
+        "Orlando Mansion with themed Avengers, Spider-Man, and Princess rooms!",
+        "FORECLOSURES IN ORLANDO? NEWS, Q&A, AND MORE!",
+        "What\u2019s exciting for the Lake Nona area",
+        "The Man Behind Orlando's Largest Developments",
+        "Orlando Bear, Hail, and Disney Lawsuits + YOUR QA",
+        "$1.5M Lake Nona Laurel Pointe Model by Toll Brothers",
+        "Orlando Plans CHANGED but These Projects Move Forward",
+        "Guess how many Orlando residents are self employed",
+        "Disney Launches Affordable Housing in Orlando",
+        "What 500k buys in Winter Garden, Florida",
+        "Disney Affordable Housing and a Growing Orlando + QA!",
+        "A NEW look at Horizon West | Winter Garden, Florida",
+        "Job openings in Orlando? Not what you'd think",
+        "Here's what $35,000,000 gets you in Orlando",
+        "Best Rides in Orlando",
+        "Moving to Florida from Jersey",
+        "Jobs in Florida - How are we doing?",
+        "Disney World versus Ron Desantis (Skit)",
+        "Vision 2050, More jobs in Orlando, and your Q&A!",
+        "Guess the Price of These Orlando Homes! New Area Spotlight",
+        "Orlando Real Estate Market: Defying National Trends & Thriving Amid Rising Interest Rates",
+        "They'd want to change THIS about living in Orlando",
+        "This Orlando Neighborhood Ranked FIRST, Theme Park Hiccups, and your Q&A!",
+        "All New Packing District in Orlando, Florida",
+        "Disney's Pay Increase, Horror Nights Annouced, and a Real Estate Update!",
+        "Living in East Orlando vs. West Orlando",
+        "Orlando's Mayor sees us going here!",
+        "5 Things About Living in Orlando, Local expansion, plus Q&A",
+        "Disney's Golden Oak like you\u2019ve never seen!",
+        "Orlando\u2019s Creative Village Creates Jobs",
+        "Universal Wage Increases, 2500 new Orlando jobs for the Metaverse, and your Q&A!",
+        "Minneola is the Orlando area City You've Never Heard Of (why it's growing)",
+        "Mount Dora Explodes, Disney's Reedy Creek is done, and your Q&A!",
+        "Clermont Florida is going to BOOM (here's why)",
+        "iDrive's Boom, Cruises set records, and Downtown Orlando's Plan",
+        "You Won't Believe What's Inside This Orlando Luxury Home",
+        "Before moving to Orlando #movingtoflorida",
+        "Can Downtown Orlando Change for the Better?",
+        "5th Disney Gate, New Schools, and New Shops in Orlando | Plus your Q&A!",
+        "Uncover Orlando Neighborhoods - Guess the Price!",
+        "Universal's HUGE win | Disney Campus Moves Forward",
+        "Orlando Builder Changes and Opportunities",
+        "Disney's Golden Oak Condos! Florida Outpaces Nation. Your Q&A",
+        "Orlando's 2023 Predictions",
+        "Coming to Orlando: $1B Reunion Development, MLB Baseball, and your Q&A!",
+        "These Four Orlando Neighborhoods are Changing the Area",
+        "Coming to Orlando: Universal Escape Room, Neocity, and Lake Nona updates!",
+        "Disney Adults Living in Orlando",
+        "Desantis vs Disney | Orlando Areas Seeing a Price Change",
+        "Orlando's 2023 Outlook - Home Values, Iger, and more!",
+        "Living in Orlando vs. Tampa",
+        "Iger is Back! Disney fans hope for change",
+        "Inside TWO Celebration Florida Homes (and a Weird Update)",
+        "4 Amazing Orlando Airbnb Neighborhoods You Need to Know About",
+        "Orlando's tax vote, Olympics, & Area 15?",
+        "Is getting solar worth it in Florida?",
+        "How Orlando Became A College Town",
+        "How do Orlando home prices compare?",
+        "UNIVERSAL IS WINNING theme park wars",
+        "What people love about Orlando (and your Q&A!)",
+        "Orlando area residents will be affected",
+        "How are interest rates affecting Orlando?",
+        "What they wish they knew before moving to Orlando",
+        "Florida Home Insurance Q&A (Post Hurricane Ian)",
+        "Orlando Preps for Hurricane Ian",
+        "Naval base in the middle of Florida?",
+        "Lake Nona Neighborhoods explained",
+        "No high rise buildings in Orlando",
+        "Affordable Areas of Orlando, Disney vs. Universal, and your Q&A!",
+        "Housing Opportunities in Orlando?",
+        "Orlando Developments FINALLY selling and WDW D23 Announcements",
+        "Orlando Home Buyers Disappear?!",
+        "Reunion Resort Timeshares, Artemis, and Builder Updates",
+        "\"Cool\" Neighborhoods in Orlando",
+        "Zillow says this about Orlando",
+        "Coming Soon to Orlando: Sports Betting and Jobs Numbers",
+        "Orlando Facts You Didn\u2019t Know!",
+        "Coming Soon to Orlando - Condo High Rise, EverBe, and your Q&A!",
+        "Orlando\u2019s walkable neighborhoods",
+        "Coming to Orlando - New Tower, Universal Changes + Your Q&A",
+        "Was Celebration Florida a Success?",
+        "Coming to Orlando - Is Orlando Empty?",
+        "4 Things Coming to Orlando + Your Q&A",
+        "Home Tour + 5 New Horizon West Neighborhoods",
+        "If I Moved to Orlando, Again + Lord of the Rings at Universal",
+        "Orlando Housing Predictions and Update 2022",
+        "Orlando Foodies, Geekiest City in America, and a Housing Update",
+        "Is Orlando Affordable Anymore?",
+        "Orlando Airbnb Changes, New Community, July 4th recap, and a special guest!",
+        "Disney Brightline Cancelled, Freedom Tax, and Orlando Fireworks!",
+        "Orlando builder issues, real estate update, and your questions answered!",
+        "Luxury Celebration Home + Island Village Updates!",
+        "Disney Delays Orlando Move + Real Estate Update",
+        "Projects Coming to Orlando 2022",
+        "Orlando Real Estate Update, Michelin Restaurants, and Thousands of THESE come to Orlando",
+        "Coming to Orlando: Space Tourism, Real Estate Update, and Rent Control",
+        "Moving to Orlando | 8 things youll want to know",
+        "The Orlando Housing Market Has Started to Shift",
+        "Avalon Park | Orlando\u2019s best community?",
+        "What $1M in Orlando used to buy",
+        "Coming Soon to Orlando: Celebration, Sea World, Wellness Way",
+        "Winter Garden Florida | Orlando's Fastest Growing Suburb",
+        "Coming to Orlando: New Orange County Tax, Builders Expand, and more!",
+        "Orlando Recession Looming? Reedy Creek Update and More!",
+        "What Disney Losing Reedy Creek Means For Orlando Homeowners",
+        "Coming to Orlando | Thousands of New Homes, Blue Origin, and more!",
+        "New Home Process in Orlando Florida | 2022",
+        "Disney Affordable Housing and an Orlando Market Update!",
+        "Orlando Home Builders Ranked",
+        "Living in Saint Cloud Florida | Plus a Sunbridge Update",
+        "Orlando Inflation and Interest Rates",
+        "Electronic Arts, NASA, and huge new Orlando developments!",
+        "Coming soon to Orlando | Space Mountain, 1k New Homes, Mandalorian Tech?",
+        "Living in Lake Mary Florida",
+        "Coming to Orlando | Disney's Surge, Smart Apartments, and So Much Coffee!",
+        "Orlando: Outside the Theme Parks",
+        "Orlando\u2019s housing market\ufffc picks up! UCF partners with Amazon.  \ufffc",
+        "3 Affordable vs Luxury Orlando Neighborhoods Ranked!",
+        "Orlando Live! Real Estate, Theme Parks, and Orlando Life Update",
+        "Building a Custom Home in Orlando",
+        "Living in Apopka",
+        "Clermont, Wellness Way, and the Olympus Project",
+        "Investing In Orlando",
+        "Delayed (and Announced) in Orlando | Epic Universe, Brightline, The Grow",
+        "Horizon West |  New Community Update",
+        "Lake Nona's Newest Amenity | The Wave Hotel",
+        "Orlando in 2030",
+        "Mortgage Rate Hikes and How It Affects Orlando",
+        "Top Orlando Home Sales",
+        "Kissimmee, Florida | Top Place People Are Moving?",
+        "It's OK to move to Orlando for Disney",
+        "Billions spent in Orlando, Florida",
+        "Sunbridge Florida Preview",
+        "Things To Do In Orlando Besides Disney",
+        "FIVE New Orlando Developments, Star Wars Hotel, and more!",
+        "Orlando Real Estate Market Review",
+        "Orlando Housing Predictions for 2022",
+        "Orlando Mortgage Updates, Orlando Developments YOUR questions",
+        "Huge Travel Numbers and a Tech Hub?  Coming to Orlando",
+        "Coming to Orlando | Housing Market Dips, a Million Lights, and more!",
+        "Orlando Older Homes",
+        "Coming to Orlando | Zillow Causes a Crash, Florida ID,  and Disney NFT",
+        "What's Orlando Known For? Plus HUGE new road toll roads and transportation news",
+        "Coming to Orlando | Massive Development, Michelin & More",
+        "How will Zillow Leaving Affect Orlando?",
+        "Horizon West Winter Garden Update",
+        "Coming To Orlando in 2021 and beyond",
+        "Orlando's Growth - Old Becomes New",
+        "Shaq\u2019s home sells, Boo bash, Orlando real estate update and more!",
+        "Coming to Orlando in 2022",
+        "Homes Near Lake Nona",
+        "Orlando Real Estate Update (Fall 2021)",
+        "Myths About Living in Orlando",
+        "The Orlando Real - Theme Parks, Real Estate, Living in Orlando",
+        "Moving to Oviedo Florida",
+        "Orlando Builders Fall Behind, $1.2B investment in Neocity, and are we FINALLY seeing a slow down?",
+        "Orlando Versus Miami Mansion Tour",
+        "Inside a $6,995,000 Winter Park Mansion",
+        "Mount Dora Florida Street Interviews!",
+        "10 Things Coming To Orlando! Popstroke Hamlin, UCF Knights Join Big 12, and Disney's 50th!",
+        "Inside a $6,000,000 Orlando Vacation Home",
+        "Candid Comments and Coffee with Ken Pozek",
+        "Tips On Buying A Second Home In Orlando",
+        "New Disney Campus, Disney's 55+ community, and I ask YOU questions",
+        "What 500k Buys in Orlando Florida (18 months later)",
+        "Disney's Golden Oak Neighborhood",
+        "Recession coming to Orlando? Disney's 50th swag. Sunbridge and more!",
+        "The Future of Celebration Florida",
+        "Moving To Florida [During a Pandemic]",
+        "Is the market finally correcting in Orlando?",
+        "Lake Nona\u2019s New Disney Campus (and so much more)",
+        "Is Celebration Florida A Good Place to Live?",
+        "Florida Home Inspections",
+        "The Future of Orlando",
+        "Orlando Home Prices [Can You Afford It?]",
+        "Creating Disney Magic w/ Lee Cockerell",
+        "Best Tacos in Orlando Florida",
+        "Coming to Orlando beyond 2021",
+        "Downtown Orlando Night time paddle boarding",
+        "Moving to Florida - Things I Wish I Knew Before Moving Here",
+        "Mid Year Orlando Real Estate Update and News!",
+        "Living in Maitland Florida [Best Orlando Suburb]",
+        "Lake Nona Orlando Florida - Man on the Street Interviews!",
+        "Most Affordable Places to Live In Orlando, Florida",
+        "Winter Park, Florida - On the Street!",
+        "Investment Home in Orlando",
+        "Tiger Woods House Demolished - Florida is #1 on THIS - No more masks at Universal and Disney",
+        "How Disney Creates Magic - Louie Gravance (former Disney Institute)",
+        "Winter Garden, Florida - On the Street!",
+        "No Masks at Disney, Big Orlando Changes, and your Q&A!",
+        "Orlando Lake Living - Boat and house tour",
+        "Alligators and snakes in Florida?",
+        "Orlando Florida - Man on the Street Interviews",
+        "What would you change about Orlando?",
+        "Guide to Orlando - Ken Pozek",
+        "Celebration Island Village, Florida Insurance Hikes, Evermore Developments, and more LIVE",
+        "Horizon West, Florida (Winter Garden)",
+        "High Paying Jobs In Orlando",
+        "Best Orlando Condo Buildings",
+        "Olympus, Sunbridge, Orlando Real Estate Talk",
+        "Coming To Orlando 2021",
+        "Living In Reunion Florida",
+        "The 7 Best Photo Spots in Orlando",
+        "Orlando Housing Update, Disney Facial Recognition, and more!",
+        "Celebration Island Village #short",
+        "What $1 Million Buys: Winter Garden Home Tour",
+        "Ken Pozek Reacts to Ryan Serhant\u2019s Shaq House Tour",
+        "Late Night LIVE. Q+A while I try to break my new computer",
+        "Disney Fans Live Here [Top 3 Neighborhoods]",
+        "Ken Pozek LIVE! 3/20 @2pm EST [New Epcot Hotel, Orlando News, and Q&A]",
+        "Moving to Clermont, Florida",
+        "The Villages Lifestyle Visit",
+        "Most expensive home sales in Orlando 2020",
+        "Shaq's House, New Polynesian Revealed, O-Town West, and a special guest! Ken Pozek LIVE 3/6/2021",
+        "Living in Winter Park vs Windermere",
+        "Navigating Orlando's Housing Market",
+        "Orlando's Hidden Gem Neighborhoods",
+        "Orlando Life Live! Feb 20 - Updates on Real Estate, Theme Parks, and Life in Orlando",
+        "Moving to Dr. Phillips | Orlando, FL | Community Tour",
+        "How Do Homeowners Associations Work?",
+        "Win a Bidding War When Buying A Home",
+        "Orlando Life LIVE! 2/6/21 @3P EST",
+        "Moving to Mount Dora, Florida",
+        "7 Best Orlando Suburbs",
+        "Gideon's Bakehouse + Everglazed Tour and Review!",
+        "Moving to Orlando : 5 Year Update | Orlando, Florida",
+        "Orlando Life, Real Estate, and Theme Park News!",
+        "Is Disney World Overrated or Underrated",
+        "The State of the Orlando Real Estate Market",
+        "2020 Rewind [A Year in Review]",
+        "Pros and Cons of living in a Gated Community",
+        "Visiting Walt Disney World during Holidays!",
+        "Buying a House Sight Unseen [step by step]",
+        "Downtown Winter Garden Florida | Tour, Restaurants, and Shopping",
+        "Tips For Flipping Your First House [Before and After]",
+        "Shaquille O\u2019Neal\u2019s $16 Million Mansion Tour in Orlando Florida",
+        "Boom or Bust?! 2021 Housing Predictions for Orlando [And Beyond]",
+        "Lake Nona | An Inside Look | Orlando Florida",
+        "Keene's Pointe Neighborhood [Windermere, Florida]",
+        "How to be a Successful Real Estate Agent",
+        "Life in Celebration, Florida",
+        "Steps to Buying a Home",
+        "Life in Orlando",
+        "Walt Disney by Helicopter!",
+        "5 Reasons Why People Are Moving to Orlando",
+        "Windermere Luxury Home Tour",
+        "Best Places to Live in Celebration, Florida",
+        "Orlando's Coming Housing Crash",
+        "Winter Garden Lakefront Living! [New Listing]",
+        "5 Reasons Your Home Won't Sell",
+        "Ken Responds to YOUR Comments [Good and Bad]",
+        "The BEST pizza in Orlando?",
+        "Moving to Downtown Orlando",
+        "How to Flip A House",
+        "The BEST Donut in Orlando",
+        "Lakefront Living in Windermere, Florida [New Listing Alert!]",
+        "The NBA bubble",
+        "Living in Baldwin Park [Orlando, Florida]",
+        "Moving to Bay Hill [Orlando, Florida]",
+        "Living in Oakland Park [Winter Garden]",
+        "Moving to Winter Park, Florida",
+        "Million Dollar Airbnb near Walt Disney World",
+        "Inside this $1.629M Montverde Luxury Home",
+        "Walt Disney World [Post-Covid]",
+        "Lake Nona vs. Horizon West [Which is better?]",
+        "ChampionsGate, Florida [AMENITIES AND COMMUNITY TOUR]",
+        "Should You Add a Pool?",
+        "Celebration Florida [8 things to know from an insider]",
+        "Disney Vacation Homes [What You Should Know]",
+        "Prop Culture: Home Office Tour with Ken Pozek",
+        "Empty Disney During Covid",
+        "Bella Collina $2,800,000 Luxury Home Tour",
+        "Bella Collina $1,390,000 Luxury Home Tour",
+        "Disney's Golden Oak | $7.8M Mansion in the Four Seasons Private Residences",
+        "Bella Collina | Luxury Community Tour",
+        "Living Near Disney World",
+        "Orlando, Florida | What does 500k buy?",
+        "Moving to Orlando",
+        "Celebration Island Village Update!",
+        "Margaritaville Resort Orlando",
+        "Lakeshore Winter Garden Community Tour",
+        "Celebration Home Tour | 1551 Resolute",
+        "Laureate Park Tour | Lake Nona",
+        "Waterleigh Neighborhood Tour!",
+        "2019 Was Insane (A Year in Review)",
+        "Are new construction inspections worth it?",
+        "Davenport Pool Home with Amazing Updates! 836 Coventry Road, Davenport, FL",
+        "Disney's Golden Oak and a Harry Buffalo",
+        "Moving to Windermere, Florida",
+        "Celebrity Homes of Orlando",
+        "Lakefront home in Winter Garden!",
+        "Building A New Home",
+        "Halloween in Orlando! Jeater Bend, Oakland, and more with Ken Pozek",
+        "Best Coffee in Orlando",
+        "Guess The Price with Ken Pozek | Dr. Phillips Edition",
+        "Hi. I\u2019m Ken.",
+        "Guess The Price Ep 2 | Lake Nona, Orlando, Florida",
+        "14228 Alford Drive (St. Lawrence Model)",
+        "Guess The Price | Winter Garden Edition w/ Ken Pozek",
+        "Multi Generational Housing | Orlando Florida",
+        "Millennium Falcon, Horizon West, and MORE | This Week in Orlando",
+        "College Park Traditional Home For Sale!",
+        "Selling your Florida holiday home",
+        "How to choose a REALTOR",
+        "Horizon West Area Tour",
+        "Evans Square | David Weekley | New Construction",
+        "Reunion Resort and Golf Club Tour",
+        "Moving to Lake Nona",
+        "Winter Garden Area Tour",
+        "Adler's Burgers | Inside Central Florida with Ken Pozek",
+        "Reunion Resort Condo Walkthrough!",
+        "Celebration, FL Home Walkthrough",
+        "Celebration Home Walkthrough | 1585 Castile, Celebration, FL",
+        "This week in Orlando Ep 19 | What's coming up in 2019?",
+        "1000 Hours Outside | Rents are UP in Orlando | This Week in ORL EP 18",
+        "Orlando Ambassador Program | High Speed Rail | This Week in ORL EP 17",
+        "Tompkins II model | K. Hovnanian Homes",
+        "Orlando Apollos, Selling During the Holidays, This Week in Orlando Ep 16",
+        "HUGE New development in SE Orlando | This Week in Orlando Episode 15",
+        "Holidays in Orlando | This Week in Orlando Episode 14",
+        "This Week in Orlando Episode 13 | What's happening in Orlando Real Estate?",
+        "Election Results | Veteran's Day | This Week In Orlando Episode 12",
+        "Something EPIC is coming | This Week In Orlando | EP 11",
+        "Orlando's Amazon Controversy | Boyz II Men in Real Estate | And More!",
+        "New Winter Garden Schools!",
+        "New Orlando Police Chief | Fashion Square Mall Reimagined | EP 9 of The Week In Orlando!",
+        "New Shopping, Dining, and more in Winter Garden | Hamlin Shops | Horizon West",
+        "Disney History Uncovered | Orlando's Hottest Neighborhoods | This Week in Orlando Ep 8",
+        "Introducing: Sand Lake Sound | Meritage Homes",
+        "Overture 55+ community in Doctor Phillips",
+        "Introducing: Hawksmoor by Mattamy Homes",
+        "Airbnb Rule Change, Orlando new budget, and more! This week in Orlando Ep 7",
+        "Highest Building In Downtown Orlando Coming | This Week In Orlando Ep. 6",
+        "Park Square's Ravenna | Winter Garden | Horizon West",
+        "Halloween In Orlando | This Week In Orlando Ep 5.",
+        "Mattamy's Legado in Windermere, Florida",
+        "Amazon Jobs, 5G and more | This Week In Orlando | EP 4",
+        "Laguna II | Part 2 | Solara Resort by Mattamy Homes",
+        "Laguna II Model Home Tour | Mattamy Homes | Solara Resort",
+        "Coming soon! Meridian Parks | Orlando, Florida",
+        "Celebration, Florida | 10 Things You May Not Know",
+        "People were REALLY excited about.. | This Week In Orlando Ep. 3",
+        "Orlando is the BEST place for... | This Week in Orlando EP #2",
+        "Monaca 2 model, Part TWO | Mattamy Homes | Solara Resort Community",
+        "Monaco II Model Home Tour | Mattamy Homes | Kissimmee, FL",
+        "Solara Resort | Kissimmee Florida | Amenity Tour!",
+        "72 MILLION vistors to Orlando? This Week In Orlando Ep. #1",
+        "Cleardon | Waterleigh | Model Tour Part Two!",
+        "Waterleigh | Cleardon First Floor Model Tour | Winter Garden",
+        "North Haven Pool and VIEW! | Waterleigh | Winter Garden",
+        "North Haven 2nd floor tour | Waterleigh | DR Horton",
+        "The North Haven | DR Horton | Waterleigh",
+        "The Reef Part II | Second Floor | David Weekley Lake Nona",
+        "David Weekley \"The Reef\" Model | Lake Nona | Laurette Park",
+        "Manville Model | Pool and lanai tour | Laureate Park",
+        "Laureate Park | Manville Model Part 2 | Second Floor Tour",
+        "David Weekley | The Manville | First Floor Tour",
+        "Aurora Model | Phillips Grove | Owners Suite Tour",
+        "The Aurora Model | Phillips Grove | Second Floor Layout",
+        "The Aurora | Phillips Grove | Main Level Tour",
+        "Phillips Grove | The Heatherton Pool and Lanai",
+        "Phillips Grove | The Heatherton Second Floor Layout",
+        "Heatherton Pulte | Phillips Grove | First floor",
+        "The Grove Resort and Spa - Disney Area Condo/Hotel",
+        "Celebration Island Village - Mattamy homes",
+        "Bonavento | Four Seasons Private Residences Orlando at Walt Disney World Resort",
+        "Avanti | Four Seasons Private Residences at Golden Oak",
+        "Capolavoro | Four Seasons Private Residences at Golden Oak",
+        "January 2018 Orlando Trends - Market Update",
+        "Horace Grant's former Winter Park Home Sells -  December 2017 Market Update",
+        "Topgolf Review - Orlando Review by Ken Pozek",
+        "Riddick Model (For Sale!) | Celebration, FL | David Weekley Homes",
+        "Balfour | Four Seasons | Video 1 of 3",
+        "Balfour | Four Seasons| Video 2 of 3",
+        "Balfour | Four Seasons | Video 3 of 3",
+        "Saint Thomas | Four Seasons 55+ Community  | Video 3 of 3",
+        "Saint Thomas | Four Seasons | Video 2 of 3",
+        "Saint Thomas | Four Seasons | Video 1 of 3",
+        "Dominica | Four Seasons | Lanai and Exterior | Video 3 of 3",
+        "Dominica Model | Four Seasons | Owners Suite | Video 2 of 3",
+        "Dominica Model | Four Seasons | Video 1 of 3",
+        "Camden | Randal Park | Video 2 of 2",
+        "Camden | Randal Park | Video 1 of 2",
+        "Winthorp | Randal Park | Video 4 of 4",
+        "Winthorp | Randal Park | Video 3 of 4",
+        "Winthorp Model | Randal Park | Video 2 of 4",
+        "Winthorp | Randal Park | Video 1 of 4",
+        "Storey Park | Raleigh | Master Suite |  Video 3 of 3",
+        "Storey Park | Raleigh | Lennar Homes | Video 2 of 3",
+        "Storey Park | Raleigh Model | Lennar Homes | Video 1 of 3",
+        "Windsor at Westside | Baymont Model | Video 3 of 3",
+        "Windsor at Westside | Baymont | Video 1 of 3",
+        "Windsor at Westside | Hideaway Model | Video 2 of 2",
+        "Windsor at Westside | Hideaway Model | Video 1 of 2",
+        "Windsor at Westside Amenities Tour",
+        "Laurel Model | Video 3 of 3 | Randal Park | Mattamy Homes",
+        "Laurel Model | Video 2 of 3 | Randal Park | Mattamy Homes",
+        "Laurel Model | Video 1 of 3 | Randal Park | Mattamy Homes",
+        "Watermark Model | Video 3 of 3| Randal Park | Mattamy Homes",
+        "Watermark Model | Video 2 of 3| Randal Park | Mattamy Homes",
+        "Watermark Model | Video 1 of 3 | Randal Park | Mattamy Homes",
+        "Denison Model | Video 4 of 4 | Laureate Park | Taylor Morrison",
+        "Denison Model | Video 3 of 4 | Laureate Park | Taylor Morrison",
+        "Denison Model | Video 2 of 4 | Laureate Park | Taylor Morrison",
+        "Denison Model | Video 1 of 4 | Laureate Park | Taylor Morrison",
+        "Russell Model | Video 4 of 4 | Laureate Park | Pool!",
+        "Russell Model | Video 3 of 4 | Laureate Park | Taylor Morrison",
+        "Russell Model | Video 2 of 4 | Owners Suite!",
+        "Russell Model | Video 1 of 4 | Laureate Park | Taylor Morrison",
+        "Emory Model | Video 4 of 4 | Laureate Park | Ashton Woods",
+        "Emory Model | Video 3 of 4 | Laureate Park | Ashton Woods",
+        "Emory Model | Video 2 of 3 | Laureate Park | Ashton Woods",
+        "Emory Model | Video 1 of 4 | Laureate Park | Ashton Woods",
+        "Southhaven Model | Video 4 of 4 | Laureate Park | David Weekley",
+        "Southhaven Model | Video 3 of 4 | Laureate Park | David Weekley",
+        "Southhaven Model | Video 2 of 4 | Laureate Park | David Weekley",
+        "Southhaven Model | Video 1 of 4 | Laureate Park | David Weekley",
+        "Hancock Model | Cove at Hamlin | Video 2 of 2 | Taylor Morrison",
+        "Hancock Model | Cove at Hamlin | Video 1 of 2 | Taylor Morrison",
+        "Sheen Model | Cove at Hamlin | Video 2 of 2 | Taylor Morrison",
+        "Sheen Model | Cove at Hamlin | Video 1 of 2 | Taylor Morrison",
+        "Butler Model | Cove at Hamlin | Owners Suite | Taylor Morrison",
+        "Butler Model | Cove at Hamlin | Second Level Tour | Taylor Morrison",
+        "Butler Model | Hamlin | First Level Tour | Taylor Morrison",
+        "Walden Model | Hamlin Reserve | Second Level Tour | Ashton Woods",
+        "Walden Model | Hamlin Reserve | First Level Tour | Ashton Woods",
+        "Florence Model | Hamlin Reserve | Master Suite | Ashton Woods | Video 3 of 3",
+        "Florence Model | Hamlin Reserve | 2nd Level | Ashton Woods | Video 2 of 3",
+        "Florence Model | Hamlin Reserve | Ashton Woods | Video 1 of 3",
+        "Sienna Model | Hamlin Reserve | Ashton Woods | Video 2 of 2",
+        "Sienna Model | Hamlin Reserve | Ashton Woods",
+        "Bishop Model | Overlook at Hamlin | Award Worthy Pool and Lanai | Taylor Morrison",
+        "Bishop Model | Overlook at Hamlin | 2nd level | Taylor Morrison",
+        "Bishop Model | Overlook at Hamlin | Owners Suite | Taylor Morrison",
+        "Bishop Model | Overlook at Hamlin | First Floor Tour | Taylor Morrison",
+        "Treviso Model | Overlook at Hamlin | Taylor Morrison | Epic Exterior Tour!",
+        "Treviso Model | Overlook at Hamlin | INCREDIBLE Second Floor",
+        "Treviso Model | Overlook at Hamlin | Taylor Morrison | Master Suite",
+        "Treviso Model | Overlook at Hamlin | Taylor Morrison | Main Level",
+        "Courbet Model | Overlook at Hamlin | Taylor Morrison | Lanai",
+        "Courbet Model | Second Floor Tour | Overlook at Hamlin | Taylor Morrison",
+        "Corbet Model | Overlook at Hamlin | Taylor Morrison | Master Suite Tour",
+        "Courbet Model | First Floor Tour | Overlook at Hamlin | Taylor Morrison",
+        "Jamestown Model | Taylor Morrison | Exterior Lanai",
+        "Jamestown Model | Taylor Morrison | Owners Suite Tour",
+        "Jamestown Model | Taylor Morrison | Main Level Tour",
+        "Grafton Model | Ashton Woods | Owners Suite",
+        "Grafton Model | Ashton Woods | 2nd Floor Tour",
+        "Grafton Model | Ashton Woods | First Floor Tour",
+        "Duval Model | Ashton Woods | Exterior Tour",
+        "Duval Model | Ashton Woods | Owners Suite Tour",
+        "Duval Model | Ashton Woods | 2nd Floor Tour",
+        "Duval Model | Ashton Woods | Main Level Tour",
+        "Clearview Model | Lakeview Pointe | Main Level Tour | Video 1 of 3",
+        "Clearview Model | Lakeview Pointe | 2nd floor tour",
+        "Clearview Model | Lakeview Pointe | Master Suite Tour | Video 3 of 3",
+        "Arbordale Model | Lakeview Pointe | First Floor Tour | Video 1 of 3",
+        "Arbordale Model | Lakeview Pointe | 2nd Floor Tour | Video 2 of 3",
+        "Arbordale Model | Lakeview Pointe | Master Suite | Video 3 of 3",
+        "Lakeview Pointe | Amenities | Winter Garden",
+        "Hi! I'm Ken Pozek",
+        "Dante Model | 2nd Floor Tour | Lakeshore Video 2 of 4",
+        "Dante Model | First Floor Tour | Lakeshore Video 1 of 5",
+        "Dante Model | Master Suite Tour | Lakeshore Video 3 of 5",
+        "Dante Model | Guest Suite | Lakeshore Video 4 of 5",
+        "Dante Model | Exterior Tour | Lakeshore Video 5 of 5",
+        "Cicero | Lakeshore Video 4 of 4",
+        "Cicero | Lakeshore | Video 3 of 4 - The Second Floor",
+        "Cicero | Lakeshore Video 2 of 3",
+        "Cicero | Lakeshore | Video 1 of 4 - First Floor",
+        "Gardenia | Lakeshore Video 1 of 3",
+        "Gardenia | Lakeshore Video 2 of 3",
+        "Gardenia | Lakeshore | Video 3 of 3",
+        "What Do Real Estate Agents Do All Day?",
+        "Madeira Model | Lakeshore | Video 4 of 4",
+        "Madeira Model | Lakeshore | Video 3 of 4",
+        "Madeira Model | Lakeshore | Video 2 of 4",
+        "Madeira Model | Lakeshore | Video 1 of 4",
+        "Maranello Model | Exterior Tour | Video 4 of 4",
+        "Maranello Model | Second Floor Tour | Video 3 of 4",
+        "Maranello Model | Owners Suite | Video 2 of 4",
+        "Maranello Model | Lakeshore | Video 1 of 4",
+        "Lakehouse Amenities at Lakeshore by Toll Brothers",
+        "Hayden Model | Westside Village | Video 3 of 3",
+        "Hayden Model | Westside Village | video 2 of 3",
+        "Hayden Model | Meritage Homes | Video 1 of 3",
+        "Emerson Westside Village 3 of 3 | Master Suite",
+        "Emerson Westside Village Windermere 2 of 3",
+        "Emerson Westside Village Windermere 1 of 3",
+        "Siena First Floor Walkthrough",
+        "Pompeii Optional Second Floor - Ruby Lake - Pulte",
+        "Pompeii Ruby Lake Pulte",
+        "Pompeii Model By Pulte - Owners Suite",
+        "Ruby Lake Amenities Center Dr. Phillips",
+        "Lewiston by Cal Atlantic - First Floor Tour",
+        "Lewiston - Cal Atlantic - Exterior Tour",
+        "Lewiston Model Cal Atlantic - Owners suite Tour",
+        "Inverness Model by Cal Atlantic - Second Floor Tour",
+        "Inverness Cal Atlantic Model Master Suite Tour - Hickory Hammock",
+        "Inverness Cal Atlantic Model - First Floor Tour - Hickory Hammock",
+        "Roarke II - Cal Atlantic - Owners Suite Tour",
+        "Roarke II - Cal Atlantic - Second Floor Tour",
+        "Roarke II Exterior and Main Level",
+        "Loma Del Sol Campions Gate - Davenport, FL",
+        "Campions Gate Amenities",
+        "Hideaway Model Champions Gate - Master Suite",
+        "Hideaway Model Champions Gate - Main Level",
+        "Nicholas Champions Gate Second Floor Tour",
+        "Nicholas Champions Gate Master Suite Walk through",
+        "Nicholas Champions Gate - First Floor and Exterior",
+        "Palermo II Master Suite Tour",
+        "Del Rio II Meritage Homes Master Suite Tour",
+        "Palermo II Meritage Homes First Floor Tour",
+        "Palermo II Lanai and Exterior",
+        "Estates at Parkside Amenities Tour",
+        "Del Rio II Second Floor Tour",
+        "Del Rio II Meritage Homes Exterior and First Floor Tour",
+        "Preserve of Oviedo on the Park - Spec Homes Available",
+        "Royal Cypress Preserve Orlando Amenities Tour",
+        "Winter Park New Construction - David Weekley Central Living",
+        "Robellini by Toll Brothers Covered Lanai Tour",
+        "Massiano Model by Toll Brothers Second Floor Tour",
+        "Massiano Model by Toll Brothers Master Suite Tour",
+        "Massiano by Toll Brothers Model Lanai/Exterior Tour",
+        "Massiano by Toll Brothers Model Tour",
+        "Robellini Model Orlando Video 2 of 3 (Second Floor)"
+      ],
+      "total_chunks": 405,
+      "total_videos_on_channel": 757,
+      "last_sync_date": "2026-07-18",
+      "videos": [
+        {
+          "id": "OZXnlLFDjZ4",
+          "title": "First Agrihood in Orlando\u2014Model Homes, Gardens, and What's Included"
+        },
+        {
+          "id": "RP7FIfFnCf8",
+          "title": "Orlando Dreamers with New Proposal, Local Cities Freeze Budgets, and Magical Dining is back!"
+        },
+        {
+          "id": "aXXf_ESr3I4",
+          "title": "Living Near Disney: Celebration vs Reunion"
+        },
+        {
+          "id": "k3MF2tS-mCc",
+          "title": "Oviedo Mall Demolished, Orlando Development Opportunity, and new local insights!"
+        },
+        {
+          "id": "rGU6_9HRfcw",
+          "title": "Clermont, Florida is growing FAST. Here's what's changed"
+        },
+        {
+          "id": "TH_yKr2ajrE",
+          "title": "Vegas Wins Over Orlando, New Development Moves Forward, 4th of July"
+        },
+        {
+          "id": "-GOkxuIBtfY",
+          "title": "Florida Housing Affordability Study, Orlando High Rise, and Epic Rumors"
+        },
+        {
+          "id": "5LsVINlbHkQ",
+          "title": "Moving to Orlando? Here\u2019s 9 things to consider"
+        },
+        {
+          "id": "ynsht_KX6sY",
+          "title": "Lake Eola Food Hall, Orlando Earthquake, and New Developments for our area"
+        },
+        {
+          "id": "CKGhAJ8FI3w",
+          "title": "Trying to find a new office in Orlando #realestate #orlando"
+        },
+        {
+          "id": "OUC0-geDKac",
+          "title": "Florida Property Taxes Could Change. Here's What It Actually Means"
+        },
+        {
+          "id": "wL7fYDnDNaE",
+          "title": "Orlando Foodies, Nickelodeon Resort, and a 2026 Real Estate Update"
+        },
+        {
+          "id": "F-trFDgL2jg",
+          "title": "INSIDE a $5,595,000 home at Walt Disney World's Golden Oak"
+        },
+        {
+          "id": "OpVdvs-BU4s",
+          "title": "Greater Orlando Boomtown, Bugs, and Brightline"
+        },
+        {
+          "id": "-LvuCVucjTo",
+          "title": "Disney Auditions, Florida Laws, and Hurricane Season"
+        },
+        {
+          "id": "31Km3le0BDM",
+          "title": "Universal + UCF team up, Ken Griffey Jr's MANSION hits market, and Your Questions Answered"
+        },
+        {
+          "id": "T12D6LxOz7A",
+          "title": "The MASSIVE Orlando projects and who\u2019s behind them"
+        },
+        {
+          "id": "PoIL1cBkv-I",
+          "title": "Lake Nona Shopping, Neo City Investments, and Downtown Awards"
+        },
+        {
+          "id": "01PCDoTPHto",
+          "title": "These 8 areas are driving Orlando\u2019s growth"
+        },
+        {
+          "id": "PaAh-VS7HQE",
+          "title": "Orlando Real LIVE from Alt Social April 25th"
+        },
+        {
+          "id": "W4-wPMBBVJI",
+          "title": "New Florida Laws and Orlando Ranks 2nd for THIS!"
+        },
+        {
+          "id": "u4M8zMqb8cU",
+          "title": "Orlando votes, Disney Launches, and a regional foreclosure update"
+        }
+      ]
+    },
+    "pinecone_index": "channel-brain-prod",
+    "namespace": "ken-pozek"
+  },
+  "stats": {
+    "channel_name": "Ken Pozek",
+    "channel_id": "UC_xegE89D8RBGdFWChAucWg",
+    "namespace": "ken-pozek",
+    "index_name": "channel-brain-prod",
+    "videos_indexed": 445,
+    "skipped": 735,
+    "skipped_titles": [
+      "INSIDE a $9,500,000 Orlando Home. It's Actually Insane",
+      "Orlando Custom Home BOOM is happening in THIS Suburb!",
+      "The Orlando Jags? Florida Taxes. Your questions answered!",
+      "Small Towns Near Orlando Everyone's Moving To Right Now",
+      "Florida Speed Limit, Orlando Area Schools, Live Local Act",
+      "Winter Garden vs Winter Park - Orlando's Best Places to Live?",
+      "Moving to Orlando for Disney? Here's Where People Buy",
+      "Central Florida Boomtown + Winter Garden in turmoil?",
+      "Tunnels to Epic Universe, Flamingos, and your Orlando Q&A!",
+      "Celebration Florida is Changing (2026 Update)",
+      "Orlando's Hottest Neighborhoods in 2026",
+      "Florida Insurance Woes, Rage Rooms, and Millions for Nurses",
+      "Orlando's Hottest Suburb Just Added Five New Neighborhoods",
+      "Orlando Projects, Theme Parks, and Events happening in 2026!",
+      "Changes to Florida HOAs, Tolls, and a look back at Orlando in 2025",
+      "Updates from Orlando: MLB, DC at Universal (rumor), and developments taking shape",
+      "MAJOR Projects Shaping Orlando in 2026",
+      "Orlando's Hidden Neighborhoods Everyone Should Know",
+      "Orlando has grown by HOW MUCH? We rank #2.",
+      "Saving Orlando #orlando",
+      "Orlando\u2019s Top Luxury Neighborhood Expands",
+      "Orlando Film Incentives, Road relief and Epic Universe to Ramp Up.",
+      "MASSIVE Florida Insurance Rebate, MCO Expansion, Orlando's Q&A!",
+      "Windermere, Florida - Orlando's hottest address? You decide!",
+      "Orlando Football, Roads, and Ticket Prices",
+      "New resorts, neighborhoods, and Florida's LARGEST animal shelter approved in Orlando",
+      "Horizon West and Wellness Way Update (2025)",
+      "Orlando's Redevelopment and New Transportation",
+      "Inside a $14,500,000 Home at Walt Disney World\u2019s Golden Oak",
+      "Orlando H-Mart, Universal Expansion, Fashion Square Mall, and your Q&A",
+      "Top 10 Questions About Living in Orlando",
+      "Moving to Orlando from California",
+      "Orlando New Construction Process in 2025",
+      "State of Orlando Recap + A big move in Lake Nona",
+      "Here\u2019s what $6M buys in Golden Oak vs Winter Park",
+      "This Florida boom town is about to explode",
+      "Orlando Housing Strengthened and Record Insurance Profits",
+      "Billions Invested into Orlando Area Roads",
+      "Neocity Expands, Home Prices Drop, Epic Drives Growth",
+      "Orlando Real LIVE! Florida economic insights and your Q&A",
+      "Orlando Before and After Walt Disney World",
+      "These Projects Could Change Orlando\u2019s Future",
+      "Here's What's Coming to Orlando in the Next 20 Years",
+      "No 5th Park at WDW? + Orlando\u2019s Millionaire Boom",
+      "5 Reasons Why Orlando Will Thrive Over The Next 10 Years",
+      "Orlando Housing Crash? Here's the data.",
+      "Orlando Art, explained for newbies (with Jefr\u00eb)",
+      "Waymo Hits Orlando Streets | County Connector Updates + Disney Closures",
+      "Inside Epic Universe\u2019s Grand Opening. Exclusive Interviews and More!",
+      "Epic Universe Opens and a New Town Center in St. Cloud!",
+      "Orlando Update: Tourism Surge, Epic Universe, and New Communities",
+      "TOP Places to Own a Vacation Home in Orlando, Florida",
+      "Orlando Updates: Redistricting, I-4 Opens, and Church Condos",
+      "HUGE Discounts on Orlando Area New Homes",
+      "Updates in Orlando! I4 surprise, tourist surge, and your Q&A",
+      "HUGE New Growth in Clermont Florida Shocked Me",
+      "Orlando\u2019s Population Booms! + Epic Universe Q&A",
+      "MASSIVE Orlando Construction Projects That Will Change How You Live",
+      "Lower Florida Property Tax, I-Drive Project, & Disney Office Deal in Orlando",
+      "What makes Seminole County, Florida special?",
+      "Orlando\u2019s Wild Growth: Vacation Rentals by Disney, Jaguars Rumors, and New Transit Plans",
+      "Winter Garden Homes: $400K to $2.25M | Which Would YOU Pick?",
+      "10 Realities of Living in Orlando Florida",
+      "Changes in the Orlando Real Estate Market",
+      "I4 Tolls, Chickens take over Orlando, New Permits Filed, and your Q&A!",
+      "Living in Celebration Florida vs Other Orlando Communities",
+      "Living in Windermere, Florida (they told me to live here)",
+      "Villains Land, Road Delays and life in Orlando",
+      "Orlando\u2019s development: An Architect\u2019s Take on Our Future",
+      "MLB Revived in Orlando + A Starcruiser Update (2025)",
+      "Inside a home near Disney World listed at $8,250,000",
+      "Orlando Growth Report: From Clermont to the Michelin Guide",
+      "St. Cloud Florida area MASSIVE developments on the way",
+      "Orlando Ranks Number One",
+      "Tour This $6.7M Golden Oak Disney Property",
+      "Here\u2019s where Orlando is headed",
+      "Florida ranks #1 in migration, Orlando area news and more!",
+      "This Modern Golden Oak Home Has a Hidden Casita",
+      "Orlando Food, Jobs, and New Homes",
+      "Sunbridge Florida Like You\u2019ve Never Seen Before: Exclusive Look",
+      "MLB in Orlando? Plus 5 other changes in Central Florida",
+      "2025 Predictions for Orlando Real Estate",
+      "INSIDE a CASTLE outside Orlando Florida",
+      "Inside a $15,850,000 Home at Walt Disney World\u2019s Golden Oak",
+      "Orlando's Economy Slows. Development Moves Forward",
+      "Exclusive: Inside Orlando\u2019s Biggest Developer Shaping the City",
+      "New Laws and Upcoming Votes changing Greater Orlando",
+      "Orlando Locals Spill the Truth About Living Here",
+      "Big Changes Coming to Orlando Florida",
+      "How Horizon West Has Changed (and what's coming to Winter Garden)",
+      "Orlando's Most Exclusive Neighborhood Tour",
+      "Will this help affordability in Orlando?",
+      "Hyatt Regency Orlando sells for $1B #realestate #orlando",
+      "Orlando Transportation Woes (planes, trains, and automobiles)",
+      "Orlando Area Schools, Disney Rumors, New Development, and more!",
+      "Winter Park, Florida and the Custom Home Process",
+      "10 days or less: Orlando areas that are still selling quickly.",
+      "New construction: large amenity or large lot?",
+      "Florida passes 23 Million residents",
+      "Apopka, Florida is about to BOOM (here's why)",
+      "Groveland Custom Home Tour and a Clermont Update!",
+      "The Truth About Price Drops, Rising Inventory and Deals in Orlando",
+      "THIS Area is the Best Place to Live for Theme Park fans",
+      "Average home list price around greater Orlando #realestate #movingtoorlando",
+      "Walkable Orlando Neighborhoods: Top Places to Live",
+      "3 Lesser Known Orlando Suburbs You'll Love",
+      "New Florida BIlls Affect Homeowners",
+      "Massive changes coming to Orlando",
+      "Is Dr. Phillips the Best Place to Live in Orlando?",
+      "INSIDE a $7.25M Home for Sale in Walt Disney World\u2019s Golden Oak Neighborhood",
+      "Orlando\u2019s Canceled, Postponed, and Moving Forward projects",
+      "Inside Walt Disney\u2019s Newest Golden Oak Home",
+      "Lake Nona: Orlando\u2019s Living Lab",
+      "Living in St. Cloud, Florida: Fastest Growing Area?",
+      "These 5 Things Could Hold Orlando Back",
+      "Lessons Learned in Flipping a Home in Orlando",
+      "Wellness Way, Disney, and Airbnb updates",
+      "Orlando Florida: Top Spot for Starting a Business",
+      "What these changes mean for Orlando's Real Estate Market",
+      "Winter Park Florida: Ultimate Guide to Homes and Hidden Gems!",
+      "Shuttered Disney Area Gains New Life and More!",
+      "How Far Does $1,000,000 Go in Orlando?",
+      "Clermont vs Winter Garden Florida. Which area is best?",
+      "Retiring in Orlando: The Ultimate Guide",
+      "Orlando Housing Market Forecast for 2024",
+      "Florida is CLOSED. Don't move here",
+      "Living in Orlando. The Ultimate Guide to making the move",
+      "Your Guide to Celebration Florida: The Town Disney Built",
+      "Orlando's Homeowners Insurance Woes",
+      "The Most Interesting Homes in Orlando",
+      "Top 10 Orlando Developments I'm excited about in 2024",
+      "The $4,550,000 Way to Live at Disney World - Golden Oak Home For Sale",
+      "Tips on Owning an Second Home in Orlando",
+      "Top Orlando Stories of 2023",
+      "Florida overtakes New York for most valuable market, Orlando Magic project, and more!",
+      "Top places to live in America? Hunters Creek, Orlando, Florida",
+      "Johnny Damon lists $30M Orlando home. New Law Would Out Wall Street from Real Estate.",
+      "15 Reasons Why I Love Living in Orlando",
+      "Dubbed one of the biggest development deals in greater Orlando",
+      "It's a Wonderful (Orlando) Life",
+      "Orlando Sales Fall, Disney's $40B impact, and the LARGEST listing",
+      "Sending human remains to space",
+      "Orlando's Donut King vs. Voodoo Donuts. What's the best?",
+      "Jeff Bezos Florida man, huge Orlando travel news, Universal affordable housing on Orlando Real Recap",
+      "Southwest Airlines Moves to Orlando",
+      "$200k vs $2,000,000 in Orlando Florida",
+      "Orlando\u2019s must have neighborhood amenities plus your Q+A!",
+      "Orlando Defaults, Best Buys for new construction, and more!",
+      "THIS area in Orlando has promise",
+      "Connecting Winter Garden and Clermont Florida",
+      "Four Growth Areas in Orlando",
+      "A Look Inside Amazon Orlando, plus a look into local jobs",
+      "Surf Park Coming to West Orlando?",
+      "Winter Park Florida brings the largest McLaren dealership in the World",
+      "Celebration vs Reunion - Where would you rather live?",
+      "Fireworks from your house? TOP Orlando must haves",
+      "Is the \"bubble\" bursting in Orlando?",
+      "Downtown Orlando might be different than you think",
+      "Arts in Downtown Orlando",
+      "St Cloud vs Minneola Florida",
+      "Downtown Orlando Reimagined - Here\u2019s what\u2019s coming",
+      "They made a mistake when moving to Orlando. Tips on choosing the right area",
+      "How many Orlando homes sell all cash?",
+      "Target, Torchy's, and Tiger. This week's Orlando Real Live!",
+      "Lake Living in Greater Orlando!",
+      "Bear on the loose at Magic Kingdom?! #orlandoflorida #wdw #floridalife",
+      "What is the Florida Live Local Act? How does it affect Orlando?",
+      "New Construction in Orlando - Is It the Only Option?",
+      "Orlando Redevelopment: Is this a good thing?",
+      "Living in Orlando as a theme park fan",
+      "Winter Garden - My fav neighborhood, small businesses, and more!",
+      "Inside an Orlando Home Transformation",
+      "Massive Orlando Road Development Near Disney Springs",
+      "Orlando Park Attendance is down. When is the best time to go?",
+      "Lake Nona Performance Club",
+      "What It's Really Like Moving to Orlando",
+      "Orlando Ranks on list of cities with...",
+      "This small community outside Orlando is incredible",
+      "These Orlando Chefs Have a WILD Job!",
+      "Olympic Trials to start in Orlando",
+      "Minions, Mayhem, and an Orlando Housing Shortage",
+      "Windermere Florida Tour | Best Place To Live In Orlando?",
+      "Mr. Beast Sues Orlando Based Virtual Dining Concepts",
+      "Saint Cloud or Horizon West Florida?",
+      "Florida Jobs Report, Should there be build to rent, and YOUR Q+A",
+      "Lake Nona Town Center Expansion",
+      "Hidden Gem's of Orlando | Places No One Talks About Living...",
+      "Brightline Train Orlando Posts Almost 1 MILLION...",
+      "Florida Home Insurance Woes Continue",
+      "Reasons to be excited if you live in Orlando, Florida",
+      "Orlando Area Home listed for $30M is Back on the Market",
+      "Cocaine Sharks off Florida Coast!",
+      "Why are people STILL moving to Orlando in 2023?!",
+      "Here's where Orlando Ranks!",
+      "Highest Rated Neighborhoods in Orlando ** According to Locals",
+      "THESE are the most sought after Lake Nona Gated Communities",
+      "Florida Bans Foreign Investment - How will it affect Orlando?",
+      "Popular Orlando Neighborhood Changes Proposed",
+      "Where Do Orlando's Wealthy Choose to Live?!",
+      "Windermere or Winter Park Florida? Which one do you prefer?",
+      "Orlando's More Affordable Cities + Top Rated Florida Restaurant is HERE!",
+      "Orlando's 192 Area Redevelopment",
+      "Orlando Areas Heating Up and Cooling Off",
+      "New Orlando Construction, Will there be Smoke in Orlando, and your Q&A!",
+      "Full Sunbridge Florida Update!",
+      "Orlando's Ranked in Hottest Housing Markets List + Your Q&A",
+      "Did I Buy A Money Pit In Orlando?",
+      "Coming Soon to Orlando's iDrive and Surrounding Area",
+      "Disney Cancels Lake Nona Move (and that's not all)",
+      "Orlando Mansion with themed Avengers, Spider-Man, and Princess rooms!",
+      "FORECLOSURES IN ORLANDO? NEWS, Q&A, AND MORE!",
+      "What\u2019s exciting for the Lake Nona area",
+      "The Man Behind Orlando's Largest Developments",
+      "Orlando Bear, Hail, and Disney Lawsuits + YOUR QA",
+      "$1.5M Lake Nona Laurel Pointe Model by Toll Brothers",
+      "Orlando Plans CHANGED but These Projects Move Forward",
+      "Guess how many Orlando residents are self employed",
+      "Disney Launches Affordable Housing in Orlando",
+      "What 500k buys in Winter Garden, Florida",
+      "Disney Affordable Housing and a Growing Orlando + QA!",
+      "A NEW look at Horizon West | Winter Garden, Florida",
+      "Job openings in Orlando? Not what you'd think",
+      "Here's what $35,000,000 gets you in Orlando",
+      "Best Rides in Orlando",
+      "Moving to Florida from Jersey",
+      "Jobs in Florida - How are we doing?",
+      "Disney World versus Ron Desantis (Skit)",
+      "Vision 2050, More jobs in Orlando, and your Q&A!",
+      "Guess the Price of These Orlando Homes! New Area Spotlight",
+      "Orlando Real Estate Market: Defying National Trends & Thriving Amid Rising Interest Rates",
+      "They'd want to change THIS about living in Orlando",
+      "This Orlando Neighborhood Ranked FIRST, Theme Park Hiccups, and your Q&A!",
+      "All New Packing District in Orlando, Florida",
+      "Disney's Pay Increase, Horror Nights Annouced, and a Real Estate Update!",
+      "Living in East Orlando vs. West Orlando",
+      "Orlando's Mayor sees us going here!",
+      "5 Things About Living in Orlando, Local expansion, plus Q&A",
+      "Disney's Golden Oak like you\u2019ve never seen!",
+      "Orlando\u2019s Creative Village Creates Jobs",
+      "Universal Wage Increases, 2500 new Orlando jobs for the Metaverse, and your Q&A!",
+      "Minneola is the Orlando area City You've Never Heard Of (why it's growing)",
+      "Mount Dora Explodes, Disney's Reedy Creek is done, and your Q&A!",
+      "Clermont Florida is going to BOOM (here's why)",
+      "iDrive's Boom, Cruises set records, and Downtown Orlando's Plan",
+      "You Won't Believe What's Inside This Orlando Luxury Home",
+      "Before moving to Orlando #movingtoflorida",
+      "Can Downtown Orlando Change for the Better?",
+      "5th Disney Gate, New Schools, and New Shops in Orlando | Plus your Q&A!",
+      "Uncover Orlando Neighborhoods - Guess the Price!",
+      "Universal's HUGE win | Disney Campus Moves Forward",
+      "Orlando Builder Changes and Opportunities",
+      "Disney's Golden Oak Condos! Florida Outpaces Nation. Your Q&A",
+      "Orlando's 2023 Predictions",
+      "Coming to Orlando: $1B Reunion Development, MLB Baseball, and your Q&A!",
+      "These Four Orlando Neighborhoods are Changing the Area",
+      "Coming to Orlando: Universal Escape Room, Neocity, and Lake Nona updates!",
+      "Disney Adults Living in Orlando",
+      "Desantis vs Disney | Orlando Areas Seeing a Price Change",
+      "Orlando's 2023 Outlook - Home Values, Iger, and more!",
+      "Living in Orlando vs. Tampa",
+      "Iger is Back! Disney fans hope for change",
+      "Inside TWO Celebration Florida Homes (and a Weird Update)",
+      "4 Amazing Orlando Airbnb Neighborhoods You Need to Know About",
+      "Orlando's tax vote, Olympics, & Area 15?",
+      "Is getting solar worth it in Florida?",
+      "How Orlando Became A College Town",
+      "How do Orlando home prices compare?",
+      "UNIVERSAL IS WINNING theme park wars",
+      "What people love about Orlando (and your Q&A!)",
+      "Orlando area residents will be affected",
+      "How are interest rates affecting Orlando?",
+      "What they wish they knew before moving to Orlando",
+      "Florida Home Insurance Q&A (Post Hurricane Ian)",
+      "Orlando Preps for Hurricane Ian",
+      "Naval base in the middle of Florida?",
+      "Lake Nona Neighborhoods explained",
+      "No high rise buildings in Orlando",
+      "Affordable Areas of Orlando, Disney vs. Universal, and your Q&A!",
+      "Housing Opportunities in Orlando?",
+      "Orlando Developments FINALLY selling and WDW D23 Announcements",
+      "Orlando Home Buyers Disappear?!",
+      "Reunion Resort Timeshares, Artemis, and Builder Updates",
+      "\"Cool\" Neighborhoods in Orlando",
+      "Zillow says this about Orlando",
+      "Coming Soon to Orlando: Sports Betting and Jobs Numbers",
+      "Orlando Facts You Didn\u2019t Know!",
+      "Coming Soon to Orlando - Condo High Rise, EverBe, and your Q&A!",
+      "Orlando\u2019s walkable neighborhoods",
+      "Coming to Orlando - New Tower, Universal Changes + Your Q&A",
+      "Was Celebration Florida a Success?",
+      "Coming to Orlando - Is Orlando Empty?",
+      "4 Things Coming to Orlando + Your Q&A",
+      "Home Tour + 5 New Horizon West Neighborhoods",
+      "If I Moved to Orlando, Again + Lord of the Rings at Universal",
+      "Orlando Housing Predictions and Update 2022",
+      "Orlando Foodies, Geekiest City in America, and a Housing Update",
+      "Is Orlando Affordable Anymore?",
+      "Orlando Airbnb Changes, New Community, July 4th recap, and a special guest!",
+      "Disney Brightline Cancelled, Freedom Tax, and Orlando Fireworks!",
+      "Orlando builder issues, real estate update, and your questions answered!",
+      "Luxury Celebration Home + Island Village Updates!",
+      "Disney Delays Orlando Move + Real Estate Update",
+      "Projects Coming to Orlando 2022",
+      "Orlando Real Estate Update, Michelin Restaurants, and Thousands of THESE come to Orlando",
+      "Coming to Orlando: Space Tourism, Real Estate Update, and Rent Control",
+      "Moving to Orlando | 8 things youll want to know",
+      "The Orlando Housing Market Has Started to Shift",
+      "Avalon Park | Orlando\u2019s best community?",
+      "What $1M in Orlando used to buy",
+      "Coming Soon to Orlando: Celebration, Sea World, Wellness Way",
+      "Winter Garden Florida | Orlando's Fastest Growing Suburb",
+      "Coming to Orlando: New Orange County Tax, Builders Expand, and more!",
+      "Orlando Recession Looming? Reedy Creek Update and More!",
+      "What Disney Losing Reedy Creek Means For Orlando Homeowners",
+      "Coming to Orlando | Thousands of New Homes, Blue Origin, and more!",
+      "New Home Process in Orlando Florida | 2022",
+      "Disney Affordable Housing and an Orlando Market Update!",
+      "Orlando Home Builders Ranked",
+      "Living in Saint Cloud Florida | Plus a Sunbridge Update",
+      "Orlando Inflation and Interest Rates",
+      "Electronic Arts, NASA, and huge new Orlando developments!",
+      "Coming soon to Orlando | Space Mountain, 1k New Homes, Mandalorian Tech?",
+      "Living in Lake Mary Florida",
+      "Coming to Orlando | Disney's Surge, Smart Apartments, and So Much Coffee!",
+      "Orlando: Outside the Theme Parks",
+      "Orlando\u2019s housing market\ufffc picks up! UCF partners with Amazon.  \ufffc",
+      "3 Affordable vs Luxury Orlando Neighborhoods Ranked!",
+      "Orlando Live! Real Estate, Theme Parks, and Orlando Life Update",
+      "Building a Custom Home in Orlando",
+      "Living in Apopka",
+      "Clermont, Wellness Way, and the Olympus Project",
+      "Investing In Orlando",
+      "Delayed (and Announced) in Orlando | Epic Universe, Brightline, The Grow",
+      "Horizon West |  New Community Update",
+      "Lake Nona's Newest Amenity | The Wave Hotel",
+      "Orlando in 2030",
+      "Mortgage Rate Hikes and How It Affects Orlando",
+      "Top Orlando Home Sales",
+      "Kissimmee, Florida | Top Place People Are Moving?",
+      "It's OK to move to Orlando for Disney",
+      "Billions spent in Orlando, Florida",
+      "Sunbridge Florida Preview",
+      "Things To Do In Orlando Besides Disney",
+      "FIVE New Orlando Developments, Star Wars Hotel, and more!",
+      "Orlando Real Estate Market Review",
+      "Orlando Housing Predictions for 2022",
+      "Orlando Mortgage Updates, Orlando Developments YOUR questions",
+      "Huge Travel Numbers and a Tech Hub?  Coming to Orlando",
+      "Coming to Orlando | Housing Market Dips, a Million Lights, and more!",
+      "Orlando Older Homes",
+      "Coming to Orlando | Zillow Causes a Crash, Florida ID,  and Disney NFT",
+      "What's Orlando Known For? Plus HUGE new road toll roads and transportation news",
+      "Coming to Orlando | Massive Development, Michelin & More",
+      "How will Zillow Leaving Affect Orlando?",
+      "Horizon West Winter Garden Update",
+      "Coming To Orlando in 2021 and beyond",
+      "Orlando's Growth - Old Becomes New",
+      "Shaq\u2019s home sells, Boo bash, Orlando real estate update and more!",
+      "Coming to Orlando in 2022",
+      "Homes Near Lake Nona",
+      "Orlando Real Estate Update (Fall 2021)",
+      "Myths About Living in Orlando",
+      "The Orlando Real - Theme Parks, Real Estate, Living in Orlando",
+      "Moving to Oviedo Florida",
+      "Orlando Builders Fall Behind, $1.2B investment in Neocity, and are we FINALLY seeing a slow down?",
+      "Orlando Versus Miami Mansion Tour",
+      "Inside a $6,995,000 Winter Park Mansion",
+      "Mount Dora Florida Street Interviews!",
+      "10 Things Coming To Orlando! Popstroke Hamlin, UCF Knights Join Big 12, and Disney's 50th!",
+      "Inside a $6,000,000 Orlando Vacation Home",
+      "Candid Comments and Coffee with Ken Pozek",
+      "Tips On Buying A Second Home In Orlando",
+      "New Disney Campus, Disney's 55+ community, and I ask YOU questions",
+      "What 500k Buys in Orlando Florida (18 months later)",
+      "Disney's Golden Oak Neighborhood",
+      "Recession coming to Orlando? Disney's 50th swag. Sunbridge and more!",
+      "The Future of Celebration Florida",
+      "Moving To Florida [During a Pandemic]",
+      "Is the market finally correcting in Orlando?",
+      "Lake Nona\u2019s New Disney Campus (and so much more)",
+      "Is Celebration Florida A Good Place to Live?",
+      "Florida Home Inspections",
+      "The Future of Orlando",
+      "Orlando Home Prices [Can You Afford It?]",
+      "Creating Disney Magic w/ Lee Cockerell",
+      "Best Tacos in Orlando Florida",
+      "Coming to Orlando beyond 2021",
+      "Downtown Orlando Night time paddle boarding",
+      "Moving to Florida - Things I Wish I Knew Before Moving Here",
+      "Mid Year Orlando Real Estate Update and News!",
+      "Living in Maitland Florida [Best Orlando Suburb]",
+      "Lake Nona Orlando Florida - Man on the Street Interviews!",
+      "Most Affordable Places to Live In Orlando, Florida",
+      "Winter Park, Florida - On the Street!",
+      "Investment Home in Orlando",
+      "Tiger Woods House Demolished - Florida is #1 on THIS - No more masks at Universal and Disney",
+      "How Disney Creates Magic - Louie Gravance (former Disney Institute)",
+      "Winter Garden, Florida - On the Street!",
+      "No Masks at Disney, Big Orlando Changes, and your Q&A!",
+      "Orlando Lake Living - Boat and house tour",
+      "Alligators and snakes in Florida?",
+      "Orlando Florida - Man on the Street Interviews",
+      "What would you change about Orlando?",
+      "Guide to Orlando - Ken Pozek",
+      "Celebration Island Village, Florida Insurance Hikes, Evermore Developments, and more LIVE",
+      "Horizon West, Florida (Winter Garden)",
+      "High Paying Jobs In Orlando",
+      "Best Orlando Condo Buildings",
+      "Olympus, Sunbridge, Orlando Real Estate Talk",
+      "Coming To Orlando 2021",
+      "Living In Reunion Florida",
+      "The 7 Best Photo Spots in Orlando",
+      "Orlando Housing Update, Disney Facial Recognition, and more!",
+      "Celebration Island Village #short",
+      "What $1 Million Buys: Winter Garden Home Tour",
+      "Ken Pozek Reacts to Ryan Serhant\u2019s Shaq House Tour",
+      "Late Night LIVE. Q+A while I try to break my new computer",
+      "Disney Fans Live Here [Top 3 Neighborhoods]",
+      "Ken Pozek LIVE! 3/20 @2pm EST [New Epcot Hotel, Orlando News, and Q&A]",
+      "Moving to Clermont, Florida",
+      "The Villages Lifestyle Visit",
+      "Most expensive home sales in Orlando 2020",
+      "Shaq's House, New Polynesian Revealed, O-Town West, and a special guest! Ken Pozek LIVE 3/6/2021",
+      "Living in Winter Park vs Windermere",
+      "Navigating Orlando's Housing Market",
+      "Orlando's Hidden Gem Neighborhoods",
+      "Orlando Life Live! Feb 20 - Updates on Real Estate, Theme Parks, and Life in Orlando",
+      "Moving to Dr. Phillips | Orlando, FL | Community Tour",
+      "How Do Homeowners Associations Work?",
+      "Win a Bidding War When Buying A Home",
+      "Orlando Life LIVE! 2/6/21 @3P EST",
+      "Moving to Mount Dora, Florida",
+      "7 Best Orlando Suburbs",
+      "Gideon's Bakehouse + Everglazed Tour and Review!",
+      "Moving to Orlando : 5 Year Update | Orlando, Florida",
+      "Orlando Life, Real Estate, and Theme Park News!",
+      "Is Disney World Overrated or Underrated",
+      "The State of the Orlando Real Estate Market",
+      "2020 Rewind [A Year in Review]",
+      "Pros and Cons of living in a Gated Community",
+      "Visiting Walt Disney World during Holidays!",
+      "Buying a House Sight Unseen [step by step]",
+      "Downtown Winter Garden Florida | Tour, Restaurants, and Shopping",
+      "Tips For Flipping Your First House [Before and After]",
+      "Shaquille O\u2019Neal\u2019s $16 Million Mansion Tour in Orlando Florida",
+      "Boom or Bust?! 2021 Housing Predictions for Orlando [And Beyond]",
+      "Lake Nona | An Inside Look | Orlando Florida",
+      "Keene's Pointe Neighborhood [Windermere, Florida]",
+      "How to be a Successful Real Estate Agent",
+      "Life in Celebration, Florida",
+      "Steps to Buying a Home",
+      "Life in Orlando",
+      "Walt Disney by Helicopter!",
+      "5 Reasons Why People Are Moving to Orlando",
+      "Windermere Luxury Home Tour",
+      "Best Places to Live in Celebration, Florida",
+      "Orlando's Coming Housing Crash",
+      "Winter Garden Lakefront Living! [New Listing]",
+      "5 Reasons Your Home Won't Sell",
+      "Ken Responds to YOUR Comments [Good and Bad]",
+      "The BEST pizza in Orlando?",
+      "Moving to Downtown Orlando",
+      "How to Flip A House",
+      "The BEST Donut in Orlando",
+      "Lakefront Living in Windermere, Florida [New Listing Alert!]",
+      "The NBA bubble",
+      "Living in Baldwin Park [Orlando, Florida]",
+      "Moving to Bay Hill [Orlando, Florida]",
+      "Living in Oakland Park [Winter Garden]",
+      "Moving to Winter Park, Florida",
+      "Million Dollar Airbnb near Walt Disney World",
+      "Inside this $1.629M Montverde Luxury Home",
+      "Walt Disney World [Post-Covid]",
+      "Lake Nona vs. Horizon West [Which is better?]",
+      "ChampionsGate, Florida [AMENITIES AND COMMUNITY TOUR]",
+      "Should You Add a Pool?",
+      "Celebration Florida [8 things to know from an insider]",
+      "Disney Vacation Homes [What You Should Know]",
+      "Prop Culture: Home Office Tour with Ken Pozek",
+      "Empty Disney During Covid",
+      "Bella Collina $2,800,000 Luxury Home Tour",
+      "Bella Collina $1,390,000 Luxury Home Tour",
+      "Disney's Golden Oak | $7.8M Mansion in the Four Seasons Private Residences",
+      "Bella Collina | Luxury Community Tour",
+      "Living Near Disney World",
+      "Orlando, Florida | What does 500k buy?",
+      "Moving to Orlando",
+      "Celebration Island Village Update!",
+      "Margaritaville Resort Orlando",
+      "Lakeshore Winter Garden Community Tour",
+      "Celebration Home Tour | 1551 Resolute",
+      "Laureate Park Tour | Lake Nona",
+      "Waterleigh Neighborhood Tour!",
+      "2019 Was Insane (A Year in Review)",
+      "Are new construction inspections worth it?",
+      "Davenport Pool Home with Amazing Updates! 836 Coventry Road, Davenport, FL",
+      "Disney's Golden Oak and a Harry Buffalo",
+      "Moving to Windermere, Florida",
+      "Celebrity Homes of Orlando",
+      "Lakefront home in Winter Garden!",
+      "Building A New Home",
+      "Halloween in Orlando! Jeater Bend, Oakland, and more with Ken Pozek",
+      "Best Coffee in Orlando",
+      "Guess The Price with Ken Pozek | Dr. Phillips Edition",
+      "Hi. I\u2019m Ken.",
+      "Guess The Price Ep 2 | Lake Nona, Orlando, Florida",
+      "14228 Alford Drive (St. Lawrence Model)",
+      "Guess The Price | Winter Garden Edition w/ Ken Pozek",
+      "Multi Generational Housing | Orlando Florida",
+      "Millennium Falcon, Horizon West, and MORE | This Week in Orlando",
+      "College Park Traditional Home For Sale!",
+      "Selling your Florida holiday home",
+      "How to choose a REALTOR",
+      "Horizon West Area Tour",
+      "Evans Square | David Weekley | New Construction",
+      "Reunion Resort and Golf Club Tour",
+      "Moving to Lake Nona",
+      "Winter Garden Area Tour",
+      "Adler's Burgers | Inside Central Florida with Ken Pozek",
+      "Reunion Resort Condo Walkthrough!",
+      "Celebration, FL Home Walkthrough",
+      "Celebration Home Walkthrough | 1585 Castile, Celebration, FL",
+      "This week in Orlando Ep 19 | What's coming up in 2019?",
+      "1000 Hours Outside | Rents are UP in Orlando | This Week in ORL EP 18",
+      "Orlando Ambassador Program | High Speed Rail | This Week in ORL EP 17",
+      "Tompkins II model | K. Hovnanian Homes",
+      "Orlando Apollos, Selling During the Holidays, This Week in Orlando Ep 16",
+      "HUGE New development in SE Orlando | This Week in Orlando Episode 15",
+      "Holidays in Orlando | This Week in Orlando Episode 14",
+      "This Week in Orlando Episode 13 | What's happening in Orlando Real Estate?",
+      "Election Results | Veteran's Day | This Week In Orlando Episode 12",
+      "Something EPIC is coming | This Week In Orlando | EP 11",
+      "Orlando's Amazon Controversy | Boyz II Men in Real Estate | And More!",
+      "New Winter Garden Schools!",
+      "New Orlando Police Chief | Fashion Square Mall Reimagined | EP 9 of The Week In Orlando!",
+      "New Shopping, Dining, and more in Winter Garden | Hamlin Shops | Horizon West",
+      "Disney History Uncovered | Orlando's Hottest Neighborhoods | This Week in Orlando Ep 8",
+      "Introducing: Sand Lake Sound | Meritage Homes",
+      "Overture 55+ community in Doctor Phillips",
+      "Introducing: Hawksmoor by Mattamy Homes",
+      "Airbnb Rule Change, Orlando new budget, and more! This week in Orlando Ep 7",
+      "Highest Building In Downtown Orlando Coming | This Week In Orlando Ep. 6",
+      "Park Square's Ravenna | Winter Garden | Horizon West",
+      "Halloween In Orlando | This Week In Orlando Ep 5.",
+      "Mattamy's Legado in Windermere, Florida",
+      "Amazon Jobs, 5G and more | This Week In Orlando | EP 4",
+      "Laguna II | Part 2 | Solara Resort by Mattamy Homes",
+      "Laguna II Model Home Tour | Mattamy Homes | Solara Resort",
+      "Coming soon! Meridian Parks | Orlando, Florida",
+      "Celebration, Florida | 10 Things You May Not Know",
+      "People were REALLY excited about.. | This Week In Orlando Ep. 3",
+      "Orlando is the BEST place for... | This Week in Orlando EP #2",
+      "Monaca 2 model, Part TWO | Mattamy Homes | Solara Resort Community",
+      "Monaco II Model Home Tour | Mattamy Homes | Kissimmee, FL",
+      "Solara Resort | Kissimmee Florida | Amenity Tour!",
+      "72 MILLION vistors to Orlando? This Week In Orlando Ep. #1",
+      "Cleardon | Waterleigh | Model Tour Part Two!",
+      "Waterleigh | Cleardon First Floor Model Tour | Winter Garden",
+      "North Haven Pool and VIEW! | Waterleigh | Winter Garden",
+      "North Haven 2nd floor tour | Waterleigh | DR Horton",
+      "The North Haven | DR Horton | Waterleigh",
+      "The Reef Part II | Second Floor | David Weekley Lake Nona",
+      "David Weekley \"The Reef\" Model | Lake Nona | Laurette Park",
+      "Manville Model | Pool and lanai tour | Laureate Park",
+      "Laureate Park | Manville Model Part 2 | Second Floor Tour",
+      "David Weekley | The Manville | First Floor Tour",
+      "Aurora Model | Phillips Grove | Owners Suite Tour",
+      "The Aurora Model | Phillips Grove | Second Floor Layout",
+      "The Aurora | Phillips Grove | Main Level Tour",
+      "Phillips Grove | The Heatherton Pool and Lanai",
+      "Phillips Grove | The Heatherton Second Floor Layout",
+      "Heatherton Pulte | Phillips Grove | First floor",
+      "The Grove Resort and Spa - Disney Area Condo/Hotel",
+      "Celebration Island Village - Mattamy homes",
+      "Bonavento | Four Seasons Private Residences Orlando at Walt Disney World Resort",
+      "Avanti | Four Seasons Private Residences at Golden Oak",
+      "Capolavoro | Four Seasons Private Residences at Golden Oak",
+      "January 2018 Orlando Trends - Market Update",
+      "Horace Grant's former Winter Park Home Sells -  December 2017 Market Update",
+      "Topgolf Review - Orlando Review by Ken Pozek",
+      "Riddick Model (For Sale!) | Celebration, FL | David Weekley Homes",
+      "Balfour | Four Seasons | Video 1 of 3",
+      "Balfour | Four Seasons| Video 2 of 3",
+      "Balfour | Four Seasons | Video 3 of 3",
+      "Saint Thomas | Four Seasons 55+ Community  | Video 3 of 3",
+      "Saint Thomas | Four Seasons | Video 2 of 3",
+      "Saint Thomas | Four Seasons | Video 1 of 3",
+      "Dominica | Four Seasons | Lanai and Exterior | Video 3 of 3",
+      "Dominica Model | Four Seasons | Owners Suite | Video 2 of 3",
+      "Dominica Model | Four Seasons | Video 1 of 3",
+      "Camden | Randal Park | Video 2 of 2",
+      "Camden | Randal Park | Video 1 of 2",
+      "Winthorp | Randal Park | Video 4 of 4",
+      "Winthorp | Randal Park | Video 3 of 4",
+      "Winthorp Model | Randal Park | Video 2 of 4",
+      "Winthorp | Randal Park | Video 1 of 4",
+      "Storey Park | Raleigh | Master Suite |  Video 3 of 3",
+      "Storey Park | Raleigh | Lennar Homes | Video 2 of 3",
+      "Storey Park | Raleigh Model | Lennar Homes | Video 1 of 3",
+      "Windsor at Westside | Baymont Model | Video 3 of 3",
+      "Windsor at Westside | Baymont | Video 1 of 3",
+      "Windsor at Westside | Hideaway Model | Video 2 of 2",
+      "Windsor at Westside | Hideaway Model | Video 1 of 2",
+      "Windsor at Westside Amenities Tour",
+      "Laurel Model | Video 3 of 3 | Randal Park | Mattamy Homes",
+      "Laurel Model | Video 2 of 3 | Randal Park | Mattamy Homes",
+      "Laurel Model | Video 1 of 3 | Randal Park | Mattamy Homes",
+      "Watermark Model | Video 3 of 3| Randal Park | Mattamy Homes",
+      "Watermark Model | Video 2 of 3| Randal Park | Mattamy Homes",
+      "Watermark Model | Video 1 of 3 | Randal Park | Mattamy Homes",
+      "Denison Model | Video 4 of 4 | Laureate Park | Taylor Morrison",
+      "Denison Model | Video 3 of 4 | Laureate Park | Taylor Morrison",
+      "Denison Model | Video 2 of 4 | Laureate Park | Taylor Morrison",
+      "Denison Model | Video 1 of 4 | Laureate Park | Taylor Morrison",
+      "Russell Model | Video 4 of 4 | Laureate Park | Pool!",
+      "Russell Model | Video 3 of 4 | Laureate Park | Taylor Morrison",
+      "Russell Model | Video 2 of 4 | Owners Suite!",
+      "Russell Model | Video 1 of 4 | Laureate Park | Taylor Morrison",
+      "Emory Model | Video 4 of 4 | Laureate Park | Ashton Woods",
+      "Emory Model | Video 3 of 4 | Laureate Park | Ashton Woods",
+      "Emory Model | Video 2 of 3 | Laureate Park | Ashton Woods",
+      "Emory Model | Video 1 of 4 | Laureate Park | Ashton Woods",
+      "Southhaven Model | Video 4 of 4 | Laureate Park | David Weekley",
+      "Southhaven Model | Video 3 of 4 | Laureate Park | David Weekley",
+      "Southhaven Model | Video 2 of 4 | Laureate Park | David Weekley",
+      "Southhaven Model | Video 1 of 4 | Laureate Park | David Weekley",
+      "Hancock Model | Cove at Hamlin | Video 2 of 2 | Taylor Morrison",
+      "Hancock Model | Cove at Hamlin | Video 1 of 2 | Taylor Morrison",
+      "Sheen Model | Cove at Hamlin | Video 2 of 2 | Taylor Morrison",
+      "Sheen Model | Cove at Hamlin | Video 1 of 2 | Taylor Morrison",
+      "Butler Model | Cove at Hamlin | Owners Suite | Taylor Morrison",
+      "Butler Model | Cove at Hamlin | Second Level Tour | Taylor Morrison",
+      "Butler Model | Hamlin | First Level Tour | Taylor Morrison",
+      "Walden Model | Hamlin Reserve | Second Level Tour | Ashton Woods",
+      "Walden Model | Hamlin Reserve | First Level Tour | Ashton Woods",
+      "Florence Model | Hamlin Reserve | Master Suite | Ashton Woods | Video 3 of 3",
+      "Florence Model | Hamlin Reserve | 2nd Level | Ashton Woods | Video 2 of 3",
+      "Florence Model | Hamlin Reserve | Ashton Woods | Video 1 of 3",
+      "Sienna Model | Hamlin Reserve | Ashton Woods | Video 2 of 2",
+      "Sienna Model | Hamlin Reserve | Ashton Woods",
+      "Bishop Model | Overlook at Hamlin | Award Worthy Pool and Lanai | Taylor Morrison",
+      "Bishop Model | Overlook at Hamlin | 2nd level | Taylor Morrison",
+      "Bishop Model | Overlook at Hamlin | Owners Suite | Taylor Morrison",
+      "Bishop Model | Overlook at Hamlin | First Floor Tour | Taylor Morrison",
+      "Treviso Model | Overlook at Hamlin | Taylor Morrison | Epic Exterior Tour!",
+      "Treviso Model | Overlook at Hamlin | INCREDIBLE Second Floor",
+      "Treviso Model | Overlook at Hamlin | Taylor Morrison | Master Suite",
+      "Treviso Model | Overlook at Hamlin | Taylor Morrison | Main Level",
+      "Courbet Model | Overlook at Hamlin | Taylor Morrison | Lanai",
+      "Courbet Model | Second Floor Tour | Overlook at Hamlin | Taylor Morrison",
+      "Corbet Model | Overlook at Hamlin | Taylor Morrison | Master Suite Tour",
+      "Courbet Model | First Floor Tour | Overlook at Hamlin | Taylor Morrison",
+      "Jamestown Model | Taylor Morrison | Exterior Lanai",
+      "Jamestown Model | Taylor Morrison | Owners Suite Tour",
+      "Jamestown Model | Taylor Morrison | Main Level Tour",
+      "Grafton Model | Ashton Woods | Owners Suite",
+      "Grafton Model | Ashton Woods | 2nd Floor Tour",
+      "Grafton Model | Ashton Woods | First Floor Tour",
+      "Duval Model | Ashton Woods | Exterior Tour",
+      "Duval Model | Ashton Woods | Owners Suite Tour",
+      "Duval Model | Ashton Woods | 2nd Floor Tour",
+      "Duval Model | Ashton Woods | Main Level Tour",
+      "Clearview Model | Lakeview Pointe | Main Level Tour | Video 1 of 3",
+      "Clearview Model | Lakeview Pointe | 2nd floor tour",
+      "Clearview Model | Lakeview Pointe | Master Suite Tour | Video 3 of 3",
+      "Arbordale Model | Lakeview Pointe | First Floor Tour | Video 1 of 3",
+      "Arbordale Model | Lakeview Pointe | 2nd Floor Tour | Video 2 of 3",
+      "Arbordale Model | Lakeview Pointe | Master Suite | Video 3 of 3",
+      "Lakeview Pointe | Amenities | Winter Garden",
+      "Hi! I'm Ken Pozek",
+      "Dante Model | 2nd Floor Tour | Lakeshore Video 2 of 4",
+      "Dante Model | First Floor Tour | Lakeshore Video 1 of 5",
+      "Dante Model | Master Suite Tour | Lakeshore Video 3 of 5",
+      "Dante Model | Guest Suite | Lakeshore Video 4 of 5",
+      "Dante Model | Exterior Tour | Lakeshore Video 5 of 5",
+      "Cicero | Lakeshore Video 4 of 4",
+      "Cicero | Lakeshore | Video 3 of 4 - The Second Floor",
+      "Cicero | Lakeshore Video 2 of 3",
+      "Cicero | Lakeshore | Video 1 of 4 - First Floor",
+      "Gardenia | Lakeshore Video 1 of 3",
+      "Gardenia | Lakeshore Video 2 of 3",
+      "Gardenia | Lakeshore | Video 3 of 3",
+      "What Do Real Estate Agents Do All Day?",
+      "Madeira Model | Lakeshore | Video 4 of 4",
+      "Madeira Model | Lakeshore | Video 3 of 4",
+      "Madeira Model | Lakeshore | Video 2 of 4",
+      "Madeira Model | Lakeshore | Video 1 of 4",
+      "Maranello Model | Exterior Tour | Video 4 of 4",
+      "Maranello Model | Second Floor Tour | Video 3 of 4",
+      "Maranello Model | Owners Suite | Video 2 of 4",
+      "Maranello Model | Lakeshore | Video 1 of 4",
+      "Lakehouse Amenities at Lakeshore by Toll Brothers",
+      "Hayden Model | Westside Village | Video 3 of 3",
+      "Hayden Model | Westside Village | video 2 of 3",
+      "Hayden Model | Meritage Homes | Video 1 of 3",
+      "Emerson Westside Village 3 of 3 | Master Suite",
+      "Emerson Westside Village Windermere 2 of 3",
+      "Emerson Westside Village Windermere 1 of 3",
+      "Siena First Floor Walkthrough",
+      "Pompeii Optional Second Floor - Ruby Lake - Pulte",
+      "Pompeii Ruby Lake Pulte",
+      "Pompeii Model By Pulte - Owners Suite",
+      "Ruby Lake Amenities Center Dr. Phillips",
+      "Lewiston by Cal Atlantic - First Floor Tour",
+      "Lewiston - Cal Atlantic - Exterior Tour",
+      "Lewiston Model Cal Atlantic - Owners suite Tour",
+      "Inverness Model by Cal Atlantic - Second Floor Tour",
+      "Inverness Cal Atlantic Model Master Suite Tour - Hickory Hammock",
+      "Inverness Cal Atlantic Model - First Floor Tour - Hickory Hammock",
+      "Roarke II - Cal Atlantic - Owners Suite Tour",
+      "Roarke II - Cal Atlantic - Second Floor Tour",
+      "Roarke II Exterior and Main Level",
+      "Loma Del Sol Campions Gate - Davenport, FL",
+      "Campions Gate Amenities",
+      "Hideaway Model Champions Gate - Master Suite",
+      "Hideaway Model Champions Gate - Main Level",
+      "Nicholas Champions Gate Second Floor Tour",
+      "Nicholas Champions Gate Master Suite Walk through",
+      "Nicholas Champions Gate - First Floor and Exterior",
+      "Palermo II Master Suite Tour",
+      "Del Rio II Meritage Homes Master Suite Tour",
+      "Palermo II Meritage Homes First Floor Tour",
+      "Palermo II Lanai and Exterior",
+      "Estates at Parkside Amenities Tour",
+      "Del Rio II Second Floor Tour",
+      "Del Rio II Meritage Homes Exterior and First Floor Tour",
+      "Preserve of Oviedo on the Park - Spec Homes Available",
+      "Royal Cypress Preserve Orlando Amenities Tour",
+      "Winter Park New Construction - David Weekley Central Living",
+      "Robellini by Toll Brothers Covered Lanai Tour",
+      "Massiano Model by Toll Brothers Second Floor Tour",
+      "Massiano Model by Toll Brothers Master Suite Tour",
+      "Massiano by Toll Brothers Model Lanai/Exterior Tour",
+      "Massiano by Toll Brothers Model Tour",
+      "Robellini Model Orlando Video 2 of 3 (Second Floor)"
+    ],
+    "total_chunks": 4565,
+    "total_videos_on_channel": 757,
+    "last_sync_date": "2026-07-28 01:15:01 UTC",
+    "videos": [
+      {
+        "id": "OZXnlLFDjZ4",
+        "title": "First Agrihood in Orlando\u2014Model Homes, Gardens, and What's Included"
+      },
+      {
+        "id": "RP7FIfFnCf8",
+        "title": "Orlando Dreamers with New Proposal, Local Cities Freeze Budgets, and Magical Dining is back!"
+      },
+      {
+        "id": "aXXf_ESr3I4",
+        "title": "Living Near Disney: Celebration vs Reunion"
+      },
+      {
+        "id": "k3MF2tS-mCc",
+        "title": "Oviedo Mall Demolished, Orlando Development Opportunity, and new local insights!"
+      },
+      {
+        "id": "rGU6_9HRfcw",
+        "title": "Clermont, Florida is growing FAST. Here's what's changed"
+      },
+      {
+        "id": "TH_yKr2ajrE",
+        "title": "Vegas Wins Over Orlando, New Development Moves Forward, 4th of July"
+      },
+      {
+        "id": "-GOkxuIBtfY",
+        "title": "Florida Housing Affordability Study, Orlando High Rise, and Epic Rumors"
+      },
+      {
+        "id": "5LsVINlbHkQ",
+        "title": "Moving to Orlando? Here\u2019s 9 things to consider"
+      },
+      {
+        "id": "ynsht_KX6sY",
+        "title": "Lake Eola Food Hall, Orlando Earthquake, and New Developments for our area"
+      },
+      {
+        "id": "CKGhAJ8FI3w",
+        "title": "Trying to find a new office in Orlando #realestate #orlando"
+      },
+      {
+        "id": "OUC0-geDKac",
+        "title": "Florida Property Taxes Could Change. Here's What It Actually Means"
+      },
+      {
+        "id": "wL7fYDnDNaE",
+        "title": "Orlando Foodies, Nickelodeon Resort, and a 2026 Real Estate Update"
+      },
+      {
+        "id": "F-trFDgL2jg",
+        "title": "INSIDE a $5,595,000 home at Walt Disney World's Golden Oak"
+      },
+      {
+        "id": "OpVdvs-BU4s",
+        "title": "Greater Orlando Boomtown, Bugs, and Brightline"
+      },
+      {
+        "id": "-LvuCVucjTo",
+        "title": "Disney Auditions, Florida Laws, and Hurricane Season"
+      },
+      {
+        "id": "31Km3le0BDM",
+        "title": "Universal + UCF team up, Ken Griffey Jr's MANSION hits market, and Your Questions Answered"
+      },
+      {
+        "id": "T12D6LxOz7A",
+        "title": "The MASSIVE Orlando projects and who\u2019s behind them"
+      },
+      {
+        "id": "PoIL1cBkv-I",
+        "title": "Lake Nona Shopping, Neo City Investments, and Downtown Awards"
+      },
+      {
+        "id": "01PCDoTPHto",
+        "title": "These 8 areas are driving Orlando\u2019s growth"
+      },
+      {
+        "id": "PaAh-VS7HQE",
+        "title": "Orlando Real LIVE from Alt Social April 25th"
+      },
+      {
+        "id": "W4-wPMBBVJI",
+        "title": "New Florida Laws and Orlando Ranks 2nd for THIS!"
+      },
+      {
+        "id": "u4M8zMqb8cU",
+        "title": "Orlando votes, Disney Launches, and a regional foreclosure update"
+      },
+      {
+        "id": "C0UPDJjMqqU",
+        "title": "Is Orlando Falling Behind? Myths and Truths Exposed"
+      },
+      {
+        "id": "-kVP9MuFHFo",
+        "title": "INSIDE a $9,500,000 Orlando Home. It's Actually Insane"
+      },
+      {
+        "id": "SSDjGcVESnA",
+        "title": "Orlando Custom Home BOOM is happening in THIS Suburb!"
+      },
+      {
+        "id": "JT3JWSlutfU",
+        "title": "The Orlando Jags? Florida Taxes. Your questions answered!"
+      },
+      {
+        "id": "1ELuibcovJ0",
+        "title": "Florida Speed Limit, Orlando Area Schools, Live Local Act"
+      },
+      {
+        "id": "uUXB44h0nRA",
+        "title": "Winter Garden vs Winter Park - Orlando's Best Places to Live?"
+      },
+      {
+        "id": "B5aLaKZwGTc",
+        "title": "Moving to Orlando for Disney? Here's Where People Buy"
+      },
+      {
+        "id": "QKVtCsnGuZc",
+        "title": "Central Florida Boomtown + Winter Garden in turmoil?"
+      },
+      {
+        "id": "0UbitCI9eAE",
+        "title": "Celebration Florida is Changing (2026 Update)"
+      },
+      {
+        "id": "_VmHsTO8TgA",
+        "title": "Orlando's Hottest Neighborhoods in 2026"
+      },
+      {
+        "id": "oVR5w_EAw3A",
+        "title": "Florida Insurance Woes, Rage Rooms, and Millions for Nurses"
+      },
+      {
+        "id": "23Gymzan8g8",
+        "title": "Orlando's Hottest Suburb Just Added Five New Neighborhoods"
+      },
+      {
+        "id": "wZhfUiDX2mY",
+        "title": "Saving Orlando #orlando"
+      },
+      {
+        "id": "A8YQDoWKFMI",
+        "title": "Orlando\u2019s Top Luxury Neighborhood Expands"
+      },
+      {
+        "id": "R9kLyRKxxCE",
+        "title": "Orlando Film Incentives, Road relief and Epic Universe to Ramp Up."
+      },
+      {
+        "id": "5EBwmar_B9U",
+        "title": "Windermere, Florida - Orlando's hottest address? You decide!"
+      },
+      {
+        "id": "tToHz8LbaB4",
+        "title": "New resorts, neighborhoods, and Florida's LARGEST animal shelter approved in Orlando"
+      },
+      {
+        "id": "pcfggb3M4Ls",
+        "title": "Orlando's Redevelopment and New Transportation"
+      },
+      {
+        "id": "FLjfAh5aW2Y",
+        "title": "Inside a $14,500,000 Home at Walt Disney World\u2019s Golden Oak"
+      },
+      {
+        "id": "8sM6WweBA0M",
+        "title": "Orlando H-Mart, Universal Expansion, Fashion Square Mall, and your Q&A"
+      },
+      {
+        "id": "Ar_UiYeHVzI",
+        "title": "Moving to Orlando from California"
+      },
+      {
+        "id": "2XX--fJSjto",
+        "title": "Orlando New Construction Process in 2025"
+      },
+      {
+        "id": "SXniqe0DG7s",
+        "title": "This Florida boom town is about to explode"
+      },
+      {
+        "id": "9dYIvc15xD8",
+        "title": "Neocity Expands, Home Prices Drop, Epic Drives Growth"
+      },
+      {
+        "id": "DrdAjZKu8iY",
+        "title": "Orlando Real LIVE! Florida economic insights and your Q&A"
+      },
+      {
+        "id": "hpqXVgNT1Z8",
+        "title": "Orlando Before and After Walt Disney World"
+      },
+      {
+        "id": "N9kk-_JEJrU",
+        "title": "These Projects Could Change Orlando\u2019s Future"
+      },
+      {
+        "id": "xLgILHWD9P4",
+        "title": "Here's What's Coming to Orlando in the Next 20 Years"
+      },
+      {
+        "id": "Mlx2ncSs6ls",
+        "title": "No 5th Park at WDW? + Orlando\u2019s Millionaire Boom"
+      },
+      {
+        "id": "V96GOEO9oWQ",
+        "title": "5 Reasons Why Orlando Will Thrive Over The Next 10 Years"
+      },
+      {
+        "id": "Eb1ZkrAcXzY",
+        "title": "Orlando Housing Crash? Here's the data."
+      },
+      {
+        "id": "zCRtnrbAFKA",
+        "title": "Inside Epic Universe\u2019s Grand Opening. Exclusive Interviews and More!"
+      },
+      {
+        "id": "lFXGQPwweko",
+        "title": "Orlando Update: Tourism Surge, Epic Universe, and New Communities"
+      },
+      {
+        "id": "zYbSpa7f--U",
+        "title": "TOP Places to Own a Vacation Home in Orlando, Florida"
+      },
+      {
+        "id": "M8EJdX9M4h8",
+        "title": "Orlando Updates: Redistricting, I-4 Opens, and Church Condos"
+      },
+      {
+        "id": "8osYtGhg9l4",
+        "title": "Updates in Orlando! I4 surprise, tourist surge, and your Q&A"
+      },
+      {
+        "id": "kP1TifcCb-8",
+        "title": "HUGE New Growth in Clermont Florida Shocked Me"
+      },
+      {
+        "id": "czxcFInv_0s",
+        "title": "Orlando\u2019s Population Booms! + Epic Universe Q&A"
+      },
+      {
+        "id": "1eTbkd5ReU8",
+        "title": "MASSIVE Orlando Construction Projects That Will Change How You Live"
+      },
+      {
+        "id": "skWYAzI4UKM",
+        "title": "What makes Seminole County, Florida special?"
+      },
+      {
+        "id": "-0Mxnxa14u8",
+        "title": "Orlando\u2019s Wild Growth: Vacation Rentals by Disney, Jaguars Rumors, and New Transit Plans"
+      },
+      {
+        "id": "7YDXkpkx1wY",
+        "title": "Winter Garden Homes: $400K to $2.25M | Which Would YOU Pick?"
+      },
+      {
+        "id": "SO5QsLka89g",
+        "title": "10 Realities of Living in Orlando Florida"
+      },
+      {
+        "id": "G2EBF_ohWOI",
+        "title": "Living in Celebration Florida vs Other Orlando Communities"
+      },
+      {
+        "id": "inQGtdwmMR0",
+        "title": "Living in Windermere, Florida (they told me to live here)"
+      },
+      {
+        "id": "y0yR-3i_Ps4",
+        "title": "MLB Revived in Orlando + A Starcruiser Update (2025)"
+      },
+      {
+        "id": "zvwLNtrrs_c",
+        "title": "Inside a home near Disney World listed at $8,250,000"
+      },
+      {
+        "id": "8x9tO52CNbA",
+        "title": "St. Cloud Florida area MASSIVE developments on the way"
+      },
+      {
+        "id": "Ut2EYUTiApc",
+        "title": "Orlando Ranks Number One"
+      },
+      {
+        "id": "YGZoHN3j0hU",
+        "title": "Here\u2019s where Orlando is headed"
+      },
+      {
+        "id": "Jgk3poqJTUI",
+        "title": "Florida ranks #1 in migration, Orlando area news and more!"
+      },
+      {
+        "id": "PQl35MwY9Qo",
+        "title": "This Modern Golden Oak Home Has a Hidden Casita"
+      },
+      {
+        "id": "EcycW3I2jb4",
+        "title": "Sunbridge Florida Like You\u2019ve Never Seen Before: Exclusive Look"
+      },
+      {
+        "id": "IXovDpeOxWY",
+        "title": "MLB in Orlando? Plus 5 other changes in Central Florida"
+      },
+      {
+        "id": "ZOLd7lttH9o",
+        "title": "2025 Predictions for Orlando Real Estate"
+      },
+      {
+        "id": "m3YduseVoiU",
+        "title": "INSIDE a CASTLE outside Orlando Florida"
+      },
+      {
+        "id": "rPJyt0Z3yAI",
+        "title": "Inside a $15,850,000 Home at Walt Disney World\u2019s Golden Oak"
+      },
+      {
+        "id": "DOTSB274kh0",
+        "title": "Orlando's Economy Slows. Development Moves Forward"
+      },
+      {
+        "id": "0dxmTa9o-Os",
+        "title": "Exclusive: Inside Orlando\u2019s Biggest Developer Shaping the City"
+      },
+      {
+        "id": "I5sbgCR5QGs",
+        "title": "New Laws and Upcoming Votes changing Greater Orlando"
+      },
+      {
+        "id": "6RMeBtEDdeE",
+        "title": "Orlando Locals Spill the Truth About Living Here"
+      },
+      {
+        "id": "dibVeuwAPn0",
+        "title": "Big Changes Coming to Orlando Florida"
+      },
+      {
+        "id": "j-VnkC-h6zM",
+        "title": "How Horizon West Has Changed (and what's coming to Winter Garden)"
+      },
+      {
+        "id": "9qzEvI-aDVM",
+        "title": "Orlando's Most Exclusive Neighborhood Tour"
+      },
+      {
+        "id": "Uz5y0Aw3Hfg",
+        "title": "Will this help affordability in Orlando?"
+      },
+      {
+        "id": "q-9kPR0jRns",
+        "title": "Hyatt Regency Orlando sells for $1B #realestate #orlando"
+      },
+      {
+        "id": "-bFCpEsMB1s",
+        "title": "Orlando Transportation Woes (planes, trains, and automobiles)"
+      },
+      {
+        "id": "PhhazxspME0",
+        "title": "Orlando Area Schools, Disney Rumors, New Development, and more!"
+      },
+      {
+        "id": "uwfemqzgdkg",
+        "title": "Winter Park, Florida and the Custom Home Process"
+      },
+      {
+        "id": "QoAtrMu8Ih0",
+        "title": "10 days or less: Orlando areas that are still selling quickly."
+      },
+      {
+        "id": "DsPq1jNHLrg",
+        "title": "New construction: large amenity or large lot?"
+      },
+      {
+        "id": "EnsTXNMQqu4",
+        "title": "Florida passes 23 Million residents"
+      },
+      {
+        "id": "Lsa5mF6DCl4",
+        "title": "Apopka, Florida is about to BOOM (here's why)"
+      },
+      {
+        "id": "_q4y531Wtv0",
+        "title": "Groveland Custom Home Tour and a Clermont Update!"
+      },
+      {
+        "id": "gGpYc5sGmYQ",
+        "title": "The Truth About Price Drops, Rising Inventory and Deals in Orlando"
+      },
+      {
+        "id": "AOjMW782U_I",
+        "title": "THIS Area is the Best Place to Live for Theme Park fans"
+      },
+      {
+        "id": "ghb_sbTNNB8",
+        "title": "Walkable Orlando Neighborhoods: Top Places to Live"
+      },
+      {
+        "id": "efrFaQbnL8Q",
+        "title": "3 Lesser Known Orlando Suburbs You'll Love"
+      },
+      {
+        "id": "rfvl0djXaUE",
+        "title": "New Florida BIlls Affect Homeowners"
+      },
+      {
+        "id": "KFW7IR9nslU",
+        "title": "Massive changes coming to Orlando"
+      },
+      {
+        "id": "G9FssFHsSsk",
+        "title": "Is Dr. Phillips the Best Place to Live in Orlando?"
+      },
+      {
+        "id": "5NP8hjnbnWg",
+        "title": "INSIDE a $7.25M Home for Sale in Walt Disney World\u2019s Golden Oak Neighborhood"
+      },
+      {
+        "id": "E8R9YpOXTRw",
+        "title": "Orlando\u2019s Canceled, Postponed, and Moving Forward projects"
+      },
+      {
+        "id": "mNFAOGxZ6Pc",
+        "title": "Inside Walt Disney\u2019s Newest Golden Oak Home"
+      },
+      {
+        "id": "tfVnrRZCtX4",
+        "title": "Lake Nona: Orlando\u2019s Living Lab"
+      },
+      {
+        "id": "aGNF3kund8o",
+        "title": "Living in St. Cloud, Florida: Fastest Growing Area?"
+      },
+      {
+        "id": "dE2J_3YYJLs",
+        "title": "These 5 Things Could Hold Orlando Back"
+      },
+      {
+        "id": "Sw0EqP5dQ00",
+        "title": "Lessons Learned in Flipping a Home in Orlando"
+      },
+      {
+        "id": "XHLtX-eas4s",
+        "title": "Wellness Way, Disney, and Airbnb updates"
+      },
+      {
+        "id": "gbLmHjiGkEY",
+        "title": "Orlando Florida: Top Spot for Starting a Business"
+      },
+      {
+        "id": "JhX8w1xP0_E",
+        "title": "What these changes mean for Orlando's Real Estate Market"
+      },
+      {
+        "id": "SzO3KI5xIP8",
+        "title": "Winter Park Florida: Ultimate Guide to Homes and Hidden Gems!"
+      },
+      {
+        "id": "hryPC7lX-0U",
+        "title": "Shuttered Disney Area Gains New Life and More!"
+      },
+      {
+        "id": "aRUV3MweiX8",
+        "title": "How Far Does $1,000,000 Go in Orlando?"
+      },
+      {
+        "id": "UPI-VtmtRtY",
+        "title": "Clermont vs Winter Garden Florida. Which area is best?"
+      },
+      {
+        "id": "PIcWdnHVLgk",
+        "title": "Retiring in Orlando: The Ultimate Guide"
+      },
+      {
+        "id": "zc9oCP38WVI",
+        "title": "Orlando Housing Market Forecast for 2024"
+      },
+      {
+        "id": "xyb7GnIUxJ0",
+        "title": "Florida is CLOSED. Don't move here"
+      },
+      {
+        "id": "kw17-l0fVlk",
+        "title": "Living in Orlando. The Ultimate Guide to making the move"
+      },
+      {
+        "id": "npl5KfZfftc",
+        "title": "Your Guide to Celebration Florida: The Town Disney Built"
+      },
+      {
+        "id": "v3ZV5LcxmQk",
+        "title": "Orlando's Homeowners Insurance Woes"
+      },
+      {
+        "id": "fqOSr43KOc8",
+        "title": "The Most Interesting Homes in Orlando"
+      },
+      {
+        "id": "dVivVUV4erA",
+        "title": "Top 10 Orlando Developments I'm excited about in 2024"
+      },
+      {
+        "id": "NLQ-ElL15ho",
+        "title": "The $4,550,000 Way to Live at Disney World - Golden Oak Home For Sale"
+      },
+      {
+        "id": "IfdUgKGCKng",
+        "title": "Tips on Owning an Second Home in Orlando"
+      },
+      {
+        "id": "4PqTZq5Yeaw",
+        "title": "Top Orlando Stories of 2023"
+      },
+      {
+        "id": "VXlPAKlKr10",
+        "title": "Florida overtakes New York for most valuable market, Orlando Magic project, and more!"
+      },
+      {
+        "id": "7xfpvtaf8X0",
+        "title": "Top places to live in America? Hunters Creek, Orlando, Florida"
+      },
+      {
+        "id": "fh0wFkBANCI",
+        "title": "Johnny Damon lists $30M Orlando home. New Law Would Out Wall Street from Real Estate."
+      },
+      {
+        "id": "d25obInswWA",
+        "title": "15 Reasons Why I Love Living in Orlando"
+      },
+      {
+        "id": "Scd-5Kor-WY",
+        "title": "Dubbed one of the biggest development deals in greater Orlando"
+      },
+      {
+        "id": "kgV3769Afeg",
+        "title": "It's a Wonderful (Orlando) Life"
+      },
+      {
+        "id": "TYh1ONUfcjc",
+        "title": "Orlando Sales Fall, Disney's $40B impact, and the LARGEST listing"
+      },
+      {
+        "id": "taJm-OmbF5g",
+        "title": "Sending human remains to space"
+      },
+      {
+        "id": "ZV0HpKYMUxI",
+        "title": "Orlando's Donut King vs. Voodoo Donuts. What's the best?"
+      },
+      {
+        "id": "ARli2csCais",
+        "title": "Jeff Bezos Florida man, huge Orlando travel news, Universal affordable housing on Orlando Real Recap"
+      },
+      {
+        "id": "Vs4uJRwmPTE",
+        "title": "Southwest Airlines Moves to Orlando"
+      },
+      {
+        "id": "l-Bz9FUx23s",
+        "title": "$200k vs $2,000,000 in Orlando Florida"
+      },
+      {
+        "id": "r_aofxg-QQc",
+        "title": "Orlando\u2019s must have neighborhood amenities plus your Q+A!"
+      },
+      {
+        "id": "JnRoJpaofoM",
+        "title": "Orlando Defaults, Best Buys for new construction, and more!"
+      },
+      {
+        "id": "k-ZbC8cujcA",
+        "title": "THIS area in Orlando has promise"
+      },
+      {
+        "id": "hrUbQfRKopI",
+        "title": "Connecting Winter Garden and Clermont Florida"
+      },
+      {
+        "id": "UAz6u3ps56s",
+        "title": "Four Growth Areas in Orlando"
+      },
+      {
+        "id": "gifFybEYXOo",
+        "title": "A Look Inside Amazon Orlando, plus a look into local jobs"
+      },
+      {
+        "id": "Jm5cnATNJ_Q",
+        "title": "Surf Park Coming to West Orlando?"
+      },
+      {
+        "id": "9G03dZ0Nbr4",
+        "title": "Winter Park Florida brings the largest McLaren dealership in the World"
+      },
+      {
+        "id": "EUDZuLU044w",
+        "title": "Celebration vs Reunion - Where would you rather live?"
+      },
+      {
+        "id": "l4IqfgUKo90",
+        "title": "Fireworks from your house? TOP Orlando must haves"
+      },
+      {
+        "id": "x2Vs03-iivI",
+        "title": "Is the \"bubble\" bursting in Orlando?"
+      },
+      {
+        "id": "mTYBOYB7j3I",
+        "title": "Downtown Orlando might be different than you think"
+      },
+      {
+        "id": "y4xUc5VRUdQ",
+        "title": "Arts in Downtown Orlando"
+      },
+      {
+        "id": "Kr2zKSVO544",
+        "title": "St Cloud vs Minneola Florida"
+      },
+      {
+        "id": "MoMQlKCCggs",
+        "title": "Downtown Orlando Reimagined - Here\u2019s what\u2019s coming"
+      },
+      {
+        "id": "Agt2XLh9MvA",
+        "title": "They made a mistake when moving to Orlando. Tips on choosing the right area"
+      },
+      {
+        "id": "TQpDBDZpCx0",
+        "title": "How many Orlando homes sell all cash?"
+      },
+      {
+        "id": "LcniNc7UZiY",
+        "title": "Target, Torchy's, and Tiger. This week's Orlando Real Live!"
+      },
+      {
+        "id": "Oj1L81hbdCA",
+        "title": "Lake Living in Greater Orlando!"
+      },
+      {
+        "id": "EHQvpb87PA0",
+        "title": "Bear on the loose at Magic Kingdom?! #orlandoflorida #wdw #floridalife"
+      },
+      {
+        "id": "UDDmZyx3_Q0",
+        "title": "What is the Florida Live Local Act? How does it affect Orlando?"
+      },
+      {
+        "id": "C1pFy2Dpryg",
+        "title": "New Construction in Orlando - Is It the Only Option?"
+      },
+      {
+        "id": "LFIaobHDIe8",
+        "title": "Orlando Redevelopment: Is this a good thing?"
+      },
+      {
+        "id": "d6f_77qOe3Y",
+        "title": "Living in Orlando as a theme park fan"
+      },
+      {
+        "id": "2l8J34z2gpc",
+        "title": "Winter Garden - My fav neighborhood, small businesses, and more!"
+      },
+      {
+        "id": "Z2XVFvTa4jo",
+        "title": "Inside an Orlando Home Transformation"
+      },
+      {
+        "id": "YUg_SO-Hbu8",
+        "title": "Orlando Park Attendance is down. When is the best time to go?"
+      },
+      {
+        "id": "yNbVUxitT3g",
+        "title": "Lake Nona Performance Club"
+      },
+      {
+        "id": "-IP6ppaJLfw",
+        "title": "What It's Really Like Moving to Orlando"
+      },
+      {
+        "id": "3WdeyvrI2Vo",
+        "title": "Orlando Ranks on list of cities with..."
+      },
+      {
+        "id": "Ga-YIw0qkLI",
+        "title": "This small community outside Orlando is incredible"
+      },
+      {
+        "id": "eD_ne2OFpEQ",
+        "title": "These Orlando Chefs Have a WILD Job!"
+      },
+      {
+        "id": "5B9ApMOYH7U",
+        "title": "Olympic Trials to start in Orlando"
+      },
+      {
+        "id": "Lahr3YcqlDk",
+        "title": "Minions, Mayhem, and an Orlando Housing Shortage"
+      },
+      {
+        "id": "m1DlAtqGaXQ",
+        "title": "Windermere Florida Tour | Best Place To Live In Orlando?"
+      },
+      {
+        "id": "0uaZSa-LdYA",
+        "title": "Mr. Beast Sues Orlando Based Virtual Dining Concepts"
+      },
+      {
+        "id": "u6f1LeX6oB8",
+        "title": "Saint Cloud or Horizon West Florida?"
+      },
+      {
+        "id": "nMFzKN4Xkjc",
+        "title": "Florida Jobs Report, Should there be build to rent, and YOUR Q+A"
+      },
+      {
+        "id": "cs9GUTvw-FA",
+        "title": "Lake Nona Town Center Expansion"
+      },
+      {
+        "id": "6jBnOrWyKds",
+        "title": "Hidden Gem's of Orlando | Places No One Talks About Living..."
+      },
+      {
+        "id": "N7pmyjqJGdY",
+        "title": "Brightline Train Orlando Posts Almost 1 MILLION..."
+      },
+      {
+        "id": "6ZXnCfUENdQ",
+        "title": "Florida Home Insurance Woes Continue"
+      },
+      {
+        "id": "FaE4muEB6TQ",
+        "title": "Reasons to be excited if you live in Orlando, Florida"
+      },
+      {
+        "id": "PdymH3qoVf0",
+        "title": "Orlando Area Home listed for $30M is Back on the Market"
+      },
+      {
+        "id": "1RBj14yXdMU",
+        "title": "Cocaine Sharks off Florida Coast!"
+      },
+      {
+        "id": "GgqPac23oaA",
+        "title": "Why are people STILL moving to Orlando in 2023?!"
+      },
+      {
+        "id": "wmFQ-nuoDSY",
+        "title": "Here's where Orlando Ranks!"
+      },
+      {
+        "id": "H19bNwLhktA",
+        "title": "Highest Rated Neighborhoods in Orlando ** According to Locals"
+      },
+      {
+        "id": "zd-phZBirR4",
+        "title": "THESE are the most sought after Lake Nona Gated Communities"
+      },
+      {
+        "id": "mK3p0af9d6c",
+        "title": "Florida Bans Foreign Investment - How will it affect Orlando?"
+      },
+      {
+        "id": "LpnCvYBWRN8",
+        "title": "Popular Orlando Neighborhood Changes Proposed"
+      },
+      {
+        "id": "znJVV8v1xNM",
+        "title": "Where Do Orlando's Wealthy Choose to Live?!"
+      },
+      {
+        "id": "LVuTFlnBQvU",
+        "title": "Windermere or Winter Park Florida? Which one do you prefer?"
+      },
+      {
+        "id": "1Ke4A_aEdTA",
+        "title": "Orlando's More Affordable Cities + Top Rated Florida Restaurant is HERE!"
+      },
+      {
+        "id": "FmqLsJea8qw",
+        "title": "Orlando's 192 Area Redevelopment"
+      },
+      {
+        "id": "2kpjmeaKwVM",
+        "title": "Orlando Areas Heating Up and Cooling Off"
+      },
+      {
+        "id": "gcLmzB27g_w",
+        "title": "New Orlando Construction, Will there be Smoke in Orlando, and your Q&A!"
+      },
+      {
+        "id": "iZgiDvCw0Vs",
+        "title": "Full Sunbridge Florida Update!"
+      },
+      {
+        "id": "r9RWfTSSYzA",
+        "title": "Orlando's Ranked in Hottest Housing Markets List + Your Q&A"
+      },
+      {
+        "id": "QWY3bH9IPVw",
+        "title": "Did I Buy A Money Pit In Orlando?"
+      },
+      {
+        "id": "ZUCRkNnAH6c",
+        "title": "Coming Soon to Orlando's iDrive and Surrounding Area"
+      },
+      {
+        "id": "nrurLnFbSP4",
+        "title": "Disney Cancels Lake Nona Move (and that's not all)"
+      },
+      {
+        "id": "Tgx3rI8s2jU",
+        "title": "Orlando Mansion with themed Avengers, Spider-Man, and Princess rooms!"
+      },
+      {
+        "id": "cIMcNMvBcwA",
+        "title": "FORECLOSURES IN ORLANDO? NEWS, Q&A, AND MORE!"
+      },
+      {
+        "id": "rMjlt1ZeXfg",
+        "title": "What\u2019s exciting for the Lake Nona area"
+      },
+      {
+        "id": "95BsOTi6l-Y",
+        "title": "The Man Behind Orlando's Largest Developments"
+      },
+      {
+        "id": "5ruIq2YUoaA",
+        "title": "Orlando Bear, Hail, and Disney Lawsuits + YOUR QA"
+      },
+      {
+        "id": "6UrUS04dQY0",
+        "title": "$1.5M Lake Nona Laurel Pointe Model by Toll Brothers"
+      },
+      {
+        "id": "geGpyiXeoPw",
+        "title": "Orlando Plans CHANGED but These Projects Move Forward"
+      },
+      {
+        "id": "PEkAsKzwmm8",
+        "title": "Guess how many Orlando residents are self employed"
+      },
+      {
+        "id": "9iY3Fa2oT10",
+        "title": "Disney Launches Affordable Housing in Orlando"
+      },
+      {
+        "id": "KMwBcLVmrZE",
+        "title": "What 500k buys in Winter Garden, Florida"
+      },
+      {
+        "id": "o0Mv4AC4sro",
+        "title": "Disney Affordable Housing and a Growing Orlando + QA!"
+      },
+      {
+        "id": "MVn9_Mk-dd4",
+        "title": "A NEW look at Horizon West | Winter Garden, Florida"
+      },
+      {
+        "id": "PLgH0y-hG2A",
+        "title": "Job openings in Orlando? Not what you'd think"
+      },
+      {
+        "id": "z10w9P2Tykk",
+        "title": "Here's what $35,000,000 gets you in Orlando"
+      },
+      {
+        "id": "r3w-m70lzWw",
+        "title": "Best Rides in Orlando"
+      },
+      {
+        "id": "7QGxYFTb4yk",
+        "title": "Moving to Florida from Jersey"
+      },
+      {
+        "id": "Xl6j_9aYB_k",
+        "title": "Jobs in Florida - How are we doing?"
+      },
+      {
+        "id": "5xt76v4VwFY",
+        "title": "Disney World versus Ron Desantis (Skit)"
+      },
+      {
+        "id": "ndDQJuMacpM",
+        "title": "Orlando Real Estate Market: Defying National Trends & Thriving Amid Rising Interest Rates"
+      },
+      {
+        "id": "gMD6KgvvhtQ",
+        "title": "They'd want to change THIS about living in Orlando"
+      },
+      {
+        "id": "YySwQ02lsEs",
+        "title": "This Orlando Neighborhood Ranked FIRST, Theme Park Hiccups, and your Q&A!"
+      },
+      {
+        "id": "wjq4nIg4O3o",
+        "title": "All New Packing District in Orlando, Florida"
+      },
+      {
+        "id": "PK0h8UgUwoA",
+        "title": "Small Towns Near Orlando Everyone's Moving To Right Now"
+      },
+      {
+        "id": "3R43bxrTyWA",
+        "title": "Tunnels to Epic Universe, Flamingos, and your Orlando Q&A!"
+      },
+      {
+        "id": "3KcFHylDrCw",
+        "title": "Changes to Florida HOAs, Tolls, and a look back at Orlando in 2025"
+      },
+      {
+        "id": "RFcQM-I2E3Y",
+        "title": "Updates from Orlando: MLB, DC at Universal (rumor), and developments taking shape"
+      },
+      {
+        "id": "QQd0AqI0D9Y",
+        "title": "MAJOR Projects Shaping Orlando in 2026"
+      },
+      {
+        "id": "jDZeipoPS9g",
+        "title": "Orlando's Hidden Neighborhoods Everyone Should Know"
+      },
+      {
+        "id": "Q87Rk9Lsffs",
+        "title": "Orlando has grown by HOW MUCH? We rank #2."
+      },
+      {
+        "id": "6inD0a4RJKE",
+        "title": "MASSIVE Florida Insurance Rebate, MCO Expansion, Orlando's Q&A!"
+      },
+      {
+        "id": "gu7UV56-7uU",
+        "title": "Orlando Football, Roads, and Ticket Prices"
+      },
+      {
+        "id": "sAXSzNAnWtU",
+        "title": "Top 10 Questions About Living in Orlando"
+      },
+      {
+        "id": "VGP_s-4buVE",
+        "title": "Orlando Housing Strengthened and Record Insurance Profits"
+      },
+      {
+        "id": "pU5RkFY4bUE",
+        "title": "Billions Invested into Orlando Area Roads"
+      },
+      {
+        "id": "z6kfCO-mBVQ",
+        "title": "Epic Universe Opens and a New Town Center in St. Cloud!"
+      },
+      {
+        "id": "6gg7l0KBohE",
+        "title": "HUGE Discounts on Orlando Area New Homes"
+      },
+      {
+        "id": "nW0hQubblFI",
+        "title": "Lower Florida Property Tax, I-Drive Project, & Disney Office Deal in Orlando"
+      },
+      {
+        "id": "0lN0lvZDw-w",
+        "title": "Villains Land, Road Delays and life in Orlando"
+      },
+      {
+        "id": "dV-l35zkEkQ",
+        "title": "Orlando\u2019s development: An Architect\u2019s Take on Our Future"
+      },
+      {
+        "id": "v4hu4z7c7Oo",
+        "title": "Orlando Growth Report: From Clermont to the Michelin Guide"
+      },
+      {
+        "id": "3xm3yyNgJeg",
+        "title": "Tour This $6.7M Golden Oak Disney Property"
+      },
+      {
+        "id": "DvGZZpTt8Os",
+        "title": "Orlando Food, Jobs, and New Homes"
+      },
+      {
+        "id": "rBXjwD4kKP0",
+        "title": "Disney's Pay Increase, Horror Nights Annouced, and a Real Estate Update!"
+      },
+      {
+        "id": "Y5QLiy2ABEg",
+        "title": "Living in East Orlando vs. West Orlando"
+      },
+      {
+        "id": "5ItBA4z0Bmg",
+        "title": "5 Things About Living in Orlando, Local expansion, plus Q&A"
+      },
+      {
+        "id": "vU63TWGbGjo",
+        "title": "Disney's Golden Oak like you\u2019ve never seen!"
+      },
+      {
+        "id": "Ex2hPAdSw4I",
+        "title": "Orlando\u2019s Creative Village Creates Jobs"
+      },
+      {
+        "id": "9c0iYC3prLg",
+        "title": "Universal Wage Increases, 2500 new Orlando jobs for the Metaverse, and your Q&A!"
+      },
+      {
+        "id": "g3d9gP10tpg",
+        "title": "Minneola is the Orlando area City You've Never Heard Of (why it's growing)"
+      },
+      {
+        "id": "Yzcao_FzeZs",
+        "title": "Mount Dora Explodes, Disney's Reedy Creek is done, and your Q&A!"
+      },
+      {
+        "id": "823G2IrqvS4",
+        "title": "Clermont Florida is going to BOOM (here's why)"
+      },
+      {
+        "id": "FMeIZ3sE-QY",
+        "title": "Can Downtown Orlando Change for the Better?"
+      },
+      {
+        "id": "2_c9mk_XTno",
+        "title": "Orlando Builder Changes and Opportunities"
+      },
+      {
+        "id": "1v_R5zvNrNk",
+        "title": "Disney's Golden Oak Condos! Florida Outpaces Nation. Your Q&A"
+      },
+      {
+        "id": "Hxilvs5z3q8",
+        "title": "These Four Orlando Neighborhoods are Changing the Area"
+      },
+      {
+        "id": "y6SP35rcm9o",
+        "title": "Coming to Orlando: Universal Escape Room, Neocity, and Lake Nona updates!"
+      },
+      {
+        "id": "JNtF7Di1f6Y",
+        "title": "Orlando's 2023 Outlook - Home Values, Iger, and more!"
+      },
+      {
+        "id": "GhTWXCq6s-Y",
+        "title": "Living in Orlando vs. Tampa"
+      },
+      {
+        "id": "IQsb5nNh70w",
+        "title": "Iger is Back! Disney fans hope for change"
+      },
+      {
+        "id": "wI1xNXI4gKs",
+        "title": "Inside TWO Celebration Florida Homes (and a Weird Update)"
+      },
+      {
+        "id": "AHsEy7oSPaU",
+        "title": "Is getting solar worth it in Florida?"
+      },
+      {
+        "id": "C9FY2RWz6Ks",
+        "title": "How Orlando Became A College Town"
+      },
+      {
+        "id": "uHuebxBeujE",
+        "title": "How do Orlando home prices compare?"
+      },
+      {
+        "id": "Cl_QcypFBy0",
+        "title": "UNIVERSAL IS WINNING theme park wars"
+      },
+      {
+        "id": "gYWfGuthZWk",
+        "title": "What people love about Orlando (and your Q&A!)"
+      },
+      {
+        "id": "IL2d1rzKxew",
+        "title": "What they wish they knew before moving to Orlando"
+      },
+      {
+        "id": "rNJ0qCK01m4",
+        "title": "Orlando Preps for Hurricane Ian"
+      },
+      {
+        "id": "JtzZ2T2DIkQ",
+        "title": "Affordable Areas of Orlando, Disney vs. Universal, and your Q&A!"
+      },
+      {
+        "id": "RP5dkhCpXV4",
+        "title": "Orlando Home Buyers Disappear?!"
+      },
+      {
+        "id": "LJAFgKo4JDA",
+        "title": "Reunion Resort Timeshares, Artemis, and Builder Updates"
+      },
+      {
+        "id": "JRFBuhuErWo",
+        "title": "Coming Soon to Orlando: Sports Betting and Jobs Numbers"
+      },
+      {
+        "id": "DqjZZdKr_DI",
+        "title": "Orlando Facts You Didn\u2019t Know!"
+      },
+      {
+        "id": "p0MDrku8Kd4",
+        "title": "Orlando\u2019s walkable neighborhoods"
+      },
+      {
+        "id": "Nh1zcZk-yoM",
+        "title": "Coming to Orlando - New Tower, Universal Changes + Your Q&A"
+      },
+      {
+        "id": "MRJCjbTsJsw",
+        "title": "Coming to Orlando - Is Orlando Empty?"
+      },
+      {
+        "id": "G0yfgx-jpTc",
+        "title": "4 Things Coming to Orlando + Your Q&A"
+      },
+      {
+        "id": "Tc5my0HlKY4",
+        "title": "If I Moved to Orlando, Again + Lord of the Rings at Universal"
+      },
+      {
+        "id": "8HdTE5YQj40",
+        "title": "Orlando Housing Predictions and Update 2022"
+      },
+      {
+        "id": "D0LpMDPxwp0",
+        "title": "Orlando Foodies, Geekiest City in America, and a Housing Update"
+      },
+      {
+        "id": "Zt9Y4lvYqQU",
+        "title": "Is Orlando Affordable Anymore?"
+      },
+      {
+        "id": "-4MbNSKOxs8",
+        "title": "Orlando Airbnb Changes, New Community, July 4th recap, and a special guest!"
+      },
+      {
+        "id": "4apIeML0q5s",
+        "title": "Disney Brightline Cancelled, Freedom Tax, and Orlando Fireworks!"
+      },
+      {
+        "id": "NgmA4Ik4XqY",
+        "title": "Disney Delays Orlando Move + Real Estate Update"
+      },
+      {
+        "id": "AMTMjb5JKV8",
+        "title": "Projects Coming to Orlando 2022"
+      },
+      {
+        "id": "DABYZRTF_sM",
+        "title": "Orlando Real Estate Update, Michelin Restaurants, and Thousands of THESE come to Orlando"
+      },
+      {
+        "id": "eXX5tqIiLNU",
+        "title": "Moving to Orlando | 8 things youll want to know"
+      },
+      {
+        "id": "eg7oe3zcF5c",
+        "title": "The Orlando Housing Market Has Started to Shift"
+      },
+      {
+        "id": "OCKCH_J7h6A",
+        "title": "Avalon Park | Orlando\u2019s best community?"
+      },
+      {
+        "id": "anXeJHiOTXI",
+        "title": "Coming Soon to Orlando: Celebration, Sea World, Wellness Way"
+      },
+      {
+        "id": "7KyN0T1naKU",
+        "title": "Winter Garden Florida | Orlando's Fastest Growing Suburb"
+      },
+      {
+        "id": "17b25adB2hU",
+        "title": "Coming to Orlando: New Orange County Tax, Builders Expand, and more!"
+      },
+      {
+        "id": "QDiFZ62Pygw",
+        "title": "Orlando Recession Looming? Reedy Creek Update and More!"
+      },
+      {
+        "id": "pR9MGm5a1e0",
+        "title": "What Disney Losing Reedy Creek Means For Orlando Homeowners"
+      },
+      {
+        "id": "Zr_63Jppu7Q",
+        "title": "Coming to Orlando | Thousands of New Homes, Blue Origin, and more!"
+      },
+      {
+        "id": "uhx5vpArr4k",
+        "title": "Disney Affordable Housing and an Orlando Market Update!"
+      },
+      {
+        "id": "Tj6ONvpFsMU",
+        "title": "Living in Saint Cloud Florida | Plus a Sunbridge Update"
+      },
+      {
+        "id": "M8-3nCfWLJk",
+        "title": "Orlando Inflation and Interest Rates"
+      },
+      {
+        "id": "NqqtzcORCf8",
+        "title": "Coming soon to Orlando | Space Mountain, 1k New Homes, Mandalorian Tech?"
+      },
+      {
+        "id": "AyNjsiUS5vM",
+        "title": "Coming to Orlando | Disney's Surge, Smart Apartments, and So Much Coffee!"
+      },
+      {
+        "id": "Z3GRrphh0GQ",
+        "title": "Orlando: Outside the Theme Parks"
+      },
+      {
+        "id": "YE0hBieAdAM",
+        "title": "3 Affordable vs Luxury Orlando Neighborhoods Ranked!"
+      },
+      {
+        "id": "8CDDn0hHeXw",
+        "title": "Orlando Live! Real Estate, Theme Parks, and Orlando Life Update"
+      },
+      {
+        "id": "UBq9qwOUE1U",
+        "title": "Building a Custom Home in Orlando"
+      },
+      {
+        "id": "nwVbgJYA7tk",
+        "title": "Living in Apopka"
+      },
+      {
+        "id": "i4lpcWHObvI",
+        "title": "Clermont, Wellness Way, and the Olympus Project"
+      },
+      {
+        "id": "duH3p9xlSS4",
+        "title": "Horizon West |  New Community Update"
+      },
+      {
+        "id": "iTw3Df4ejMs",
+        "title": "Lake Nona's Newest Amenity | The Wave Hotel"
+      },
+      {
+        "id": "wUVB-VDQPEk",
+        "title": "Orlando in 2030"
+      },
+      {
+        "id": "8barS4xiaoI",
+        "title": "Mortgage Rate Hikes and How It Affects Orlando"
+      },
+      {
+        "id": "-OTXrhgjgBA",
+        "title": "Top Orlando Home Sales"
+      },
+      {
+        "id": "jyG7ICdu0Tg",
+        "title": "Kissimmee, Florida | Top Place People Are Moving?"
+      },
+      {
+        "id": "u1PAGUUvmlc",
+        "title": "It's OK to move to Orlando for Disney"
+      },
+      {
+        "id": "hwR3V4JfBGo",
+        "title": "Billions spent in Orlando, Florida"
+      },
+      {
+        "id": "EpojlPeCti4",
+        "title": "Sunbridge Florida Preview"
+      },
+      {
+        "id": "u0T7QyTIykA",
+        "title": "Things To Do In Orlando Besides Disney"
+      },
+      {
+        "id": "JgNnwu-Edz4",
+        "title": "FIVE New Orlando Developments, Star Wars Hotel, and more!"
+      },
+      {
+        "id": "05jzPuy-MAE",
+        "title": "Orlando Real Estate Market Review"
+      },
+      {
+        "id": "_KFlOejZJaY",
+        "title": "Orlando Housing Predictions for 2022"
+      },
+      {
+        "id": "wrhRkDLthgE",
+        "title": "Orlando Mortgage Updates, Orlando Developments YOUR questions"
+      },
+      {
+        "id": "xwHbuqX6OBk",
+        "title": "Huge Travel Numbers and a Tech Hub?  Coming to Orlando"
+      },
+      {
+        "id": "7q2MrQ1dCDY",
+        "title": "Coming to Orlando | Housing Market Dips, a Million Lights, and more!"
+      },
+      {
+        "id": "4M3lWXJUlAE",
+        "title": "Orlando Older Homes"
+      },
+      {
+        "id": "57d2Or_xjoQ",
+        "title": "Coming to Orlando | Zillow Causes a Crash, Florida ID,  and Disney NFT"
+      },
+      {
+        "id": "lGp89i__mJA",
+        "title": "What's Orlando Known For? Plus HUGE new road toll roads and transportation news"
+      },
+      {
+        "id": "buqTU7SUNsQ",
+        "title": "Coming to Orlando | Massive Development, Michelin & More"
+      },
+      {
+        "id": "tewaaWjQ1co",
+        "title": "How will Zillow Leaving Affect Orlando?"
+      },
+      {
+        "id": "V5r91LZ4LTc",
+        "title": "Horizon West Winter Garden Update"
+      },
+      {
+        "id": "zYCA0Z92KBs",
+        "title": "Coming To Orlando in 2021 and beyond"
+      },
+      {
+        "id": "2iqRNlMm_hA",
+        "title": "Orlando's Growth - Old Becomes New"
+      },
+      {
+        "id": "QrhDlj7SdEY",
+        "title": "Shaq\u2019s home sells, Boo bash, Orlando real estate update and more!"
+      },
+      {
+        "id": "GUYq43rD2B0",
+        "title": "Coming to Orlando in 2022"
+      },
+      {
+        "id": "bgdYuKG1ptU",
+        "title": "Homes Near Lake Nona"
+      },
+      {
+        "id": "PWQ4UAWFKMU",
+        "title": "Orlando Real Estate Update (Fall 2021)"
+      },
+      {
+        "id": "9YRwrOoWkYE",
+        "title": "Myths About Living in Orlando"
+      },
+      {
+        "id": "QIH11LAd_fI",
+        "title": "The Orlando Real - Theme Parks, Real Estate, Living in Orlando"
+      },
+      {
+        "id": "7DInxSlxvtk",
+        "title": "Moving to Oviedo Florida"
+      },
+      {
+        "id": "tL3k84XVpZI",
+        "title": "Orlando Builders Fall Behind, $1.2B investment in Neocity, and are we FINALLY seeing a slow down?"
+      },
+      {
+        "id": "ts-vnw0VfHc",
+        "title": "Orlando Versus Miami Mansion Tour"
+      },
+      {
+        "id": "WLnLQcvSf8c",
+        "title": "Inside a $6,995,000 Winter Park Mansion"
+      },
+      {
+        "id": "Ehn4E2SAbeo",
+        "title": "Mount Dora Florida Street Interviews!"
+      },
+      {
+        "id": "OT1vD0z4uU0",
+        "title": "10 Things Coming To Orlando! Popstroke Hamlin, UCF Knights Join Big 12, and Disney's 50th!"
+      },
+      {
+        "id": "4lqLVD70QLc",
+        "title": "Inside a $6,000,000 Orlando Vacation Home"
+      },
+      {
+        "id": "ui_sNjLdXl8",
+        "title": "Candid Comments and Coffee with Ken Pozek"
+      },
+      {
+        "id": "T6_MRfDlgCw",
+        "title": "Tips On Buying A Second Home In Orlando"
+      },
+      {
+        "id": "kOc-WBiT4vA",
+        "title": "New Disney Campus, Disney's 55+ community, and I ask YOU questions"
+      },
+      {
+        "id": "Q3dDbIfrfDw",
+        "title": "What 500k Buys in Orlando Florida (18 months later)"
+      },
+      {
+        "id": "Fa3YXbcQu1Q",
+        "title": "Disney's Golden Oak Neighborhood"
+      },
+      {
+        "id": "uGB5g00Hvzw",
+        "title": "Recession coming to Orlando? Disney's 50th swag. Sunbridge and more!"
+      },
+      {
+        "id": "eF0DKlMDbtM",
+        "title": "The Future of Celebration Florida"
+      },
+      {
+        "id": "ycy8Wpt2-6k",
+        "title": "Moving To Florida [During a Pandemic]"
+      },
+      {
+        "id": "bkMwDIqSphQ",
+        "title": "Is the market finally correcting in Orlando?"
+      },
+      {
+        "id": "3Q3g6sopSzs",
+        "title": "Lake Nona\u2019s New Disney Campus (and so much more)"
+      },
+      {
+        "id": "cdOlXH3vABw",
+        "title": "Is Celebration Florida A Good Place to Live?"
+      },
+      {
+        "id": "4TWtOSGHr5k",
+        "title": "Florida Home Inspections"
+      },
+      {
+        "id": "OFTsGtfsTO8",
+        "title": "The Future of Orlando"
+      },
+      {
+        "id": "n-RSQzJhJhs",
+        "title": "Orlando Home Prices [Can You Afford It?]"
+      },
+      {
+        "id": "HNvKxPLIkfE",
+        "title": "Creating Disney Magic w/ Lee Cockerell"
+      },
+      {
+        "id": "YdKDLC6tcrg",
+        "title": "Best Tacos in Orlando Florida"
+      },
+      {
+        "id": "zMLcJCWhUpY",
+        "title": "Coming to Orlando beyond 2021"
+      },
+      {
+        "id": "8Uf2W6HMaUk",
+        "title": "Downtown Orlando Night time paddle boarding"
+      },
+      {
+        "id": "TazHYAfg0pk",
+        "title": "Moving to Florida - Things I Wish I Knew Before Moving Here"
+      },
+      {
+        "id": "x0JkPb1EDis",
+        "title": "Mid Year Orlando Real Estate Update and News!"
+      },
+      {
+        "id": "l_Q6uWneSfM",
+        "title": "Living in Maitland Florida [Best Orlando Suburb]"
+      },
+      {
+        "id": "eQJXQAmqbnM",
+        "title": "Lake Nona Orlando Florida - Man on the Street Interviews!"
+      },
+      {
+        "id": "o-2bk3FpzyY",
+        "title": "Winter Park, Florida - On the Street!"
+      },
+      {
+        "id": "ZLcEvxHB4C8",
+        "title": "Investment Home in Orlando"
+      },
+      {
+        "id": "PrG-Rcr4J6E",
+        "title": "Tiger Woods House Demolished - Florida is #1 on THIS - No more masks at Universal and Disney"
+      },
+      {
+        "id": "h2ujU2h86nY",
+        "title": "How Disney Creates Magic - Louie Gravance (former Disney Institute)"
+      },
+      {
+        "id": "cbUPG0Vy7Zg",
+        "title": "Winter Garden, Florida - On the Street!"
+      },
+      {
+        "id": "7UaGLrGKCOU",
+        "title": "No Masks at Disney, Big Orlando Changes, and your Q&A!"
+      },
+      {
+        "id": "yD835fJsIb4",
+        "title": "Orlando Lake Living - Boat and house tour"
+      },
+      {
+        "id": "LNYpFnUYgKI",
+        "title": "Orlando Florida - Man on the Street Interviews"
+      },
+      {
+        "id": "LT9PFngQOJU",
+        "title": "Guide to Orlando - Ken Pozek"
+      },
+      {
+        "id": "r33g6tg-riY",
+        "title": "Celebration Island Village, Florida Insurance Hikes, Evermore Developments, and more LIVE"
+      },
+      {
+        "id": "Z8fodbQ9tlc",
+        "title": "Horizon West, Florida (Winter Garden)"
+      },
+      {
+        "id": "4EslhuzF7kY",
+        "title": "High Paying Jobs In Orlando"
+      },
+      {
+        "id": "RBcA4FSNwXA",
+        "title": "Best Orlando Condo Buildings"
+      },
+      {
+        "id": "aLFVziVqXms",
+        "title": "Olympus, Sunbridge, Orlando Real Estate Talk"
+      },
+      {
+        "id": "4wKIXkV2D3k",
+        "title": "Coming To Orlando 2021"
+      },
+      {
+        "id": "4dwr86h-Txw",
+        "title": "Living In Reunion Florida"
+      },
+      {
+        "id": "AH71FUdSoIk",
+        "title": "The 7 Best Photo Spots in Orlando"
+      },
+      {
+        "id": "kVEcmRYTdn8",
+        "title": "Orlando Housing Update, Disney Facial Recognition, and more!"
+      },
+      {
+        "id": "pIZEGZj1Wqs",
+        "title": "Celebration Island Village #short"
+      },
+      {
+        "id": "nlGuz66szfY",
+        "title": "What $1 Million Buys: Winter Garden Home Tour"
+      },
+      {
+        "id": "9r-2Gx73lTE",
+        "title": "Ken Pozek Reacts to Ryan Serhant\u2019s Shaq House Tour"
+      },
+      {
+        "id": "bHkvYLPnmnc",
+        "title": "Late Night LIVE. Q+A while I try to break my new computer"
+      },
+      {
+        "id": "4Quq7k3SWZo",
+        "title": "Disney Fans Live Here [Top 3 Neighborhoods]"
+      },
+      {
+        "id": "Ckpl9MeGhdo",
+        "title": "Ken Pozek LIVE! 3/20 @2pm EST [New Epcot Hotel, Orlando News, and Q&A]"
+      },
+      {
+        "id": "yckWXXeQBoo",
+        "title": "Moving to Clermont, Florida"
+      },
+      {
+        "id": "oFUFv7I0BIo",
+        "title": "The Villages Lifestyle Visit"
+      },
+      {
+        "id": "tjGhi1TjuC8",
+        "title": "Most expensive home sales in Orlando 2020"
+      },
+      {
+        "id": "7DWXGt5DvDs",
+        "title": "Shaq's House, New Polynesian Revealed, O-Town West, and a special guest! Ken Pozek LIVE 3/6/2021"
+      },
+      {
+        "id": "oF5mfgDrkj0",
+        "title": "Living in Winter Park vs Windermere"
+      },
+      {
+        "id": "PU4NEGbgT7s",
+        "title": "Navigating Orlando's Housing Market"
+      },
+      {
+        "id": "G-rVnYuTVCo",
+        "title": "Orlando's Hidden Gem Neighborhoods"
+      },
+      {
+        "id": "CjPozNdcl0c",
+        "title": "Orlando Life Live! Feb 20 - Updates on Real Estate, Theme Parks, and Life in Orlando"
+      },
+      {
+        "id": "7CEqwqhhwUQ",
+        "title": "Moving to Dr. Phillips | Orlando, FL | Community Tour"
+      },
+      {
+        "id": "mjgz0PKmx0s",
+        "title": "How Do Homeowners Associations Work?"
+      },
+      {
+        "id": "_XRcT1w09lM",
+        "title": "Win a Bidding War When Buying A Home"
+      },
+      {
+        "id": "Quwi8p_lY7E",
+        "title": "Orlando Life LIVE! 2/6/21 @3P EST"
+      },
+      {
+        "id": "AH_PFJm4dBM",
+        "title": "Moving to Mount Dora, Florida"
+      },
+      {
+        "id": "3K7UcAjfX20",
+        "title": "7 Best Orlando Suburbs"
+      },
+      {
+        "id": "rw4iSz2QZqg",
+        "title": "Gideon's Bakehouse + Everglazed Tour and Review!"
+      },
+      {
+        "id": "O4hxsisARx0",
+        "title": "Moving to Orlando : 5 Year Update | Orlando, Florida"
+      },
+      {
+        "id": "e_fASMvByM4",
+        "title": "Orlando Life, Real Estate, and Theme Park News!"
+      },
+      {
+        "id": "nZEcAmKKY3M",
+        "title": "Is Disney World Overrated or Underrated"
+      },
+      {
+        "id": "TOPO8eS-NAs",
+        "title": "The State of the Orlando Real Estate Market"
+      },
+      {
+        "id": "gOO5td8Ovx0",
+        "title": "2020 Rewind [A Year in Review]"
+      },
+      {
+        "id": "hy6Oso37E3c",
+        "title": "Pros and Cons of living in a Gated Community"
+      },
+      {
+        "id": "0-h69gZMXVg",
+        "title": "Buying a House Sight Unseen [step by step]"
+      },
+      {
+        "id": "H0LWbOJuq2I",
+        "title": "Downtown Winter Garden Florida | Tour, Restaurants, and Shopping"
+      },
+      {
+        "id": "_GArEglfAn8",
+        "title": "Tips For Flipping Your First House [Before and After]"
+      },
+      {
+        "id": "NV5oFz8Dhyg",
+        "title": "Shaquille O\u2019Neal\u2019s $16 Million Mansion Tour in Orlando Florida"
+      },
+      {
+        "id": "tAp_VYJNpuM",
+        "title": "Boom or Bust?! 2021 Housing Predictions for Orlando [And Beyond]"
+      },
+      {
+        "id": "T9bOFDfDR6k",
+        "title": "Lake Nona | An Inside Look | Orlando Florida"
+      },
+      {
+        "id": "F0q_N94yFmo",
+        "title": "Keene's Pointe Neighborhood [Windermere, Florida]"
+      },
+      {
+        "id": "bHQcx-pTgCo",
+        "title": "How to be a Successful Real Estate Agent"
+      },
+      {
+        "id": "46WjuoUGtFg",
+        "title": "Life in Celebration, Florida"
+      },
+      {
+        "id": "r94hmGA4Z1c",
+        "title": "Life in Orlando"
+      },
+      {
+        "id": "WT5hEUteyJw",
+        "title": "Walt Disney by Helicopter!"
+      },
+      {
+        "id": "sIOroGRmubk",
+        "title": "5 Reasons Why People Are Moving to Orlando"
+      },
+      {
+        "id": "hH90U7DlXOU",
+        "title": "Windermere Luxury Home Tour"
+      },
+      {
+        "id": "asOjwkXEGVw",
+        "title": "Best Places to Live in Celebration, Florida"
+      },
+      {
+        "id": "rO72eni2g0c",
+        "title": "Orlando's Coming Housing Crash"
+      },
+      {
+        "id": "NPO4c51pXsw",
+        "title": "Winter Garden Lakefront Living! [New Listing]"
+      },
+      {
+        "id": "CCrs0UnHpuU",
+        "title": "5 Reasons Your Home Won't Sell"
+      },
+      {
+        "id": "eVL1cgGYvAQ",
+        "title": "Ken Responds to YOUR Comments [Good and Bad]"
+      },
+      {
+        "id": "LQbcZhP8XSg",
+        "title": "The BEST pizza in Orlando?"
+      },
+      {
+        "id": "epM4gg0OE3Q",
+        "title": "Moving to Downtown Orlando"
+      },
+      {
+        "id": "L5QHkwJdQxg",
+        "title": "How to Flip A House"
+      },
+      {
+        "id": "h8jwP_vr0YA",
+        "title": "The BEST Donut in Orlando"
+      },
+      {
+        "id": "NUIytmemroI",
+        "title": "Lakefront Living in Windermere, Florida [New Listing Alert!]"
+      },
+      {
+        "id": "0FZtv0DOUmo",
+        "title": "The NBA bubble"
+      },
+      {
+        "id": "P81XaErYFk8",
+        "title": "Living in Baldwin Park [Orlando, Florida]"
+      },
+      {
+        "id": "Vw3Xnzeqdf4",
+        "title": "Moving to Bay Hill [Orlando, Florida]"
+      },
+      {
+        "id": "7td-2AqinCQ",
+        "title": "Living in Oakland Park [Winter Garden]"
+      },
+      {
+        "id": "5UO0qnjTIEQ",
+        "title": "Moving to Winter Park, Florida"
+      },
+      {
+        "id": "4pDl5toUMyQ",
+        "title": "Million Dollar Airbnb near Walt Disney World"
+      },
+      {
+        "id": "btNPNbiDTXA",
+        "title": "Inside this $1.629M Montverde Luxury Home"
+      },
+      {
+        "id": "6X4LyeB2Kxw",
+        "title": "Walt Disney World [Post-Covid]"
+      },
+      {
+        "id": "C_WzNY2JxuA",
+        "title": "Lake Nona vs. Horizon West [Which is better?]"
+      },
+      {
+        "id": "EeilTEd_-cE",
+        "title": "ChampionsGate, Florida [AMENITIES AND COMMUNITY TOUR]"
+      },
+      {
+        "id": "PZp6Yzrhm-0",
+        "title": "Celebration Florida [8 things to know from an insider]"
+      }
+    ]
+  }
+}
