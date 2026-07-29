@@ -546,9 +546,10 @@ export default function Home() {
             />
           </div>
 
-          {/* Pro tier teaser — tests demand without building the feature yet */}
-          <div className="mt-8 bg-bg-panel border border-border-strong rounded-lg p-6 md:p-8 max-w-3xl">
-            <div className="flex items-center gap-2 mb-3">
+          {/* Pro tier teaser — two features on the roadmap. Tests demand
+              without building either feature yet. */}
+          <div className="mt-8 max-w-3xl">
+            <div className="flex items-center gap-2 mb-4">
               <span className="font-mono text-xs tracking-widest uppercase" style={{ color: "#d4a359" }}>
                 ⭐ Pro tier
               </span>
@@ -556,22 +557,48 @@ export default function Home() {
                 on the roadmap
               </span>
             </div>
-            <h3 className="font-serif text-2xl md:text-3xl font-bold text-fg-primary mb-3">
-              Audience Insights from your YouTube comments
-            </h3>
-            <p className="text-fg-secondary text-base md:text-lg leading-relaxed mb-4">
-              Pull questions your audience keeps asking, spot content gaps, and
-              track sentiment across your archive. Built on the same comment
-              data you already have on YouTube.
-            </p>
-            <ul className="text-fg-muted text-base md:text-lg space-y-2 mb-4">
-              <li>→ Weekly &quot;questions your audience is asking&quot; report</li>
-              <li>→ Content gap analysis across your videos</li>
-              <li>→ Sentiment trends per video and topic</li>
-              <li>→ Query your comment archive in Creator Mode</li>
-            </ul>
-            <p className="text-fg-faint text-sm">
-              Interested? Mention Pro tier in the demo request below.
+
+            <div className="space-y-5">
+              {/* Feature 1: Audience Insights */}
+              <div className="bg-bg-panel border border-border-strong rounded-lg p-6 md:p-8">
+                <h3 className="font-serif text-2xl md:text-3xl font-bold text-fg-primary mb-3">
+                  Audience Insights from your YouTube comments
+                </h3>
+                <p className="text-fg-secondary text-base md:text-lg leading-relaxed mb-4">
+                  Pull questions your audience keeps asking, spot content gaps,
+                  and track sentiment across your archive. Built on the same
+                  comment data you already have on YouTube.
+                </p>
+                <ul className="text-fg-muted text-base md:text-lg space-y-2">
+                  <li>→ Weekly &quot;questions your audience is asking&quot; report</li>
+                  <li>→ Content gap analysis across your videos</li>
+                  <li>→ Sentiment trends per video and topic</li>
+                  <li>→ Query your comment archive in Creator Mode</li>
+                </ul>
+              </div>
+
+              {/* Feature 2: Multi-source content */}
+              <div className="bg-bg-panel border border-border-strong rounded-lg p-6 md:p-8">
+                <h3 className="font-serif text-2xl md:text-3xl font-bold text-fg-primary mb-3">
+                  All your content, one brain
+                </h3>
+                <p className="text-fg-secondary text-base md:text-lg leading-relaxed mb-4">
+                  Your work lives in more places than YouTube. Bring your
+                  podcast, newsletter, and blog into the same searchable AI —
+                  so your audience can ask a question and get an answer from
+                  wherever the best material lives.
+                </p>
+                <ul className="text-fg-muted text-base md:text-lg space-y-2">
+                  <li>→ Podcast episodes (RSS or Whisper transcription)</li>
+                  <li>→ Newsletter archive (Substack, Beehiiv, ConvertKit)</li>
+                  <li>→ Blog posts (WordPress, Medium, custom sites)</li>
+                  <li>→ Answers cite the right source — video, episode, or post</li>
+                </ul>
+              </div>
+            </div>
+
+            <p className="text-fg-faint text-sm mt-5">
+              Interested in either? Mention Pro tier in the demo request below.
             </p>
           </div>
         </section>
