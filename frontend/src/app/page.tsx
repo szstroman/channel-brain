@@ -26,6 +26,21 @@ function resolveClientId(): string {
   const cid = params.get("client") || params.get("c");
   return cid?.trim() || DEFAULT_CLIENT_ID;
 }
+
+// Resolve the starting mode from the URL. Supports:
+//   /?mode=creator   → creator mode active on load (used in outreach links so
+//                      the recipient — the creator evaluating for their own
+//                      business — lands in the mode built for them)
+//   anything else    → audience (default)
+// Same SSR-safe lazy-initializer pattern as resolveClientId: server renders
+// "audience", client first paint resolves the param, no flash.
+function resolveInitialMode(): Mode {
+  if (typeof window === "undefined") return "audience";
+  const params = new URLSearchParams(window.location.search);
+  return params.get("mode")?.trim().toLowerCase() === "creator"
+    ? "creator"
+    : "audience";
+}
 const MAX_TURNS = 8; // Each turn = 1 user + 1 assistant. So 8 user messages max.
 const WARN_TURNS_REMAINING = 2;
 
@@ -46,7 +61,18 @@ export default function Home() {
   //   - On client first paint: renders with URL-derived client
   //   - No flash from Koerner → Ken because we skip the useEffect-based swap
   const [clientId] = useState<string>(() => resolveClientId());
+  // Mode is resolved AFTER mount, unlike clientId. Reason: clientId only
+  // affects async-fetched data (server HTML and first client paint are
+  // identical either way), but mode immediately changes rendered text — hero
+  // title, card states, palette. A lazy initializer would make the client's
+  // first render diverge from the server HTML on ?mode=creator links, and
+  // React 19 logs hydration errors for that. Resolving in an effect means one
+  // imperceptible audience→creator frame at load instead of console errors.
   const [mode, setMode] = useState<Mode>("audience");
+  useEffect(() => {
+    const urlMode = resolveInitialMode();
+    if (urlMode !== "audience") setMode(urlMode);
+  }, []);
   const [client, setClient] = useState<ClientConfig | null>(null);
   const [clientError, setClientError] = useState<string | null>(null);
   const [messages, setMessages] = useState<Message[]>([]);
@@ -112,6 +138,17 @@ export default function Home() {
 
   const handleNewChat = useCallback(() => {
     abortRef.current?.abort();
+    setMessages([]);
+    setThinking(false);
+    setStreaming(false);
+  }, []);
+
+  // Role-card mode selection in the hero. Same reset as handleModeChange but
+  // WITHOUT the scroll-back — the visitor is already at the top of the chat
+  // section, so scrolling would just produce a jarring jump.
+  const selectMode = useCallback((newMode: Mode) => {
+    abortRef.current?.abort();
+    setMode(newMode);
     setMessages([]);
     setThinking(false);
     setStreaming(false);
@@ -435,6 +472,12 @@ export default function Home() {
             >
               {eyebrowText}
             </p>
+            {messages.length === 0 && !thinking && (
+              <p className="text-fg-secondary text-lg md:text-xl mt-4 max-w-2xl mx-auto leading-relaxed">
+                Turn a content archive into a business tool. Pick where to
+                start:
+              </p>
+            )}
             {client?.channel_url && (
               <a
                 href={client.channel_url}
@@ -458,13 +501,61 @@ export default function Home() {
             style={{ maxHeight: "calc(100vh - 320px)" }}
           >
             {messages.length === 0 && !thinking && (
-              <div className="text-center text-fg-muted text-base md:text-lg pt-4 pb-6">
-                {emptyStatePrompt}
-                {suggestions.length > 0 && (
-                  <div className="mt-2 text-sm md:text-base text-fg-faint">
-                    Try one of the questions below, or type your own.
-                  </div>
-                )}
+              <div className="pt-2 pb-6">
+                {/* Role-choice cards. Creator first — outbound demo recipients
+                    are creators evaluating for their own business. */}
+                <div className="grid md:grid-cols-2 gap-4 mb-5">
+                  <button
+                    onClick={() => selectMode("creator")}
+                    className={`text-left bg-bg-panel border rounded-lg p-5 md:p-6 transition-all ${
+                      isCreator
+                        ? "border-2"
+                        : "border-border-strong hover:border-fg-dim opacity-80 hover:opacity-100"
+                    }`}
+                    style={isCreator ? { borderColor: "#d4a359" } : undefined}
+                  >
+                    <div className="font-mono text-[10px] tracking-widest uppercase mb-2" style={{ color: "#d4a359" }}>
+                      {isCreator ? "● Active" : "Creator Mode"}
+                    </div>
+                    <h3 className="font-semibold text-fg-primary text-lg md:text-xl mb-1.5">
+                      For you and your team
+                    </h3>
+                    <p className="text-fg-muted text-sm md:text-base leading-relaxed">
+                      Plan, repurpose, research, and audit your content. Ask
+                      your own archive what it knows.
+                    </p>
+                  </button>
+
+                  <button
+                    onClick={() => selectMode("audience")}
+                    className={`text-left bg-bg-panel border rounded-lg p-5 md:p-6 transition-all ${
+                      !isCreator
+                        ? "border-2"
+                        : "border-border-strong hover:border-fg-dim opacity-80 hover:opacity-100"
+                    }`}
+                    style={!isCreator ? { borderColor: "#5eb8ff" } : undefined}
+                  >
+                    <div className="font-mono text-[10px] tracking-widest uppercase mb-2" style={{ color: "#5eb8ff" }}>
+                      {!isCreator ? "● Active" : "Audience Mode"}
+                    </div>
+                    <h3 className="font-semibold text-fg-primary text-lg md:text-xl mb-1.5">
+                      For your audience
+                    </h3>
+                    <p className="text-fg-muted text-sm md:text-base leading-relaxed">
+                      Help visitors find the right answer, video, or next step
+                      — in your voice, cited to your episodes.
+                    </p>
+                  </button>
+                </div>
+
+                <div className="text-center text-fg-muted text-base md:text-lg">
+                  {emptyStatePrompt}
+                  {suggestions.length > 0 && (
+                    <div className="mt-2 text-sm md:text-base text-fg-faint">
+                      Try one of the questions below, or type your own.
+                    </div>
+                  )}
+                </div>
               </div>
             )}
             {messages.map((m) => (
@@ -529,15 +620,15 @@ export default function Home() {
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-fg-primary mb-6 leading-tight">
             Your archive becomes a tool you can use, too
           </h2>
-          <p className="text-fg-secondary text-lg md:text-xl leading-relaxed mb-8 max-w-3xl">
-            Creator Mode turns your own video archive into a strategic mirror.
-            Ask what patterns you keep returning to, pull quotable moments, spot
-            gaps in what you&apos;ve covered.
+          <p className="text-fg-secondary text-lg md:text-xl leading-relaxed mb-6 max-w-3xl">
+            Creator Mode turns your archive into a tool your team uses every
+            week: find every example you gave on a topic, pull quotable moments
+            for social posts, spot what you keep repeating, and surface the
+            gaps worth covering next.
           </p>
           <div className="bg-bg-panel border-l-4 border-accent-creator rounded-r-lg p-6 md:p-8 max-w-3xl">
             <p className="text-fg-secondary text-base md:text-lg mb-4">
-              Toggle Creator Mode to shift the demo above into first-person
-              analysis of your own archive.
+              Switch the demo above between modes any time:
             </p>
             <ModeToggle
               mode={mode}
@@ -677,8 +768,8 @@ export default function Home() {
                 body: "Interested visitors turn into email subscribers or booked calls. YouTube's AI sends them back to more YouTube.",
               },
               {
-                title: "Creator Mode included",
-                body: "Interrogate your own archive: what patterns do I return to? What's my most quotable moment? What have I NOT covered? YouTube doesn't do this.",
+                title: "Built for your whole business",
+                body: "YouTube's creator tools help you understand and grow on YouTube. Channel Brain turns your content into infrastructure for everything else — your site, your team, your sales conversations.",
               },
               {
                 title: "Fully branded",
