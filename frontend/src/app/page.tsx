@@ -421,8 +421,28 @@ export default function Home() {
 
   // ─── Derived display values ────────────────────────────────────────────
   const isCreator = mode === "creator";
-  const channelName = client?.channel_name ?? "The Koerner Office";
-  const creatorName = client?.creator_name ?? "Chris Koerner";
+  // No hard-coded creator fallback: on a personalized link (?client=ken-pozek)
+  // the config fetch takes a beat, and a Koerner fallback would flash the WRONG
+  // creator's name on another creator's demo — the single most trust-damaging
+  // failure for personalized outreach. Neutral text until the config resolves.
+  const channelName = client?.channel_name ?? null;
+
+  const eyebrowText = isCreator
+    ? "Creator Mode — Your Archive"
+    : channelName
+      ? `Chatting with ${channelName}`
+      : clientError
+        ? "Channel unavailable"
+        : "Loading channel...";
+
+  const heroTitle = isCreator ? "Your archive, working for you" : "Channel Brain";
+
+  const emptyStatePrompt = isCreator
+    ? "Explore your own archive."
+    : channelName
+      ? `Ask anything about ${channelName}.`
+      : "Ask anything.";
+
   const allSuggestions = client
     ? isCreator
       ? client.creator_suggestions
@@ -441,16 +461,6 @@ export default function Home() {
     .filter((s) => !askedQuestions.has(s.trim()))
     .slice(0, 4);
 
-  const eyebrowText = isCreator
-    ? "Creator Mode — Your Archive"
-    : `Chatting with ${channelName}`;
-
-  const heroTitle = isCreator ? "Your archive, working for you" : "Channel Brain";
-
-  const emptyStatePrompt = isCreator
-    ? "Explore your own archive."
-    : `Ask anything about ${channelName}.`;
-
   return (
     <>
       <Sidebar onNewChat={handleNewChat} />
@@ -463,7 +473,7 @@ export default function Home() {
         >
           <div className="w-full max-w-4xl pt-10 pb-4 text-center">
             <div className="text-4xl mb-3">🧠</div>
-            <h1 className="font-serif text-5xl md:text-6xl font-black text-fg-primary">
+            <h1 className="font-serif text-4xl md:text-6xl font-black text-fg-primary">
               {heroTitle}
             </h1>
             <p
@@ -483,9 +493,9 @@ export default function Home() {
                 href={client.channel_url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block mt-3 text-sm md:text-base text-fg-muted hover:text-fg-primary underline underline-offset-2 transition-colors"
+                className="inline-block mt-2 text-xs text-fg-muted hover:text-fg-secondary transition-colors"
               >
-                Visit channel on YouTube ↗
+                Source channel on YouTube ↗
               </a>
             )}
             {clientError && (
@@ -502,48 +512,40 @@ export default function Home() {
           >
             {messages.length === 0 && !thinking && (
               <div className="pt-2 pb-6">
-                {/* Role-choice cards. Creator first — outbound demo recipients
-                    are creators evaluating for their own business. */}
-                <div className="grid md:grid-cols-2 gap-4 mb-5">
+                {/* Compact role selector. Both options render at full opacity
+                    so neither reads as disabled; the active one gets a colored
+                    border + dot. Two columns even on mobile to keep the chat
+                    input above the fold. */}
+                <div className="grid grid-cols-2 gap-3 mb-5">
                   <button
                     onClick={() => selectMode("creator")}
-                    className={`text-left bg-bg-panel border rounded-lg p-5 md:p-6 transition-all ${
-                      isCreator
-                        ? "border-2"
-                        : "border-border-strong hover:border-fg-dim opacity-80 hover:opacity-100"
-                    }`}
-                    style={isCreator ? { borderColor: "#d4a359" } : undefined}
+                    className="text-left bg-bg-panel border-2 rounded-lg p-3.5 md:p-5 transition-colors hover:bg-bg-input"
+                    style={{ borderColor: isCreator ? "#d4a359" : "var(--border-strong, #333)" }}
                   >
-                    <div className="font-mono text-[10px] tracking-widest uppercase mb-2" style={{ color: "#d4a359" }}>
-                      {isCreator ? "● Active" : "Creator Mode"}
+                    <div className="font-mono text-[10px] tracking-widest uppercase mb-1" style={{ color: "#d4a359" }}>
+                      {isCreator ? "● " : ""}Creator Mode
                     </div>
-                    <h3 className="font-semibold text-fg-primary text-lg md:text-xl mb-1.5">
+                    <h3 className="font-semibold text-fg-primary text-base md:text-lg mb-0.5">
                       For you and your team
                     </h3>
-                    <p className="text-fg-muted text-sm md:text-base leading-relaxed">
-                      Plan, repurpose, research, and audit your content. Ask
-                      your own archive what it knows.
+                    <p className="text-fg-muted text-xs md:text-sm leading-snug">
+                      Plan &middot; Research &middot; Repurpose
                     </p>
                   </button>
 
                   <button
                     onClick={() => selectMode("audience")}
-                    className={`text-left bg-bg-panel border rounded-lg p-5 md:p-6 transition-all ${
-                      !isCreator
-                        ? "border-2"
-                        : "border-border-strong hover:border-fg-dim opacity-80 hover:opacity-100"
-                    }`}
-                    style={!isCreator ? { borderColor: "#5eb8ff" } : undefined}
+                    className="text-left bg-bg-panel border-2 rounded-lg p-3.5 md:p-5 transition-colors hover:bg-bg-input"
+                    style={{ borderColor: !isCreator ? "#5eb8ff" : "var(--border-strong, #333)" }}
                   >
-                    <div className="font-mono text-[10px] tracking-widest uppercase mb-2" style={{ color: "#5eb8ff" }}>
-                      {!isCreator ? "● Active" : "Audience Mode"}
+                    <div className="font-mono text-[10px] tracking-widest uppercase mb-1" style={{ color: "#5eb8ff" }}>
+                      {!isCreator ? "● " : ""}Audience Mode
                     </div>
-                    <h3 className="font-semibold text-fg-primary text-lg md:text-xl mb-1.5">
+                    <h3 className="font-semibold text-fg-primary text-base md:text-lg mb-0.5">
                       For your audience
                     </h3>
-                    <p className="text-fg-muted text-sm md:text-base leading-relaxed">
-                      Help visitors find the right answer, video, or next step
-                      — in your voice, cited to your episodes.
+                    <p className="text-fg-muted text-xs md:text-sm leading-snug">
+                      Answer &middot; Recommend &middot; Convert
                     </p>
                   </button>
                 </div>
@@ -551,7 +553,7 @@ export default function Home() {
                 <div className="text-center text-fg-muted text-base md:text-lg">
                   {emptyStatePrompt}
                   {suggestions.length > 0 && (
-                    <div className="mt-2 text-sm md:text-base text-fg-faint">
+                    <div className="mt-2 text-sm md:text-base text-fg-muted">
                       Try one of the questions below, or type your own.
                     </div>
                   )}
@@ -602,29 +604,53 @@ export default function Home() {
                 />
               </div>
             )}
-            <p className="text-center text-[10px] text-fg-dim mt-2 leading-relaxed">
+            <p className="text-center text-xs text-fg-muted mt-2 leading-relaxed">
               AI-generated from public YouTube content. May contain inaccuracies.
               For educational purposes only. Not affiliated with or endorsed by the source channel.
             </p>
+
+            {/* Primary conversion CTA — directly under the demo so the
+                "this is interesting" moment has an immediate next step,
+                instead of living several screens down the page. */}
+            <div className="mt-6 bg-bg-panel border border-border-strong rounded-lg p-5 md:p-6 text-center">
+              <p className="text-fg-primary font-semibold text-lg md:text-xl mb-1">
+                See this built for your channel
+              </p>
+              <p className="text-fg-muted text-sm md:text-base mb-4">
+                Done-for-you setup. Working version in under a week.
+              </p>
+              <a
+                href="#section-get-yours"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("section-get-yours")
+                    ?.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                className="inline-block font-semibold text-sm md:text-base px-6 py-3 rounded-lg text-bg-base hover:opacity-90 transition-opacity"
+                style={{ background: "#d4a359" }}
+              >
+                Get my channel demo →
+              </a>
+            </div>
           </div>
         </section>
 
         {/* ─── Section 2: Creator Mode ─────────────────────── */}
         <section
           id="section-creator-mode"
-          className="max-w-4xl mx-auto px-4 md:px-8 py-20 md:py-24"
+          className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16"
         >
           <p className="font-mono text-xs tracking-[0.2em] uppercase text-accent-creator mb-3">
             🎨 Creator Mode
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-fg-primary mb-6 leading-tight">
-            Your archive becomes a tool you can use, too
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-fg-primary mb-6 leading-tight">
+            Put your entire archive to work
           </h2>
           <p className="text-fg-secondary text-lg md:text-xl leading-relaxed mb-6 max-w-3xl">
-            Creator Mode turns your archive into a tool your team uses every
-            week: find every example you gave on a topic, pull quotable moments
-            for social posts, spot what you keep repeating, and surface the
-            gaps worth covering next.
+            Search every idea, example, and opinion you have published. Use it
+            to plan new content, repurpose old material, train your team, and
+            keep your messaging consistent.
           </p>
           <div className="bg-bg-panel border-l-4 border-accent-creator rounded-r-lg p-6 md:p-8 max-w-3xl">
             <p className="text-fg-secondary text-base md:text-lg mb-4">
@@ -637,67 +663,18 @@ export default function Home() {
             />
           </div>
 
-          {/* Pro tier teaser — two features on the roadmap. Tests demand
-              without building either feature yet. */}
-          <div className="mt-8 max-w-3xl">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="font-mono text-xs tracking-widest uppercase" style={{ color: "#d4a359" }}>
-                ⭐ Pro tier
-              </span>
-              <span className="font-mono text-[10px] tracking-widest uppercase text-fg-dim">
-                on the roadmap
-              </span>
-            </div>
-
-            <div className="space-y-5">
-              {/* Feature 1: Audience Insights */}
-              <div className="bg-bg-panel border border-border-strong rounded-lg p-6 md:p-8">
-                <h3 className="font-serif text-2xl md:text-3xl font-bold text-fg-primary mb-3">
-                  Audience Insights from your YouTube comments
-                </h3>
-                <p className="text-fg-secondary text-base md:text-lg leading-relaxed mb-4">
-                  Pull questions your audience keeps asking, spot content gaps,
-                  and track sentiment across your archive. Built on the same
-                  comment data you already have on YouTube.
-                </p>
-                <ul className="text-fg-muted text-base md:text-lg space-y-2">
-                  <li>→ Weekly &quot;questions your audience is asking&quot; report</li>
-                  <li>→ Content gap analysis across your videos</li>
-                  <li>→ Sentiment trends per video and topic</li>
-                  <li>→ Query your comment archive in Creator Mode</li>
-                </ul>
-              </div>
-
-              {/* Feature 2: Multi-source content */}
-              <div className="bg-bg-panel border border-border-strong rounded-lg p-6 md:p-8">
-                <h3 className="font-serif text-2xl md:text-3xl font-bold text-fg-primary mb-3">
-                  All your content, one brain
-                </h3>
-                <p className="text-fg-secondary text-base md:text-lg leading-relaxed mb-4">
-                  Your work lives in more places than YouTube. Bring your
-                  podcast, newsletter, and blog into the same searchable AI —
-                  so your audience can ask a question and get an answer from
-                  wherever the best material lives.
-                </p>
-                <ul className="text-fg-muted text-base md:text-lg space-y-2">
-                  <li>→ Podcast episodes (RSS or Whisper transcription)</li>
-                  <li>→ Newsletter archive (Substack, Beehiiv, ConvertKit)</li>
-                  <li>→ Blog posts (WordPress, Medium, custom sites)</li>
-                  <li>→ Answers cite the right source — video, episode, or post</li>
-                </ul>
-              </div>
-            </div>
-
-            <p className="text-fg-faint text-sm mt-5">
-              Interested in either? Mention Pro tier in the demo request below.
-            </p>
-          </div>
+          {/* Roadmap: one line only. Selling what exists today — unbuilt
+              features stay out of the conversion path. */}
+          <p className="text-fg-muted text-sm md:text-base mt-6 max-w-3xl">
+            Coming next: comment intelligence and multi-source archives
+            (podcast, newsletter, blog).
+          </p>
         </section>
 
         {/* ─── Section 3: How it works ─────────────────────── */}
         <section
           id="section-how"
-          className="max-w-4xl mx-auto px-4 md:px-8 py-20 md:py-24"
+          className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16"
         >
           <p
             className="font-mono text-xs tracking-[0.2em] uppercase mb-3"
@@ -705,12 +682,12 @@ export default function Home() {
           >
             ⚡ How it works
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-fg-primary mb-10 leading-tight">
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-fg-primary mb-10 leading-tight">
             From YouTube archive to conversational AI
           </h2>
           <div className="space-y-8">
             {[
-              { num: 1, title: "We index your channel", body: "Every video transcript is pulled, chunked, and stored in a searchable database." },
+              { num: 1, title: "We index your channel", body: "Every video you've published becomes instantly searchable." },
               { num: 2, title: "Your audience asks questions", body: "They type any question in plain English, just like texting you directly." },
               { num: 3, title: "AI answers from your content", body: "Answers sourced only from your videos, with links back to the source episode." },
             ].map((step) => (
@@ -737,7 +714,7 @@ export default function Home() {
         {/* ─── Section 3.5: Why not just use YouTube's AI? ────── */}
         <section
           id="section-vs-youtube"
-          className="max-w-4xl mx-auto px-4 md:px-8 py-20 md:py-24"
+          className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16"
         >
           <p
             className="font-mono text-xs tracking-[0.2em] uppercase mb-3"
@@ -745,7 +722,7 @@ export default function Home() {
           >
             🤔 Why not just use YouTube&apos;s AI?
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-fg-primary mb-6 leading-tight">
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-fg-primary mb-6 leading-tight">
             YouTube&apos;s AI works for YouTube. Channel Brain works for you.
           </h2>
           <p className="text-fg-secondary text-lg md:text-xl leading-relaxed mb-10 max-w-3xl">
@@ -753,31 +730,19 @@ export default function Home() {
             built for YouTube, not your business. Here&apos;s the difference:
           </p>
 
-          <div className="grid md:grid-cols-2 gap-5">
+          <div className="grid md:grid-cols-3 gap-5">
             {[
               {
-                title: "Lives on YOUR site",
-                body: "Every conversation happens on your domain, not youtube.com. Your audience stays in your world — where your course, coaching, and email list live.",
+                title: "Lives on your site",
+                body: "YouTube helps viewers keep watching. Channel Brain lives beside your guides, services, and contact forms — where the next step actually happens.",
               },
               {
-                title: "Your voice only",
-                body: "Answers come from your videos and only your videos. YouTube's AI blends you with every other creator on the platform.",
+                title: "Grounded only in your content",
+                body: "Every answer draws from your videos alone, with a link back to the source episode. YouTube's AI blends you with every other creator on the platform.",
               },
               {
-                title: "Captures leads for you",
-                body: "Interested visitors turn into email subscribers or booked calls. YouTube's AI sends them back to more YouTube.",
-              },
-              {
-                title: "Built for your whole business",
-                body: "YouTube's creator tools help you understand and grow on YouTube. Channel Brain turns your content into infrastructure for everything else — your site, your team, your sales conversations.",
-              },
-              {
-                title: "Fully branded",
-                body: "Colors, tone, and integration match your brand. No Google logo, no YouTube recommendations pulling attention elsewhere.",
-              },
-              {
-                title: "You own the data",
-                body: "Every question your audience asks is yours to see and learn from. YouTube keeps that data for itself.",
+                title: "You see the questions",
+                body: "Every question visitors ask is yours to learn from — what they're researching, what they can't find, what they care about. YouTube keeps that data.",
               },
             ].map((point, i) => (
               <div
@@ -806,7 +771,7 @@ export default function Home() {
         {/* ─── Section 4: Get yours ─────────────────────────── */}
         <section
           id="section-get-yours"
-          className="max-w-4xl mx-auto px-4 md:px-8 py-20 md:py-24"
+          className="max-w-4xl mx-auto px-4 md:px-8 py-12 md:py-16"
         >
           <p
             className="font-mono text-xs tracking-[0.2em] uppercase mb-3"
@@ -814,7 +779,7 @@ export default function Home() {
           >
             📩 Get yours
           </p>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-fg-primary mb-6 leading-tight">
+          <h2 className="font-serif text-3xl md:text-5xl font-bold text-fg-primary mb-6 leading-tight">
             Live on your site in under a week
           </h2>
           <p className="text-fg-secondary text-lg md:text-xl leading-relaxed mb-8 max-w-3xl">
@@ -834,7 +799,7 @@ export default function Home() {
         </section>
 
         <footer className="max-w-4xl mx-auto px-4 md:px-8 py-10 md:py-12 text-center">
-          <p className="text-fg-dim text-sm md:text-base leading-relaxed">
+          <p className="text-fg-muted text-sm md:text-base leading-relaxed">
             Channel Brain is an AI assistant trained on a creator&apos;s public
             YouTube content. Responses are for educational purposes only and may
             contain inaccuracies. Not affiliated with or endorsed by the source
