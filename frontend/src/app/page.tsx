@@ -428,14 +428,16 @@ export default function Home() {
   const channelName = client?.channel_name ?? null;
 
   const eyebrowText = isCreator
-    ? "Creator Mode — Your Archive"
+    ? channelName
+      ? `Creator Mode — ${channelName}'s archive`
+      : "Creator Mode"
     : channelName
       ? `Chatting with ${channelName}`
       : clientError
         ? "Channel unavailable"
         : "Loading channel...";
 
-  const heroTitle = isCreator ? "Your archive, working for you" : "Channel Brain";
+  const heroTitle = isCreator ? "Put your archive to work" : "Channel Brain";
 
   const emptyStatePrompt = isCreator
     ? "Explore your own archive."
@@ -645,7 +647,7 @@ export default function Home() {
             🎨 Creator Mode
           </p>
           <h2 className="font-serif text-3xl md:text-5xl font-bold text-fg-primary mb-6 leading-tight">
-            Put your entire archive to work
+            Your team can finally use everything you&apos;ve published
           </h2>
           <p className="text-fg-secondary text-lg md:text-xl leading-relaxed mb-6 max-w-3xl">
             Search every idea, example, and opinion you have published. Use it
