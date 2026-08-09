@@ -97,6 +97,31 @@
   .btn:focus-visible,a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
   .pilot .after{margin-top:14px;font-size:.85rem;color:var(--fg-3)}
 
+  /* hero CTAs */
+  .hero-cta{margin-top:34px;display:flex;flex-direction:column;align-items:center;gap:14px}
+  .hero-cta .sub{font-family:var(--mono);font-size:12px;color:var(--fg-3)}
+  .hero-cta .sub a{color:var(--fg-2);text-decoration:underline;text-underline-offset:3px}
+  .hero-cta .sub a:hover{color:var(--fg)}
+
+  /* rendered example */
+  .example{padding-top:0}
+  .ex-panel{background:var(--panel);border:1px solid var(--border-strong);border-radius:12px;padding:24px;max-width:720px;margin:0 auto}
+  .ex-panel .eyebrow{color:var(--gold);margin-bottom:14px}
+  .ex-q{background:var(--panel-2);border:1px solid var(--border);border-radius:10px;padding:14px 16px;color:var(--fg);font-weight:500;font-size:1rem;margin-bottom:16px}
+  .ex-a{font-size:.98rem;margin-bottom:18px}
+  .ex-a b{color:var(--fg);font-weight:500}
+  .ex-src-label{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--fg-3);margin-bottom:8px}
+  .ex-srcs{display:flex;flex-wrap:wrap;gap:8px}
+  .ex-src{font-family:var(--mono);font-size:11px;color:var(--fg-2);background:var(--panel-2);border:1px solid var(--border);border-radius:999px;padding:6px 12px}
+  .ex-src span{color:var(--gold)}
+  .ex-caption{text-align:center;font-family:var(--mono);font-size:11px;color:var(--fg-3);margin-top:16px;letter-spacing:.06em}
+
+  /* qualifier */
+  .fit ul{list-style:none;margin:16px 0 18px}
+  .fit li{padding-left:22px;position:relative;margin-bottom:8px}
+  .fit li::before{content:"✓";position:absolute;left:0;color:var(--gold)}
+  .fit .not{font-size:.9rem;color:var(--fg-3)}
+
   footer{border-top:1px solid var(--border);padding:34px 0;font-size:.85rem;color:var(--fg-3)}
   footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
   footer a{color:var(--fg-3)}
@@ -130,21 +155,48 @@
     <div class="split">
       <div class="tool team">
         <p class="eyebrow">For you and your team</p>
-        <h3>Ask your own archive anything</h3>
-        <p>Find every example you gave on a topic, pull quotable moments,
-        spot what you keep repeating, and surface the gaps worth covering
-        next — without digging through hundreds of videos.</p>
+        <h3>Stop rebuilding what you've already created</h3>
+        <p>Search years of your content in seconds. Find past advice,
+        examples, and quotes, identify recurring themes, and uncover what
+        your channel should cover next.</p>
       </div>
       <div class="tool aud">
         <p class="eyebrow">For your audience</p>
         <h3>Answers in your words, on your site</h3>
-        <p>Visitors ask questions in plain English and get answers drawn only
-        from your videos, each one linked back to the source episode — beside
-        your services, not on YouTube.</p>
+        <p>Visitors get answers drawn only from your videos, each linked back
+        to the source episode — without leaving your site, next to your
+        guides, services, email capture, and contact forms.</p>
       </div>
     </div>
     <p class="split-note">One archive. Two business tools.</p>
+
+    <div class="hero-cta">
+      <a class="btn" href="mailto:skylar@channelbrain.io?subject=Channel%20Brain%20design%20partner">Tell me about your channel →</a>
+      <p class="sub"><a href="#example">See what an answer looks like ↓</a></p>
+    </div>
   </div>
+
+  <section class="example" id="example">
+    <div class="wrap">
+      <div class="ex-panel">
+        <p class="eyebrow">Creator Mode — example</p>
+        <div class="ex-q">What advice do I repeat most often about pricing?</div>
+        <p class="ex-a">Across your archive, three themes come up again and
+        again: <b>price on value, not hours</b> (your most repeated line —
+        "charge for the outcome, not the afternoon"), <b>raise prices before
+        you feel ready</b>, and <b>anchor with a premium option</b> even if
+        few buyers take it. You haven't covered pricing for retainer or
+        subscription models yet — a possible gap worth a video.</p>
+        <p class="ex-src-label">Drawn from</p>
+        <div class="ex-srcs">
+          <span class="ex-src"><span>▶</span> Ep. 214 · Pricing your services · 12:40</span>
+          <span class="ex-src"><span>▶</span> Ep. 187 · The premium anchor · 04:12</span>
+          <span class="ex-src"><span>▶</span> Ep. 96 · When to raise prices · 08:55</span>
+        </div>
+      </div>
+      <p class="ex-caption">Rendered from a real indexed archive of 400+ episodes. Every answer cites its source videos.</p>
+    </div>
+  </section>
 
   <section>
     <div class="wrap">
@@ -153,9 +205,9 @@
       <div class="steps">
         <div class="step">
           <div class="n">1</div>
-          <h3>We index your channel</h3>
-          <p>Every video you've published becomes instantly searchable. Done
-          for you — no setup on your end.</p>
+          <h3>We index your archive</h3>
+          <p>Your existing content becomes searchable through one
+          conversational interface. Done for you — no setup on your end.</p>
         </div>
         <div class="step">
           <div class="n">2</div>
@@ -185,10 +237,10 @@
           actually happens.</p>
         </div>
         <div class="card">
-          <h3>Grounded only in your content</h3>
-          <p>Every answer draws from your videos alone, with a link to the
-          source. YouTube's AI blends you with every other creator on the
-          platform.</p>
+          <h3>Built around your knowledge</h3>
+          <p>Channel Brain answers from the content you choose, with citations
+          back to your source material. Your brand, your site, your
+          workflows.</p>
         </div>
         <div class="card">
           <h3>You see the questions</h3>
@@ -202,7 +254,7 @@
   <section>
     <div class="wrap founder">
       <p class="eyebrow sec-eyebrow">👋 Why this exists</p>
-      <h2>Built by a fan who couldn't find anything</h2>
+      <h2>Why I built Channel Brain</h2>
       <p>I'm Skylar — an engineer on Florida's Space Coast. Channel Brain
       started as a personal tool: I wanted to pull specific ideas out of a
       show I'd been following, and realized there was no way to search years
@@ -219,6 +271,22 @@
   </section>
 
   <section>
+    <div class="wrap founder fit">
+      <p class="eyebrow sec-eyebrow">🎯 Who it's for</p>
+      <h2>Built for creators whose content feeds a business</h2>
+      <p>Channel Brain is most useful when you have:</p>
+      <ul>
+        <li>Hundreds of evergreen videos</li>
+        <li>A team that regularly researches or repurposes your content</li>
+        <li>A service, course, membership, or community behind the channel</li>
+        <li>An owned website or audience beyond YouTube</li>
+      </ul>
+      <p class="not">If YouTube itself is your entire business, Channel Brain
+      may not be the right fit.</p>
+    </div>
+  </section>
+
+  <section>
     <div class="wrap">
       <div class="pilot">
         <p class="eyebrow sec-eyebrow">🚀 Design-partner pilot</p>
@@ -226,13 +294,13 @@
         <p>I'm working with a small number of creator businesses as design
         partners. Here's the shape of it:</p>
         <ul>
-          <li>I build a working version from your channel before you commit to anything</li>
+          <li>If there's a fit, I build a working version from your content before you decide anything</li>
           <li>Full setup and hosting, no charge for 90 days</li>
           <li>Your only commitment: occasional feedback on what's useful</li>
-          <li>Afterward, continue at the pre-agreed $650/month — or simply stop</li>
+          <li>If it's useful, we agree on a paid plan before the pilot begins — no surprises after</li>
         </ul>
-        <a class="btn" href="mailto:skylar@channelbrain.io?subject=Channel%20Brain%20design%20partner">Email me your channel →</a>
-        <p class="after">I'll reply within two business days with a working demo built from your archive.</p>
+        <a class="btn" href="mailto:skylar@channelbrain.io?subject=Channel%20Brain%20design%20partner">Tell me about your channel →</a>
+        <p class="after">I read every note personally and reply within two business days.</p>
       </div>
     </div>
   </section>
