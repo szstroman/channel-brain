@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Channel Brain — Put your archive to work</title>
+<meta name="description" content="Channel Brain turns a creator's video archive into a searchable business tool — for their team and their audience." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>" />
+<meta property="og:title" content="Channel Brain" />
+<meta property="og:description" content="Turn years of content into a business tool your team and audience can actually use." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://channelbrain.io" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#0a0a0a; --panel:#141414; --panel-2:#101010;
+    --border:#262626; --border-strong:#333;
+    --fg:#f5f0e8; --fg-2:#c9c4bb; --fg-3:#918c84;
+    --gold:#d4a359; --blue:#5eb8ff;
+    --serif:"Playfair Display",Georgia,serif;
+    --sans:"DM Sans",system-ui,sans-serif;
+    --mono:"DM Mono",ui-monospace,monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--fg-2);font-family:var(--sans);font-weight:300;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:920px;margin:0 auto;padding:0 20px}
+  .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+  h1,h2{font-family:var(--serif);color:var(--fg);line-height:1.12}
+  section{padding:64px 0}
+  @media(min-width:768px){section{padding:88px 0}}
+
+  /* header */
+  header{padding:20px 0;border-bottom:1px solid var(--border)}
+  .hd{display:flex;align-items:center;justify-content:space-between}
+  .brand{font-family:var(--serif);font-weight:900;font-size:20px;color:var(--fg);text-decoration:none}
+  .hd a.mail{font-family:var(--mono);font-size:12px;color:var(--fg-3);text-decoration:none}
+  .hd a.mail:hover{color:var(--fg)}
+
+  /* hero */
+  .hero{padding:80px 0 56px;text-align:center}
+  @media(min-width:768px){.hero{padding:110px 0 72px}}
+  .hero .eyebrow{color:var(--gold);margin-bottom:14px}
+  .hero h1{font-weight:900;font-size:clamp(2.3rem,6vw,4rem);margin-bottom:20px}
+  .hero p{max-width:620px;margin:0 auto;font-size:clamp(1.05rem,2.2vw,1.25rem)}
+  .hero p b{color:var(--fg);font-weight:500}
+
+  /* signature: one archive, two tools */
+  .split{display:grid;gap:14px;margin-top:44px;grid-template-columns:1fr}
+  @media(min-width:700px){.split{grid-template-columns:1fr 1fr;gap:18px}}
+  .tool{background:var(--panel);border:1px solid var(--border-strong);border-top:3px solid;border-radius:10px;padding:26px 24px;text-align:left}
+  .tool.team{border-top-color:var(--gold)}
+  .tool.aud{border-top-color:var(--blue)}
+  .tool .eyebrow{margin-bottom:10px}
+  .tool.team .eyebrow{color:var(--gold)}
+  .tool.aud .eyebrow{color:var(--blue)}
+  .tool h3{color:var(--fg);font-weight:600;font-size:1.15rem;margin-bottom:8px}
+  .tool p{font-size:.98rem}
+  .split-note{font-family:var(--mono);font-size:12px;color:var(--fg-3);margin-top:18px;letter-spacing:.08em}
+
+  /* generic block bits */
+  .sec-eyebrow{color:var(--gold);margin-bottom:12px}
+  h2{font-weight:700;font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:18px}
+  .lead{max-width:640px;font-size:1.08rem;margin-bottom:34px}
+
+  /* how it works */
+  .steps{display:grid;gap:22px}
+  @media(min-width:700px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step .n{width:40px;height:40px;border-radius:50%;background:var(--gold);color:var(--bg);font-weight:600;display:flex;align-items:center;justify-content:center;margin-bottom:12px;font-family:var(--mono)}
+  .step h3{color:var(--fg);font-weight:600;font-size:1.05rem;margin-bottom:6px}
+  .step p{font-size:.95rem}
+
+  /* vs youtube */
+  .vs{background:var(--panel-2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .cards3{display:grid;gap:14px}
+  @media(min-width:700px){.cards3{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--panel);border:1px solid var(--border-strong);border-radius:10px;padding:22px}
+  .card h3{color:var(--fg);font-weight:600;font-size:1.02rem;margin-bottom:8px}
+  .card p{font-size:.93rem}
+
+  /* founder */
+  .founder{max-width:640px}
+  .founder p+p{margin-top:14px}
+  .founder .sig{margin-top:20px;font-family:var(--mono);font-size:13px;color:var(--fg-3)}
+
+  /* pilot cta */
+  .pilot{background:var(--panel);border:1px solid var(--border-strong);border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:34px 28px}
+  .pilot h2{margin-bottom:12px}
+  .pilot ul{list-style:none;margin:18px 0 26px}
+  .pilot li{padding-left:22px;position:relative;margin-bottom:8px;font-size:1rem}
+  .pilot li::before{content:"→";position:absolute;left:0;color:var(--gold)}
+  .btn{display:inline-block;background:var(--gold);color:var(--bg);font-weight:600;font-size:.98rem;padding:14px 26px;border-radius:8px;text-decoration:none;transition:opacity .15s}
+  .btn:hover{opacity:.9}
+  .btn:focus-visible,a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+  .pilot .after{margin-top:14px;font-size:.85rem;color:var(--fg-3)}
+
+  footer{border-top:1px solid var(--border);padding:34px 0;font-size:.85rem;color:var(--fg-3)}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+  footer a{color:var(--fg-3)}
+
+  @media(prefers-reduced-motion:no-preference){
+    .hero>*{animation:rise .6s ease both}
+    .hero>*:nth-child(2){animation-delay:.08s}
+    .hero>*:nth-child(3){animation-delay:.16s}
+    .hero>*:nth-child(4){animation-delay:.26s}
+    @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a class="brand" href="/">🧠 Channel Brain</a>
+    <a class="mail" href="mailto:skylar@channelbrain.io">skylar@channelbrain.io</a>
+  </div>
+</header>
+
+<main>
+  <div class="hero wrap">
+    <p class="eyebrow">For creator businesses</p>
+    <h1>Put your archive to&nbsp;work</h1>
+    <p>You've published hundreds of videos. Almost everything you know is in
+    there — but neither your team nor your audience can actually search it.
+    <b>Channel Brain turns your archive into a tool both of them use.</b></p>
+
+    <div class="split">
+      <div class="tool team">
+        <p class="eyebrow">For you and your team</p>
+        <h3>Ask your own archive anything</h3>
+        <p>Find every example you gave on a topic, pull quotable moments,
+        spot what you keep repeating, and surface the gaps worth covering
+        next — without digging through hundreds of videos.</p>
+      </div>
+      <div class="tool aud">
+        <p class="eyebrow">For your audience</p>
+        <h3>Answers in your words, on your site</h3>
+        <p>Visitors ask questions in plain English and get answers drawn only
+        from your videos, each one linked back to the source episode — beside
+        your services, not on YouTube.</p>
+      </div>
+    </div>
+    <p class="split-note">One archive. Two business tools.</p>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <p class="eyebrow sec-eyebrow">⚡ How it works</p>
+      <h2>From video archive to searchable asset</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="n">1</div>
+          <h3>We index your channel</h3>
+          <p>Every video you've published becomes instantly searchable. Done
+          for you — no setup on your end.</p>
+        </div>
+        <div class="step">
+          <div class="n">2</div>
+          <h3>You and your audience ask</h3>
+          <p>Plain-English questions, from your team's research to a
+          visitor's "which neighborhood fits my budget?"</p>
+        </div>
+        <div class="step">
+          <div class="n">3</div>
+          <h3>Answers cite your videos</h3>
+          <p>Every response is grounded in your content alone, with links back
+          to the exact source episode.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vs">
+    <div class="wrap">
+      <p class="eyebrow sec-eyebrow">🤔 Why not just use YouTube's AI?</p>
+      <h2>YouTube's AI works for YouTube.<br/>Channel Brain works for you.</h2>
+      <div class="cards3">
+        <div class="card">
+          <h3>Lives on your site</h3>
+          <p>YouTube helps viewers keep watching. Channel Brain lives beside
+          your guides, services, and contact forms — where the next step
+          actually happens.</p>
+        </div>
+        <div class="card">
+          <h3>Grounded only in your content</h3>
+          <p>Every answer draws from your videos alone, with a link to the
+          source. YouTube's AI blends you with every other creator on the
+          platform.</p>
+        </div>
+        <div class="card">
+          <h3>You see the questions</h3>
+          <p>Every question asked is yours to learn from — what people are
+          researching, what they can't find, what they care about.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap founder">
+      <p class="eyebrow sec-eyebrow">👋 Why this exists</p>
+      <h2>Built by a fan who couldn't find anything</h2>
+      <p>I'm Skylar — an engineer on Florida's Space Coast. Channel Brain
+      started as a personal tool: I wanted to pull specific ideas out of a
+      show I'd been following, and realized there was no way to search years
+      of episodes for the moments that mattered.</p>
+      <p>So I built one. Then it became obvious the same problem sits inside
+      every creator business: the archive is the most valuable asset the
+      business owns, and it's the one thing nobody can search — not the team,
+      not the audience.</p>
+      <p>Channel Brain is a done-for-you service, not a self-serve app. I set
+      it up, I maintain it, and I work directly with early partners to shape
+      what it becomes.</p>
+      <p class="sig">Skylar Stroman · Founder · skylar@channelbrain.io</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="pilot">
+        <p class="eyebrow sec-eyebrow">🚀 Design-partner pilot</p>
+        <h2>90 days, built from your channel</h2>
+        <p>I'm working with a small number of creator businesses as design
+        partners. Here's the shape of it:</p>
+        <ul>
+          <li>I build a working version from your channel before you commit to anything</li>
+          <li>Full setup and hosting, no charge for 90 days</li>
+          <li>Your only commitment: occasional feedback on what's useful</li>
+          <li>Afterward, continue at the pre-agreed $650/month — or simply stop</li>
+        </ul>
+        <a class="btn" href="mailto:skylar@channelbrain.io?subject=Channel%20Brain%20design%20partner">Email me your channel →</a>
+        <p class="after">I'll reply within two business days with a working demo built from your archive.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Channel Brain</span>
+    <a href="mailto:skylar@channelbrain.io">skylar@channelbrain.io</a>
+  </div>
+</footer>
+
+</body>
+</html>
