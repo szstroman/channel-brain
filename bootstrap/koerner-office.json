@@ -4,7 +4,7 @@
     "channel_id": "UCn4dfcINwD3_z41IDFPsFcA",
     "namespace": "koerner-office",
     "index_name": "channel-brain-prod",
-    "videos_indexed": 864,
+    "videos_indexed": 882,
     "skipped": 744,
     "skipped_titles": [
       "The Best Way to Clone These $1M+ Online Businesses (Legally)",
@@ -752,9 +752,9 @@
       "How To Make $100K Building Websites for Realtors",
       "How To Turn Street Sweeping into a Lucrative Business"
     ],
-    "total_chunks": 7126,
+    "total_chunks": 7375,
     "total_videos_on_channel": 866,
-    "last_sync_date": "2026-06-18",
+    "last_sync_date": "2026-08-09 17:45:40 UTC",
     "videos": [
       {
         "id": "_1DziIwKyGk",
@@ -4211,6 +4211,78 @@
       {
         "id": "VErm-eG_wlY",
         "title": "How To Turn Street Sweeping into a Lucrative Business"
+      },
+      {
+        "id": "vvtsOOGn6Io",
+        "title": "The Most Overlooked $3K/Day Side Hustle Anyone Can Start (with $0)"
+      },
+      {
+        "id": "lG5U30gKCaY",
+        "title": "How a Mom of 3 Makes $50K a Month With AI (No Experience)"
+      },
+      {
+        "id": "nVgFbclwmSA",
+        "title": "The $0 Side Hustle Anyone Can Start"
+      },
+      {
+        "id": "g-wMJf4ckK0",
+        "title": "He Found a Grant That Feels Like a Cheat Code ($2.4M/Year)"
+      },
+      {
+        "id": "3GmZHYBX75s",
+        "title": "He Built This Business in One Weekend for $40"
+      },
+      {
+        "id": "CKiszDu2aic",
+        "title": "I Asked AI for a Money-Making Website (It Built One in Minutes)"
+      },
+      {
+        "id": "38xmJHWQzhg",
+        "title": "Stop Rambling: 7 Tricks to Make People Respect You"
+      },
+      {
+        "id": "oaXnY1YExjE",
+        "title": "This Kid Found the Fastest Way to Make Money With AI Apps"
+      },
+      {
+        "id": "-Aok3pmolAE",
+        "title": "Making Money With Apps Has Never Been Easier"
+      },
+      {
+        "id": "rrmfSJ7oUUE",
+        "title": "He Told 5 AIs: Make Money or Get Deleted"
+      },
+      {
+        "id": "DKM94g3Hr_M",
+        "title": "He Told 5 AIs: Make Money or Get Deleted"
+      },
+      {
+        "id": "6u7tkj7UJvs",
+        "title": "The Laziest One-Person Business You Can Start"
+      },
+      {
+        "id": "AqDhUMd7h28",
+        "title": "The Most Hands-Off $192K/M Business Anyone Can Copy"
+      },
+      {
+        "id": "L8xM86D1whE",
+        "title": "Find Your Passion in 20 Minutes, Not 20 Years"
+      },
+      {
+        "id": "NbAqXzS7Q44",
+        "title": "Find Your Passion in 20 Minutes, Not 20 Years"
+      },
+      {
+        "id": "6ErnEr2JcD0",
+        "title": "The Most Hands-Off $192K/M Business Anyone Can Copy"
+      },
+      {
+        "id": "mDE7InaRxDA",
+        "title": "AI Builds the Websites That Pay You Monthly"
+      },
+      {
+        "id": "pKja9oxDAaQ",
+        "title": "How to Make Money on Airbnb (Even With $0)"
       }
     ]
   },
