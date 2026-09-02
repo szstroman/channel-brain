@@ -134,6 +134,21 @@ def get_all_video_ids(playlist_id: str, youtube, max_videos: int) -> list[dict]:
     return videos
 
 
+# ── Failure/quality guards ────────────────────────────────────────────────────
+# Abort a run after this many CONSECUTIVE transcript-fetch failures. YouTube
+# rate-limiting fails every video once it kicks in, so a long streak means the
+# whole session is burned — better to stop loudly after ~10 minutes than skip
+# silently for 4 hours. Genuinely-unavailable videos appear as isolated
+# failures and never build a streak.
+CONSECUTIVE_FAILURE_LIMIT = 15
+
+# Transcripts shorter than this (chars) are Shorts / trailers with no real
+# content. They dilute the corpus (1-2 thin chunks) and can surface as weak
+# citations in answers. Counted separately from failures — the fetch WORKED,
+# the content is just too thin to index.
+MIN_TRANSCRIPT_CHARS = 400
+
+
 def fetch_transcript(video_id: str, max_retries: int = 3) -> Optional[str]:
     """
     Fetch transcript text for a video with retry logic.
@@ -263,11 +278,16 @@ def build_index(channel_url: str, max_videos: int = 50,
         "videos_indexed": 0,
         "skipped": 0,
         "skipped_titles": [],
+        "skipped_short": 0,
+        "skipped_short_titles": [],
+        "aborted_rate_limited": False,
         "total_chunks": 0,
         "total_videos_on_channel": total_videos,
         "last_sync_date": time.strftime("%Y-%m-%d"),
         "videos": [],
     }
+
+    consecutive_failures = 0
 
     for i, video in enumerate(videos):
         progress_pct = 0.15 + (0.80 * i / len(videos))
@@ -281,7 +301,30 @@ def build_index(channel_url: str, max_videos: int = 50,
         if not transcript:
             stats["skipped"] += 1
             stats["skipped_titles"].append(video["title"])
+            consecutive_failures += 1
+            if consecutive_failures >= CONSECUTIVE_FAILURE_LIMIT:
+                stats["aborted_rate_limited"] = True
+                msg = (
+                    f"{consecutive_failures} consecutive transcript failures — "
+                    f"almost certainly rate-limited. Stopping at video {i+1}/"
+                    f"{len(videos)}. Progress so far is SAVED. Wait a few hours "
+                    f"(or overnight), then run sync_runner to continue."
+                )
+                print("\n" + "!" * 70 + f"\nABORTING RUN: {msg}\n" + "!" * 70)
+                if progress_callback:
+                    progress_callback.progress(progress_pct, text="ABORTED — rate limited")
+                break
             time.sleep(1.0)
+            continue
+
+        # Fetch WORKED — reset the failure streak regardless of length
+        consecutive_failures = 0
+
+        if len(transcript) < MIN_TRANSCRIPT_CHARS:
+            # Shorts / trailers: too thin to index, not a failure
+            stats["skipped_short"] += 1
+            stats["skipped_short_titles"].append(video["title"])
+            time.sleep(0.8)
             continue
 
         chunks = chunk_text(transcript)
@@ -421,6 +464,8 @@ def delta_sync(client_id: str, channel_url: str,
         "status": "ok",
         "synced": 0,
         "skipped": 0,
+        "skipped_short": 0,
+        "aborted_rate_limited": False,
         "new_video_titles": [],
         "skipped_video_ids": [],
         "message": "",
@@ -512,6 +557,8 @@ def delta_sync(client_id: str, channel_url: str,
 
     # Process each new video with per-video error handling and partial-progress save.
     # Uses R1-03's rate-limiting lessons: 3s delay, fetch_transcript has retries built in.
+    consecutive_failures = 0
+
     for video in new_videos:
         video_id = video["id"]
         title = video.get("title", "(untitled)")
@@ -522,7 +569,28 @@ def delta_sync(client_id: str, channel_url: str,
                 # Skipped — either rate-limited or genuinely unavailable
                 result["skipped"] += 1
                 result["skipped_video_ids"].append(video_id)
+                consecutive_failures += 1
+                if consecutive_failures >= CONSECUTIVE_FAILURE_LIMIT:
+                    result["aborted_rate_limited"] = True
+                    result["message"] = (
+                        f"Aborted after {consecutive_failures} consecutive "
+                        f"transcript failures (rate-limited). Synced "
+                        f"{result['synced']} before stopping — progress saved. "
+                        f"Re-run in a few hours to continue."
+                    )
+                    print("\n" + "!" * 70 +
+                          f"\nABORTING SYNC: {result['message']}\n" + "!" * 70)
+                    break
                 time.sleep(3.0)  # honor rate-limit backoff even on skip
+                continue
+
+            # Fetch worked — reset streak before any content checks
+            consecutive_failures = 0
+
+            if len(transcript) < MIN_TRANSCRIPT_CHARS:
+                # Shorts / trailers — thin content, deliberately not indexed
+                result["skipped_short"] += 1
+                time.sleep(3.0)
                 continue
 
             chunks = chunk_text(transcript)
