@@ -1,0 +1,1543 @@
+{
+  "pinecone_config": {
+    "stats": {
+      "channel_name": "Audra Lambert - Lambert Group Homes",
+      "channel_id": "UC-Bh0tyaawaejomr1oiKWVQ",
+      "namespace": "audra-lambert",
+      "index_name": "channel-brain-prod",
+      "videos_indexed": 0,
+      "skipped": 330,
+      "skipped_titles": [
+        "The #1 rug mistake I see in homes\u2026 #interiordesign #homedecor #homestaging #designinspo #fyp\u30b7",
+        "Why Your Closing Keeps Getting DELAYED\u00a0And Who's Responsible",
+        "I owe every La-Z-Boy owner an apology. \ud83d\ude2d #realtorlife #homedecor #interiordesign #realestate #fyp\u30b7",
+        "Homeownership humbled me today. \ud83d\ude02 #homeownership #homerenovation #hometips #realtorlife #fyp\u30b7\u309aviral",
+        "If you\u2019re remodeling your kitchen, ADD THIS! #homeremodel #kitcheninspo #kitchendesign #homedesign",
+        "My CPA told me to do this IMMEDIATELY! #financialtips #financial #realestate #fyp\u30b7",
+        "Trends come and go, but THIS is timeless! #interiordesign #homedecor #luxuryinteriors #designinspo",
+        "20 Things You Should NEVER Put in Your Dining Room When Selling!!",
+        "I would NEVER choose these floors again!!! #homerenovation #interiordesign #hometips #realestatetips",
+        "The flooring mistake I'm seeing in luxury homes! #realestatetips #homerenovation #interiordesign",
+        "Most homeowners get lighting completely wrong... \ud83d\udc40 #interiordesign #homeselling #realestatetips",
+        "Your Lender Could Cost You the House!!!!",
+        "YOUR SIGN TO GET RID OF IT! \ud83c\udfd3 #realestatetips #realestate #realestatelife #fyp\u30b7\u309aviral",
+        "I wish someone had told me this before I remodeled! #homerenovation #homedesign #homedesigntips",
+        "Don't remodel your Tuscan home just yet... #interiordesign #homedesign #modernorganic #homedecor",
+        "\ud83d\ude02 Behind every perfectly staged home is a Realtor who comes home to\u2026 this. #realtorlife #realtor",
+        "Never Install This In Your Family Room or Living Room When Selling Your Home!!!!",
+        "Your garage could be costing you thousands\u2026 \ud83d\udc40 #realestatetips #realestate #homemaintenance #fyp\u30b7",
+        "\ud83d\udea7 Here\u2019s something most sellers never think about\u2026  #realtorproblems #realtorlife #realestatetips",
+        "The Tuscan era had its moment\u2026 #homedecor #homedesign #modernorganic #interiordesign #fyp\u30b7\u309aviral",
+        "Even the home inspector missed this. \ud83d\ude33 #hometips #homerenovation #realestatetips #fyp\u30b7\u309aviral",
+        "\ud83d\udea8 Your security sign could be helping burglars... #homesafety #homesecurity #homesafetytips #fyp\u30b7",
+        "We LOST These Home Features and I Miss Them So Much",
+        "HOMEOWNERS PAY ATTENTION \ud83d\udea8 #homeownership #homeproblems #homemaintenance #fyp\u30b7",
+        "Kitchen Mistakes Before Selling: 18 Things NOT to Install",
+        "Off market isn\u2019t always the best choice!! #realestate #realestatetips #realestateexpert #tipsntricks",
+        "Did I get plastic surgery??? #aginggracefully #agingwell #aging #facelift #facelifts #fyp\u30b7\u309aviral",
+        "This is why housing predictions are often misunderstood \ud83d\udc47 #housingmarket #realestate #fypyoutube",
+        "Bathroom Mistakes Before Selling: 10 Things NOT to Install",
+        "\ud83c\udfe1 \u201cIs the housing market going to crash?\u201d #housingmarket2026 #realestate  #realestateeducation",
+        "Housing Market Update What Buyers and Sellers Need to Know RIGHT NOW!!",
+        "\u2728 Staging isn\u2019t about making a home look pretty. #realestate #realtorlife #homestaging #fypyoutube",
+        "10 Things Most HOME SELLERS and REAL ESTATE AGENTS Don\u2019t Know right Now!!!",
+        "\ud83d\ude02 Real estate tip nobody talks about\u2026#funnyshorts #realestatetips #realtorlife #fypyoutube #fyp",
+        "\ud83d\ude02 Home inspections really do keep you humble #homeinspection #realtorlife #realestate #realtorhumor",
+        "the pressure of selling homes in your own neighborhood \ud83d\udc40 #realtorlife #realtorhumor #fypyoutube",
+        "Why Buyers Are Walking Out of Your Home!! (Before They Even Make an Offer)",
+        "\u2728 Okay\u2026 I think my luck is finally turning \ud83d\ude02 #realestate #realtor #homesforsale #fypyoutube",
+        "\u2728 Big little business moment today \ud83d\udc40 #realtorlife #buisnesswoman #successmotivation #fypyoutube",
+        "Realtors need therapy sometimes too \ud83d\ude2d#realestatehumor #realtorlife #realestateagent #realtortips",
+        "How to Interview a Real Estate Agent | Red Flags & Must-Ask Questions",
+        "I had NO idea repiping looked like this \ud83d\ude33 #realtorlife #homeownerproblems #realestate #fypyoutube",
+        "\ud83d\udea8KNOW WHERE YOUR MAIN WATER SHUT OFF IS \ud83d\udea8#realestate #realestateadvice #realestatetips #fypyoutube",
+        "Home Insurance Secrets Insurance Companies Do Not Tell You!!!",
+        "\ud83c\udf31Investor tip from someone currently learning the hard way \ud83d\ude02 #realestate #funnyshorts #realtorlife",
+        "10 Home Seller MISTAKES That Can Lead to Lawsuits!!",
+        "If you own a home, plan to buy one, you\u2019re going to want to tune in. #fypyoutube #realestateadvice",
+        "This is what $2.875M gets you in san juan capistrano \ud83d\udc40 #justlisted #forsale #realestate #fypyoutube",
+        "buyers: this insurance mistake could derail your escrow \ud83d\udc40 #realestate #realestateadvice #fypyoutube",
+        "\u2728 THIS is why presentation matters \ud83d\udc40 #realestate #realestateadvice #realestateeducation #fypyoutube",
+        "Okay\u2026 I officially change my mind about terrazzo floors! #realestate #realestateadvice #realtor #fyp",
+        "What Makes Buyers INSTANTLY WANT Your House!!",
+        "POV: your realtor refuses to take a day off \ud83c\udf34 #realestate #realestatehumor #realestatelife #fyp\u30b7",
+        "If your realtor replies at 11pm\u2026 this is why \ud83d\udc40 #realestate #realtorhumor #realtorlife #realtors #fy",
+        "before you panic about the market\u2026 listen to this \ud83d\udc47 #realestate #realestateadvice #realestatetips",
+        "NEVER EVER  agree to this when selling your house!!",
+        "\u2728Realtors have lockboxes\u2026 apparently I have a leaf blower now \ud83d\ude02\ud83c\udf43 #funny #funnyvideo #realtorhumor",
+        "POV: your home inspection just exposed everything you thought buyers wouldn\u2019t notice \ud83d\udc40 #homebuyers",
+        "Home Seller Mistakes Buyers Always Notice | Don't Do These Before Listing",
+        "Real estate = long-term stability. #realestateinvesting #wealthbuilding #realestatetips",
+        "Want passive income without being a landlord? #realestateinvesting #passiveincome #wealthbuilding",
+        "Turn your home into an investment property \ud83d\udc47 #realestateinvestingcanada #1031exchange",
+        "Appraisals are turning into a race to the bottom. #realestatetips #homebuying #realestateeducation",
+        "The Most HATED Exterior Home Trends Right Now!!",
+        "November 2, 2026 changes everything... #realestateupdate #appraisals #housingmarket #realestatetips",
+        "California has more appraisers over 80 than under 30 \ud83d\ude33 #realestatetips #homebuying #realestateadvice",
+        "66% of 1031 exchange FAIL \ud83d\udc40 #1031exchange #realestate #realestatetips #realestateadvice #homebuying",
+        "45 days\u2026 or you lose the deal \ud83d\udc40 #1031exchange #realestate #realestatetips #realestateadvice #fyp",
+        "Buy BEFORE you sell? Yes \ud83d\udc40 #1031exchange #realestatehacks #realestatetips #realestateadvice #fyp\u30b7",
+        "Most HATED Home Upgrades You Should Avoid Before Selling!",
+        "From $30K to billions = mindset + strategy #mindsetshift #mindset  #mindsetmatters #encouragement",
+        "The tax strategy investors use to defer taxes \ud83d\udc40 #1031exchange #realestatehacks #realestate #fyp",
+        "That $50K pickleball court might not add value \ud83d\udc40 Appraisers need comps\u2026  #realestate #realestatetips",
+        "Appraisers are disappearing\u2026 Buyers and sellers need to be ready NOW!!  #realestate #realestatetips",
+        "Red Flags When Buying a House | What Sellers Are Hiding From You",
+        "THE BEST WAY to sell your house starts with...(this will surprise you!)",
+        "Top 10 Repairs to Make Before Selling Your House That Could SAVE Your Deal!!!",
+        "Smart Home Investing Secrets Everyone Should Know!!",
+        "From $30,000 in a garage\u2026 to $3.5 BILLION \ud83d\udc40#realestateadvice #mindsetshift #wealthbuilding",
+        "Swap until you drop\u201d\u2026 but what does that actually mean? \ud83d\udc40 #realestateinvesting #wealthbuilding",
+        "What to Know Before Selling Your Home: 10 Listing Agent Secrets",
+        "Top 10 Ways Home Sellers Lose Thousands and How to Avoid Costly Mistakes!!",
+        "Selling A Home In 2026??",
+        "The Top 10 Upgrades That Increase Your Home Value",
+        "Spring Inventory Tightening",
+        "They Called Me the Condo Girl",
+        "Every appraisal tells a story! #realestate #realestateadvice #realestateeducation #viral",
+        "I Felt Out of My League at this Design Event",
+        "New Appraisal Challenges Could Impact Your Home Value!!",
+        "Staged house turned Airbnb",
+        "The future of appraising: Are we ready for AI? \ud83c\udfe0\ud83d\udcbc #appraisalprocess #realestateeducation #viral",
+        "Contingency offers can be challenging",
+        "Mark your calendar: November 2, 2026, is a date. You won\u2019t want to miss if you\u2019re in real estate!! \ufffc",
+        "My favorite book-Never Split the Difference",
+        "Home Features That Decrease The Value Of Your Home!!",
+        "Choosing artwork for your home isn't about copying trends",
+        "The 10 \"Offer Killers\" Buyers Won't Tell You To Your Face",
+        "The Next 6 Months in Real Estate: What You NEED to Know",
+        "2026 Paint color of the year",
+        "DON'T Buy This For Your Home If You're Thinking Of Selling!!!",
+        "LiveStream #4:  EVERYTHING YOU NEED TO KNOW about BUGS/TERMITES",
+        "Top Best Kitchen Designs!!",
+        "AI and real estate",
+        "What to do after losing a SPOUSE-Real Estate",
+        "What Actually Works for New Realtors (Not What You\u2019re Taught)",
+        "Selling a home in 2026 is different: 10 things you must know!",
+        "NEVER Stage Your Home Like This!!",
+        "Home Selling Tips 2026: What to Remove Before You List",
+        "Youtube Decorating Tips That Make Your Home Stand Out",
+        "What I Wish Every Home Seller And Buyer Knew Before The New Year!!!",
+        "MUST Have Gifts Every Home Seller Should Have!!!",
+        "Are Your Closets Secretly Hurting Your Home Sale?",
+        "Housing Forecast 2026 with Steven Thomas and Audra Lambert",
+        "I NEVER Want to Hear This From Home Sellers!!",
+        "Why Tuesday Is The Secret To Selling Your House Fast!",
+        "The Biggest Mistakes Real Estate Agents Make With Clients!!",
+        "Unboxing my Silver Play Button and I\u2019m still in shock! Thank you to every single one of you!\ud83e\udde1\ud83c\udf7e#fyp",
+        "What Happens When Owners Rent Your Staged Listing on Airbnb?",
+        "Game-Changing Kitchen Design Ideas for 2026!!",
+        "What PAINT should I pick in 2026?",
+        "\ud83c\udf89 The Wait Is Over! 100K Subscriber Giveaway Winners LIVE \ud83c\udf89 Interior Designer Tips",
+        "What NOT to Buy at Home Depot Before Selling Your Home!!",
+        "Tiles You Should Never Buy",
+        "Win When the Market Is Against You: Home Selling Tips",
+        "Easy & Affordable Home Styling Ideas for Instant Results",
+        "Stop Making This Flooring Mistake!",
+        "Who Pays What in a Real Estate Deal? Buyer & Seller Guide",
+        "Luxury Vinyl vs Engineered Hard Wood",
+        "How Much Should You Offer on a Home? Tips for Buyers & Sellers",
+        "Outdated Home Trends to Avoid (and What to Do Instead)",
+        "Organize Your Home for a Faster Sale: Proven Tips & Tricks",
+        "Why These Floors Are a Big Mistake!",
+        "Why Being a Firm Agent Gets Better Results for Sellers",
+        "Stop! Don\u2019t Pick These Floors for Your Home!",
+        "Selling Your Home? Avoid These 20 Costly Pitfalls!",
+        "Audra Lambert's Live Stream #1:  Market Update, Design Trends, and Investing tips!  Live Q & A.",
+        "Kitchen Countertops 2025: Which Material is Best?",
+        "Home Maintenance Tools No One Talks About...But Should!",
+        "Real Estate Investing Secrets from Successful Investors",
+        "Don\u2019t Get Rid of These Items in Your Home \u2013 The Market Has Changed!",
+        "3 Big Mistakes Home Sellers Make and How to Avoid Them!",
+        "Why Your Home Looks Cheap (and How to Fix It Before Selling)!",
+        "Flooring Installation Tips: Don\u2019t Make These Common Mistakes",
+        "Home Prices Are DROPPING",
+        "Flooring Upgrade Tips That Pay Off When Selling!",
+        "Don't hire a knucklehead agent",
+        "Strange & Surprising Things That Happen When Selling a Home!",
+        "Must-Have Gadgets to Boost Your Home\u2019s Value Before Selling!",
+        "Feeling Discouraged in Real Estate? Watch This!",
+        "Why Are So Many Houses Still For Sale in 2025?",
+        "8 Home Upgrades & Purchases That Impact Your Lifestyle",
+        "Mistakes People Make When Moving to a Smaller Home",
+        "Why Are So Many People Struggling With Their Mortgage Payments?",
+        "Overpriced Homes & Price Cuts: The Truth About Selling in 2025!",
+        "How Some Real Estate Agents Take Advantage of You",
+        "Hidden Costs of Homeownership: Taxes & Insurance Explained!",
+        "Why Selling Your Home Feels So Hard Right Now",
+        "The way we BUY & SELL HOMES has Changed FOREVER! Audra Lambert Realtor 2025",
+        "Is Your House Toxic? Audra Lambert The Realtor Advice 2025",
+        "When to Say Yes to A Home Offer",
+        "Stop!  DON'T MAKE these Home Renovation Mistakes!!",
+        "Avoid These 15 Homes at ALL COSTS!",
+        "Top Lighting Mistakes That Make Your Home Look Dated (and How to Fix Them!)",
+        "Controversy in Real Estate!  Must Watch!",
+        "Home Buyers HATE This Expensive Backyard Feature",
+        "OLD vs NEW home make this decision in 17.30 minutes!",
+        "Why Home Sellers MUST Say YES to Every Showing in 2025?",
+        "Top Issues That Come Up During Home Inspections (Be Prepared!)",
+        "Selling a Home is a Pain in the REAR!!!",
+        "NOT SURE if you want to sell your house?  WATCH THIS FIRST!!",
+        "WHAT?  I Don't get this when SELLING A HOME!",
+        "NEVER!!  Stage  your house with this!",
+        "This is tough!  What its like selling your home in 2025",
+        "This $30 Device Could Save Your House From DISASTER",
+        "Never Put Your House on the market UNTIL.....",
+        "Do Realtors actually spend money on me?",
+        "25 Things I wish for in Real Estate in 2025!",
+        "I'm overpaying for homeowner's insurance!",
+        "Why Your Mail Forwarding NEEDS to Start TODAY!",
+        "25 things you need to get rid of when selling your home!",
+        "10 Genius Home Seller Hacks You NEED to Know! Audra Lambert 2025",
+        "This is Going to COST You BIG TIME!",
+        "What the Heck are home buyer's looking for?",
+        "Mover's guide when leaving your home!",
+        "Your  Agent  needs to know these 10 things!",
+        "25 Things YOU NEED to Know When Selling Your Home in 2025!",
+        "Cancel your real estate contract now!  Here's how!",
+        "How To Prepare Your Home To Sell",
+        "Don't Sell your House to an Investor!  Watch this First!!",
+        "Classic Homes  Sell Quicker!  Check this one out!",
+        "Top Interior Paint Choices of 2025!!",
+        "I am really not loving this! Home Sellers Tune in!  Audra Lambert",
+        "Don't Try TOO HARD when selling your home! Audra Lambert",
+        "Is Your Home Secure!?!?!",
+        "Don't make these Design Mistakes when Selling your home!",
+        "Feng Shui Home Design!",
+        "Be Careful What Realtor You Choose!!!",
+        "Luxury Home Design tips-top dollar for your home!",
+        "Lawsuit Shakeup!!",
+        "Do we like the 2025 Color of the Year? For Home sellers!",
+        "The Real Estate Market Is COLD!!!",
+        "WARNING! Don't hire a CHEAP REAL ESTATE AGENT!  Listen to this video!",
+        "SAVE MONEY: Home Upgrades Not Worth it Before Selling!",
+        "Want a SAFE Home Sale? Watch This Now!",
+        "ESSENTIAL REPAIRS to maximize your property value! Audra Lambert 2024",
+        "Is Carpet A Waste Of Money???",
+        "AVOID these OVERHYPED TRENDS when Selling your House!",
+        "Real Estate In A Freefall!!",
+        "\ud83d\udeab Is Your Backsplash Killing Your Home's Value? \ud83c\udfe0\u2728",
+        "I AM NOT HAVING FUN IN REAL ESTATE..right now!  Audra Lambert 2024.",
+        "The #1 Home Buyer Mistake \ud83c\udfe1\ud83d\udeab",
+        "\ud83d\udeab Top 3 Mistakes Home Sellers Make! \ud83d\udeab",
+        "Just say NO!!",
+        "Why These Flooring Choices Make Buyers Say WOW",
+        "Attention Seniors: Important Changes You Need To Know Before Selling Your House!",
+        "Why Home Buyers Are Paying Agent Commissions in 2024",
+        "Best Flooring Choices for Your Home: Expert Tips!",
+        "Is Your All-Cash Offer REALLY Cash? The Truth Revealed!",
+        "MY YOUTUBE STORY: Here is why I am doing this! Audra Lambert",
+        "Best Flooring to Boost Your Home's Value in 2024",
+        "JUST SAY NO!!  In Real Estate!.  Audra Lambert 2024",
+        "September 30, 2024",
+        "DON'T PICK THIS FLOORING IF YOU ARE SELLING YOUR HOME!",
+        "Protect Yourself: Navigating New Changes in Today\u2019s Housing Market! Audra Lambert 2024",
+        "How to Prepare Your Home for Sale in a Shifting Housing Market!  Audra Lambert 2024.",
+        "HOME SELLERS: ARE YOU SABOTAGING THE SALE OF YOUR HOME? Audra Lambert 2024.",
+        "Lousy Changes Shaking Up Real Estate Right now!  Audra Lambert",
+        "15 Reasons Buyers Walk Away (And How to Fix Them FAST)",
+        "Avoid These 10 Annoying Mistakes When Selling Your Home! Audra Lambert 2024",
+        "Upgraded Executive Home Tour - 31252 Via Del Verde, San Juan Capistrano, CA 92675",
+        "5 Brutal Realities of Selling a House Right Now",
+        "Things you should know about HOAs!  Condos Beware! Audra Lambert 2024",
+        "12 Tips for Selling your House in a Shifting Housing Market | Audra Lambert 2024!",
+        "Dove Canyon Luxurious Home Tour - 4 Piedmont, Trabuco Canyon, CA",
+        "YOU NEED TO KNOW THESE TERMS..in a real estate purchase contract!  Audra Lambert 2024",
+        "I HATE THIS...in Real Estate. BEWARE!  Learn from me!  Audra Lambert 2024",
+        "The Housing Market Right now!  You can find out yourself!  Audra Lambert 2024",
+        "Pets!!! When Buying or Selling a Home!  Audra Lambert 2024",
+        "Don't Get Fooled! 5 Red Flags in \"All-Cash\" Real Estate Offers",
+        "Want More Money for your home?  Do This!!  Audra Lambert 2024",
+        "10 Things You Need in your Home When Selling!",
+        "The Secret Weapon That Gets Your Offer ACCEPTED Every Time",
+        "The Honest Truth About Selling Your Home FSBO (Watch Before You List!)",
+        "Myth vs Reality in Real Estate.  Audra Lambert 2024",
+        "Best Real Estate Agent Hiring Tips for 2025!",
+        "Overwhelmed with Selling Your Home?  This will help!!  Audra Lambert 2024",
+        "Don't Cancel the Contract in Real Estate!  Audra Lambert 2024",
+        "New Listing! Ocean Views! San Juan Capistrano! Shorts",
+        "No Lockbox!  Beware!!  Audra Lambert 2024",
+        "How to Deny Unreasonable Repair Requests (And Save Your Deal)",
+        "Home Appraisal Did not come in!!  Audra Lambert 2024",
+        "Don't Forget! Prepping your Home for Spring! Audra Lambert 2024",
+        "National Association of Realtors Settlement Explained-Audra Lambert 2024",
+        "San Juan Capistrano Charming Home!  Orange County Real Estate",
+        "San Juan Capistrano Golf Course View Home, Single Story!",
+        "Protect Yourself in Real Estate! Audra Lambert 2024",
+        "How to Sell Your House Without Getting Sued (Legal Red Flags!)",
+        "Do I Really Need a Buyer's Agent? (The Brutal Truth)",
+        "Gorgeous Home in Orange County, CA. Panoramic Views!  Oversized lot!  Audra Lambert 2024.",
+        "More on Real Estate Commissions & Open Houses.  Audra Lambert 2024",
+        "How to Negotiate Real Estate Commission (Don't Overpay Your Agent!)",
+        "10 Things You Must REMOVE Before Your Next Open House",
+        "Should I buy my house from the Listing Agent? Dual Agency explained.",
+        "Top Seller Mistakes To Avoid when Hiring a Real Estate Agent! Audra Lambert 2024",
+        "Never say this to a Real Estate Agent!",
+        "DONT DO THIS at An OPEN HOUSE!",
+        "9 Things You Should NEVER Say to a General Contractor",
+        "Unveiling The Truth: Is Your Listing Agent Really Working For You?",
+        "The Top Secrets To Spotting The Perfect Home!",
+        "BEWARE: Subject to an Existing Mortgage!",
+        "Quick Contingency Removal!",
+        "Is Your Home Inspector Licensed And Experienced???",
+        "LISTING AGREEMENT WARNING!",
+        "Everything You Need to Check Before Your Home Inspection",
+        "Make your Home NICE FOR LESS \ud83d\udcb8",
+        "Questions To Ask Your Buyer's Agent: What's Their Commission Policy? 2024",
+        "HOUSEHOLD MUST HAVES!!",
+        "HOME INSPECTION REPORT???",
+        "Home Inspection Secrets: What to Look for When Buying or Selling a Home",
+        "Don't do these Upgrades in you're Selling.  #01909872 #audralambert  #realestate  #realtor",
+        "GIFT PURCHASE OVERLOAD!!!",
+        "Home Inspection Tips! #01909872  #audralambert #homeinspection #realestate #Shorts",
+        "Open House Tips! #01909872 #audralambert #realtor #openhouse #realestate",
+        "Helpful Tips for Realtors #01909872 #audralambert #realtor #realtorslife",
+        "Selling a House on a Budget--Preparation is Essential!! Real Estate 2023",
+        "Staging tips for Selling! #01909872  #audralambert #realtor #carealestate",
+        "3 Mistakes Home Sellers Make! #01909872 #audralambert #realtor #realestate #carealestate",
+        "Are Homeowner's Being Taken Advantage Of?  WATCH THIS VIDEO PLEASE!",
+        "3 Negotiations When Selling! #01909872 #realestate #realestatenegotiation",
+        "New Agents: Watch This! #01909872 #stalbertrealtor #property #sanlorenzorealtor",
+        "I Own My Home and Want to Buy Another! - Audra Lambert Real Estate 2023",
+        "Reasons You Should Not Buy A Home!",
+        "Selling Your Home During The Holidays? Here's What You Need To Know!",
+        "Is Selling a Mistake? Watch This Before You Sign Anything",
+        "How Much Does it cost to sell or buy a home? Real Estate 2023",
+        "Real Estate Tactics to Avoid!! BEWARE!!",
+        "Desirable Single Story Home in San Juan Capistrano",
+        "Truckin! This is what I do to calm down! #reels",
+        "How to Stage a Bedroom Like a 5-Star Luxury Hotel",
+        "Should You Move Out Before Selling Your House? (The Truth)",
+        "How to Buy (or Sell) Real Estate During the Holiday Slowdown",
+        "I wish I knew this as a new Real Estate Agent - Guide for new realtors 2023",
+        "San Juan Capistrano Home Tour-Campanilla #shorts",
+        "My New Listing in Palmia 55+ over community-Mission Viejo #shorts",
+        "The Photoshoot--Helpful tips #shorts",
+        "The #1 Mistake Lazy Listing Agents Make During Showings",
+        "How to Sell Your House Fast (Even With High Mortgage Rates)",
+        "The Speed-Selling Blueprint: How to Get Multiple Bids Fast",
+        "5 Photo Mistakes That Make Your Home Look Cheap Online",
+        "How to Stage Your House Like a Pro (Without Spending a Fortune)",
+        "The 3 HIDDEN Stages of Real Estate Negotiation",
+        "Should you buy a Home Warranty?  Pros and Cons!",
+        "San Juan Capistrano Home Tour--The Oaks Farms #shorts",
+        "Home Improvements worth it? Audra Lambert",
+        "15 Reasons Buyers Walk Away (And How to Fix Them FAST)",
+        "Do NOT Fix This Before Selling Your Home!",
+        "Sea Summit Home Tour-167 Via Galicia #shorts",
+        "7 Things to Ask a Realtor Before Selling Your House",
+        "Cancel and/or terminating Real Estate Purchase Contract? Back out of Offer?...California 2022",
+        "Real Estate: Dana Point House Tour #shorts",
+        "The $500k Tax Mistake Homeowners Make When Selling",
+        "Mistakes Sellers Make in Today's Housing Recession 2022",
+        "Before you Vacate a Property (Sellers and Renters) - Helpful Reminders and Tips",
+        "#2 NO NO at my Open House!",
+        "Real Estate: Open House NO NO's #shorts",
+        "\ud83c\udfe0 \"AS IS\" Condition-FULL Explanation - California Purchase Agreement",
+        "Attention all Horse Lovers! This property is for you! Bonsall, Ca! $$2.5m. Call me for more details!",
+        "\ud83c\udfe0 Open House Recommendation - My experience as a listing agent!",
+        "Real Estate: Renting or Leasing Properties? Real Estate Leases in California!",
+        "My experience as a realtor--tips for success!"
+      ],
+      "total_chunks": 0,
+      "total_videos_on_channel": 330,
+      "last_sync_date": "2026-08-24",
+      "videos": []
+    },
+    "pinecone_index": "channel-brain-prod",
+    "namespace": "audra-lambert"
+  },
+  "stats": {
+    "channel_name": "Audra Lambert - Lambert Group Homes",
+    "channel_id": "UC-Bh0tyaawaejomr1oiKWVQ",
+    "namespace": "audra-lambert",
+    "index_name": "channel-brain-prod",
+    "videos_indexed": 212,
+    "skipped": 330,
+    "skipped_titles": [
+      "The #1 rug mistake I see in homes\u2026 #interiordesign #homedecor #homestaging #designinspo #fyp\u30b7",
+      "Why Your Closing Keeps Getting DELAYED\u00a0And Who's Responsible",
+      "I owe every La-Z-Boy owner an apology. \ud83d\ude2d #realtorlife #homedecor #interiordesign #realestate #fyp\u30b7",
+      "Homeownership humbled me today. \ud83d\ude02 #homeownership #homerenovation #hometips #realtorlife #fyp\u30b7\u309aviral",
+      "If you\u2019re remodeling your kitchen, ADD THIS! #homeremodel #kitcheninspo #kitchendesign #homedesign",
+      "My CPA told me to do this IMMEDIATELY! #financialtips #financial #realestate #fyp\u30b7",
+      "Trends come and go, but THIS is timeless! #interiordesign #homedecor #luxuryinteriors #designinspo",
+      "20 Things You Should NEVER Put in Your Dining Room When Selling!!",
+      "I would NEVER choose these floors again!!! #homerenovation #interiordesign #hometips #realestatetips",
+      "The flooring mistake I'm seeing in luxury homes! #realestatetips #homerenovation #interiordesign",
+      "Most homeowners get lighting completely wrong... \ud83d\udc40 #interiordesign #homeselling #realestatetips",
+      "Your Lender Could Cost You the House!!!!",
+      "YOUR SIGN TO GET RID OF IT! \ud83c\udfd3 #realestatetips #realestate #realestatelife #fyp\u30b7\u309aviral",
+      "I wish someone had told me this before I remodeled! #homerenovation #homedesign #homedesigntips",
+      "Don't remodel your Tuscan home just yet... #interiordesign #homedesign #modernorganic #homedecor",
+      "\ud83d\ude02 Behind every perfectly staged home is a Realtor who comes home to\u2026 this. #realtorlife #realtor",
+      "Never Install This In Your Family Room or Living Room When Selling Your Home!!!!",
+      "Your garage could be costing you thousands\u2026 \ud83d\udc40 #realestatetips #realestate #homemaintenance #fyp\u30b7",
+      "\ud83d\udea7 Here\u2019s something most sellers never think about\u2026  #realtorproblems #realtorlife #realestatetips",
+      "The Tuscan era had its moment\u2026 #homedecor #homedesign #modernorganic #interiordesign #fyp\u30b7\u309aviral",
+      "Even the home inspector missed this. \ud83d\ude33 #hometips #homerenovation #realestatetips #fyp\u30b7\u309aviral",
+      "\ud83d\udea8 Your security sign could be helping burglars... #homesafety #homesecurity #homesafetytips #fyp\u30b7",
+      "We LOST These Home Features and I Miss Them So Much",
+      "HOMEOWNERS PAY ATTENTION \ud83d\udea8 #homeownership #homeproblems #homemaintenance #fyp\u30b7",
+      "Kitchen Mistakes Before Selling: 18 Things NOT to Install",
+      "Off market isn\u2019t always the best choice!! #realestate #realestatetips #realestateexpert #tipsntricks",
+      "Did I get plastic surgery??? #aginggracefully #agingwell #aging #facelift #facelifts #fyp\u30b7\u309aviral",
+      "This is why housing predictions are often misunderstood \ud83d\udc47 #housingmarket #realestate #fypyoutube",
+      "Bathroom Mistakes Before Selling: 10 Things NOT to Install",
+      "\ud83c\udfe1 \u201cIs the housing market going to crash?\u201d #housingmarket2026 #realestate  #realestateeducation",
+      "Housing Market Update What Buyers and Sellers Need to Know RIGHT NOW!!",
+      "\u2728 Staging isn\u2019t about making a home look pretty. #realestate #realtorlife #homestaging #fypyoutube",
+      "10 Things Most HOME SELLERS and REAL ESTATE AGENTS Don\u2019t Know right Now!!!",
+      "\ud83d\ude02 Real estate tip nobody talks about\u2026#funnyshorts #realestatetips #realtorlife #fypyoutube #fyp",
+      "\ud83d\ude02 Home inspections really do keep you humble #homeinspection #realtorlife #realestate #realtorhumor",
+      "the pressure of selling homes in your own neighborhood \ud83d\udc40 #realtorlife #realtorhumor #fypyoutube",
+      "Why Buyers Are Walking Out of Your Home!! (Before They Even Make an Offer)",
+      "\u2728 Okay\u2026 I think my luck is finally turning \ud83d\ude02 #realestate #realtor #homesforsale #fypyoutube",
+      "\u2728 Big little business moment today \ud83d\udc40 #realtorlife #buisnesswoman #successmotivation #fypyoutube",
+      "Realtors need therapy sometimes too \ud83d\ude2d#realestatehumor #realtorlife #realestateagent #realtortips",
+      "How to Interview a Real Estate Agent | Red Flags & Must-Ask Questions",
+      "I had NO idea repiping looked like this \ud83d\ude33 #realtorlife #homeownerproblems #realestate #fypyoutube",
+      "\ud83d\udea8KNOW WHERE YOUR MAIN WATER SHUT OFF IS \ud83d\udea8#realestate #realestateadvice #realestatetips #fypyoutube",
+      "Home Insurance Secrets Insurance Companies Do Not Tell You!!!",
+      "\ud83c\udf31Investor tip from someone currently learning the hard way \ud83d\ude02 #realestate #funnyshorts #realtorlife",
+      "10 Home Seller MISTAKES That Can Lead to Lawsuits!!",
+      "If you own a home, plan to buy one, you\u2019re going to want to tune in. #fypyoutube #realestateadvice",
+      "This is what $2.875M gets you in san juan capistrano \ud83d\udc40 #justlisted #forsale #realestate #fypyoutube",
+      "buyers: this insurance mistake could derail your escrow \ud83d\udc40 #realestate #realestateadvice #fypyoutube",
+      "\u2728 THIS is why presentation matters \ud83d\udc40 #realestate #realestateadvice #realestateeducation #fypyoutube",
+      "Okay\u2026 I officially change my mind about terrazzo floors! #realestate #realestateadvice #realtor #fyp",
+      "What Makes Buyers INSTANTLY WANT Your House!!",
+      "POV: your realtor refuses to take a day off \ud83c\udf34 #realestate #realestatehumor #realestatelife #fyp\u30b7",
+      "If your realtor replies at 11pm\u2026 this is why \ud83d\udc40 #realestate #realtorhumor #realtorlife #realtors #fy",
+      "before you panic about the market\u2026 listen to this \ud83d\udc47 #realestate #realestateadvice #realestatetips",
+      "NEVER EVER  agree to this when selling your house!!",
+      "\u2728Realtors have lockboxes\u2026 apparently I have a leaf blower now \ud83d\ude02\ud83c\udf43 #funny #funnyvideo #realtorhumor",
+      "POV: your home inspection just exposed everything you thought buyers wouldn\u2019t notice \ud83d\udc40 #homebuyers",
+      "Home Seller Mistakes Buyers Always Notice | Don't Do These Before Listing",
+      "Real estate = long-term stability. #realestateinvesting #wealthbuilding #realestatetips",
+      "Want passive income without being a landlord? #realestateinvesting #passiveincome #wealthbuilding",
+      "Turn your home into an investment property \ud83d\udc47 #realestateinvestingcanada #1031exchange",
+      "Appraisals are turning into a race to the bottom. #realestatetips #homebuying #realestateeducation",
+      "The Most HATED Exterior Home Trends Right Now!!",
+      "November 2, 2026 changes everything... #realestateupdate #appraisals #housingmarket #realestatetips",
+      "California has more appraisers over 80 than under 30 \ud83d\ude33 #realestatetips #homebuying #realestateadvice",
+      "66% of 1031 exchange FAIL \ud83d\udc40 #1031exchange #realestate #realestatetips #realestateadvice #homebuying",
+      "45 days\u2026 or you lose the deal \ud83d\udc40 #1031exchange #realestate #realestatetips #realestateadvice #fyp",
+      "Buy BEFORE you sell? Yes \ud83d\udc40 #1031exchange #realestatehacks #realestatetips #realestateadvice #fyp\u30b7",
+      "Most HATED Home Upgrades You Should Avoid Before Selling!",
+      "From $30K to billions = mindset + strategy #mindsetshift #mindset  #mindsetmatters #encouragement",
+      "The tax strategy investors use to defer taxes \ud83d\udc40 #1031exchange #realestatehacks #realestate #fyp",
+      "That $50K pickleball court might not add value \ud83d\udc40 Appraisers need comps\u2026  #realestate #realestatetips",
+      "Appraisers are disappearing\u2026 Buyers and sellers need to be ready NOW!!  #realestate #realestatetips",
+      "Red Flags When Buying a House | What Sellers Are Hiding From You",
+      "THE BEST WAY to sell your house starts with...(this will surprise you!)",
+      "Top 10 Repairs to Make Before Selling Your House That Could SAVE Your Deal!!!",
+      "Smart Home Investing Secrets Everyone Should Know!!",
+      "From $30,000 in a garage\u2026 to $3.5 BILLION \ud83d\udc40#realestateadvice #mindsetshift #wealthbuilding",
+      "Swap until you drop\u201d\u2026 but what does that actually mean? \ud83d\udc40 #realestateinvesting #wealthbuilding",
+      "What to Know Before Selling Your Home: 10 Listing Agent Secrets",
+      "Top 10 Ways Home Sellers Lose Thousands and How to Avoid Costly Mistakes!!",
+      "Selling A Home In 2026??",
+      "The Top 10 Upgrades That Increase Your Home Value",
+      "Spring Inventory Tightening",
+      "They Called Me the Condo Girl",
+      "Every appraisal tells a story! #realestate #realestateadvice #realestateeducation #viral",
+      "I Felt Out of My League at this Design Event",
+      "New Appraisal Challenges Could Impact Your Home Value!!",
+      "Staged house turned Airbnb",
+      "The future of appraising: Are we ready for AI? \ud83c\udfe0\ud83d\udcbc #appraisalprocess #realestateeducation #viral",
+      "Contingency offers can be challenging",
+      "Mark your calendar: November 2, 2026, is a date. You won\u2019t want to miss if you\u2019re in real estate!! \ufffc",
+      "My favorite book-Never Split the Difference",
+      "Home Features That Decrease The Value Of Your Home!!",
+      "Choosing artwork for your home isn't about copying trends",
+      "The 10 \"Offer Killers\" Buyers Won't Tell You To Your Face",
+      "The Next 6 Months in Real Estate: What You NEED to Know",
+      "2026 Paint color of the year",
+      "DON'T Buy This For Your Home If You're Thinking Of Selling!!!",
+      "LiveStream #4:  EVERYTHING YOU NEED TO KNOW about BUGS/TERMITES",
+      "Top Best Kitchen Designs!!",
+      "AI and real estate",
+      "What to do after losing a SPOUSE-Real Estate",
+      "What Actually Works for New Realtors (Not What You\u2019re Taught)",
+      "Selling a home in 2026 is different: 10 things you must know!",
+      "NEVER Stage Your Home Like This!!",
+      "Home Selling Tips 2026: What to Remove Before You List",
+      "Youtube Decorating Tips That Make Your Home Stand Out",
+      "What I Wish Every Home Seller And Buyer Knew Before The New Year!!!",
+      "MUST Have Gifts Every Home Seller Should Have!!!",
+      "Are Your Closets Secretly Hurting Your Home Sale?",
+      "Housing Forecast 2026 with Steven Thomas and Audra Lambert",
+      "I NEVER Want to Hear This From Home Sellers!!",
+      "Why Tuesday Is The Secret To Selling Your House Fast!",
+      "The Biggest Mistakes Real Estate Agents Make With Clients!!",
+      "Unboxing my Silver Play Button and I\u2019m still in shock! Thank you to every single one of you!\ud83e\udde1\ud83c\udf7e#fyp",
+      "What Happens When Owners Rent Your Staged Listing on Airbnb?",
+      "Game-Changing Kitchen Design Ideas for 2026!!",
+      "What PAINT should I pick in 2026?",
+      "\ud83c\udf89 The Wait Is Over! 100K Subscriber Giveaway Winners LIVE \ud83c\udf89 Interior Designer Tips",
+      "What NOT to Buy at Home Depot Before Selling Your Home!!",
+      "Tiles You Should Never Buy",
+      "Win When the Market Is Against You: Home Selling Tips",
+      "Easy & Affordable Home Styling Ideas for Instant Results",
+      "Stop Making This Flooring Mistake!",
+      "Who Pays What in a Real Estate Deal? Buyer & Seller Guide",
+      "Luxury Vinyl vs Engineered Hard Wood",
+      "How Much Should You Offer on a Home? Tips for Buyers & Sellers",
+      "Outdated Home Trends to Avoid (and What to Do Instead)",
+      "Organize Your Home for a Faster Sale: Proven Tips & Tricks",
+      "Why These Floors Are a Big Mistake!",
+      "Why Being a Firm Agent Gets Better Results for Sellers",
+      "Stop! Don\u2019t Pick These Floors for Your Home!",
+      "Selling Your Home? Avoid These 20 Costly Pitfalls!",
+      "Audra Lambert's Live Stream #1:  Market Update, Design Trends, and Investing tips!  Live Q & A.",
+      "Kitchen Countertops 2025: Which Material is Best?",
+      "Home Maintenance Tools No One Talks About...But Should!",
+      "Real Estate Investing Secrets from Successful Investors",
+      "Don\u2019t Get Rid of These Items in Your Home \u2013 The Market Has Changed!",
+      "3 Big Mistakes Home Sellers Make and How to Avoid Them!",
+      "Why Your Home Looks Cheap (and How to Fix It Before Selling)!",
+      "Flooring Installation Tips: Don\u2019t Make These Common Mistakes",
+      "Home Prices Are DROPPING",
+      "Flooring Upgrade Tips That Pay Off When Selling!",
+      "Don't hire a knucklehead agent",
+      "Strange & Surprising Things That Happen When Selling a Home!",
+      "Must-Have Gadgets to Boost Your Home\u2019s Value Before Selling!",
+      "Feeling Discouraged in Real Estate? Watch This!",
+      "Why Are So Many Houses Still For Sale in 2025?",
+      "8 Home Upgrades & Purchases That Impact Your Lifestyle",
+      "Mistakes People Make When Moving to a Smaller Home",
+      "Why Are So Many People Struggling With Their Mortgage Payments?",
+      "Overpriced Homes & Price Cuts: The Truth About Selling in 2025!",
+      "How Some Real Estate Agents Take Advantage of You",
+      "Hidden Costs of Homeownership: Taxes & Insurance Explained!",
+      "Why Selling Your Home Feels So Hard Right Now",
+      "The way we BUY & SELL HOMES has Changed FOREVER! Audra Lambert Realtor 2025",
+      "Is Your House Toxic? Audra Lambert The Realtor Advice 2025",
+      "When to Say Yes to A Home Offer",
+      "Stop!  DON'T MAKE these Home Renovation Mistakes!!",
+      "Avoid These 15 Homes at ALL COSTS!",
+      "Top Lighting Mistakes That Make Your Home Look Dated (and How to Fix Them!)",
+      "Controversy in Real Estate!  Must Watch!",
+      "Home Buyers HATE This Expensive Backyard Feature",
+      "OLD vs NEW home make this decision in 17.30 minutes!",
+      "Why Home Sellers MUST Say YES to Every Showing in 2025?",
+      "Top Issues That Come Up During Home Inspections (Be Prepared!)",
+      "Selling a Home is a Pain in the REAR!!!",
+      "NOT SURE if you want to sell your house?  WATCH THIS FIRST!!",
+      "WHAT?  I Don't get this when SELLING A HOME!",
+      "NEVER!!  Stage  your house with this!",
+      "This is tough!  What its like selling your home in 2025",
+      "This $30 Device Could Save Your House From DISASTER",
+      "Never Put Your House on the market UNTIL.....",
+      "Do Realtors actually spend money on me?",
+      "25 Things I wish for in Real Estate in 2025!",
+      "I'm overpaying for homeowner's insurance!",
+      "Why Your Mail Forwarding NEEDS to Start TODAY!",
+      "25 things you need to get rid of when selling your home!",
+      "10 Genius Home Seller Hacks You NEED to Know! Audra Lambert 2025",
+      "This is Going to COST You BIG TIME!",
+      "What the Heck are home buyer's looking for?",
+      "Mover's guide when leaving your home!",
+      "Your  Agent  needs to know these 10 things!",
+      "25 Things YOU NEED to Know When Selling Your Home in 2025!",
+      "Cancel your real estate contract now!  Here's how!",
+      "How To Prepare Your Home To Sell",
+      "Don't Sell your House to an Investor!  Watch this First!!",
+      "Classic Homes  Sell Quicker!  Check this one out!",
+      "Top Interior Paint Choices of 2025!!",
+      "I am really not loving this! Home Sellers Tune in!  Audra Lambert",
+      "Don't Try TOO HARD when selling your home! Audra Lambert",
+      "Is Your Home Secure!?!?!",
+      "Don't make these Design Mistakes when Selling your home!",
+      "Feng Shui Home Design!",
+      "Be Careful What Realtor You Choose!!!",
+      "Luxury Home Design tips-top dollar for your home!",
+      "Lawsuit Shakeup!!",
+      "Do we like the 2025 Color of the Year? For Home sellers!",
+      "The Real Estate Market Is COLD!!!",
+      "WARNING! Don't hire a CHEAP REAL ESTATE AGENT!  Listen to this video!",
+      "SAVE MONEY: Home Upgrades Not Worth it Before Selling!",
+      "Want a SAFE Home Sale? Watch This Now!",
+      "ESSENTIAL REPAIRS to maximize your property value! Audra Lambert 2024",
+      "Is Carpet A Waste Of Money???",
+      "AVOID these OVERHYPED TRENDS when Selling your House!",
+      "Real Estate In A Freefall!!",
+      "\ud83d\udeab Is Your Backsplash Killing Your Home's Value? \ud83c\udfe0\u2728",
+      "I AM NOT HAVING FUN IN REAL ESTATE..right now!  Audra Lambert 2024.",
+      "The #1 Home Buyer Mistake \ud83c\udfe1\ud83d\udeab",
+      "\ud83d\udeab Top 3 Mistakes Home Sellers Make! \ud83d\udeab",
+      "Just say NO!!",
+      "Why These Flooring Choices Make Buyers Say WOW",
+      "Attention Seniors: Important Changes You Need To Know Before Selling Your House!",
+      "Why Home Buyers Are Paying Agent Commissions in 2024",
+      "Best Flooring Choices for Your Home: Expert Tips!",
+      "Is Your All-Cash Offer REALLY Cash? The Truth Revealed!",
+      "MY YOUTUBE STORY: Here is why I am doing this! Audra Lambert",
+      "Best Flooring to Boost Your Home's Value in 2024",
+      "JUST SAY NO!!  In Real Estate!.  Audra Lambert 2024",
+      "September 30, 2024",
+      "DON'T PICK THIS FLOORING IF YOU ARE SELLING YOUR HOME!",
+      "Protect Yourself: Navigating New Changes in Today\u2019s Housing Market! Audra Lambert 2024",
+      "How to Prepare Your Home for Sale in a Shifting Housing Market!  Audra Lambert 2024.",
+      "HOME SELLERS: ARE YOU SABOTAGING THE SALE OF YOUR HOME? Audra Lambert 2024.",
+      "Lousy Changes Shaking Up Real Estate Right now!  Audra Lambert",
+      "15 Reasons Buyers Walk Away (And How to Fix Them FAST)",
+      "Avoid These 10 Annoying Mistakes When Selling Your Home! Audra Lambert 2024",
+      "Upgraded Executive Home Tour - 31252 Via Del Verde, San Juan Capistrano, CA 92675",
+      "5 Brutal Realities of Selling a House Right Now",
+      "Things you should know about HOAs!  Condos Beware! Audra Lambert 2024",
+      "12 Tips for Selling your House in a Shifting Housing Market | Audra Lambert 2024!",
+      "Dove Canyon Luxurious Home Tour - 4 Piedmont, Trabuco Canyon, CA",
+      "YOU NEED TO KNOW THESE TERMS..in a real estate purchase contract!  Audra Lambert 2024",
+      "I HATE THIS...in Real Estate. BEWARE!  Learn from me!  Audra Lambert 2024",
+      "The Housing Market Right now!  You can find out yourself!  Audra Lambert 2024",
+      "Pets!!! When Buying or Selling a Home!  Audra Lambert 2024",
+      "Don't Get Fooled! 5 Red Flags in \"All-Cash\" Real Estate Offers",
+      "Want More Money for your home?  Do This!!  Audra Lambert 2024",
+      "10 Things You Need in your Home When Selling!",
+      "The Secret Weapon That Gets Your Offer ACCEPTED Every Time",
+      "The Honest Truth About Selling Your Home FSBO (Watch Before You List!)",
+      "Myth vs Reality in Real Estate.  Audra Lambert 2024",
+      "Best Real Estate Agent Hiring Tips for 2025!",
+      "Overwhelmed with Selling Your Home?  This will help!!  Audra Lambert 2024",
+      "Don't Cancel the Contract in Real Estate!  Audra Lambert 2024",
+      "New Listing! Ocean Views! San Juan Capistrano! Shorts",
+      "No Lockbox!  Beware!!  Audra Lambert 2024",
+      "How to Deny Unreasonable Repair Requests (And Save Your Deal)",
+      "Home Appraisal Did not come in!!  Audra Lambert 2024",
+      "Don't Forget! Prepping your Home for Spring! Audra Lambert 2024",
+      "National Association of Realtors Settlement Explained-Audra Lambert 2024",
+      "San Juan Capistrano Charming Home!  Orange County Real Estate",
+      "San Juan Capistrano Golf Course View Home, Single Story!",
+      "Protect Yourself in Real Estate! Audra Lambert 2024",
+      "How to Sell Your House Without Getting Sued (Legal Red Flags!)",
+      "Do I Really Need a Buyer's Agent? (The Brutal Truth)",
+      "Gorgeous Home in Orange County, CA. Panoramic Views!  Oversized lot!  Audra Lambert 2024.",
+      "More on Real Estate Commissions & Open Houses.  Audra Lambert 2024",
+      "How to Negotiate Real Estate Commission (Don't Overpay Your Agent!)",
+      "10 Things You Must REMOVE Before Your Next Open House",
+      "Should I buy my house from the Listing Agent? Dual Agency explained.",
+      "Top Seller Mistakes To Avoid when Hiring a Real Estate Agent! Audra Lambert 2024",
+      "Never say this to a Real Estate Agent!",
+      "DONT DO THIS at An OPEN HOUSE!",
+      "9 Things You Should NEVER Say to a General Contractor",
+      "Unveiling The Truth: Is Your Listing Agent Really Working For You?",
+      "The Top Secrets To Spotting The Perfect Home!",
+      "BEWARE: Subject to an Existing Mortgage!",
+      "Quick Contingency Removal!",
+      "Is Your Home Inspector Licensed And Experienced???",
+      "LISTING AGREEMENT WARNING!",
+      "Everything You Need to Check Before Your Home Inspection",
+      "Make your Home NICE FOR LESS \ud83d\udcb8",
+      "Questions To Ask Your Buyer's Agent: What's Their Commission Policy? 2024",
+      "HOUSEHOLD MUST HAVES!!",
+      "HOME INSPECTION REPORT???",
+      "Home Inspection Secrets: What to Look for When Buying or Selling a Home",
+      "Don't do these Upgrades in you're Selling.  #01909872 #audralambert  #realestate  #realtor",
+      "GIFT PURCHASE OVERLOAD!!!",
+      "Home Inspection Tips! #01909872  #audralambert #homeinspection #realestate #Shorts",
+      "Open House Tips! #01909872 #audralambert #realtor #openhouse #realestate",
+      "Helpful Tips for Realtors #01909872 #audralambert #realtor #realtorslife",
+      "Selling a House on a Budget--Preparation is Essential!! Real Estate 2023",
+      "Staging tips for Selling! #01909872  #audralambert #realtor #carealestate",
+      "3 Mistakes Home Sellers Make! #01909872 #audralambert #realtor #realestate #carealestate",
+      "Are Homeowner's Being Taken Advantage Of?  WATCH THIS VIDEO PLEASE!",
+      "3 Negotiations When Selling! #01909872 #realestate #realestatenegotiation",
+      "New Agents: Watch This! #01909872 #stalbertrealtor #property #sanlorenzorealtor",
+      "I Own My Home and Want to Buy Another! - Audra Lambert Real Estate 2023",
+      "Reasons You Should Not Buy A Home!",
+      "Selling Your Home During The Holidays? Here's What You Need To Know!",
+      "Is Selling a Mistake? Watch This Before You Sign Anything",
+      "How Much Does it cost to sell or buy a home? Real Estate 2023",
+      "Real Estate Tactics to Avoid!! BEWARE!!",
+      "Desirable Single Story Home in San Juan Capistrano",
+      "Truckin! This is what I do to calm down! #reels",
+      "How to Stage a Bedroom Like a 5-Star Luxury Hotel",
+      "Should You Move Out Before Selling Your House? (The Truth)",
+      "How to Buy (or Sell) Real Estate During the Holiday Slowdown",
+      "I wish I knew this as a new Real Estate Agent - Guide for new realtors 2023",
+      "San Juan Capistrano Home Tour-Campanilla #shorts",
+      "My New Listing in Palmia 55+ over community-Mission Viejo #shorts",
+      "The Photoshoot--Helpful tips #shorts",
+      "The #1 Mistake Lazy Listing Agents Make During Showings",
+      "How to Sell Your House Fast (Even With High Mortgage Rates)",
+      "The Speed-Selling Blueprint: How to Get Multiple Bids Fast",
+      "5 Photo Mistakes That Make Your Home Look Cheap Online",
+      "How to Stage Your House Like a Pro (Without Spending a Fortune)",
+      "The 3 HIDDEN Stages of Real Estate Negotiation",
+      "Should you buy a Home Warranty?  Pros and Cons!",
+      "San Juan Capistrano Home Tour--The Oaks Farms #shorts",
+      "Home Improvements worth it? Audra Lambert",
+      "15 Reasons Buyers Walk Away (And How to Fix Them FAST)",
+      "Do NOT Fix This Before Selling Your Home!",
+      "Sea Summit Home Tour-167 Via Galicia #shorts",
+      "7 Things to Ask a Realtor Before Selling Your House",
+      "Cancel and/or terminating Real Estate Purchase Contract? Back out of Offer?...California 2022",
+      "Real Estate: Dana Point House Tour #shorts",
+      "The $500k Tax Mistake Homeowners Make When Selling",
+      "Mistakes Sellers Make in Today's Housing Recession 2022",
+      "Before you Vacate a Property (Sellers and Renters) - Helpful Reminders and Tips",
+      "#2 NO NO at my Open House!",
+      "Real Estate: Open House NO NO's #shorts",
+      "\ud83c\udfe0 \"AS IS\" Condition-FULL Explanation - California Purchase Agreement",
+      "Attention all Horse Lovers! This property is for you! Bonsall, Ca! $$2.5m. Call me for more details!",
+      "\ud83c\udfe0 Open House Recommendation - My experience as a listing agent!",
+      "Real Estate: Renting or Leasing Properties? Real Estate Leases in California!",
+      "My experience as a realtor--tips for success!"
+    ],
+    "total_chunks": 1709,
+    "total_videos_on_channel": 330,
+    "last_sync_date": "2026-09-04 04:14:19 UTC",
+    "videos": [
+      {
+        "id": "TyuhYp2M0a0",
+        "title": "Want to know where all my money goes? Right here. \ud83d\ude02 #homeownership #homerenovation #realestate"
+      },
+      {
+        "id": "DY1tP7FtfRA",
+        "title": "HIDE These UGLY\u00a0Things\u00a0Before\u00a0Selling Your Home"
+      },
+      {
+        "id": "-qnl1CqGwd0",
+        "title": "NEVER put these handles in your kitchen. #hometips #interiordesign #homerenovation #homeinspo"
+      },
+      {
+        "id": "lGVKyNTlHE8",
+        "title": "The #1 rug mistake I see in homes\u2026 #interiordesign #homedecor #homestaging #designinspo #fyp\u30b7"
+      },
+      {
+        "id": "YWiJXBjiV04",
+        "title": "Why Your Closing Keeps Getting DELAYED\u00a0And Who's Responsible"
+      },
+      {
+        "id": "MH2G9Bx3lf4",
+        "title": "I owe every La-Z-Boy owner an apology. \ud83d\ude2d #realtorlife #homedecor #interiordesign #realestate #fyp\u30b7"
+      },
+      {
+        "id": "ko_Pqb_ZFq0",
+        "title": "Homeownership humbled me today. \ud83d\ude02 #homeownership #homerenovation #hometips #realtorlife #fyp\u30b7\u309aviral"
+      },
+      {
+        "id": "VcTmzjtlNuQ",
+        "title": "If you\u2019re remodeling your kitchen, ADD THIS! #homeremodel #kitcheninspo #kitchendesign #homedesign"
+      },
+      {
+        "id": "36FnGa0sej8",
+        "title": "My CPA told me to do this IMMEDIATELY! #financialtips #financial #realestate #fyp\u30b7"
+      },
+      {
+        "id": "t9klaS4FBhE",
+        "title": "Trends come and go, but THIS is timeless! #interiordesign #homedecor #luxuryinteriors #designinspo"
+      },
+      {
+        "id": "afOsyEnNZlM",
+        "title": "20 Things You Should NEVER Put in Your Dining Room When Selling!!"
+      },
+      {
+        "id": "BJxwRst-h1Q",
+        "title": "I would NEVER choose these floors again!!! #homerenovation #interiordesign #hometips #realestatetips"
+      },
+      {
+        "id": "2mFaQrzqXrw",
+        "title": "The flooring mistake I'm seeing in luxury homes! #realestatetips #homerenovation #interiordesign"
+      },
+      {
+        "id": "iPkpJYDgCJM",
+        "title": "Most homeowners get lighting completely wrong... \ud83d\udc40 #interiordesign #homeselling #realestatetips"
+      },
+      {
+        "id": "1QLoE82dc3c",
+        "title": "Your Lender Could Cost You the House!!!!"
+      },
+      {
+        "id": "lVvUO0skRHY",
+        "title": "YOUR SIGN TO GET RID OF IT! \ud83c\udfd3 #realestatetips #realestate #realestatelife #fyp\u30b7\u309aviral"
+      },
+      {
+        "id": "CNdzOOLKbsw",
+        "title": "12 Things That Could Go Wrong When Selling Your Home!!"
+      },
+      {
+        "id": "og2whlbajNc",
+        "title": "The TIME you list your home actually matters!! #realtorlife #hustle #realestatetips #realestate"
+      },
+      {
+        "id": "K-5I4iFaWI0",
+        "title": "I wish someone had told me this before I remodeled! #homerenovation #homedesign #homedesigntips"
+      },
+      {
+        "id": "FAK0m9EQ9Yg",
+        "title": "Don't remodel your Tuscan home just yet... #interiordesign #homedesign #modernorganic #homedecor"
+      },
+      {
+        "id": "IJvdlvVg4YQ",
+        "title": "\ud83d\ude02 Behind every perfectly staged home is a Realtor who comes home to\u2026 this. #realtorlife #realtor"
+      },
+      {
+        "id": "kluR1NLw5zE",
+        "title": "Never Install This In Your Family Room or Living Room When Selling Your Home!!!!"
+      },
+      {
+        "id": "EHjkgadtNP4",
+        "title": "Your garage could be costing you thousands\u2026 \ud83d\udc40 #realestatetips #realestate #homemaintenance #fyp\u30b7"
+      },
+      {
+        "id": "8-VO1F9S2n4",
+        "title": "\ud83d\udea7 Here\u2019s something most sellers never think about\u2026  #realtorproblems #realtorlife #realestatetips"
+      },
+      {
+        "id": "ajTh1Fp6PP4",
+        "title": "The Tuscan era had its moment\u2026 #homedecor #homedesign #modernorganic #interiordesign #fyp\u30b7\u309aviral"
+      },
+      {
+        "id": "ng7ytOqMwTU",
+        "title": "Even the home inspector missed this. \ud83d\ude33 #hometips #homerenovation #realestatetips #fyp\u30b7\u309aviral"
+      },
+      {
+        "id": "Xv4l7iMU4o4",
+        "title": "\ud83d\udea8 Your security sign could be helping burglars... #homesafety #homesecurity #homesafetytips #fyp\u30b7"
+      },
+      {
+        "id": "X9sGXpoL_Q8",
+        "title": "We LOST These Home Features and I Miss Them So Much"
+      },
+      {
+        "id": "PuNGfGxZ3WA",
+        "title": "HOMEOWNERS PAY ATTENTION \ud83d\udea8 #homeownership #homeproblems #homemaintenance #fyp\u30b7"
+      },
+      {
+        "id": "jIUlMD3-Dsg",
+        "title": "Kitchen Mistakes Before Selling: 18 Things NOT to Install"
+      },
+      {
+        "id": "r5BrZOSFWik",
+        "title": "Off market isn\u2019t always the best choice!! #realestate #realestatetips #realestateexpert #tipsntricks"
+      },
+      {
+        "id": "8endW93w0sE",
+        "title": "Did I get plastic surgery??? #aginggracefully #agingwell #aging #facelift #facelifts #fyp\u30b7\u309aviral"
+      },
+      {
+        "id": "Cvi40zihe70",
+        "title": "This is why housing predictions are often misunderstood \ud83d\udc47 #housingmarket #realestate #fypyoutube"
+      },
+      {
+        "id": "eGerPF-5xlM",
+        "title": "Bathroom Mistakes Before Selling: 10 Things NOT to Install"
+      },
+      {
+        "id": "7qM9N0mrYYY",
+        "title": "\ud83c\udfe1 \u201cIs the housing market going to crash?\u201d #housingmarket2026 #realestate  #realestateeducation"
+      },
+      {
+        "id": "K-RZ-iv1YhA",
+        "title": "Housing Market Update What Buyers and Sellers Need to Know RIGHT NOW!!"
+      },
+      {
+        "id": "RBkxvX8RNec",
+        "title": "10 Things Most HOME SELLERS and REAL ESTATE AGENTS Don\u2019t Know right Now!!!"
+      },
+      {
+        "id": "BUyiV80KE_8",
+        "title": "\ud83d\ude02 Real estate tip nobody talks about\u2026#funnyshorts #realestatetips #realtorlife #fypyoutube #fyp"
+      },
+      {
+        "id": "x8_k0lOtww0",
+        "title": "the pressure of selling homes in your own neighborhood \ud83d\udc40 #realtorlife #realtorhumor #fypyoutube"
+      },
+      {
+        "id": "w66HFb_Umhs",
+        "title": "Why Buyers Are Walking Out of Your Home!! (Before They Even Make an Offer)"
+      },
+      {
+        "id": "osQSVrzYJnA",
+        "title": "How to Interview a Real Estate Agent | Red Flags & Must-Ask Questions"
+      },
+      {
+        "id": "az8BWoCMkuQ",
+        "title": "Home Insurance Secrets Insurance Companies Do Not Tell You!!!"
+      },
+      {
+        "id": "FViZNScozO0",
+        "title": "10 Home Seller MISTAKES That Can Lead to Lawsuits!!"
+      },
+      {
+        "id": "31MZ3HZzIss",
+        "title": "\u2728 THIS is why presentation matters \ud83d\udc40 #realestate #realestateadvice #realestateeducation #fypyoutube"
+      },
+      {
+        "id": "kfj0uRXsyt4",
+        "title": "What Makes Buyers INSTANTLY WANT Your House!!"
+      },
+      {
+        "id": "XOEDlcwUW84",
+        "title": "NEVER EVER  agree to this when selling your house!!"
+      },
+      {
+        "id": "J-m9Oa4BGG8",
+        "title": "Home Seller Mistakes Buyers Always Notice | Don't Do These Before Listing"
+      },
+      {
+        "id": "d8NleDB2AH0",
+        "title": "The Most HATED Exterior Home Trends Right Now!!"
+      },
+      {
+        "id": "TkjVhJVriXc",
+        "title": "Most HATED Home Upgrades You Should Avoid Before Selling!"
+      },
+      {
+        "id": "gCoLRmDSuLY",
+        "title": "Red Flags When Buying a House | What Sellers Are Hiding From You"
+      },
+      {
+        "id": "M8NmyOSufk4",
+        "title": "THE BEST WAY to sell your house starts with...(this will surprise you!)"
+      },
+      {
+        "id": "2Puu_xqysag",
+        "title": "Top 10 Repairs to Make Before Selling Your House That Could SAVE Your Deal!!!"
+      },
+      {
+        "id": "MX85lMtmxGY",
+        "title": "Smart Home Investing Secrets Everyone Should Know!!"
+      },
+      {
+        "id": "Ge2xAzgvxB4",
+        "title": "What to Know Before Selling Your Home: 10 Listing Agent Secrets"
+      },
+      {
+        "id": "ZBTHnomI_fg",
+        "title": "Top 10 Ways Home Sellers Lose Thousands and How to Avoid Costly Mistakes!!"
+      },
+      {
+        "id": "ZaG5NZ7XBwY",
+        "title": "Selling A Home In 2026??"
+      },
+      {
+        "id": "CnknesJoK9k",
+        "title": "The Top 10 Upgrades That Increase Your Home Value"
+      },
+      {
+        "id": "1qsSwDtfFFk",
+        "title": "New Appraisal Challenges Could Impact Your Home Value!!"
+      },
+      {
+        "id": "xnCfzKemKmo",
+        "title": "My favorite book-Never Split the Difference"
+      },
+      {
+        "id": "A83cRoDYEmY",
+        "title": "Home Features That Decrease The Value Of Your Home!!"
+      },
+      {
+        "id": "FAtw0cRcI1Y",
+        "title": "The 10 \"Offer Killers\" Buyers Won't Tell You To Your Face"
+      },
+      {
+        "id": "bprL_nAMwcs",
+        "title": "The Next 6 Months in Real Estate: What You NEED to Know"
+      },
+      {
+        "id": "oHRvxzKsjZw",
+        "title": "DON'T Buy This For Your Home If You're Thinking Of Selling!!!"
+      },
+      {
+        "id": "Wzjhzx3g_Kk",
+        "title": "LiveStream #4:  EVERYTHING YOU NEED TO KNOW about BUGS/TERMITES"
+      },
+      {
+        "id": "V81IrGu9Y48",
+        "title": "Top Best Kitchen Designs!!"
+      },
+      {
+        "id": "hkapLatTag8",
+        "title": "What to do after losing a SPOUSE-Real Estate"
+      },
+      {
+        "id": "rZjupUKOmMY",
+        "title": "Selling a home in 2026 is different: 10 things you must know!"
+      },
+      {
+        "id": "6jmT0vSdttM",
+        "title": "NEVER Stage Your Home Like This!!"
+      },
+      {
+        "id": "MnbloiOs9_0",
+        "title": "Home Selling Tips 2026: What to Remove Before You List"
+      },
+      {
+        "id": "UMOHq1caF74",
+        "title": "What I Wish Every Home Seller And Buyer Knew Before The New Year!!!"
+      },
+      {
+        "id": "w7S74UdEHbE",
+        "title": "MUST Have Gifts Every Home Seller Should Have!!!"
+      },
+      {
+        "id": "6FrwDLcVL6o",
+        "title": "Housing Forecast 2026 with Steven Thomas and Audra Lambert"
+      },
+      {
+        "id": "9xaSi_8LRHE",
+        "title": "I NEVER Want to Hear This From Home Sellers!!"
+      },
+      {
+        "id": "orBiB-itdQk",
+        "title": "The Biggest Mistakes Real Estate Agents Make With Clients!!"
+      },
+      {
+        "id": "7e1PiEmGxnI",
+        "title": "Game-Changing Kitchen Design Ideas for 2026!!"
+      },
+      {
+        "id": "eCGtrZ2Ca6U",
+        "title": "What PAINT should I pick in 2026?"
+      },
+      {
+        "id": "XydsMxbP9So",
+        "title": "\ud83c\udf89 The Wait Is Over! 100K Subscriber Giveaway Winners LIVE \ud83c\udf89 Interior Designer Tips"
+      },
+      {
+        "id": "GcigMYNWGQ0",
+        "title": "What NOT to Buy at Home Depot Before Selling Your Home!!"
+      },
+      {
+        "id": "suQDosMvzAU",
+        "title": "Win When the Market Is Against You: Home Selling Tips"
+      },
+      {
+        "id": "WzN_CAVWhk4",
+        "title": "Easy & Affordable Home Styling Ideas for Instant Results"
+      },
+      {
+        "id": "l2STl0qQ4zU",
+        "title": "Who Pays What in a Real Estate Deal? Buyer & Seller Guide"
+      },
+      {
+        "id": "XGs7trydSLk",
+        "title": "How Much Should You Offer on a Home? Tips for Buyers & Sellers"
+      },
+      {
+        "id": "6nDZ2AXlnv4",
+        "title": "Organize Your Home for a Faster Sale: Proven Tips & Tricks"
+      },
+      {
+        "id": "IZaG4dnG-GI",
+        "title": "Why Being a Firm Agent Gets Better Results for Sellers"
+      },
+      {
+        "id": "2NhTHxtefPM",
+        "title": "Selling Your Home? Avoid These 20 Costly Pitfalls!"
+      },
+      {
+        "id": "4eYtWqTQyag",
+        "title": "Audra Lambert's Live Stream #1:  Market Update, Design Trends, and Investing tips!  Live Q & A."
+      },
+      {
+        "id": "btma6vNTcSg",
+        "title": "Kitchen Countertops 2025: Which Material is Best?"
+      },
+      {
+        "id": "M4upv75N9JM",
+        "title": "Real Estate Investing Secrets from Successful Investors"
+      },
+      {
+        "id": "yqDcC1nh1kc",
+        "title": "Don\u2019t Get Rid of These Items in Your Home \u2013 The Market Has Changed!"
+      },
+      {
+        "id": "XhTZUQ6OizA",
+        "title": "Why Your Home Looks Cheap (and How to Fix It Before Selling)!"
+      },
+      {
+        "id": "wZC3gsH-inE",
+        "title": "Flooring Installation Tips: Don\u2019t Make These Common Mistakes"
+      },
+      {
+        "id": "ry-3FKFsxyg",
+        "title": "Flooring Upgrade Tips That Pay Off When Selling!"
+      },
+      {
+        "id": "OejQ1d3qq7g",
+        "title": "Strange & Surprising Things That Happen When Selling a Home!"
+      },
+      {
+        "id": "SspSRm0KLsU",
+        "title": "Must-Have Gadgets to Boost Your Home\u2019s Value Before Selling!"
+      },
+      {
+        "id": "2Q16hYJX-OM",
+        "title": "Feeling Discouraged in Real Estate? Watch This!"
+      },
+      {
+        "id": "tROEQm2IH3M",
+        "title": "8 Home Upgrades & Purchases That Impact Your Lifestyle"
+      },
+      {
+        "id": "YG8x_1itfRM",
+        "title": "Mistakes People Make When Moving to a Smaller Home"
+      },
+      {
+        "id": "gojPOGyBAcI",
+        "title": "Overpriced Homes & Price Cuts: The Truth About Selling in 2025!"
+      },
+      {
+        "id": "BGACWlwmESc",
+        "title": "How Some Real Estate Agents Take Advantage of You"
+      },
+      {
+        "id": "ALW9FoGXWvY",
+        "title": "Hidden Costs of Homeownership: Taxes & Insurance Explained!"
+      },
+      {
+        "id": "1BsaDtQnPfE",
+        "title": "Why Selling Your Home Feels So Hard Right Now"
+      },
+      {
+        "id": "E2YlPkJPPjY",
+        "title": "The way we BUY & SELL HOMES has Changed FOREVER! Audra Lambert Realtor 2025"
+      },
+      {
+        "id": "0YoBptCEBQs",
+        "title": "Is Your House Toxic? Audra Lambert The Realtor Advice 2025"
+      },
+      {
+        "id": "LcD168OtRTI",
+        "title": "Stop!  DON'T MAKE these Home Renovation Mistakes!!"
+      },
+      {
+        "id": "qaewyhVsRSw",
+        "title": "Avoid These 15 Homes at ALL COSTS!"
+      },
+      {
+        "id": "ZmYxQKoFUF8",
+        "title": "Top Lighting Mistakes That Make Your Home Look Dated (and How to Fix Them!)"
+      },
+      {
+        "id": "PuDzUHgdoug",
+        "title": "Controversy in Real Estate!  Must Watch!"
+      },
+      {
+        "id": "zUvP8BPQXaw",
+        "title": "OLD vs NEW home make this decision in 17.30 minutes!"
+      },
+      {
+        "id": "e1j00vnYPow",
+        "title": "Top Issues That Come Up During Home Inspections (Be Prepared!)"
+      },
+      {
+        "id": "lzuB5DjeUdc",
+        "title": "Selling a Home is a Pain in the REAR!!!"
+      },
+      {
+        "id": "UTOAn5q6YY8",
+        "title": "NOT SURE if you want to sell your house?  WATCH THIS FIRST!!"
+      },
+      {
+        "id": "MoR9pc-b7h4",
+        "title": "WHAT?  I Don't get this when SELLING A HOME!"
+      },
+      {
+        "id": "Cu9L0-_jnv0",
+        "title": "NEVER!!  Stage  your house with this!"
+      },
+      {
+        "id": "JDXPzrD6McY",
+        "title": "This is tough!  What its like selling your home in 2025"
+      },
+      {
+        "id": "9KVqkmT8CgQ",
+        "title": "Never Put Your House on the market UNTIL....."
+      },
+      {
+        "id": "N7apRR92Yv8",
+        "title": "Do Realtors actually spend money on me?"
+      },
+      {
+        "id": "ev2_s7CmPkk",
+        "title": "25 Things I wish for in Real Estate in 2025!"
+      },
+      {
+        "id": "eX1hzfDj5Ak",
+        "title": "25 things you need to get rid of when selling your home!"
+      },
+      {
+        "id": "m_RSPfjb_1U",
+        "title": "10 Genius Home Seller Hacks You NEED to Know! Audra Lambert 2025"
+      },
+      {
+        "id": "yuSqvkSiEhM",
+        "title": "What the Heck are home buyer's looking for?"
+      },
+      {
+        "id": "LDkBAXI1O9w",
+        "title": "Mover's guide when leaving your home!"
+      },
+      {
+        "id": "I8s5OenKUXc",
+        "title": "Your  Agent  needs to know these 10 things!"
+      },
+      {
+        "id": "Y3sJ5IDTjKI",
+        "title": "25 Things YOU NEED to Know When Selling Your Home in 2025!"
+      },
+      {
+        "id": "ZtgD00_jxO4",
+        "title": "Cancel your real estate contract now!  Here's how!"
+      },
+      {
+        "id": "aJdXTbEnGTA",
+        "title": "Don't Sell your House to an Investor!  Watch this First!!"
+      },
+      {
+        "id": "MtnyFhrOT80",
+        "title": "Classic Homes  Sell Quicker!  Check this one out!"
+      },
+      {
+        "id": "hx0r71dglwk",
+        "title": "I am really not loving this! Home Sellers Tune in!  Audra Lambert"
+      },
+      {
+        "id": "g2uMCUhdoe4",
+        "title": "Don't Try TOO HARD when selling your home! Audra Lambert"
+      },
+      {
+        "id": "_MMFbSAq43I",
+        "title": "Don't make these Design Mistakes when Selling your home!"
+      },
+      {
+        "id": "iBSLoiVSHw8",
+        "title": "Luxury Home Design tips-top dollar for your home!"
+      },
+      {
+        "id": "crL0aVgNRCA",
+        "title": "Do we like the 2025 Color of the Year? For Home sellers!"
+      },
+      {
+        "id": "K4MP2h-On80",
+        "title": "WARNING! Don't hire a CHEAP REAL ESTATE AGENT!  Listen to this video!"
+      },
+      {
+        "id": "dC6GXff--mM",
+        "title": "SAVE MONEY: Home Upgrades Not Worth it Before Selling!"
+      },
+      {
+        "id": "4gAYw3Hqrdc",
+        "title": "ESSENTIAL REPAIRS to maximize your property value! Audra Lambert 2024"
+      },
+      {
+        "id": "DlyWJ46zAhw",
+        "title": "AVOID these OVERHYPED TRENDS when Selling your House!"
+      },
+      {
+        "id": "lDuJ2uPpFHc",
+        "title": "I AM NOT HAVING FUN IN REAL ESTATE..right now!  Audra Lambert 2024."
+      },
+      {
+        "id": "5rAyn0lQlyQ",
+        "title": "Attention Seniors: Important Changes You Need To Know Before Selling Your House!"
+      },
+      {
+        "id": "IO-iFIV-W9M",
+        "title": "MY YOUTUBE STORY: Here is why I am doing this! Audra Lambert"
+      },
+      {
+        "id": "ddz1dWh6oUw",
+        "title": "JUST SAY NO!!  In Real Estate!.  Audra Lambert 2024"
+      },
+      {
+        "id": "HxOykrsvGT0",
+        "title": "DON'T PICK THIS FLOORING IF YOU ARE SELLING YOUR HOME!"
+      },
+      {
+        "id": "-x72PE2TXHg",
+        "title": "Protect Yourself: Navigating New Changes in Today\u2019s Housing Market! Audra Lambert 2024"
+      },
+      {
+        "id": "IEr2NsR_Da8",
+        "title": "How to Prepare Your Home for Sale in a Shifting Housing Market!  Audra Lambert 2024."
+      },
+      {
+        "id": "J9oAheaetyw",
+        "title": "HOME SELLERS: ARE YOU SABOTAGING THE SALE OF YOUR HOME? Audra Lambert 2024."
+      },
+      {
+        "id": "RBlfCHu_3Ps",
+        "title": "Lousy Changes Shaking Up Real Estate Right now!  Audra Lambert"
+      },
+      {
+        "id": "kiyBpAx-E5k",
+        "title": "15 Reasons Buyers Walk Away (And How to Fix Them FAST)"
+      },
+      {
+        "id": "01V9mHgGInA",
+        "title": "Avoid These 10 Annoying Mistakes When Selling Your Home! Audra Lambert 2024"
+      },
+      {
+        "id": "d4JHgBx2XiE",
+        "title": "5 Brutal Realities of Selling a House Right Now"
+      },
+      {
+        "id": "H2946TrEcFI",
+        "title": "Things you should know about HOAs!  Condos Beware! Audra Lambert 2024"
+      },
+      {
+        "id": "ZDBFp5AmBBE",
+        "title": "12 Tips for Selling your House in a Shifting Housing Market | Audra Lambert 2024!"
+      },
+      {
+        "id": "ihx9eO0sAr0",
+        "title": "YOU NEED TO KNOW THESE TERMS..in a real estate purchase contract!  Audra Lambert 2024"
+      },
+      {
+        "id": "l5g9_WKLdqA",
+        "title": "I HATE THIS...in Real Estate. BEWARE!  Learn from me!  Audra Lambert 2024"
+      },
+      {
+        "id": "ZfJQR1gG4vg",
+        "title": "The Housing Market Right now!  You can find out yourself!  Audra Lambert 2024"
+      },
+      {
+        "id": "1rxkKdhUcdU",
+        "title": "Pets!!! When Buying or Selling a Home!  Audra Lambert 2024"
+      },
+      {
+        "id": "HZyMaZ111JU",
+        "title": "Don't Get Fooled! 5 Red Flags in \"All-Cash\" Real Estate Offers"
+      },
+      {
+        "id": "TEvGj4il2sM",
+        "title": "Want More Money for your home?  Do This!!  Audra Lambert 2024"
+      },
+      {
+        "id": "DsjdCcKVNg0",
+        "title": "10 Things You Need in your Home When Selling!"
+      },
+      {
+        "id": "aHbzSYMe9kI",
+        "title": "The Secret Weapon That Gets Your Offer ACCEPTED Every Time"
+      },
+      {
+        "id": "S_k3O9TGAyc",
+        "title": "The Honest Truth About Selling Your Home FSBO (Watch Before You List!)"
+      },
+      {
+        "id": "YeKQCBdh4UM",
+        "title": "Myth vs Reality in Real Estate.  Audra Lambert 2024"
+      },
+      {
+        "id": "93RCGI3SYis",
+        "title": "Best Real Estate Agent Hiring Tips for 2025!"
+      },
+      {
+        "id": "z4sVGutGj20",
+        "title": "Overwhelmed with Selling Your Home?  This will help!!  Audra Lambert 2024"
+      },
+      {
+        "id": "bslhdXrpJHo",
+        "title": "Don't Cancel the Contract in Real Estate!  Audra Lambert 2024"
+      },
+      {
+        "id": "CIbos7ew4RE",
+        "title": "No Lockbox!  Beware!!  Audra Lambert 2024"
+      },
+      {
+        "id": "-_Hxi0k1W6Q",
+        "title": "How to Deny Unreasonable Repair Requests (And Save Your Deal)"
+      },
+      {
+        "id": "H6s7ClkSdb4",
+        "title": "Home Appraisal Did not come in!!  Audra Lambert 2024"
+      },
+      {
+        "id": "M8yU6GHdOsg",
+        "title": "Don't Forget! Prepping your Home for Spring! Audra Lambert 2024"
+      },
+      {
+        "id": "nNQlXQEjWOg",
+        "title": "National Association of Realtors Settlement Explained-Audra Lambert 2024"
+      },
+      {
+        "id": "UBt-QIx7IDA",
+        "title": "Protect Yourself in Real Estate! Audra Lambert 2024"
+      },
+      {
+        "id": "C-Mr6cQWcVg",
+        "title": "How to Sell Your House Without Getting Sued (Legal Red Flags!)"
+      },
+      {
+        "id": "VNLtxpHGNT8",
+        "title": "Do I Really Need a Buyer's Agent? (The Brutal Truth)"
+      },
+      {
+        "id": "CvCTHPGaObM",
+        "title": "More on Real Estate Commissions & Open Houses.  Audra Lambert 2024"
+      },
+      {
+        "id": "1Mbd1FsVTZs",
+        "title": "How to Negotiate Real Estate Commission (Don't Overpay Your Agent!)"
+      },
+      {
+        "id": "F_xM33BpuaA",
+        "title": "10 Things You Must REMOVE Before Your Next Open House"
+      },
+      {
+        "id": "_ASlo5X4lAk",
+        "title": "Should I buy my house from the Listing Agent? Dual Agency explained."
+      },
+      {
+        "id": "YSPC5lFWUPI",
+        "title": "The #1 Lie Real Estate Agents Tell Sellers to Get the Listing"
+      },
+      {
+        "id": "YPFgmReTAC8",
+        "title": "Never say this to a Real Estate Agent!"
+      },
+      {
+        "id": "QBn1hhdL8x4",
+        "title": "9 Things You Should NEVER Say to a General Contractor"
+      },
+      {
+        "id": "id5T21m0m9w",
+        "title": "Don't Fall For This \"Creative Financing\" Trap! (Subject-To Explained)"
+      },
+      {
+        "id": "x30AVw2jpIE",
+        "title": "Everything You Need to Check Before Your Home Inspection"
+      },
+      {
+        "id": "STAcVUUq4Bc",
+        "title": "How to Interview a Buyer\u2019s Agent (And Avoid Out-of-Pocket Fees)"
+      },
+      {
+        "id": "L2bm8VIOgWE",
+        "title": "Home Inspection Secrets: What to Look for When Buying or Selling a Home"
+      },
+      {
+        "id": "s9QfR1hbZ7c",
+        "title": "Selling on a Budget? Do THESE 5 Cheap Prep Hacks First"
+      },
+      {
+        "id": "FpBNC79EoVs",
+        "title": "The Mortgage Trap: How Predatory Investors Steal Equity"
+      },
+      {
+        "id": "E1kWiKqGFHk",
+        "title": "How to Buy Your Next House When You Already Own One"
+      },
+      {
+        "id": "9vOoRegFjpQ",
+        "title": "Why You SHOULDN'T Buy a House Right Now (The Brutal Truth)"
+      },
+      {
+        "id": "HQN-Eblmm6c",
+        "title": "The Holiday Selling Secret: Less Competition, Serious Cash Buyers"
+      },
+      {
+        "id": "Ewp87cQny_o",
+        "title": "Is Selling a Mistake? Watch This Before You Sign Anything"
+      },
+      {
+        "id": "QcRtS7spZpc",
+        "title": "How Much Does It ACTUALLY Cost to Sell a House? (Closing Sheet Breakdown)"
+      },
+      {
+        "id": "BvMIa1-Aids",
+        "title": "Real Estate Tactics to Avoid!! BEWARE!!"
+      },
+      {
+        "id": "h486_M2uy9Y",
+        "title": "How to Stage a Bedroom Like a 5-Star Luxury Hotel"
+      },
+      {
+        "id": "UqZuZ6xM9Q8",
+        "title": "Should You Move Out Before Selling Your House? (The Truth)"
+      },
+      {
+        "id": "Ov6V-RozFJI",
+        "title": "How to Buy (or Sell) Real Estate During the Holiday Slowdown"
+      },
+      {
+        "id": "CfBcp7nhLcw",
+        "title": "I wish I knew this as a new Real Estate Agent - Guide for new realtors 2023"
+      },
+      {
+        "id": "ovSFHkxEwEA",
+        "title": "The #1 Mistake Lazy Listing Agents Make During Showings"
+      },
+      {
+        "id": "S9kkPIGuh1E",
+        "title": "How to Sell Your House Fast (Even With High Mortgage Rates)"
+      },
+      {
+        "id": "pySXH7pwGR0",
+        "title": "The Speed-Selling Blueprint: How to Get Multiple Bids Fast"
+      },
+      {
+        "id": "ovmxzuhaMoo",
+        "title": "5 Photo Mistakes That Make Your Home Look Cheap Online"
+      },
+      {
+        "id": "LCQCJ5uRBKI",
+        "title": "How to Stage Your House Like a Pro (Without Spending a Fortune)"
+      },
+      {
+        "id": "G1_-rqGIr1o",
+        "title": "The 3 HIDDEN Stages of Real Estate Negotiation"
+      },
+      {
+        "id": "JaTEFvWsARo",
+        "title": "Should you buy a Home Warranty?  Pros and Cons!"
+      },
+      {
+        "id": "9VaRYvCATvw",
+        "title": "Home Improvements worth it? Audra Lambert"
+      },
+      {
+        "id": "641_NnMK48c",
+        "title": "15 Reasons Buyers Walk Away (And How to Fix Them FAST)"
+      },
+      {
+        "id": "vnKGmKm574s",
+        "title": "Do NOT Fix This Before Selling Your Home!"
+      },
+      {
+        "id": "bQdpKgfKpe0",
+        "title": "7 Things to Ask a Realtor Before Selling Your House"
+      },
+      {
+        "id": "IETYIJlI3ZE",
+        "title": "Cancel and/or terminating Real Estate Purchase Contract? Back out of Offer?...California 2022"
+      },
+      {
+        "id": "-Nt3jw7u3Kw",
+        "title": "The $500k Tax Mistake Homeowners Make When Selling"
+      },
+      {
+        "id": "I54UZuC_C80",
+        "title": "Mistakes Sellers Make in Today's Housing Recession 2022"
+      },
+      {
+        "id": "Xkm-8njkLrU",
+        "title": "Before you Vacate a Property (Sellers and Renters) - Helpful Reminders and Tips"
+      },
+      {
+        "id": "5aNaabkizTU",
+        "title": "\ud83c\udfe0 \"AS IS\" Condition-FULL Explanation - California Purchase Agreement"
+      },
+      {
+        "id": "aJ6b1rVmEjg",
+        "title": "\ud83c\udfe0 Open House Recommendation - My experience as a listing agent!"
+      },
+      {
+        "id": "PmosjWwmX5k",
+        "title": "Real Estate: Renting or Leasing Properties? Real Estate Leases in California!"
+      },
+      {
+        "id": "cgjun_Qx0_Q",
+        "title": "My experience as a realtor--tips for success!"
+      }
+    ]
+  }
+}
