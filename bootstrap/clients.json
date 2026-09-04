@@ -48,6 +48,30 @@
         "What content gaps could I fill based on Orlando topics I haven't covered?",
         "Pull my most quotable one-liners about the Orlando market."
       ]
+    },
+    "audra-lambert": {
+      "channel_name": "Audra Lambert",
+      "channel_handle": "@AudraLambert",
+      "channel_url": "https://www.youtube.com/@AudraLambert",
+      "namespace": "audra-lambert",
+      "creator_name": "Audra Lambert",
+      "active": true,
+      "audience_suggestions": [
+        "What should I fix before selling my home?",
+        "What are Audra's biggest home staging mistakes to avoid?",
+        "What does Audra say about pricing a home to sell?",
+        "Which remodeling projects are worth doing before listing?",
+        "What should I know about buying in Orange County?",
+        "What does Audra recommend for preparing a luxury home for sale?"
+      ],
+      "creator_suggestions": [
+        "What selling advice do I repeat most often?",
+        "What are my most quotable lines about home preparation?",
+        "Which topics have I covered but not revisited recently?",
+        "What have I said about working with luxury sellers?",
+        "What themes come up most in my remodeling videos?",
+        "What content gaps could I fill based on what sellers ask?"
+      ]
     }
   }
 }
