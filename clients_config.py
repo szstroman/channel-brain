@@ -387,12 +387,14 @@ def get_client(client_id: Optional[str]) -> Tuple[str, Dict[str, Any], str]:
         "ok"        — client found and active
         "inactive"  — client (requested OR default) exists but active=false;
                       UI should show inactive page rather than loading the index.
-                      Applies whether the visitor asked for a specific client or
-                      no client — if the resolved client is inactive, we say so.
-        "fallback"  — requested client not found; resolved to default (which IS active)
+        "not_found" — a specific client was requested but doesn't exist.
+                      client_data is {} — callers MUST NOT serve the default
+                      here: a personalized link (?client=audra-lambert) must
+                      never silently render a different creator's channel.
+                      That wrong-creator swap is the single most
+                      trust-damaging failure for outreach demos.
         "default"   — no client requested; using default (which IS active)
-    The status ALWAYS reflects the actual state of the returned client, so the
-    caller can trust that status="ok"/"default"/"fallback" implies active=True.
+    For "ok"/"default", the caller can trust the returned client is active.
     """
     config = load_clients_config()
     default_id = config["default_client"]
@@ -406,9 +408,9 @@ def get_client(client_id: Optional[str]) -> Tuple[str, Dict[str, Any], str]:
         resolved_id = default_id
         base_status = "default"
     elif sanitized not in clients:
-        # Unknown request — fall back to default
-        resolved_id = default_id
-        base_status = "fallback"
+        # Explicit request for a client that doesn't exist. Do NOT fall back —
+        # return not_found and let the API layer turn this into a 404.
+        return sanitized, {}, "not_found"
     else:
         resolved_id = sanitized
         base_status = "ok"
@@ -416,7 +418,7 @@ def get_client(client_id: Optional[str]) -> Tuple[str, Dict[str, Any], str]:
     client_data = clients[resolved_id]
 
     # If the resolved client is inactive, status is always "inactive"
-    # (regardless of whether the request was explicit, fallback, or default)
+    # (regardless of whether the request was explicit or default)
     if not client_data.get("active", True):
         return resolved_id, client_data, "inactive"
 

@@ -238,6 +238,10 @@ async def _stream_answer(req: QueryStreamRequest) -> AsyncIterator[str]:
         yield _sse_event("error", {"message": "Client resolution failed"})
         return
 
+    if status == "not_found":
+        yield _sse_event("error", {"message": "Unknown client"})
+        return
+
     if status == "inactive":
         yield _sse_event("error", {"message": "This client is no longer active"})
         return
@@ -424,6 +428,9 @@ async def get_client_config(client_id: str):
         resolved_id, client_data, status = get_client(client_id)
     except Exception:
         raise HTTPException(status_code=500, detail="Client resolution failed")
+
+    if status == "not_found":
+        raise HTTPException(status_code=404, detail="Client not found")
 
     if status == "inactive":
         raise HTTPException(status_code=410, detail="This client is no longer available")
