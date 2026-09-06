@@ -72,6 +72,30 @@
         "What themes come up most in my remodeling videos?",
         "What content gaps could I fill based on what sellers ask?"
       ]
+    },
+    "levi-lascsak": {
+      "channel_name": "Living in Dallas Texas",
+      "channel_handle": "@LIVINGINDALLAS",
+      "channel_url": "https://www.youtube.com/@LIVINGINDALLAS",
+      "namespace": "levi-lascsak",
+      "creator_name": "Levi Lascsak",
+      "active": true,
+      "audience_suggestions": [
+        "What should I know before moving to Dallas?",
+        "Which Dallas suburbs are best for families?",
+        "What does it cost to live in Dallas compared to other cities?",
+        "What are the pros and cons of new construction in DFW?",
+        "What does the team say about the best Dallas neighborhoods?",
+        "What should out-of-state buyers know about Texas?"
+      ],
+      "creator_suggestions": [
+        "What relocation advice do we repeat most often?",
+        "What themes come up most in our Dallas videos?",
+        "Which suburbs have we covered most \u2014 and least?",
+        "What are our most quotable lines about moving to Dallas?",
+        "What questions do out-of-state buyers ask that we answer repeatedly?",
+        "What content gaps could we fill based on what we've covered?"
+      ]
     }
   }
 }

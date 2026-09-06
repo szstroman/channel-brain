@@ -1,0 +1,1728 @@
+{
+  "pinecone_config": {
+    "stats": {
+      "channel_name": "LIVING IN DALLAS TEXAS",
+      "channel_id": "UCYciB9Xe2tbFVlPMF6IwNCA",
+      "namespace": "levi-lascsak",
+      "index_name": "channel-brain-prod",
+      "videos_indexed": 211,
+      "skipped": 0,
+      "skipped_titles": [],
+      "skipped_short": 0,
+      "skipped_short_titles": [],
+      "aborted_rate_limited": false,
+      "total_chunks": 2428,
+      "total_videos_on_channel": 211,
+      "last_sync_date": "2026-09-05",
+      "videos": [
+        {
+          "id": "nwgjGR7q6A4",
+          "title": "Why Dallas Is Getting Richer Faster Than the Rest of America"
+        },
+        {
+          "id": "Vi2UMWTU8A8",
+          "title": "I Didn't Expect to Find These Homes in Prosper, Texas"
+        },
+        {
+          "id": "4yG7hn78kJU",
+          "title": "A Complete Driving Tour of Every Dallas Suburb"
+        },
+        {
+          "id": "uBSBuMsSyFo",
+          "title": "Frisco Is Transforming The Way You Think About Dallas"
+        },
+        {
+          "id": "OD72Gx_EJEw",
+          "title": "New 2026 Luxury Model House Tour Near Dallas Texas!"
+        },
+        {
+          "id": "-wrQJfa39ZA",
+          "title": "I Sold EVERYTHING and Moved to Dallas, TX (Here\u2019s Why)"
+        },
+        {
+          "id": "RahMhaSok8g",
+          "title": "I Toured EVERY RAMBLE Model Home in Celina Texas!"
+        },
+        {
+          "id": "cOSKVOIpaug",
+          "title": "Thinking About Moving to Dallas? Avoid These 3 Suburbs"
+        },
+        {
+          "id": "ZqIJJUN7-KU",
+          "title": "Every Dallas Neighborhood Ranked by Appreciation (2016-2026)"
+        },
+        {
+          "id": "7jRzfs-3Grc",
+          "title": "Dallas' BEST Neighborhoods Ranked By Lifestyle"
+        },
+        {
+          "id": "ug5t0kBGQU4",
+          "title": "Inside Anna TX: One of America's Fastest Growing Suburbs"
+        },
+        {
+          "id": "UbWMCTnBAPM",
+          "title": "Where to Actually Live in Dallas, Texas"
+        },
+        {
+          "id": "VhYF-1wQvZY",
+          "title": "Driving Tour of Melissa TX: The Booming Suburb North of Dallas"
+        },
+        {
+          "id": "Xh53XBHpJhc",
+          "title": "Why Plano TX Just Had One of the Biggest Home Price Drops in America"
+        },
+        {
+          "id": "oE685wJEwL0",
+          "title": "Full Plano Texas Driving Tour \u2013 Dallas's Most Iconic Suburb"
+        },
+        {
+          "id": "jjySELVvHoM",
+          "title": "I Asked World Cup Visitors What They REALLY Think of Dallas Texas"
+        },
+        {
+          "id": "piEan0R2qtc",
+          "title": "Dallas Ranks #1 Market For New Home Construction in the U.S."
+        },
+        {
+          "id": "PApGW3ApQ2c",
+          "title": "The 8 Best Neighborhoods When Moving to McKinney, Texas 2026"
+        },
+        {
+          "id": "BeaGChzzX2Q",
+          "title": "Every Major Country Club in Dallas, TX (Ranked By Price)"
+        },
+        {
+          "id": "op998h2XDvM",
+          "title": "Frisco's Best Places To Live Near Universal Kids Resort"
+        },
+        {
+          "id": "Ec5rvur0rWM",
+          "title": "Where to Retire in Dallas Texas for 2026"
+        },
+        {
+          "id": "wSi8taivEkE",
+          "title": "European-Inspired Luxury in Plano Texas"
+        },
+        {
+          "id": "F8aIVJZpZ2w",
+          "title": "M3 Ranch in Mansfield Texas is Changing the South Side"
+        },
+        {
+          "id": "1YJKJxa0LRs",
+          "title": "Why Dallas Is Growing Backwards"
+        },
+        {
+          "id": "wRPhpP-CjGk",
+          "title": "Small Towns Near Dallas Everyone's Moving To Right Now"
+        },
+        {
+          "id": "B2YyfwzwFsM",
+          "title": "Touring Dallas' Most Overlooked Suburb (Allen, TX)"
+        },
+        {
+          "id": "-o-DK319grw",
+          "title": "Moving to Texas: The 7 Top Ranked Cities Right Now"
+        },
+        {
+          "id": "yGFz3jEpjt8",
+          "title": "Everything WRONG With Living in McKinney, TX"
+        },
+        {
+          "id": "vxnhvtoKIb4",
+          "title": "Answering CONCERNING Questions About Living in Dallas, TX"
+        },
+        {
+          "id": "0OKM8V5tVX8",
+          "title": "Inside Dallas' Most Overlooked Suburb Richardson, TX"
+        },
+        {
+          "id": "h0Ofx5EYyF0",
+          "title": "The 6 New Celina Communities Opening in 2026"
+        },
+        {
+          "id": "zAWyM_3DXiw",
+          "title": "Forney Texas\u2019 New 1,079-Acre Community Is Insane! Meraki"
+        },
+        {
+          "id": "hT2zhR_m4WI",
+          "title": "Avoid Moving to the Wrong Area in Frisco, Texas"
+        },
+        {
+          "id": "kDcZA-HWpcI",
+          "title": "Top 6 BEST Plano Neighborhoods | Living in Plano Texas"
+        },
+        {
+          "id": "iv1notQfU24",
+          "title": "CRAZY Price Cuts Happening NOW in North Dallas(McKinney, Celina & Prosper)"
+        },
+        {
+          "id": "RRjvayUOvAs",
+          "title": "Top 6 Frisco Neighborhoods | Living in Frisco Texas (2026 Update)"
+        },
+        {
+          "id": "fpCXLDKKRVY",
+          "title": "The Dallas Neighborhood So Irresistible It\u2019s IMPOSSIBLE Not To Want To Live There"
+        },
+        {
+          "id": "oqarNGU2gro",
+          "title": "It's Finally Become Impossible to Move to Lakewood, Dallas"
+        },
+        {
+          "id": "UXuNcIAnFU8",
+          "title": "Give Me 19 Minutes, I'll Explain Every Major City in Dallas"
+        },
+        {
+          "id": "-8P6OXs2j0w",
+          "title": "Driving Through Dallas' RICHEST Neighborhood: Highland Park"
+        },
+        {
+          "id": "cTwZ6EdvNI4",
+          "title": "What Nobody Tells You About Living in Dallas vs Fort Worth"
+        },
+        {
+          "id": "9SqAtbrlwGw",
+          "title": "The California Exodus to Dallas Is WAY BIGGER Than We Thought\u2026"
+        },
+        {
+          "id": "cA2hjE43FTw",
+          "title": "Texas Is Becoming the World's LARGEST Data Center Market"
+        },
+        {
+          "id": "j_NxYH23m_Y",
+          "title": "If I had 24 Hours in Dallas, Here\u2019s What I\u2019d do - What To See Before Moving"
+        },
+        {
+          "id": "fVVI5yfc13E",
+          "title": "Where to Live in Dallas, Texas: Full Suburb Map Guide"
+        },
+        {
+          "id": "92zddo165OY",
+          "title": "Mass Migration to Dallas: The California, New York, and Illinois Exodus"
+        },
+        {
+          "id": "iohl3zZJ7ng",
+          "title": "Why Everyone\u2019s Betting Big on North Texas"
+        },
+        {
+          "id": "ztn-YpE3jRA",
+          "title": "Why Dallas' 'Terrible' Design Actually Works"
+        },
+        {
+          "id": "4S14IGrrirY",
+          "title": "A Full Guide to Moving To Dallas Texas & What You Must Know"
+        },
+        {
+          "id": "d41Zzmfg0Vo",
+          "title": "Why Dallas, Texas Has A Serious Unfair Advantage"
+        },
+        {
+          "id": "kqPEvBdx9aY",
+          "title": "Top 6 Luxury Suburbs in Dallas, Texas"
+        },
+        {
+          "id": "JWEoxyv6E2I",
+          "title": "5 Reasons Why Dallas, TX Will Thrive Over The Next 5 Years"
+        },
+        {
+          "id": "FZW4gy_f2M8",
+          "title": "Frisco Texas Crowned the #1 Affordable City in the U.S."
+        },
+        {
+          "id": "X9sZc5xOrQk",
+          "title": "Frisco\u2019s Most Exclusive New Community | The Preserve at Fields"
+        },
+        {
+          "id": "6l1T1mkTnKg",
+          "title": "The Dallas Housing Market Is About to Change in 2026"
+        },
+        {
+          "id": "0bPmA4qIxbQ",
+          "title": "Frisco\u2019s Newest Community East Village at Fields Just Opened!"
+        },
+        {
+          "id": "rpiblwDwam0",
+          "title": "Dallas New Construction Upgrades That Aren\u2019t Worth It"
+        },
+        {
+          "id": "S6XZFT0Jbys",
+          "title": "Why This Texas Suburb is Ranked the #1 in America"
+        },
+        {
+          "id": "E49nyG4KaTk",
+          "title": "AVOID These 5 Dallas Neighborhoods If You Are From Out of State"
+        },
+        {
+          "id": "9has57vIq00",
+          "title": "Is Living in Plano TX Actually Worth it in 2026? (Pro\u2019s & Con\u2019s)"
+        },
+        {
+          "id": "69EdrAQWbm0",
+          "title": "What NOBODY Tells You About Moving to Dallas in 2026"
+        },
+        {
+          "id": "Q5XYbnd-6AA",
+          "title": "Dallas Property Taxes: Watch This or Overpay in 2026"
+        },
+        {
+          "id": "Q6JnRn4SVVw",
+          "title": "Dallas\u2019 Housing Landscape is About to Change Forever"
+        },
+        {
+          "id": "5GUYzvKdIKA",
+          "title": "A Realistic Driving Tour of Rockwall, Texas"
+        },
+        {
+          "id": "ZcqtwgNpGUE",
+          "title": "Why These Dallas Homes Aren\u2019t Selling\u2026 But Others Are"
+        },
+        {
+          "id": "ccCwiACD6_c",
+          "title": "AVOID Moving to the WRONG Area in McKinney, Texas"
+        },
+        {
+          "id": "vl5s7HkXyhA",
+          "title": "Full Driving Tour of Dallas\u2019s Most Exclusive Suburb (Southlake, TX)"
+        },
+        {
+          "id": "f8QvySI3P14",
+          "title": "Why Dallas Is The Opposite Of Every Major US City"
+        },
+        {
+          "id": "ZgWBfwQNsLY",
+          "title": "Texas Veteran Benefits 2026 | Housing, Taxes, Education & More"
+        },
+        {
+          "id": "EKry7Z9Less",
+          "title": "Which is Dallas' Best Area? North vs East vs South vs West"
+        },
+        {
+          "id": "MjecN1iUnZY",
+          "title": "If I Were Moving to Celina Texas in 2026, I'd Move HERE"
+        },
+        {
+          "id": "vBpbVLxYcUE",
+          "title": "Top 10 Most Beautiful Neighborhoods To Live in Frisco, TX"
+        },
+        {
+          "id": "eqc6QJ1cWQY",
+          "title": "Where Frisco's Rich Actually Choose To Live (Dallas, TX)"
+        },
+        {
+          "id": "1J921NtXv98",
+          "title": "Dallas Winter Real Estate Housing Market Forecast"
+        },
+        {
+          "id": "NQg9lfIjUN0",
+          "title": "The REAL Pros & Cons of Living in Dallas, TX 2026"
+        },
+        {
+          "id": "_ERL6E-OslY",
+          "title": "Why Are Sellers Getting Desperate? | Dallas Real Estate Market"
+        },
+        {
+          "id": "XuIBaOuEfBE",
+          "title": "Is NORTH Dallas BETTER Than SOUTH Dallas"
+        },
+        {
+          "id": "0W7aNcieKgc",
+          "title": "Why Dallas is Becoming the Economic Capital of Texas"
+        },
+        {
+          "id": "xE795xtscpw",
+          "title": "I\u2019ve Lived in Dallas for \u201825\u2019 Years\u2026 My Honest Thoughts"
+        },
+        {
+          "id": "m_hxWvuDl6E",
+          "title": "Shane Homes Debuts In Rockwall Texas...Worth The Hype?"
+        },
+        {
+          "id": "qG3twGbovkI",
+          "title": "Every North Dallas Suburb Explained in 26 Minutes"
+        },
+        {
+          "id": "vzxLTm-3mos",
+          "title": "A Realistic Tour of Downtown Dallas, TX"
+        },
+        {
+          "id": "2Z222PHX5pM",
+          "title": "Why The Ultra Wealthy Are FLOCKING To Dallas Texas"
+        },
+        {
+          "id": "_GXp9_hsOyk",
+          "title": "Full Driving Tour of Prosper, TX \u2013 Dallas\u2019s Most Desirable Suburb"
+        },
+        {
+          "id": "cZl5x8-C1JQ",
+          "title": "Something Abnormal Just Happened in Dallas Tx Housing Market"
+        },
+        {
+          "id": "x5iq5Pi2ejs",
+          "title": "Moving to Frisco TX in 2026: Everything You NEED to Know"
+        },
+        {
+          "id": "f__8laG2Gjg",
+          "title": "ONLY Buy These Types of Homes in Dallas TX"
+        },
+        {
+          "id": "u5OyY0LMmTY",
+          "title": "TEXANS are Moving BACK to Dallas [MASS MIGRATION]"
+        },
+        {
+          "id": "vGA_POzk9Y4",
+          "title": "Dallas Real Estate Expert Answers Home Buying Questions"
+        },
+        {
+          "id": "ugYtB88M58k",
+          "title": "Top 10 Most Beautiful Cities To Live in Dallas Tx"
+        },
+        {
+          "id": "VHomZbfa6Vo",
+          "title": "I Found The Best New Construction Deals in Dallas, TX"
+        },
+        {
+          "id": "vynjS-MrODI",
+          "title": "A Full Tour Of Dallas\u2019 Fastest Growing Suburb (Celina Tx)"
+        },
+        {
+          "id": "pfnXqppJS6I",
+          "title": "If You\u2019re Relocating to Dallas in 2026, Watch This"
+        },
+        {
+          "id": "7oVMwfe4q40",
+          "title": "Exposing the Hidden Costs of Living in Dallas Texas"
+        },
+        {
+          "id": "GSHN4pHiGuM",
+          "title": "Top 5 BEST New Construction Homes in Dallas Tx in 2026"
+        },
+        {
+          "id": "Uf-xxlosdE8",
+          "title": "Top 8 NEW Construction Neighborhoods in North Dallas"
+        },
+        {
+          "id": "2rrwDZLk30o",
+          "title": "Full Driving Tour of Dallas\u2019s Most Underrated Suburb (McKinney, TX)"
+        },
+        {
+          "id": "R2TUX66NHJg",
+          "title": "What Do People REALLY Think About Dallas?"
+        },
+        {
+          "id": "JguLkSGlhhU",
+          "title": "How Much Dallas TX Home Can You Afford (Based on Salary)"
+        },
+        {
+          "id": "UeVOEZ2tcHw",
+          "title": "8 HARSH Reasons NOT to Move To Dallas TX & Where To Move instead"
+        },
+        {
+          "id": "ZxFg6D7Clow",
+          "title": "These Dallas Suburbs Will Explode in 2026 (Get In Early)"
+        },
+        {
+          "id": "ndPcdsPOpQU",
+          "title": "AVOID Moving to the WRONG Area in Dallas, Texas"
+        },
+        {
+          "id": "mlD3QnyBld0",
+          "title": "If I Were Moving to Frisco Texas in 2026, I\u2019d Move HERE"
+        },
+        {
+          "id": "hbdkOnDXwJY",
+          "title": "The #1 Mistake People Make Moving To Dallas Texas"
+        },
+        {
+          "id": "kmulqFGE1YU",
+          "title": "Touring Fields Frisco: The HOTTEST North Dallas Community"
+        },
+        {
+          "id": "hxw8lZQbylk",
+          "title": "Exploring Windsong Ranch (FULL Community & Property Tour)"
+        },
+        {
+          "id": "otcyvkjVTCk",
+          "title": "Was Leaving Dallas A Big Mistake, 2 Year Update"
+        },
+        {
+          "id": "G7Wwxn7CI64",
+          "title": "Home Buyers Blindsided by Something Terrible Happening in Dallas, Texas"
+        },
+        {
+          "id": "cQQMjIn13kk",
+          "title": "Where Dallas' Ultra Wealthy Choose To Live"
+        },
+        {
+          "id": "ifSOvj-KfWU",
+          "title": "Never Buy These Types of Homes in Dallas"
+        },
+        {
+          "id": "76r0LWzULJw",
+          "title": "The BEST North Dallas New Construction Homes"
+        },
+        {
+          "id": "iIFVXs9cOHU",
+          "title": "The Fastest Growing City In North Texas | Celina Texas"
+        },
+        {
+          "id": "CO20djypnRw",
+          "title": "If I Were Moving to Dallas Texas in 2026, I'd Move HERE"
+        },
+        {
+          "id": "n3ZSVa6vJPQ",
+          "title": "Why So Many Californians Are Fleeing To Dallas in 2026"
+        },
+        {
+          "id": "hMYdWy6EjO0",
+          "title": "Ranking EVERY Dallas Texas AREA From WORST to BEST"
+        },
+        {
+          "id": "UzWMl9y5b34",
+          "title": "Complete Frisco Texas Moving Guide 2025"
+        },
+        {
+          "id": "59lmej4fWfk",
+          "title": "INSIDE Dallas Texas's #1 Suburb (Frisco) - FULL Driving Tour"
+        },
+        {
+          "id": "kMkMP03aZtY",
+          "title": "The BEST Frisco Texas Pros and Cons for 2025"
+        },
+        {
+          "id": "7IwvEGQ045s",
+          "title": "These Dallas Texas Suburbs Are BOOMING in 2026"
+        },
+        {
+          "id": "jRWCkRduBgg",
+          "title": "The BEST Plano Texas Pros and Cons for 2025"
+        },
+        {
+          "id": "VA1aVmxBegY",
+          "title": "North Dallas New Homes Under 400K with CRAZY Low Rates!"
+        },
+        {
+          "id": "TgRGR6jIuZI",
+          "title": "Dallas Texas Custom Homes With Big Lots, RV Parking & NO HOA"
+        },
+        {
+          "id": "n3T2yuVFum8",
+          "title": "Discover North Dallas' Ultra-Private Gated Community"
+        },
+        {
+          "id": "GqSLUO4wTSE",
+          "title": "INSANE Price Cuts in North Texas Homes with Massive Lots!"
+        },
+        {
+          "id": "QciT164gVtg",
+          "title": "North Dallas Homes With Crazy Acreage, Workshops & NO HOA!"
+        },
+        {
+          "id": "Uh8WgvNm01I",
+          "title": "The Cheapest Homes Near Dallas In Top Celina School District"
+        },
+        {
+          "id": "EKluAzmVC7w",
+          "title": "These Frisco Texas Homes Are 5 MIN. to UNIVERSAL KIDS RESORT"
+        },
+        {
+          "id": "tF5wVLjBGj0",
+          "title": "Celina Texas LUXURY CUSTOM HOMES In Top Rated Celina Schools"
+        },
+        {
+          "id": "eXEOYysvLYw",
+          "title": "McKinney Texas New Homes That Are A Good Price With Low Taxes"
+        },
+        {
+          "id": "5KutWAekB3Y",
+          "title": "Massive Price Drops Hit North Dallas Luxury Homes"
+        },
+        {
+          "id": "RzejEdNTjbE",
+          "title": "CRAZY AFFORDABLE Dallas Texas Homes in North Dallas\u2019 Newest Communities"
+        },
+        {
+          "id": "31pD8yrtj3Q",
+          "title": "INSANE Price Cuts in North Dallas (Frisco Texas)"
+        },
+        {
+          "id": "MYPrqZUQL1o",
+          "title": "I Can't Believe We Found Mckinney Texas Homes Under 300K!"
+        },
+        {
+          "id": "_9RdwSX-T2c",
+          "title": "We Compared Dallas New Homes Cheapest to Most Lavish"
+        },
+        {
+          "id": "wjCMCECML0o",
+          "title": "INSANE Dallas Luxury Custom Home In LAKESIDE Community"
+        },
+        {
+          "id": "U570BItkcg8",
+          "title": "How Much Home Does A $100,000 SALARY Buy You In DALLAS TEXAS?"
+        },
+        {
+          "id": "Ns6emUWth34",
+          "title": "FRISCO CRAZY Price Cuts In Top Communities (Fields Frisco, Lexington)"
+        },
+        {
+          "id": "H2PUQtOYmg8",
+          "title": "Unbelievable Discounts On Toll Brothers Homes Near Dallas, Tx"
+        },
+        {
+          "id": "R8VL-8BWEfQ",
+          "title": "More MASSIVE Price Cuts in NORTH DALLAS (Celina)"
+        },
+        {
+          "id": "77KHknBz0OM",
+          "title": "INSANE Price Cuts in North Dallas (Fields Frisco)"
+        },
+        {
+          "id": "Xqedlo4eipg",
+          "title": "FIELDS FRISCO RIVAL Community at HALF PRICE in Celina Texas"
+        },
+        {
+          "id": "yL_Pi3CWbMY",
+          "title": "AMAZING $2,500,000 Luxury Mansion Just 20 Min From DALLAS TEXAS"
+        },
+        {
+          "id": "JfIJmthvRTg",
+          "title": "INSANE Price Cuts In North Dallas (McKinney, Aubrey, & Prosper)"
+        },
+        {
+          "id": "ntud96jv56Y",
+          "title": "Dallas Hoods EXPOSED! BEWARE Before Moving to Dallas Texas in 2025"
+        },
+        {
+          "id": "bgFf3zzXe4Y",
+          "title": "Comparing $1,500,000+ Luxury Custom Homes Near Dallas Texas"
+        },
+        {
+          "id": "YZ_kg3UXvng",
+          "title": "Dallas Texas Most AFFORDABLE HOMES In Top Suburbs"
+        },
+        {
+          "id": "LfHfgpJUgSM",
+          "title": "Frisco's New INCREDIBLE Homes in Dallas Texas' NEWEST and HOTTEST Community"
+        },
+        {
+          "id": "rt3CsFV2k9g",
+          "title": "First Look at DALLAS TEXAS Brand New AFFORDABLE Homes"
+        },
+        {
+          "id": "boghLIlZLxw",
+          "title": "Dallas Texas AFFORDABLE NEW Homes In One of the HOTTEST SUBURBS"
+        },
+        {
+          "id": "KQHe6w2NJuU",
+          "title": "Where You Can Find AFFORDABLE MANSIONS Just 20 Miles From DALLAS Texas"
+        },
+        {
+          "id": "nOxQW1--PrY",
+          "title": "DALLAS Texas New 4000 SQFT Home at an UNBELIEVABLE Price"
+        },
+        {
+          "id": "SfgkOyy1lBc",
+          "title": "Dallas Texas AFFORDABLE 3000 sqft Home That is PERFECT For Entertainers!"
+        },
+        {
+          "id": "PCKmLlXUEfk",
+          "title": "AMAZING Black and White Home Near Dallas Texas That is Also AFFORDABLE"
+        },
+        {
+          "id": "G0gIaJmaMnM",
+          "title": "Dallas Texas New Home in the LOW 400s That is MASSIVE"
+        },
+        {
+          "id": "C45PTVDViGA",
+          "title": "Dallas Texas Most Affordable Modern Farmhouses in Top Ranked Suburb!"
+        },
+        {
+          "id": "JNVJK4e-QtE",
+          "title": "What Does $583,000 Get You Near DALLAS Texas?"
+        },
+        {
+          "id": "3O2ykb7g28g",
+          "title": "AMAZING $7,600,000 Luxury Custom Home Near DALLAS TEXAS"
+        },
+        {
+          "id": "4p5CpqwjwLQ",
+          "title": "What Does $566K Get You In DALLAS Texas?"
+        },
+        {
+          "id": "_JYfGLjZa58",
+          "title": "What Does $489K Get You in DALLAS Texas?"
+        },
+        {
+          "id": "BX6kHN4LSNg",
+          "title": "Dallas Texas MOST AFFORDABLE Homes That You Have to SEE to BELIEVE | Celina Hills"
+        },
+        {
+          "id": "QCPbCOb9U00",
+          "title": "Dallas Texas MOST AFFORDABLE Homes That JUST OPENED | Cross Creek Meadows"
+        },
+        {
+          "id": "CMz0Qm_at7M",
+          "title": "Dallas Texas TOP 7 Suburbs: South Dallas"
+        },
+        {
+          "id": "bBWEYX0yKsU",
+          "title": "Dallas Texas MOST AFFORDABLE Homes ONLY 20Min From Dallas (Solterra)"
+        },
+        {
+          "id": "yMT6MsTVSr0",
+          "title": "Dallas Texas MOST AFFORDABLE Homes Over 3Ksf ON THE LAKE! | Spiritas Ranch in Little Elm"
+        },
+        {
+          "id": "UmAI-3blIxQ",
+          "title": "Dallas Texas MOST AFFORDABLE Homes With A Country Vibe! | Harvest in Argyle"
+        },
+        {
+          "id": "5LYLMnDbj1s",
+          "title": "Dallas Texas MOST Affordable MASSIVE Homes In Dallas Newest Community!! | Lakehaven in Farmersville"
+        },
+        {
+          "id": "qIWuYZNtHQQ",
+          "title": "DON'T MOVE to Dallas Texas UNLESS You Can Handle These 11 Negatives"
+        },
+        {
+          "id": "U_s4QZl7Pxs",
+          "title": "Frisco Texas Top 9 Neighborhoods | Living in Frisco Texas"
+        },
+        {
+          "id": "Idi6DKd_5_k",
+          "title": "Dallas Texas New Construction Community Tours: Mosaic in Celina"
+        },
+        {
+          "id": "PT2cMKss-bk",
+          "title": "Dallas Texas New Construction Community Tours: Buffalo Ridge"
+        },
+        {
+          "id": "LH1z45YLSrM",
+          "title": "Dallas Texas New Construction Community Tours: Wellspring Estates"
+        },
+        {
+          "id": "TOXPU9H-FCo",
+          "title": "Dallas Texas New Construction Community Tours: The Parks at Wilson Creek"
+        },
+        {
+          "id": "bQozp8-L5nk",
+          "title": "The Celina Texas Community That Looks Like A FAIRY TALE | Cambridge Crossing in CELINA Texas"
+        },
+        {
+          "id": "A39WaIPS-oE",
+          "title": "Frisco TX vs. Prosper TX: Housing, Schools, Economy & More!"
+        },
+        {
+          "id": "GVhWWJ8GfNk",
+          "title": "Texas Gun Laws YOU MUST KNOW Before Moving to Texas"
+        },
+        {
+          "id": "5Tyrh29Qb-4",
+          "title": "Dallas Texas New Construction Community Tours: AnaCapri"
+        },
+        {
+          "id": "NcyKl9TI3EY",
+          "title": "Dallas Texas Suburb Tours: Prosper Texas"
+        },
+        {
+          "id": "L3JboSB9xik",
+          "title": "Dallas Texas NEW Home Buyers: UNBELIEVABLE 20 ACRE Entertainment District!"
+        },
+        {
+          "id": "qb9ks9qKuTI",
+          "title": "Complete North DALLAS TEXAS SUBURBS Guide!"
+        },
+        {
+          "id": "76-sZMEezC8",
+          "title": "Dallas Texas MOST AFFORDABLE Suburb with Acreage (Midlothian Texas)"
+        },
+        {
+          "id": "O8W7aGT1TsE",
+          "title": "Dallas Texas New Construction Community Tours: Elevon"
+        },
+        {
+          "id": "rxAJBBO_GPE",
+          "title": "Dallas Texas Universal Kids Resort COMING SOON to Frisco!"
+        },
+        {
+          "id": "ebqKsGDRT3M",
+          "title": "Why I'm LEAVING DALLAS And You Should Too"
+        },
+        {
+          "id": "OvFimoazZh8",
+          "title": "Dallas Texas Top 6 Suburbs: North East Dallas"
+        },
+        {
+          "id": "ByAY-YX-xpo",
+          "title": "Dallas Texas Suburb Tour: Southlake Texas"
+        },
+        {
+          "id": "EXr8iI11bB0",
+          "title": "Dallas Texas Suburb Tour: Allen, Texas"
+        },
+        {
+          "id": "esRobWb_eiw",
+          "title": "#1 Amenity Center in the USA is In Dallas Texas | Living in Mustang Lakes"
+        },
+        {
+          "id": "uCiuVOkzxOw",
+          "title": "Dallas Texas TOP 7 Suburbs: North Dallas"
+        },
+        {
+          "id": "Eqh1SwEI44M",
+          "title": "Are There ANY Affordable Houses Left in Dallas Texas? | Affordable Homes in Princeton Texas in 2024"
+        },
+        {
+          "id": "J5nQK6s1uus",
+          "title": "Why Is Everyone Is Moving To Texas? Top 10 Reasons"
+        },
+        {
+          "id": "eLOL1XwE4_I",
+          "title": "Dallas Texas Suburb Tour: Melissa, Texas"
+        },
+        {
+          "id": "dr6oS-OfDvQ",
+          "title": "Dallas Texas Suburb Tour: McKinney, Texas"
+        },
+        {
+          "id": "kkw1qeW6MOU",
+          "title": "Exploring Forney, Texas: A Hidden Gem In The Dallas Suburbs"
+        },
+        {
+          "id": "-24hty-FneY",
+          "title": "Fields Frisco Development is INSANE | Fields of Frisco COMPLETE Tour | Living in Frisco Texas"
+        },
+        {
+          "id": "Taguim68uSo",
+          "title": "Texas VETERAN BENEFITS | Housing, Employment, Education, & More!"
+        },
+        {
+          "id": "DATc7AYo6lw",
+          "title": "Dallas Texas Suburb Tour: Prosper, Texas"
+        },
+        {
+          "id": "1CHCMFr9zx4",
+          "title": "AMAZING $3,700,000 Luxury Custom Home in Dallas Texas!"
+        },
+        {
+          "id": "6tfJydD4EZw",
+          "title": "Is Living In Plano Texas Worth It? Must-know Pros And Cons Before You Move!"
+        },
+        {
+          "id": "tH8lBzGMYto",
+          "title": "Is Living In Plano Worth It in 2024? | The REAL Pros and Cons of Plano Texas"
+        },
+        {
+          "id": "T460dS7SJIs",
+          "title": "Highland Park FULL TOUR of Luxury Living in Dallas Texas 2024 | Highland Park Texas Real Estate"
+        },
+        {
+          "id": "0PZQSckXE3o",
+          "title": "Dallas Texas Suburb Tour: Frisco, Texas"
+        },
+        {
+          "id": "0OH1jjizOsE",
+          "title": "Inside A $3.8 MILLION McKinney Texas Home | Luxury Listing in McKinney Texas | Dallas Texas Suburb"
+        },
+        {
+          "id": "3r1QYHRESGM",
+          "title": "Dallas Texas Top 5 Suburbs | Which Dallas Texas Suburb to Choose | Dallas Texas Real Estate"
+        },
+        {
+          "id": "JL0OL_khRv0",
+          "title": "DON'T Move to Dallas Texas | WATCH FIRST BEFORE MOVING to Dallas Texas | Dallas Texas Real Estate"
+        },
+        {
+          "id": "SJjuOWE4BaA",
+          "title": "McKinney Texas Top 8 Neighborhoods | Living in McKinney Texas"
+        },
+        {
+          "id": "JhXf_f-dZEY",
+          "title": "Frisco Texas Top 8 Neighborhoods | Living in Frisco Texas | Dallas Texas Real Estate"
+        },
+        {
+          "id": "w4-TnRueZDE",
+          "title": "Top 8 Plano Texas Neighborhoods | Living in Plano Texas"
+        },
+        {
+          "id": "NJK24Qdk6e8",
+          "title": "Frisco Texas vs Plano Texas | The Differences Between Frisco TX and Plano TX | Dallas Texas Suburbs"
+        },
+        {
+          "id": "06Ixcxz2REA",
+          "title": "Does it Snow in Texas? | 3 SNOW TIPS to help TEXANS Survive the Snow! | Dallas Texas Real Estate"
+        },
+        {
+          "id": "evLx-IairM0",
+          "title": "DON'T Move to Dallas Texas| EVERY DALLAS TEXAS SUBURB EXPLAINED FOR YOU"
+        },
+        {
+          "id": "R3GJEg-yARw",
+          "title": "Living in Plano Texas | EVERYTHING YOU NEED TO KNOW ABOUT PLANO TEXAS | Dallas Texas Suburb"
+        }
+      ]
+    },
+    "pinecone_index": "channel-brain-prod",
+    "namespace": "levi-lascsak"
+  },
+  "stats": {
+    "channel_name": "LIVING IN DALLAS TEXAS",
+    "channel_id": "UCYciB9Xe2tbFVlPMF6IwNCA",
+    "namespace": "levi-lascsak",
+    "index_name": "channel-brain-prod",
+    "videos_indexed": 211,
+    "skipped": 0,
+    "skipped_titles": [],
+    "skipped_short": 0,
+    "skipped_short_titles": [],
+    "aborted_rate_limited": false,
+    "total_chunks": 2428,
+    "total_videos_on_channel": 211,
+    "last_sync_date": "2026-09-05",
+    "videos": [
+      {
+        "id": "nwgjGR7q6A4",
+        "title": "Why Dallas Is Getting Richer Faster Than the Rest of America"
+      },
+      {
+        "id": "Vi2UMWTU8A8",
+        "title": "I Didn't Expect to Find These Homes in Prosper, Texas"
+      },
+      {
+        "id": "4yG7hn78kJU",
+        "title": "A Complete Driving Tour of Every Dallas Suburb"
+      },
+      {
+        "id": "uBSBuMsSyFo",
+        "title": "Frisco Is Transforming The Way You Think About Dallas"
+      },
+      {
+        "id": "OD72Gx_EJEw",
+        "title": "New 2026 Luxury Model House Tour Near Dallas Texas!"
+      },
+      {
+        "id": "-wrQJfa39ZA",
+        "title": "I Sold EVERYTHING and Moved to Dallas, TX (Here\u2019s Why)"
+      },
+      {
+        "id": "RahMhaSok8g",
+        "title": "I Toured EVERY RAMBLE Model Home in Celina Texas!"
+      },
+      {
+        "id": "cOSKVOIpaug",
+        "title": "Thinking About Moving to Dallas? Avoid These 3 Suburbs"
+      },
+      {
+        "id": "ZqIJJUN7-KU",
+        "title": "Every Dallas Neighborhood Ranked by Appreciation (2016-2026)"
+      },
+      {
+        "id": "7jRzfs-3Grc",
+        "title": "Dallas' BEST Neighborhoods Ranked By Lifestyle"
+      },
+      {
+        "id": "ug5t0kBGQU4",
+        "title": "Inside Anna TX: One of America's Fastest Growing Suburbs"
+      },
+      {
+        "id": "UbWMCTnBAPM",
+        "title": "Where to Actually Live in Dallas, Texas"
+      },
+      {
+        "id": "VhYF-1wQvZY",
+        "title": "Driving Tour of Melissa TX: The Booming Suburb North of Dallas"
+      },
+      {
+        "id": "Xh53XBHpJhc",
+        "title": "Why Plano TX Just Had One of the Biggest Home Price Drops in America"
+      },
+      {
+        "id": "oE685wJEwL0",
+        "title": "Full Plano Texas Driving Tour \u2013 Dallas's Most Iconic Suburb"
+      },
+      {
+        "id": "jjySELVvHoM",
+        "title": "I Asked World Cup Visitors What They REALLY Think of Dallas Texas"
+      },
+      {
+        "id": "piEan0R2qtc",
+        "title": "Dallas Ranks #1 Market For New Home Construction in the U.S."
+      },
+      {
+        "id": "PApGW3ApQ2c",
+        "title": "The 8 Best Neighborhoods When Moving to McKinney, Texas 2026"
+      },
+      {
+        "id": "BeaGChzzX2Q",
+        "title": "Every Major Country Club in Dallas, TX (Ranked By Price)"
+      },
+      {
+        "id": "op998h2XDvM",
+        "title": "Frisco's Best Places To Live Near Universal Kids Resort"
+      },
+      {
+        "id": "Ec5rvur0rWM",
+        "title": "Where to Retire in Dallas Texas for 2026"
+      },
+      {
+        "id": "wSi8taivEkE",
+        "title": "European-Inspired Luxury in Plano Texas"
+      },
+      {
+        "id": "F8aIVJZpZ2w",
+        "title": "M3 Ranch in Mansfield Texas is Changing the South Side"
+      },
+      {
+        "id": "1YJKJxa0LRs",
+        "title": "Why Dallas Is Growing Backwards"
+      },
+      {
+        "id": "wRPhpP-CjGk",
+        "title": "Small Towns Near Dallas Everyone's Moving To Right Now"
+      },
+      {
+        "id": "B2YyfwzwFsM",
+        "title": "Touring Dallas' Most Overlooked Suburb (Allen, TX)"
+      },
+      {
+        "id": "-o-DK319grw",
+        "title": "Moving to Texas: The 7 Top Ranked Cities Right Now"
+      },
+      {
+        "id": "yGFz3jEpjt8",
+        "title": "Everything WRONG With Living in McKinney, TX"
+      },
+      {
+        "id": "vxnhvtoKIb4",
+        "title": "Answering CONCERNING Questions About Living in Dallas, TX"
+      },
+      {
+        "id": "0OKM8V5tVX8",
+        "title": "Inside Dallas' Most Overlooked Suburb Richardson, TX"
+      },
+      {
+        "id": "h0Ofx5EYyF0",
+        "title": "The 6 New Celina Communities Opening in 2026"
+      },
+      {
+        "id": "zAWyM_3DXiw",
+        "title": "Forney Texas\u2019 New 1,079-Acre Community Is Insane! Meraki"
+      },
+      {
+        "id": "hT2zhR_m4WI",
+        "title": "Avoid Moving to the Wrong Area in Frisco, Texas"
+      },
+      {
+        "id": "kDcZA-HWpcI",
+        "title": "Top 6 BEST Plano Neighborhoods | Living in Plano Texas"
+      },
+      {
+        "id": "iv1notQfU24",
+        "title": "CRAZY Price Cuts Happening NOW in North Dallas(McKinney, Celina & Prosper)"
+      },
+      {
+        "id": "RRjvayUOvAs",
+        "title": "Top 6 Frisco Neighborhoods | Living in Frisco Texas (2026 Update)"
+      },
+      {
+        "id": "fpCXLDKKRVY",
+        "title": "The Dallas Neighborhood So Irresistible It\u2019s IMPOSSIBLE Not To Want To Live There"
+      },
+      {
+        "id": "oqarNGU2gro",
+        "title": "It's Finally Become Impossible to Move to Lakewood, Dallas"
+      },
+      {
+        "id": "UXuNcIAnFU8",
+        "title": "Give Me 19 Minutes, I'll Explain Every Major City in Dallas"
+      },
+      {
+        "id": "-8P6OXs2j0w",
+        "title": "Driving Through Dallas' RICHEST Neighborhood: Highland Park"
+      },
+      {
+        "id": "cTwZ6EdvNI4",
+        "title": "What Nobody Tells You About Living in Dallas vs Fort Worth"
+      },
+      {
+        "id": "9SqAtbrlwGw",
+        "title": "The California Exodus to Dallas Is WAY BIGGER Than We Thought\u2026"
+      },
+      {
+        "id": "cA2hjE43FTw",
+        "title": "Texas Is Becoming the World's LARGEST Data Center Market"
+      },
+      {
+        "id": "j_NxYH23m_Y",
+        "title": "If I had 24 Hours in Dallas, Here\u2019s What I\u2019d do - What To See Before Moving"
+      },
+      {
+        "id": "fVVI5yfc13E",
+        "title": "Where to Live in Dallas, Texas: Full Suburb Map Guide"
+      },
+      {
+        "id": "92zddo165OY",
+        "title": "Mass Migration to Dallas: The California, New York, and Illinois Exodus"
+      },
+      {
+        "id": "iohl3zZJ7ng",
+        "title": "Why Everyone\u2019s Betting Big on North Texas"
+      },
+      {
+        "id": "ztn-YpE3jRA",
+        "title": "Why Dallas' 'Terrible' Design Actually Works"
+      },
+      {
+        "id": "4S14IGrrirY",
+        "title": "A Full Guide to Moving To Dallas Texas & What You Must Know"
+      },
+      {
+        "id": "d41Zzmfg0Vo",
+        "title": "Why Dallas, Texas Has A Serious Unfair Advantage"
+      },
+      {
+        "id": "kqPEvBdx9aY",
+        "title": "Top 6 Luxury Suburbs in Dallas, Texas"
+      },
+      {
+        "id": "JWEoxyv6E2I",
+        "title": "5 Reasons Why Dallas, TX Will Thrive Over The Next 5 Years"
+      },
+      {
+        "id": "FZW4gy_f2M8",
+        "title": "Frisco Texas Crowned the #1 Affordable City in the U.S."
+      },
+      {
+        "id": "X9sZc5xOrQk",
+        "title": "Frisco\u2019s Most Exclusive New Community | The Preserve at Fields"
+      },
+      {
+        "id": "6l1T1mkTnKg",
+        "title": "The Dallas Housing Market Is About to Change in 2026"
+      },
+      {
+        "id": "0bPmA4qIxbQ",
+        "title": "Frisco\u2019s Newest Community East Village at Fields Just Opened!"
+      },
+      {
+        "id": "rpiblwDwam0",
+        "title": "Dallas New Construction Upgrades That Aren\u2019t Worth It"
+      },
+      {
+        "id": "S6XZFT0Jbys",
+        "title": "Why This Texas Suburb is Ranked the #1 in America"
+      },
+      {
+        "id": "E49nyG4KaTk",
+        "title": "AVOID These 5 Dallas Neighborhoods If You Are From Out of State"
+      },
+      {
+        "id": "9has57vIq00",
+        "title": "Is Living in Plano TX Actually Worth it in 2026? (Pro\u2019s & Con\u2019s)"
+      },
+      {
+        "id": "69EdrAQWbm0",
+        "title": "What NOBODY Tells You About Moving to Dallas in 2026"
+      },
+      {
+        "id": "Q5XYbnd-6AA",
+        "title": "Dallas Property Taxes: Watch This or Overpay in 2026"
+      },
+      {
+        "id": "Q6JnRn4SVVw",
+        "title": "Dallas\u2019 Housing Landscape is About to Change Forever"
+      },
+      {
+        "id": "5GUYzvKdIKA",
+        "title": "A Realistic Driving Tour of Rockwall, Texas"
+      },
+      {
+        "id": "ZcqtwgNpGUE",
+        "title": "Why These Dallas Homes Aren\u2019t Selling\u2026 But Others Are"
+      },
+      {
+        "id": "ccCwiACD6_c",
+        "title": "AVOID Moving to the WRONG Area in McKinney, Texas"
+      },
+      {
+        "id": "vl5s7HkXyhA",
+        "title": "Full Driving Tour of Dallas\u2019s Most Exclusive Suburb (Southlake, TX)"
+      },
+      {
+        "id": "f8QvySI3P14",
+        "title": "Why Dallas Is The Opposite Of Every Major US City"
+      },
+      {
+        "id": "ZgWBfwQNsLY",
+        "title": "Texas Veteran Benefits 2026 | Housing, Taxes, Education & More"
+      },
+      {
+        "id": "EKry7Z9Less",
+        "title": "Which is Dallas' Best Area? North vs East vs South vs West"
+      },
+      {
+        "id": "MjecN1iUnZY",
+        "title": "If I Were Moving to Celina Texas in 2026, I'd Move HERE"
+      },
+      {
+        "id": "vBpbVLxYcUE",
+        "title": "Top 10 Most Beautiful Neighborhoods To Live in Frisco, TX"
+      },
+      {
+        "id": "eqc6QJ1cWQY",
+        "title": "Where Frisco's Rich Actually Choose To Live (Dallas, TX)"
+      },
+      {
+        "id": "1J921NtXv98",
+        "title": "Dallas Winter Real Estate Housing Market Forecast"
+      },
+      {
+        "id": "NQg9lfIjUN0",
+        "title": "The REAL Pros & Cons of Living in Dallas, TX 2026"
+      },
+      {
+        "id": "_ERL6E-OslY",
+        "title": "Why Are Sellers Getting Desperate? | Dallas Real Estate Market"
+      },
+      {
+        "id": "XuIBaOuEfBE",
+        "title": "Is NORTH Dallas BETTER Than SOUTH Dallas"
+      },
+      {
+        "id": "0W7aNcieKgc",
+        "title": "Why Dallas is Becoming the Economic Capital of Texas"
+      },
+      {
+        "id": "xE795xtscpw",
+        "title": "I\u2019ve Lived in Dallas for \u201825\u2019 Years\u2026 My Honest Thoughts"
+      },
+      {
+        "id": "m_hxWvuDl6E",
+        "title": "Shane Homes Debuts In Rockwall Texas...Worth The Hype?"
+      },
+      {
+        "id": "qG3twGbovkI",
+        "title": "Every North Dallas Suburb Explained in 26 Minutes"
+      },
+      {
+        "id": "vzxLTm-3mos",
+        "title": "A Realistic Tour of Downtown Dallas, TX"
+      },
+      {
+        "id": "2Z222PHX5pM",
+        "title": "Why The Ultra Wealthy Are FLOCKING To Dallas Texas"
+      },
+      {
+        "id": "_GXp9_hsOyk",
+        "title": "Full Driving Tour of Prosper, TX \u2013 Dallas\u2019s Most Desirable Suburb"
+      },
+      {
+        "id": "cZl5x8-C1JQ",
+        "title": "Something Abnormal Just Happened in Dallas Tx Housing Market"
+      },
+      {
+        "id": "x5iq5Pi2ejs",
+        "title": "Moving to Frisco TX in 2026: Everything You NEED to Know"
+      },
+      {
+        "id": "f__8laG2Gjg",
+        "title": "ONLY Buy These Types of Homes in Dallas TX"
+      },
+      {
+        "id": "u5OyY0LMmTY",
+        "title": "TEXANS are Moving BACK to Dallas [MASS MIGRATION]"
+      },
+      {
+        "id": "vGA_POzk9Y4",
+        "title": "Dallas Real Estate Expert Answers Home Buying Questions"
+      },
+      {
+        "id": "ugYtB88M58k",
+        "title": "Top 10 Most Beautiful Cities To Live in Dallas Tx"
+      },
+      {
+        "id": "VHomZbfa6Vo",
+        "title": "I Found The Best New Construction Deals in Dallas, TX"
+      },
+      {
+        "id": "vynjS-MrODI",
+        "title": "A Full Tour Of Dallas\u2019 Fastest Growing Suburb (Celina Tx)"
+      },
+      {
+        "id": "pfnXqppJS6I",
+        "title": "If You\u2019re Relocating to Dallas in 2026, Watch This"
+      },
+      {
+        "id": "7oVMwfe4q40",
+        "title": "Exposing the Hidden Costs of Living in Dallas Texas"
+      },
+      {
+        "id": "GSHN4pHiGuM",
+        "title": "Top 5 BEST New Construction Homes in Dallas Tx in 2026"
+      },
+      {
+        "id": "Uf-xxlosdE8",
+        "title": "Top 8 NEW Construction Neighborhoods in North Dallas"
+      },
+      {
+        "id": "2rrwDZLk30o",
+        "title": "Full Driving Tour of Dallas\u2019s Most Underrated Suburb (McKinney, TX)"
+      },
+      {
+        "id": "R2TUX66NHJg",
+        "title": "What Do People REALLY Think About Dallas?"
+      },
+      {
+        "id": "JguLkSGlhhU",
+        "title": "How Much Dallas TX Home Can You Afford (Based on Salary)"
+      },
+      {
+        "id": "UeVOEZ2tcHw",
+        "title": "8 HARSH Reasons NOT to Move To Dallas TX & Where To Move instead"
+      },
+      {
+        "id": "ZxFg6D7Clow",
+        "title": "These Dallas Suburbs Will Explode in 2026 (Get In Early)"
+      },
+      {
+        "id": "ndPcdsPOpQU",
+        "title": "AVOID Moving to the WRONG Area in Dallas, Texas"
+      },
+      {
+        "id": "mlD3QnyBld0",
+        "title": "If I Were Moving to Frisco Texas in 2026, I\u2019d Move HERE"
+      },
+      {
+        "id": "hbdkOnDXwJY",
+        "title": "The #1 Mistake People Make Moving To Dallas Texas"
+      },
+      {
+        "id": "kmulqFGE1YU",
+        "title": "Touring Fields Frisco: The HOTTEST North Dallas Community"
+      },
+      {
+        "id": "hxw8lZQbylk",
+        "title": "Exploring Windsong Ranch (FULL Community & Property Tour)"
+      },
+      {
+        "id": "otcyvkjVTCk",
+        "title": "Was Leaving Dallas A Big Mistake, 2 Year Update"
+      },
+      {
+        "id": "G7Wwxn7CI64",
+        "title": "Home Buyers Blindsided by Something Terrible Happening in Dallas, Texas"
+      },
+      {
+        "id": "cQQMjIn13kk",
+        "title": "Where Dallas' Ultra Wealthy Choose To Live"
+      },
+      {
+        "id": "ifSOvj-KfWU",
+        "title": "Never Buy These Types of Homes in Dallas"
+      },
+      {
+        "id": "76r0LWzULJw",
+        "title": "The BEST North Dallas New Construction Homes"
+      },
+      {
+        "id": "iIFVXs9cOHU",
+        "title": "The Fastest Growing City In North Texas | Celina Texas"
+      },
+      {
+        "id": "CO20djypnRw",
+        "title": "If I Were Moving to Dallas Texas in 2026, I'd Move HERE"
+      },
+      {
+        "id": "n3ZSVa6vJPQ",
+        "title": "Why So Many Californians Are Fleeing To Dallas in 2026"
+      },
+      {
+        "id": "hMYdWy6EjO0",
+        "title": "Ranking EVERY Dallas Texas AREA From WORST to BEST"
+      },
+      {
+        "id": "UzWMl9y5b34",
+        "title": "Complete Frisco Texas Moving Guide 2025"
+      },
+      {
+        "id": "59lmej4fWfk",
+        "title": "INSIDE Dallas Texas's #1 Suburb (Frisco) - FULL Driving Tour"
+      },
+      {
+        "id": "kMkMP03aZtY",
+        "title": "The BEST Frisco Texas Pros and Cons for 2025"
+      },
+      {
+        "id": "7IwvEGQ045s",
+        "title": "These Dallas Texas Suburbs Are BOOMING in 2026"
+      },
+      {
+        "id": "jRWCkRduBgg",
+        "title": "The BEST Plano Texas Pros and Cons for 2025"
+      },
+      {
+        "id": "VA1aVmxBegY",
+        "title": "North Dallas New Homes Under 400K with CRAZY Low Rates!"
+      },
+      {
+        "id": "TgRGR6jIuZI",
+        "title": "Dallas Texas Custom Homes With Big Lots, RV Parking & NO HOA"
+      },
+      {
+        "id": "n3T2yuVFum8",
+        "title": "Discover North Dallas' Ultra-Private Gated Community"
+      },
+      {
+        "id": "GqSLUO4wTSE",
+        "title": "INSANE Price Cuts in North Texas Homes with Massive Lots!"
+      },
+      {
+        "id": "QciT164gVtg",
+        "title": "North Dallas Homes With Crazy Acreage, Workshops & NO HOA!"
+      },
+      {
+        "id": "Uh8WgvNm01I",
+        "title": "The Cheapest Homes Near Dallas In Top Celina School District"
+      },
+      {
+        "id": "EKluAzmVC7w",
+        "title": "These Frisco Texas Homes Are 5 MIN. to UNIVERSAL KIDS RESORT"
+      },
+      {
+        "id": "tF5wVLjBGj0",
+        "title": "Celina Texas LUXURY CUSTOM HOMES In Top Rated Celina Schools"
+      },
+      {
+        "id": "eXEOYysvLYw",
+        "title": "McKinney Texas New Homes That Are A Good Price With Low Taxes"
+      },
+      {
+        "id": "5KutWAekB3Y",
+        "title": "Massive Price Drops Hit North Dallas Luxury Homes"
+      },
+      {
+        "id": "RzejEdNTjbE",
+        "title": "CRAZY AFFORDABLE Dallas Texas Homes in North Dallas\u2019 Newest Communities"
+      },
+      {
+        "id": "31pD8yrtj3Q",
+        "title": "INSANE Price Cuts in North Dallas (Frisco Texas)"
+      },
+      {
+        "id": "MYPrqZUQL1o",
+        "title": "I Can't Believe We Found Mckinney Texas Homes Under 300K!"
+      },
+      {
+        "id": "_9RdwSX-T2c",
+        "title": "We Compared Dallas New Homes Cheapest to Most Lavish"
+      },
+      {
+        "id": "wjCMCECML0o",
+        "title": "INSANE Dallas Luxury Custom Home In LAKESIDE Community"
+      },
+      {
+        "id": "U570BItkcg8",
+        "title": "How Much Home Does A $100,000 SALARY Buy You In DALLAS TEXAS?"
+      },
+      {
+        "id": "Ns6emUWth34",
+        "title": "FRISCO CRAZY Price Cuts In Top Communities (Fields Frisco, Lexington)"
+      },
+      {
+        "id": "H2PUQtOYmg8",
+        "title": "Unbelievable Discounts On Toll Brothers Homes Near Dallas, Tx"
+      },
+      {
+        "id": "R8VL-8BWEfQ",
+        "title": "More MASSIVE Price Cuts in NORTH DALLAS (Celina)"
+      },
+      {
+        "id": "77KHknBz0OM",
+        "title": "INSANE Price Cuts in North Dallas (Fields Frisco)"
+      },
+      {
+        "id": "Xqedlo4eipg",
+        "title": "FIELDS FRISCO RIVAL Community at HALF PRICE in Celina Texas"
+      },
+      {
+        "id": "yL_Pi3CWbMY",
+        "title": "AMAZING $2,500,000 Luxury Mansion Just 20 Min From DALLAS TEXAS"
+      },
+      {
+        "id": "JfIJmthvRTg",
+        "title": "INSANE Price Cuts In North Dallas (McKinney, Aubrey, & Prosper)"
+      },
+      {
+        "id": "ntud96jv56Y",
+        "title": "Dallas Hoods EXPOSED! BEWARE Before Moving to Dallas Texas in 2025"
+      },
+      {
+        "id": "bgFf3zzXe4Y",
+        "title": "Comparing $1,500,000+ Luxury Custom Homes Near Dallas Texas"
+      },
+      {
+        "id": "YZ_kg3UXvng",
+        "title": "Dallas Texas Most AFFORDABLE HOMES In Top Suburbs"
+      },
+      {
+        "id": "LfHfgpJUgSM",
+        "title": "Frisco's New INCREDIBLE Homes in Dallas Texas' NEWEST and HOTTEST Community"
+      },
+      {
+        "id": "rt3CsFV2k9g",
+        "title": "First Look at DALLAS TEXAS Brand New AFFORDABLE Homes"
+      },
+      {
+        "id": "boghLIlZLxw",
+        "title": "Dallas Texas AFFORDABLE NEW Homes In One of the HOTTEST SUBURBS"
+      },
+      {
+        "id": "KQHe6w2NJuU",
+        "title": "Where You Can Find AFFORDABLE MANSIONS Just 20 Miles From DALLAS Texas"
+      },
+      {
+        "id": "nOxQW1--PrY",
+        "title": "DALLAS Texas New 4000 SQFT Home at an UNBELIEVABLE Price"
+      },
+      {
+        "id": "SfgkOyy1lBc",
+        "title": "Dallas Texas AFFORDABLE 3000 sqft Home That is PERFECT For Entertainers!"
+      },
+      {
+        "id": "PCKmLlXUEfk",
+        "title": "AMAZING Black and White Home Near Dallas Texas That is Also AFFORDABLE"
+      },
+      {
+        "id": "G0gIaJmaMnM",
+        "title": "Dallas Texas New Home in the LOW 400s That is MASSIVE"
+      },
+      {
+        "id": "C45PTVDViGA",
+        "title": "Dallas Texas Most Affordable Modern Farmhouses in Top Ranked Suburb!"
+      },
+      {
+        "id": "JNVJK4e-QtE",
+        "title": "What Does $583,000 Get You Near DALLAS Texas?"
+      },
+      {
+        "id": "3O2ykb7g28g",
+        "title": "AMAZING $7,600,000 Luxury Custom Home Near DALLAS TEXAS"
+      },
+      {
+        "id": "4p5CpqwjwLQ",
+        "title": "What Does $566K Get You In DALLAS Texas?"
+      },
+      {
+        "id": "_JYfGLjZa58",
+        "title": "What Does $489K Get You in DALLAS Texas?"
+      },
+      {
+        "id": "BX6kHN4LSNg",
+        "title": "Dallas Texas MOST AFFORDABLE Homes That You Have to SEE to BELIEVE | Celina Hills"
+      },
+      {
+        "id": "QCPbCOb9U00",
+        "title": "Dallas Texas MOST AFFORDABLE Homes That JUST OPENED | Cross Creek Meadows"
+      },
+      {
+        "id": "CMz0Qm_at7M",
+        "title": "Dallas Texas TOP 7 Suburbs: South Dallas"
+      },
+      {
+        "id": "bBWEYX0yKsU",
+        "title": "Dallas Texas MOST AFFORDABLE Homes ONLY 20Min From Dallas (Solterra)"
+      },
+      {
+        "id": "yMT6MsTVSr0",
+        "title": "Dallas Texas MOST AFFORDABLE Homes Over 3Ksf ON THE LAKE! | Spiritas Ranch in Little Elm"
+      },
+      {
+        "id": "UmAI-3blIxQ",
+        "title": "Dallas Texas MOST AFFORDABLE Homes With A Country Vibe! | Harvest in Argyle"
+      },
+      {
+        "id": "5LYLMnDbj1s",
+        "title": "Dallas Texas MOST Affordable MASSIVE Homes In Dallas Newest Community!! | Lakehaven in Farmersville"
+      },
+      {
+        "id": "qIWuYZNtHQQ",
+        "title": "DON'T MOVE to Dallas Texas UNLESS You Can Handle These 11 Negatives"
+      },
+      {
+        "id": "U_s4QZl7Pxs",
+        "title": "Frisco Texas Top 9 Neighborhoods | Living in Frisco Texas"
+      },
+      {
+        "id": "Idi6DKd_5_k",
+        "title": "Dallas Texas New Construction Community Tours: Mosaic in Celina"
+      },
+      {
+        "id": "PT2cMKss-bk",
+        "title": "Dallas Texas New Construction Community Tours: Buffalo Ridge"
+      },
+      {
+        "id": "LH1z45YLSrM",
+        "title": "Dallas Texas New Construction Community Tours: Wellspring Estates"
+      },
+      {
+        "id": "TOXPU9H-FCo",
+        "title": "Dallas Texas New Construction Community Tours: The Parks at Wilson Creek"
+      },
+      {
+        "id": "bQozp8-L5nk",
+        "title": "The Celina Texas Community That Looks Like A FAIRY TALE | Cambridge Crossing in CELINA Texas"
+      },
+      {
+        "id": "A39WaIPS-oE",
+        "title": "Frisco TX vs. Prosper TX: Housing, Schools, Economy & More!"
+      },
+      {
+        "id": "GVhWWJ8GfNk",
+        "title": "Texas Gun Laws YOU MUST KNOW Before Moving to Texas"
+      },
+      {
+        "id": "5Tyrh29Qb-4",
+        "title": "Dallas Texas New Construction Community Tours: AnaCapri"
+      },
+      {
+        "id": "NcyKl9TI3EY",
+        "title": "Dallas Texas Suburb Tours: Prosper Texas"
+      },
+      {
+        "id": "L3JboSB9xik",
+        "title": "Dallas Texas NEW Home Buyers: UNBELIEVABLE 20 ACRE Entertainment District!"
+      },
+      {
+        "id": "qb9ks9qKuTI",
+        "title": "Complete North DALLAS TEXAS SUBURBS Guide!"
+      },
+      {
+        "id": "76-sZMEezC8",
+        "title": "Dallas Texas MOST AFFORDABLE Suburb with Acreage (Midlothian Texas)"
+      },
+      {
+        "id": "O8W7aGT1TsE",
+        "title": "Dallas Texas New Construction Community Tours: Elevon"
+      },
+      {
+        "id": "rxAJBBO_GPE",
+        "title": "Dallas Texas Universal Kids Resort COMING SOON to Frisco!"
+      },
+      {
+        "id": "ebqKsGDRT3M",
+        "title": "Why I'm LEAVING DALLAS And You Should Too"
+      },
+      {
+        "id": "OvFimoazZh8",
+        "title": "Dallas Texas Top 6 Suburbs: North East Dallas"
+      },
+      {
+        "id": "ByAY-YX-xpo",
+        "title": "Dallas Texas Suburb Tour: Southlake Texas"
+      },
+      {
+        "id": "EXr8iI11bB0",
+        "title": "Dallas Texas Suburb Tour: Allen, Texas"
+      },
+      {
+        "id": "esRobWb_eiw",
+        "title": "#1 Amenity Center in the USA is In Dallas Texas | Living in Mustang Lakes"
+      },
+      {
+        "id": "uCiuVOkzxOw",
+        "title": "Dallas Texas TOP 7 Suburbs: North Dallas"
+      },
+      {
+        "id": "Eqh1SwEI44M",
+        "title": "Are There ANY Affordable Houses Left in Dallas Texas? | Affordable Homes in Princeton Texas in 2024"
+      },
+      {
+        "id": "J5nQK6s1uus",
+        "title": "Why Is Everyone Is Moving To Texas? Top 10 Reasons"
+      },
+      {
+        "id": "eLOL1XwE4_I",
+        "title": "Dallas Texas Suburb Tour: Melissa, Texas"
+      },
+      {
+        "id": "dr6oS-OfDvQ",
+        "title": "Dallas Texas Suburb Tour: McKinney, Texas"
+      },
+      {
+        "id": "kkw1qeW6MOU",
+        "title": "Exploring Forney, Texas: A Hidden Gem In The Dallas Suburbs"
+      },
+      {
+        "id": "-24hty-FneY",
+        "title": "Fields Frisco Development is INSANE | Fields of Frisco COMPLETE Tour | Living in Frisco Texas"
+      },
+      {
+        "id": "Taguim68uSo",
+        "title": "Texas VETERAN BENEFITS | Housing, Employment, Education, & More!"
+      },
+      {
+        "id": "DATc7AYo6lw",
+        "title": "Dallas Texas Suburb Tour: Prosper, Texas"
+      },
+      {
+        "id": "1CHCMFr9zx4",
+        "title": "AMAZING $3,700,000 Luxury Custom Home in Dallas Texas!"
+      },
+      {
+        "id": "6tfJydD4EZw",
+        "title": "Is Living In Plano Texas Worth It? Must-know Pros And Cons Before You Move!"
+      },
+      {
+        "id": "tH8lBzGMYto",
+        "title": "Is Living In Plano Worth It in 2024? | The REAL Pros and Cons of Plano Texas"
+      },
+      {
+        "id": "T460dS7SJIs",
+        "title": "Highland Park FULL TOUR of Luxury Living in Dallas Texas 2024 | Highland Park Texas Real Estate"
+      },
+      {
+        "id": "0PZQSckXE3o",
+        "title": "Dallas Texas Suburb Tour: Frisco, Texas"
+      },
+      {
+        "id": "0OH1jjizOsE",
+        "title": "Inside A $3.8 MILLION McKinney Texas Home | Luxury Listing in McKinney Texas | Dallas Texas Suburb"
+      },
+      {
+        "id": "3r1QYHRESGM",
+        "title": "Dallas Texas Top 5 Suburbs | Which Dallas Texas Suburb to Choose | Dallas Texas Real Estate"
+      },
+      {
+        "id": "JL0OL_khRv0",
+        "title": "DON'T Move to Dallas Texas | WATCH FIRST BEFORE MOVING to Dallas Texas | Dallas Texas Real Estate"
+      },
+      {
+        "id": "SJjuOWE4BaA",
+        "title": "McKinney Texas Top 8 Neighborhoods | Living in McKinney Texas"
+      },
+      {
+        "id": "JhXf_f-dZEY",
+        "title": "Frisco Texas Top 8 Neighborhoods | Living in Frisco Texas | Dallas Texas Real Estate"
+      },
+      {
+        "id": "w4-TnRueZDE",
+        "title": "Top 8 Plano Texas Neighborhoods | Living in Plano Texas"
+      },
+      {
+        "id": "NJK24Qdk6e8",
+        "title": "Frisco Texas vs Plano Texas | The Differences Between Frisco TX and Plano TX | Dallas Texas Suburbs"
+      },
+      {
+        "id": "06Ixcxz2REA",
+        "title": "Does it Snow in Texas? | 3 SNOW TIPS to help TEXANS Survive the Snow! | Dallas Texas Real Estate"
+      },
+      {
+        "id": "evLx-IairM0",
+        "title": "DON'T Move to Dallas Texas| EVERY DALLAS TEXAS SUBURB EXPLAINED FOR YOU"
+      },
+      {
+        "id": "R3GJEg-yARw",
+        "title": "Living in Plano Texas | EVERYTHING YOU NEED TO KNOW ABOUT PLANO TEXAS | Dallas Texas Suburb"
+      }
+    ]
+  }
+}
