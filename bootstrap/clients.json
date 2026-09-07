@@ -96,6 +96,30 @@
         "What questions do out-of-state buyers ask that we answer repeatedly?",
         "What content gaps could we fill based on what we've covered?"
       ]
+    },
+    "javier-vidana": {
+      "channel_name": "Javier Vidana",
+      "channel_handle": "@JavyVidana",
+      "channel_url": "https://www.youtube.com/@JavyVidana",
+      "namespace": "javier-vidana",
+      "creator_name": "Javier Vidana",
+      "active": true,
+      "audience_suggestions": [
+        "How do I know if I can afford a home?",
+        "What does Javier say first-time buyers get wrong?",
+        "How much do I really need for a down payment?",
+        "What should I know before talking to a lender?",
+        "What are the hidden costs of buying a home?",
+        "What does Javier say about buying in the Phoenix area?"
+      ],
+      "creator_suggestions": [
+        "What advice do I repeat most often to first-time buyers?",
+        "What themes come up most in my affordability videos?",
+        "What have I said about lenders and mortgage rates?",
+        "What are my most quotable lines about the home buying process?",
+        "Which buyer questions do I answer over and over?",
+        "What content gaps could I fill based on what I've covered?"
+      ]
     }
   }
 }

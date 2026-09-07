@@ -1,0 +1,360 @@
+{
+  "pinecone_config": {
+    "stats": {
+      "channel_name": "Javier Vidana",
+      "channel_id": "UCnHjOLBTYCC1cbJNW6jVzhg",
+      "namespace": "javier-vidana",
+      "index_name": "channel-brain-prod",
+      "videos_indexed": 40,
+      "skipped": 0,
+      "skipped_titles": [],
+      "skipped_short": 0,
+      "skipped_short_titles": [],
+      "aborted_rate_limited": false,
+      "total_chunks": 389,
+      "total_videos_on_channel": 413,
+      "last_sync_date": "2026-09-07",
+      "videos": [
+        {
+          "id": "ZNqlILCDnvc",
+          "title": "Failed Airbnbs and Flips are Flooding The Market"
+        },
+        {
+          "id": "9QFk4MeSc1A",
+          "title": "The Housing Market Is NOT Just Affecting Poor People"
+        },
+        {
+          "id": "7FAO9ul9B0w",
+          "title": "\ud83c\udfe0My Honest Advice If You Bought Recently And Want To Move"
+        },
+        {
+          "id": "QtJkk1z5tNw",
+          "title": "This Is Why Homes Are Not Selling"
+        },
+        {
+          "id": "AHnhEAW1zeA",
+          "title": "\ud83c\udfe0 Lets Talk About Paying Off Your Home Early \ud83c\udfe0"
+        },
+        {
+          "id": "eoVezhrJ5So",
+          "title": "This Is Why House Prices Haven't Crashed"
+        },
+        {
+          "id": "v2OU-8YD3I0",
+          "title": "I Asked First Time Home Buyers About Their Biggest Regrets and Learned..."
+        },
+        {
+          "id": "RgfnCTH5Mjc",
+          "title": "A Starter Home Isn't An Investment. It's A Bailout."
+        },
+        {
+          "id": "7vrP85wEHGI",
+          "title": "$400,000 House: How Much Do You Actually Need to Make?"
+        },
+        {
+          "id": "oX4VTGnJkdo",
+          "title": "What I'd Tell My Sister If She Was Buying Her First Home"
+        },
+        {
+          "id": "dDAZwWqunTM",
+          "title": "Is It Better To Pay An Extra $500 Extra On Your Mortgage or Invest It?"
+        },
+        {
+          "id": "cdDBN19T7gQ",
+          "title": "Buy A Home With $22,000 of Credit Card Debt?! | Reality Check"
+        },
+        {
+          "id": "btKhMoKt5K4",
+          "title": "The Home Inspection Industry Doesn't Protect You | Here's Why"
+        },
+        {
+          "id": "xdPDFMrqoWs",
+          "title": "Fake AI Listing Photos Are a Massive Red Flag for Home Buyers"
+        },
+        {
+          "id": "1C8Y7_s9Omw",
+          "title": "The New Build Conspiracy Realtors Don't Want Exposed"
+        },
+        {
+          "id": "VtfYR5gSUAk",
+          "title": "The Market Crash Everyone's Predicting Won't Happen"
+        },
+        {
+          "id": "9HBivkx6Heg",
+          "title": "This Is Why The Housing Market Sucks Right Now"
+        },
+        {
+          "id": "hC8Oii4cbjE",
+          "title": "Prices Are FINALLY Dropping But DONT Make These Mistakes"
+        },
+        {
+          "id": "h9R9gROmSfs",
+          "title": "This Is Why the Housing Market Is Broken"
+        },
+        {
+          "id": "KwI5IwOmpjk",
+          "title": "What I Learned After Seeing Thousands of New Construction Homes"
+        },
+        {
+          "id": "MHoK2X2q3jE",
+          "title": "What's REALLY Happening In The Housing Market Right Now?!"
+        },
+        {
+          "id": "bVVtzhWsG2U",
+          "title": "I Lost Hair Over These Home Buyer Mistakes"
+        },
+        {
+          "id": "t0KjJ-eR1CU",
+          "title": "How Are People Getting a 4% Mortgage Rate?! (Breakdown)"
+        },
+        {
+          "id": "5rzCsQAsfXs",
+          "title": "Houses You\u2019ll REGRET Buying"
+        },
+        {
+          "id": "l2dUjw_4z8Q",
+          "title": "\"I feel uneasy about where the market is headed.\""
+        },
+        {
+          "id": "h5rYCMKSswE",
+          "title": "How Much House Can You REALLY Afford? (Step By Step Guide)"
+        },
+        {
+          "id": "CGhZFQ3_uU0",
+          "title": "What Happens If You Pay An Extra $500 A Month On Your Mortgage?"
+        },
+        {
+          "id": "4M6jVGwmbZY",
+          "title": "We Can Afford a House but Are Too SCARED to Buy"
+        },
+        {
+          "id": "tIBKzchWebY",
+          "title": "The Home Builder Situation Is Crazy"
+        },
+        {
+          "id": "IGNbSO0S-SY",
+          "title": "Is Buying a Home Actually WORTH It?"
+        },
+        {
+          "id": "Jtugb4KuQ5M",
+          "title": "Common Home Buying Mistakes That Beginners Make"
+        },
+        {
+          "id": "9knLCnPpi4g",
+          "title": "Are Rising Listings Finally Impacting The Housing Market??  -  \ud83d\udd34 LIVE"
+        },
+        {
+          "id": "8GNQxFiJU6o",
+          "title": "How to Calculate Your Mortgage Payment (The Easy Way)"
+        },
+        {
+          "id": "Iv2X1YxXIkc",
+          "title": "How Tariff News Is Manipulating Homebuyers (And Why It Matters)"
+        },
+        {
+          "id": "7PTd8u61ink",
+          "title": "The Only Smart Way to Buy A Home is With 20% Down"
+        },
+        {
+          "id": "ldA-iO52DR8",
+          "title": "\ud83d\udd34 RATES ARE DROPPING! PREPARE FOR WAR!"
+        },
+        {
+          "id": "ePs6uMxHqok",
+          "title": "Best & Worst New Construction Incentives for First-Time Buyers!"
+        },
+        {
+          "id": "slEJEWoEshQ",
+          "title": "Are Home Prices Finally Dropping?"
+        },
+        {
+          "id": "nI97RcxuYK4",
+          "title": "Why The Housing Market Is Not Getting Better..."
+        },
+        {
+          "id": "TuHd_0gcjRE",
+          "title": "I Regret Buying My House\u2026"
+        }
+      ]
+    },
+    "pinecone_index": "channel-brain-prod",
+    "namespace": "javier-vidana"
+  },
+  "stats": {
+    "channel_name": "Javier Vidana",
+    "channel_id": "UCnHjOLBTYCC1cbJNW6jVzhg",
+    "namespace": "javier-vidana",
+    "index_name": "channel-brain-prod",
+    "videos_indexed": 40,
+    "skipped": 0,
+    "skipped_titles": [],
+    "skipped_short": 0,
+    "skipped_short_titles": [],
+    "aborted_rate_limited": false,
+    "total_chunks": 389,
+    "total_videos_on_channel": 413,
+    "last_sync_date": "2026-09-07",
+    "videos": [
+      {
+        "id": "ZNqlILCDnvc",
+        "title": "Failed Airbnbs and Flips are Flooding The Market"
+      },
+      {
+        "id": "9QFk4MeSc1A",
+        "title": "The Housing Market Is NOT Just Affecting Poor People"
+      },
+      {
+        "id": "7FAO9ul9B0w",
+        "title": "\ud83c\udfe0My Honest Advice If You Bought Recently And Want To Move"
+      },
+      {
+        "id": "QtJkk1z5tNw",
+        "title": "This Is Why Homes Are Not Selling"
+      },
+      {
+        "id": "AHnhEAW1zeA",
+        "title": "\ud83c\udfe0 Lets Talk About Paying Off Your Home Early \ud83c\udfe0"
+      },
+      {
+        "id": "eoVezhrJ5So",
+        "title": "This Is Why House Prices Haven't Crashed"
+      },
+      {
+        "id": "v2OU-8YD3I0",
+        "title": "I Asked First Time Home Buyers About Their Biggest Regrets and Learned..."
+      },
+      {
+        "id": "RgfnCTH5Mjc",
+        "title": "A Starter Home Isn't An Investment. It's A Bailout."
+      },
+      {
+        "id": "7vrP85wEHGI",
+        "title": "$400,000 House: How Much Do You Actually Need to Make?"
+      },
+      {
+        "id": "oX4VTGnJkdo",
+        "title": "What I'd Tell My Sister If She Was Buying Her First Home"
+      },
+      {
+        "id": "dDAZwWqunTM",
+        "title": "Is It Better To Pay An Extra $500 Extra On Your Mortgage or Invest It?"
+      },
+      {
+        "id": "cdDBN19T7gQ",
+        "title": "Buy A Home With $22,000 of Credit Card Debt?! | Reality Check"
+      },
+      {
+        "id": "btKhMoKt5K4",
+        "title": "The Home Inspection Industry Doesn't Protect You | Here's Why"
+      },
+      {
+        "id": "xdPDFMrqoWs",
+        "title": "Fake AI Listing Photos Are a Massive Red Flag for Home Buyers"
+      },
+      {
+        "id": "1C8Y7_s9Omw",
+        "title": "The New Build Conspiracy Realtors Don't Want Exposed"
+      },
+      {
+        "id": "VtfYR5gSUAk",
+        "title": "The Market Crash Everyone's Predicting Won't Happen"
+      },
+      {
+        "id": "9HBivkx6Heg",
+        "title": "This Is Why The Housing Market Sucks Right Now"
+      },
+      {
+        "id": "hC8Oii4cbjE",
+        "title": "Prices Are FINALLY Dropping But DONT Make These Mistakes"
+      },
+      {
+        "id": "h9R9gROmSfs",
+        "title": "This Is Why the Housing Market Is Broken"
+      },
+      {
+        "id": "KwI5IwOmpjk",
+        "title": "What I Learned After Seeing Thousands of New Construction Homes"
+      },
+      {
+        "id": "MHoK2X2q3jE",
+        "title": "What's REALLY Happening In The Housing Market Right Now?!"
+      },
+      {
+        "id": "bVVtzhWsG2U",
+        "title": "I Lost Hair Over These Home Buyer Mistakes"
+      },
+      {
+        "id": "t0KjJ-eR1CU",
+        "title": "How Are People Getting a 4% Mortgage Rate?! (Breakdown)"
+      },
+      {
+        "id": "5rzCsQAsfXs",
+        "title": "Houses You\u2019ll REGRET Buying"
+      },
+      {
+        "id": "l2dUjw_4z8Q",
+        "title": "\"I feel uneasy about where the market is headed.\""
+      },
+      {
+        "id": "h5rYCMKSswE",
+        "title": "How Much House Can You REALLY Afford? (Step By Step Guide)"
+      },
+      {
+        "id": "CGhZFQ3_uU0",
+        "title": "What Happens If You Pay An Extra $500 A Month On Your Mortgage?"
+      },
+      {
+        "id": "4M6jVGwmbZY",
+        "title": "We Can Afford a House but Are Too SCARED to Buy"
+      },
+      {
+        "id": "tIBKzchWebY",
+        "title": "The Home Builder Situation Is Crazy"
+      },
+      {
+        "id": "IGNbSO0S-SY",
+        "title": "Is Buying a Home Actually WORTH It?"
+      },
+      {
+        "id": "Jtugb4KuQ5M",
+        "title": "Common Home Buying Mistakes That Beginners Make"
+      },
+      {
+        "id": "9knLCnPpi4g",
+        "title": "Are Rising Listings Finally Impacting The Housing Market??  -  \ud83d\udd34 LIVE"
+      },
+      {
+        "id": "8GNQxFiJU6o",
+        "title": "How to Calculate Your Mortgage Payment (The Easy Way)"
+      },
+      {
+        "id": "Iv2X1YxXIkc",
+        "title": "How Tariff News Is Manipulating Homebuyers (And Why It Matters)"
+      },
+      {
+        "id": "7PTd8u61ink",
+        "title": "The Only Smart Way to Buy A Home is With 20% Down"
+      },
+      {
+        "id": "ldA-iO52DR8",
+        "title": "\ud83d\udd34 RATES ARE DROPPING! PREPARE FOR WAR!"
+      },
+      {
+        "id": "ePs6uMxHqok",
+        "title": "Best & Worst New Construction Incentives for First-Time Buyers!"
+      },
+      {
+        "id": "slEJEWoEshQ",
+        "title": "Are Home Prices Finally Dropping?"
+      },
+      {
+        "id": "nI97RcxuYK4",
+        "title": "Why The Housing Market Is Not Getting Better..."
+      },
+      {
+        "id": "TuHd_0gcjRE",
+        "title": "I Regret Buying My House\u2026"
+      }
+    ]
+  }
+}
