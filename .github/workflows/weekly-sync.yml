@@ -1,0 +1,17 @@
+name: Weekly Channel Sync
+
+on:
+  schedule:
+    # Mondays 02:30 UTC = Sunday 9:30pm EST / 10:30pm EDT
+    - cron: "30 2 * * 1"
+  workflow_dispatch: {}
+
+jobs:
+  trigger-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger backend delta sync
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer ${{ secrets.CHANNELBRAIN_SYNC_TOKEN }}" \
+            "${{ secrets.CHANNELBRAIN_BACKEND_URL }}/api/admin/sync"

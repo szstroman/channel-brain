@@ -548,3 +548,94 @@ async def submit_lead(request: Request, req: LeadRequest):
         logger.info("[lead] no ZAPIER_WEBHOOK_URL set, skipping forwarding")
 
     return {"status": "ok"}
+
+
+# ── Admin: weekly delta-sync endpoint (R2-03) ─────────────────────────────────
+# POST /api/admin/sync  (Authorization: Bearer $SYNC_TOKEN) starts a background
+# delta-sync of all active clients — the same work sync_runner.py does from the
+# CLI. Fire-and-forget: returns 202 immediately; progress goes to Railway logs.
+# GET /api/admin/sync/status (same auth) reports the current/last run.
+# Triggered weekly by .github/workflows/weekly-sync.yml.
+import threading
+
+_sync_lock = threading.Lock()
+_sync_state = {
+    "running": False,
+    "started_at": None,
+    "finished_at": None,
+    "last_summary": None,
+}
+
+
+def _check_sync_token(request: Request) -> None:
+    expected = os.environ.get("SYNC_TOKEN", "")
+    auth = request.headers.get("authorization", "")
+    if not expected:
+        raise HTTPException(status_code=503, detail="SYNC_TOKEN not configured")
+    if auth != f"Bearer {expected}":
+        raise HTTPException(status_code=401, detail="Unauthorized")
+
+
+def _run_sync_all() -> None:
+    from clients_config import load_clients_config
+    from sync_runner import sync_one_client
+
+    started = time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime())
+    results = []
+    try:
+        config = load_clients_config()
+        clients = {
+            cid: c for cid, c in config.get("clients", {}).items() if c.get("active")
+        }
+        logger.info(f"[admin-sync] starting delta sync for {len(clients)} active clients")
+        for cid, cdata in clients.items():
+            res = sync_one_client(cid, cdata, dry_run=False)
+            results.append(res)
+            logger.info(
+                f"[admin-sync] {cid}: status={res.get('status')} "
+                f"synced={res.get('synced')} skipped={res.get('skipped')}"
+            )
+    except Exception as e:
+        logger.error(f"[admin-sync] fatal: {type(e).__name__}: {e}")
+        results.append({"client_id": "(runner)", "status": "fatal", "error": str(e)})
+    finally:
+        with _sync_lock:
+            _sync_state["running"] = False
+            _sync_state["finished_at"] = time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime())
+            _sync_state["last_summary"] = {
+                "started_at": started,
+                "clients": [
+                    {
+                        "client_id": r.get("client_id"),
+                        "status": r.get("status"),
+                        "synced": r.get("synced"),
+                        "skipped": r.get("skipped"),
+                        "error": r.get("error"),
+                    }
+                    for r in results
+                ],
+            }
+        logger.info("[admin-sync] finished")
+
+
+@app.post("/api/admin/sync", status_code=202)
+async def admin_sync(request: Request):
+    _check_sync_token(request)
+    with _sync_lock:
+        if _sync_state["running"]:
+            return JSONResponse(
+                status_code=409,
+                content={"status": "already_running", "started_at": _sync_state["started_at"]},
+            )
+        _sync_state["running"] = True
+        _sync_state["started_at"] = time.strftime("%Y-%m-%d %H:%M:%S UTC", time.gmtime())
+        _sync_state["finished_at"] = None
+    threading.Thread(target=_run_sync_all, name="admin-sync", daemon=True).start()
+    return {"status": "started", "started_at": _sync_state["started_at"]}
+
+
+@app.get("/api/admin/sync/status")
+async def admin_sync_status(request: Request):
+    _check_sync_token(request)
+    with _sync_lock:
+        return dict(_sync_state)
