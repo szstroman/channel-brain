@@ -143,10 +143,76 @@ def get_all_video_ids(playlist_id: str, youtube, max_videos: int) -> list[dict]:
 CONSECUTIVE_FAILURE_LIMIT = 15
 
 # Transcripts shorter than this (chars) are Shorts / trailers with no real
-# content. They dilute the corpus (1-2 thin chunks) and can surface as weak
-# citations in answers. Counted separately from failures — the fetch WORKED,
-# the content is just too thin to index.
-MIN_TRANSCRIPT_CHARS = 400
+# content. ~1500 chars ≈ under two minutes of speech — dense talking Shorts
+# run 800-1000 chars and were slipping past the old 400 floor, diluting the
+# corpus. Counted separately from failures — the fetch WORKED, the content is
+# just too thin to index.
+MIN_TRANSCRIPT_CHARS = 1500
+
+
+# Sentinel so we resolve + log the proxy decision exactly once per process,
+# instead of silently re-deciding on every single transcript fetch.
+_PROXY_UNRESOLVED = object()
+_proxy_config_cache = _PROXY_UNRESOLVED
+
+
+def _get_proxy_config():
+    """
+    Webshare rotating-residential proxy support (opt-in via env vars).
+
+    YouTube throttles transcript fetches per-IP after ~15-30 requests in a
+    session, which caps demo builds at a trickle. Rotating residential proxies
+    exit every request from a different home IP, so no single IP ever
+    accumulates a request budget. youtube-transcript-api ships first-class
+    support via WebshareProxyConfig.
+
+    Set in .env (never commit):
+        WEBSHARE_PROXY_USERNAME=xxxx
+        WEBSHARE_PROXY_PASSWORD=xxxx
+
+    Returns a WebshareProxyConfig, or None to use the direct connection
+    (unset vars, or an old library version without proxy support).
+
+    The decision is resolved once per process and ALWAYS logged, so the run
+    logs state plainly whether transcripts go through Webshare or direct —
+    a silent fallback here cost us a burned Railway IP once already.
+    """
+    global _proxy_config_cache
+    if _proxy_config_cache is not _PROXY_UNRESOLVED:
+        return _proxy_config_cache
+
+    username = os.environ.get("WEBSHARE_PROXY_USERNAME")
+    password = os.environ.get("WEBSHARE_PROXY_PASSWORD")
+
+    if not username and not password:
+        print("[proxy] WEBSHARE_PROXY_USERNAME / WEBSHARE_PROXY_PASSWORD not set "
+              "— transcripts will use the DIRECT connection (this IP can be "
+              "rate-limited by YouTube).")
+        _proxy_config_cache = None
+        return None
+    if not username or not password:
+        missing = "WEBSHARE_PROXY_USERNAME" if not username else "WEBSHARE_PROXY_PASSWORD"
+        print(f"[proxy] WARNING: only one Webshare variable is set — {missing} "
+              f"is missing (check for a typo in the variable NAME). "
+              f"Continuing with the DIRECT connection.")
+        _proxy_config_cache = None
+        return None
+
+    try:
+        from youtube_transcript_api.proxies import WebshareProxyConfig
+    except ImportError:
+        print("[proxy] WARNING: WEBSHARE_PROXY_* set but this youtube-transcript-api "
+              "version lacks proxy support. Run: py -m pip install --upgrade "
+              "youtube-transcript-api. Continuing WITHOUT proxy.")
+        _proxy_config_cache = None
+        return None
+
+    print("[proxy] Webshare rotating residential proxy ENABLED "
+          "— transcript requests will exit through rotating IPs.")
+    _proxy_config_cache = WebshareProxyConfig(
+        proxy_username=username, proxy_password=password
+    )
+    return _proxy_config_cache
 
 
 def fetch_transcript(video_id: str, max_retries: int = 3) -> Optional[str]:
@@ -154,10 +220,20 @@ def fetch_transcript(video_id: str, max_retries: int = 3) -> Optional[str]:
     Fetch transcript text for a video with retry logic.
     Retries on transient errors (rate limiting, network) with exponential backoff.
     Returns None only if all retries exhausted or transcript genuinely unavailable.
+
+    When WEBSHARE_PROXY_USERNAME/PASSWORD are set, requests route through
+    rotating residential proxies (see _get_proxy_config). Cookies are only
+    attached on DIRECT connections — mixing an account session with rotating
+    exit IPs looks like account compromise to YouTube and risks flagging the
+    account; the proxy path runs unauthenticated by design, which rotation
+    makes sufficient.
     """
     cookies_path = Path("cookies.txt")
+    proxy_config = _get_proxy_config()
 
     def make_api():
+        if proxy_config is not None:
+            return YouTubeTranscriptApi(proxy_config=proxy_config)
         if cookies_path.exists():
             import http.cookiejar
             import requests
@@ -207,6 +283,12 @@ def fetch_transcript(video_id: str, max_retries: int = 3) -> Optional[str]:
             if "transcripts disabled" in err_str or "no transcripts" in err_str or "video unavailable" in err_str:
                 return None
 
+    # All retries exhausted — say WHY, so a proxy/auth problem can't hide
+    # behind the generic "rate-limited" abort message upstream.
+    if last_error is not None:
+        err_text = str(last_error).replace("\n", " ")[:300]
+        print(f"[transcript] {video_id} failed after {max_retries} attempts: "
+              f"{type(last_error).__name__}: {err_text}")
     return None
 
 
